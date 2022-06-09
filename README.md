@@ -2,7 +2,6 @@
 MC2 Team12 세계수 팀의 Eco Tales 앱 레포지토리입니다.
 
 # 팀원
-[리아](https://github.com/Lia316)<br/>
-[오즈](https://github.com/glitterer)<br/>
-[레인](https://github.com/eunbkang)<br/>
-[그리즐리](https://github.com/Lim-YongKwan)
+|<img src="https://github.com/Lim-YongKwan.png">|<img src="https://github.com/taek0622.png">|<img src="https://github.com/쉐리.png">|<img src="https://github.com/glitterer.png">|<img src="https://github.com/eunbkang.png">|<img src="https://github.com/Lia316.png">|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[Grizzly](https://github.com/Lim-YongKwan)|[Meenu](https://github.com/Meenu)|[Sheery](https://github.com/쉐리)|[Oz](https://github.com/glitterer)|[Rain](https://github.com/eunbkang)|[Lia](https://github.com/Lia316)|
