@@ -12,6 +12,7 @@
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
 		AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A452A2852288900683CCF /* Preview Assets.xcassets */; };
 		AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE9A453228522A3100683CCF /* .swiftlint.yml */; };
+		AE9A45372853307600683CCF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45362853307600683CCF /* MapView.swift */; };
 		F857443F28531A820012346A /* File1 in Resources */ = {isa = PBXBuildFile; fileRef = F857443E28531A820012346A /* File1 */; };
 		F857444928531B000012346A /* File2 in Resources */ = {isa = PBXBuildFile; fileRef = F857444828531B000012346A /* File2 */; };
 		F857444B28531B0C0012346A /* File3 in Resources */ = {isa = PBXBuildFile; fileRef = F857444A28531B0C0012346A /* File3 */; };
@@ -39,6 +40,7 @@
 		AE9A45272852288900683CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE9A452A2852288900683CCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE9A453228522A3100683CCF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AE9A45362853307600683CCF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F857443E28531A820012346A /* File1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File1; sourceTree = "<group>"; };
 		F857444828531B000012346A /* File2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File2; sourceTree = "<group>"; };
 		F857444A28531B0C0012346A /* File3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File3; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 		F857448128532C4E0012346A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE9A45362853307600683CCF /* MapView.swift */,
 				F857448228532C580012346A /* Component */,
 			);
 			path = Views;
@@ -507,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				AE9A45372853307600683CCF /* MapView.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
