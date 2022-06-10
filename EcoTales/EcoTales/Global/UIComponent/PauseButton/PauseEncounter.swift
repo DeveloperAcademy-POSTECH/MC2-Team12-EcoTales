@@ -11,15 +11,12 @@ import SwiftUI
 struct PauseEncounter: View {
     @State private var showPopUp = false
     var body: some View {
-        ZStack{
+        ZStack {
             Button(action: {
                 self.showPopUp = true
             }, label: {})
-            .buttonStyle(PauseButton())
-            
-            if $showPopUp.wrappedValue {
-                StoryPopup()
-            }
+            .buttonStyle(PauseButtonStyle())
+            StoryPopup(iscount: $showPopUp)
         }
     }
 }

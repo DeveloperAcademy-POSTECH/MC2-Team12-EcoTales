@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6888E285325AC00B0DB71 /* Color+Extension.swift */; };
-		59B688922853265C00B0DB71 /* PauseButtonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688912853265C00B0DB71 /* PauseButtonUI.swift */; };
+		59B688922853265C00B0DB71 /* PauseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688912853265C00B0DB71 /* PauseButtonStyle.swift */; };
 		59B688982853273500B0DB71 /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688942853273500B0DB71 /* ReplayButton.swift */; };
 		59B688992853273500B0DB71 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688952853273500B0DB71 /* ExitButton.swift */; };
 		59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688962853273500B0DB71 /* ContinueButton.swift */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		59B6888E285325AC00B0DB71 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		59B688912853265C00B0DB71 /* PauseButtonUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseButtonUI.swift; sourceTree = "<group>"; };
+		59B688912853265C00B0DB71 /* PauseButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseButtonStyle.swift; sourceTree = "<group>"; };
 		59B688942853273500B0DB71 /* ReplayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
 		59B688952853273500B0DB71 /* ExitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		59B688962853273500B0DB71 /* ContinueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				59B6889C2853286300B0DB71 /* PauseEncounter.swift */,
-				59B688912853265C00B0DB71 /* PauseButtonUI.swift */,
+				59B688912853265C00B0DB71 /* PauseButtonStyle.swift */,
 			);
 			path = PauseButton;
 			sourceTree = "<group>";
@@ -509,7 +509,7 @@
 				59B688992853273500B0DB71 /* ExitButton.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */,
-				59B688922853265C00B0DB71 /* PauseButtonUI.swift in Sources */,
+				59B688922853265C00B0DB71 /* PauseButtonStyle.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 				59B6889D2853286300B0DB71 /* PauseEncounter.swift in Sources */,
 			);

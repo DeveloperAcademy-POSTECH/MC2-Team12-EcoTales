@@ -9,16 +9,15 @@ import SwiftUI
 
 struct ExitButton: View {
     var body: some View {
-        ZStack{
+        ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.PopupExitRed)
                 .frame(width: 180, height: 55)
                 .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
-            HStack(spacing: 27){
+            HStack(spacing: 27) {
                 Image(systemName: "square.and.arrow.up")
                     .resizable()
                     .rotationEffect(.degrees(90))
-                    //.scaledToFit()
                     .frame(width: 25, height: 24)
                     .font(.system(size: 5, weight: .semibold))
                     .foregroundColor(.PopupWhite)

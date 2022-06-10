@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ReplayButton: View {
     var body: some View {
-        ZStack{
+        ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.PopupReplayYellow)
                 .frame(width: 180, height: 55)
                 .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
-            HStack(spacing: 14){
+            HStack(spacing: 14) {
                 Image(systemName: "arrow.triangle.2.circlepath")
                     .resizable()
                     .scaledToFit()
