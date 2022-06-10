@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LaunchScreenView.swift
 //  EcoTales
 //
 //  Created by 리아 on 2022/06/09.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LaunchScreenView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LaunchScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LaunchScreenView()
     }
 }
