@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PauseButtonUI.swift
 //  EcoTales
 //
 //  Created by Seik Oh on 2022/06/09.
