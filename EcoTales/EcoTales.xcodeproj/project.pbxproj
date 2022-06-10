@@ -28,6 +28,8 @@
 		F857447A28531CD50012346A /* File14 in Resources */ = {isa = PBXBuildFile; fileRef = F857447928531CD50012346A /* File14 */; };
 		F857447C28531CE20012346A /* File15 in Resources */ = {isa = PBXBuildFile; fileRef = F857447B28531CE20012346A /* File15 */; };
 		F857447E28531CEE0012346A /* File16 in Resources */ = {isa = PBXBuildFile; fileRef = F857447D28531CEE0012346A /* File16 */; };
+		F857448428532C800012346A /* File in Resources */ = {isa = PBXBuildFile; fileRef = F857448328532C800012346A /* File */; };
+		F857448628532C960012346A /* File in Resources */ = {isa = PBXBuildFile; fileRef = F857448528532C960012346A /* File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		F857447928531CD50012346A /* File14 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File14; sourceTree = "<group>"; };
 		F857447B28531CE20012346A /* File15 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File15; sourceTree = "<group>"; };
 		F857447D28531CEE0012346A /* File16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File16; sourceTree = "<group>"; };
+		F857448328532C800012346A /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		F857448528532C960012346A /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				AE9A45232852288800683CCF /* EcoTalesApp.swift */,
 				F857445328531B730012346A /* LaunchScreen */,
 				F857445428531B7F0012346A /* Intro */,
+				F857447F28532C300012346A /* Map */,
 				F857445828531BB10012346A /* Chapter1 */,
 				F857445728531BA20012346A /* Chapter2 */,
 				F857445628531B960012346A /* Chapter3 */,
@@ -358,6 +363,39 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		F857447F28532C300012346A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F857448028532C450012346A /* ViewModels */,
+				F857448128532C4E0012346A /* Views */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F857448028532C450012346A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F857448328532C800012346A /* File */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F857448128532C4E0012346A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F857448228532C580012346A /* Component */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F857448228532C580012346A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F857448528532C960012346A /* File */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,8 +457,10 @@
 			files = (
 				F857447C28531CE20012346A /* File15 in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
+				F857448628532C960012346A /* File in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
+				F857448428532C800012346A /* File in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
 				F857447128531CA60012346A /* File10 in Resources */,
 				F857444D28531B180012346A /* File4 in Resources */,
