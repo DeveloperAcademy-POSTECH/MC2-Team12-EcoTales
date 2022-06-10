@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PauseEncounter: View {
     @State private var showPopUp = false
     var body: some View {
         ZStack{
@@ -18,14 +18,14 @@ struct ContentView: View {
             .buttonStyle(PauseButton())
             
             if $showPopUp.wrappedValue {
-                Popup()
+                StoryPopup()
             }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PauseEncounter_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PauseEncounter()
     }
 }

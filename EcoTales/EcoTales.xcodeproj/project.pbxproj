@@ -12,7 +12,7 @@
 		59B688982853273500B0DB71 /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688942853273500B0DB71 /* ReplayButton.swift */; };
 		59B688992853273500B0DB71 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688952853273500B0DB71 /* ExitButton.swift */; };
 		59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688962853273500B0DB71 /* ContinueButton.swift */; };
-		59B6889B2853273500B0DB71 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688972853273500B0DB71 /* Popup.swift */; };
+		59B6889B2853273500B0DB71 /* StoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688972853273500B0DB71 /* StoryPopup.swift */; };
 		59B6889D2853286300B0DB71 /* PauseEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6889C2853286300B0DB71 /* PauseEncounter.swift */; };
 		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
 		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
@@ -43,7 +43,7 @@
 		59B688942853273500B0DB71 /* ReplayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
 		59B688952853273500B0DB71 /* ExitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		59B688962853273500B0DB71 /* ContinueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
-		59B688972853273500B0DB71 /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		59B688972853273500B0DB71 /* StoryPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPopup.swift; sourceTree = "<group>"; };
 		59B6889C2853286300B0DB71 /* PauseEncounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseEncounter.swift; sourceTree = "<group>"; };
 		AE9A45202852288800683CCF /* EcoTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A45232852288800683CCF /* EcoTalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTalesApp.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		59B68893285326FD00B0DB71 /* StoryPopup */ = {
 			isa = PBXGroup;
 			children = (
-				59B688972853273500B0DB71 /* Popup.swift */,
+				59B688972853273500B0DB71 /* StoryPopup.swift */,
 				59B688962853273500B0DB71 /* ContinueButton.swift */,
 				59B688942853273500B0DB71 /* ReplayButton.swift */,
 				59B688952853273500B0DB71 /* ExitButton.swift */,
@@ -505,7 +505,7 @@
 			files = (
 				59B688982853273500B0DB71 /* ReplayButton.swift in Sources */,
 				59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */,
-				59B6889B2853273500B0DB71 /* Popup.swift in Sources */,
+				59B6889B2853273500B0DB71 /* StoryPopup.swift in Sources */,
 				59B688992853273500B0DB71 /* ExitButton.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */,
