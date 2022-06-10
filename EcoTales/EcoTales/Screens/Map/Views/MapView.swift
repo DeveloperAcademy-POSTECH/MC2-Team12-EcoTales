@@ -9,13 +9,16 @@ import SwiftUI
 
 struct MapView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("map_background_Lia")
+            .resizable()
+            .scaledToFill()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.landscapeRight)
     }
 }
