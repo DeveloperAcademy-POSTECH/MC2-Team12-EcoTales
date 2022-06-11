@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3635EA285361DA00EB2CAA /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
+		7E3635EC2853764E00EB2CAA /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
+		7E3635EE28542BAC00EB2CAA /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
+		7E3635F028542DC300EB2CAA /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
+		7E3635F22854349200EB2CAA /* LocatingHiddenObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */; };
 		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
 		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
+		7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFind.swift; sourceTree = "<group>"; };
+		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
+		7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjectData.swift; sourceTree = "<group>"; };
+		7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatingHiddenObjView.swift; sourceTree = "<group>"; };
 		AE9A45202852288800683CCF /* EcoTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A45232852288800683CCF /* EcoTalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTalesApp.swift; sourceTree = "<group>"; };
 		AE9A45252852288800683CCF /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -303,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				F857446A28531C680012346A /* Component */,
+				7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,6 +346,10 @@
 			isa = PBXGroup;
 			children = (
 				F857447028531CA60012346A /* File10 */,
+				7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */,
+				7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */,
+				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
+				7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -506,7 +521,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3635EC2853764E00EB2CAA /* ObjectsToFind.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				7E3635F22854349200EB2CAA /* LocatingHiddenObjView.swift in Sources */,
+				7E3635EE28542BAC00EB2CAA /* HiddenObject.swift in Sources */,
+				7E3635EA285361DA00EB2CAA /* HiddenObjGameView.swift in Sources */,
+				7E3635F028542DC300EB2CAA /* HiddenObjectData.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
