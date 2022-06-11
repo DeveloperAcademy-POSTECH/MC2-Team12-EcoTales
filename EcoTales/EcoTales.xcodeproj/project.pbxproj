@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6888E285325AC00B0DB71 /* Color+Extension.swift */; };
-		59B688922853265C00B0DB71 /* PauseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688912853265C00B0DB71 /* PauseButtonStyle.swift */; };
-		59B688982853273500B0DB71 /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688942853273500B0DB71 /* ReplayButton.swift */; };
-		59B688992853273500B0DB71 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688952853273500B0DB71 /* ExitButton.swift */; };
-		59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688962853273500B0DB71 /* ContinueButton.swift */; };
-		59B6889B2853273500B0DB71 /* StoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688972853273500B0DB71 /* StoryPopup.swift */; };
-		59B6889D2853286300B0DB71 /* PauseEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6889C2853286300B0DB71 /* PauseEncounter.swift */; };
-		7E3635EA285361DA00EB2CAA /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
-		7E3635EC2853764E00EB2CAA /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
-		7E3635EE28542BAC00EB2CAA /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
-		7E3635F028542DC300EB2CAA /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
-		7E3635F22854349200EB2CAA /* LocatingHiddenObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */; };
-		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
-		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
+		26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
+		26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
+		26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE32854440E00ED79C8 /* Color+Extension.swift */; };
+		26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FD52854432300ED79C8 /* ContinueButton.swift */; };
+		26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDB2854438800ED79C8 /* ReplayButton.swift */; };
+		26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FD72854435D00ED79C8 /* ExitButton.swift */; };
+		26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDD285443A100ED79C8 /* StoryPopup.swift */; };
+		26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDF285443C700ED79C8 /* PauseButtonStyle.swift */; };
+		26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE1285443E000ED79C8 /* PauseEncounter.swift */; };
+		26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
+		26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
+		26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
+		26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */; };
+		26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
 		AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A452A2852288900683CCF /* Preview Assets.xcassets */; };
 		AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE9A453228522A3100683CCF /* .swiftlint.yml */; };
@@ -45,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26205FD52854432300ED79C8 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
+		26205FD72854435D00ED79C8 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		26205FDB2854438800ED79C8 /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
+		26205FDD285443A100ED79C8 /* StoryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPopup.swift; sourceTree = "<group>"; };
+		26205FDF285443C700ED79C8 /* PauseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButtonStyle.swift; sourceTree = "<group>"; };
+		26205FE1285443E000ED79C8 /* PauseEncounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseEncounter.swift; sourceTree = "<group>"; };
+		26205FE32854440E00ED79C8 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFind.swift; sourceTree = "<group>"; };
 		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
@@ -90,8 +97,8 @@
 		59B688902853263F00B0DB71 /* PauseButton */ = {
 			isa = PBXGroup;
 			children = (
-				59B6889C2853286300B0DB71 /* PauseEncounter.swift */,
-				59B688912853265C00B0DB71 /* PauseButtonStyle.swift */,
+				26205FDF285443C700ED79C8 /* PauseButtonStyle.swift */,
+				26205FE1285443E000ED79C8 /* PauseEncounter.swift */,
 			);
 			path = PauseButton;
 			sourceTree = "<group>";
@@ -99,10 +106,10 @@
 		59B68893285326FD00B0DB71 /* StoryPopup */ = {
 			isa = PBXGroup;
 			children = (
-				59B688972853273500B0DB71 /* StoryPopup.swift */,
-				59B688962853273500B0DB71 /* ContinueButton.swift */,
-				59B688942853273500B0DB71 /* ReplayButton.swift */,
-				59B688952853273500B0DB71 /* ExitButton.swift */,
+				26205FD52854432300ED79C8 /* ContinueButton.swift */,
+				26205FDB2854438800ED79C8 /* ReplayButton.swift */,
+				26205FD72854435D00ED79C8 /* ExitButton.swift */,
+				26205FDD285443A100ED79C8 /* StoryPopup.swift */,
 			);
 			path = StoryPopup;
 			sourceTree = "<group>";
@@ -202,8 +209,8 @@
 		F857444528531AE00012346A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				59B6888E285325AC00B0DB71 /* Color+Extension.swift */,
 				F857444C28531B180012346A /* File4 */,
+				26205FE32854440E00ED79C8 /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -448,10 +455,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE9A452E2852288900683CCF /* Build configuration list for PBXNativeTarget "EcoTales" */;
 			buildPhases = (
-				AE9A451C2852288800683CCF /* Sources */,
 				AE9A451D2852288800683CCF /* Frameworks */,
 				AE9A451E2852288800683CCF /* Resources */,
 				AE9A4531285229F100683CCF /* ShellScript */,
+				26205FE5285445B300ED79C8 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -549,25 +556,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AE9A451C2852288800683CCF /* Sources */ = {
+		26205FE5285445B300ED79C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B688982853273500B0DB71 /* ReplayButton.swift in Sources */,
-				59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */,
-				59B6889B2853273500B0DB71 /* StoryPopup.swift in Sources */,
-				59B688992853273500B0DB71 /* ExitButton.swift in Sources */,
-				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
-				59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */,
-				59B688922853265C00B0DB71 /* PauseButtonStyle.swift in Sources */,
-				7E3635EC2853764E00EB2CAA /* ObjectsToFind.swift in Sources */,
-				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
-				7E3635F22854349200EB2CAA /* LocatingHiddenObjView.swift in Sources */,
-				7E3635EE28542BAC00EB2CAA /* HiddenObject.swift in Sources */,
-				7E3635EA285361DA00EB2CAA /* HiddenObjGameView.swift in Sources */,
-				7E3635F028542DC300EB2CAA /* HiddenObjectData.swift in Sources */,
-				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
-				59B6889D2853286300B0DB71 /* PauseEncounter.swift in Sources */,
+				26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */,
+				26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */,
+				26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */,
+				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
+				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
+				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
+				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
+				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
+				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
+				26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */,
+				26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */,
+				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
+				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
+				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
