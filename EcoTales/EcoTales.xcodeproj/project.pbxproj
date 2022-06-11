@@ -21,6 +21,8 @@
 		26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
 		26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */; };
 		26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
+		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
+		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
 		AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A452A2852288900683CCF /* Preview Assets.xcassets */; };
 		AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE9A453228522A3100683CCF /* .swiftlint.yml */; };
@@ -52,6 +54,8 @@
 		26205FDF285443C700ED79C8 /* PauseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButtonStyle.swift; sourceTree = "<group>"; };
 		26205FE1285443E000ED79C8 /* PauseEncounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseEncounter.swift; sourceTree = "<group>"; };
 		26205FE32854440E00ED79C8 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
+		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFind.swift; sourceTree = "<group>"; };
 		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
@@ -344,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				F857447B28531CE20012346A /* File15 */,
+				5959E5F128549EAA00F39D9F /* EpilogueThree.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				F857448228532C580012346A /* Component */,
+				59D461E22854A1BD00FC0C67 /* MapBackground.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 				26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */,
 				26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */,
 				26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */,
+				5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */,
 				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
@@ -571,6 +578,7 @@
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
 				26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */,
 				26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */,
+				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
 				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
