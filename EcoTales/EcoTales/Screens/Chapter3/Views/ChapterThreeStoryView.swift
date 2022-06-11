@@ -1,26 +1,26 @@
 //
-//  ChapterOneStoryView.swift
+//  ChapterThreeStoryView.swift
 //  EcoTales
 //
-//  Created by 김민택 on 2022/06/11.
+//  Created by 김민택 on 2022/06/12.
 //
 
 import SwiftUI
 
-struct ChapterOneStoryView: View {
+struct ChapterThreeStoryView: View {
     @State private var isGameClear = false
     @State private var storyIndex = 0
     @State private var isMoveView = false
-    @State private var chapter = 1
+    @State private var chapter = 3
     @State private var num = 0
     var body: some View {
         StoryView(chapter: self.$chapter, isGameClear: self.$isGameClear, num: self.$num)
     }
 }
 
-struct ChapterOneStoryView_Previews: PreviewProvider {
+struct ChapterThreeStoryView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterOneStoryView()
+        ChapterThreeStoryView()
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

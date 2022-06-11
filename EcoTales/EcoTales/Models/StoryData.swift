@@ -21,23 +21,24 @@ enum Speaker: String {
     case redpandaC = "레서 판다 C"
 }
 
-struct ChapterStory {
+struct StoryData {
     let speaker: [Speaker]
     let dialog: [String]
 }
 
-let chapterError = ChapterStory(
+let chapterError = StoryData(
     speaker: [.naration],
     dialog: ["에러가 발생했습니다!"]
 )
 
-let chapterIntro = ChapterStory(
+let chapterIntro = StoryData(
     speaker: [.naration],
     dialog: ["인트로"]
 )
 
-let chapterOneNotClear = ChapterStory(
-    speaker: [.naration, .child, .turtle, .child, .child, .turtle, .child, .turtle, .child, .rain, .child, .rain, .child, .rain],
+let chapterOneNotClear = StoryData(
+    speaker: [.naration, .child, .turtle, .child, .child, .turtle,
+              .child, .turtle, .child, .rain, .child, .rain, .child, .rain],
     dialog: ["아이는 근처 바다에 도착했어요.",
              "와 바다다! 여기라면 깨끗한 소금물 한 바가지를 구할 수 있겠지?",
              "아이고.. 힘들다 힘들어",
@@ -54,8 +55,9 @@ let chapterOneNotClear = ChapterStory(
              "와 고마워. 그러면 바다에서 쓰레기를 찾아서 없애보자!"]
 )
 
-let chapterOneClear = ChapterStory(
-    speaker: [.rain, .child, .rain, .child, .rain, .photo, .rain, .naration, .naration, .naration, .naration, .naration, .naration],
+let chapterOneClear = StoryData(
+    speaker: [.rain, .child, .rain, .child, .rain, .photo, .rain,
+              .naration, .naration, .naration, .naration, .naration, .naration],
     dialog: ["참 잘했어! 네 덕분에 바다가 깨끗해졌어. 이제 이 바다에는 쓰레기들 때문에 죽는 친구들이 없어질거야",
              "내가 도움이 되었다니 다행이야",
              "자, 이게 바로 깨끗한 소금물 한 바가지야. 이걸로 네 친구를 꼭 치료하길 바라..",
@@ -72,8 +74,9 @@ let chapterOneClear = ChapterStory(
              "아이는 다짐하며 대지의 마을을 향해 발길을 재촉했어요."]
 )
 
-let chapterTwoNotClear = ChapterStory(
-    speaker: [.naration, .naration, .mole, .child, .sherry, .child, .sherry, .child, .sherry, .child, .sherry, .child, .sherry, .child, .sherry, .sherry, .child],
+let chapterTwoNotClear = StoryData(
+    speaker: [.naration, .naration, .mole, .child, .sherry, .child, .sherry, .child,
+              .sherry, .child, .sherry, .child, .sherry, .child, .sherry, .sherry, .child],
     dialog: ["아이는 대지의 흙 한 줌을 찾기 위해 숲을 향해 걸었어요. 숲에 도착했지만 오염물질과 쓰레기가 많아 마땅한 흙을 찾기 어려웠어요.",
              "계속 걸어가고 있던 중, 마침 땅 속에서 나온 두더지를 마주쳤어요.",
              "아이 참.. 이것 참 곤란하네..",
@@ -93,7 +96,7 @@ let chapterTwoNotClear = ChapterStory(
              "좋아, 한번 도전해볼게"]
 )
 
-let chapterTwoClear = ChapterStory(
+let chapterTwoClear = StoryData(
     speaker: [.sherry, .sherry, .child, .sherry, .child, .sherry, .photo, .sherry, .child, .sherry, .child],
     dialog: ["좋았어! 이제 좀 신나는걸!!",
              "잘했어 아이야~ 이게 바로 대지의 흙 한 줌이야.",
@@ -108,7 +111,7 @@ let chapterTwoClear = ChapterStory(
              "응 안녕 쉐리~"]
 )
 
-let chapterThreeNotClear = ChapterStory(
+let chapterThreeNotClear = StoryData(
     speaker: [.naration, .child, .naration, .oz, .child, .oz, .child, .oz, .child, .oz],
     dialog: ["아이는 마지막 재료인 청량한 공기 한 숨을 얻기 위해 높은 산 꼭대기에 올라갔어요.",
              "오늘은 참 날씨가 더운데도 하늘이 뿌옇네. 어디로 가야 청량한 공기 한 숨을 구할 수 있는 걸까? 너무 더우니 잠시 저 나무 밑에서 쉬어가야겠어.",
@@ -122,7 +125,7 @@ let chapterThreeNotClear = ChapterStory(
              "응. 옛날에 그것들이 없었던 때는 항상 공기가 맑고 하늘이 파랬어. 예전과 비교해서 지금 달라진 것들을 찾아서 없애면 괜찮아질지도 몰라."]
 )
 
-let chapterThreeClear = ChapterStory(
+let chapterThreeClear = StoryData(
     speaker: [.oz, .child, .oz, .child, .oz, .child, .oz, .child, .naration],
     dialog: ["고마워. 네 덕분에 이제 마스크를 쓰지 않아도 맑은 공기를 마실 수 있어. 보답으로 내가 만든 나뭇잎 주머니를 줄게.",
              "우와... 이 주머니에 청량한 공기 한 숨을 담아 가면 되겠다. 드디어 세계수를 구할 비약의 재료 세 가지를 모두 모았어.",
@@ -135,8 +138,9 @@ let chapterThreeClear = ChapterStory(
              "그렇게 아이는 세 가지 재료를 모두 모아 레서판다씨를 찾아가기 시작했습니다."]
 )
 
-let chapterFourNotClear = ChapterStory(
-    speaker: [.child, .child, .child, .redpandaAll, .child, .redpandaA, .child, .redpandaB, .child, .redpandaC, .child, .naration, .naration, .naration],
+let chapterFourNotClear = StoryData(
+    speaker: [.child, .child, .child, .redpandaAll, .child, .redpandaA, .child,
+              .redpandaB, .child, .redpandaC, .child, .naration, .naration, .naration],
     dialog: ["드디어 레서판다씨의 마을이다!",
              "그런데 레서판다씨가... 많아!!",
              "독수리아가 얘기한대로면 분명 한 분이실텐데...",
@@ -153,7 +157,7 @@ let chapterFourNotClear = ChapterStory(
              "진짜 판다씨를 찾아봐요!"]
 )
 
-let chapterFourClear = ChapterStory(
+let chapterFourClear = StoryData(
     speaker: [.child,
               .child,
               .child,
@@ -184,7 +188,7 @@ let chapterFourClear = ChapterStory(
              "아이는 고개를 갸우뚱 거리면서 미뉴를 따라 마을을 향해 발걸음을 옮겼어요."]
 )
 
-let chapterEpilogue = ChapterStory(
+let chapterEpilogue = StoryData(
     speaker: [.naration],
     dialog: ["에필로그"]
 )
