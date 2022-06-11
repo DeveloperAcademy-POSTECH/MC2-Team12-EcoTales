@@ -1,13 +1,13 @@
 //
-//  HiddenObjGameView.swift
+//  EpilogueThree.swift
 //  EcoTales
 //
-//  Created by Eunbee Kang on 2022/06/10.
+//  Created by Seik Oh on 2022/06/11.
 //
 
 import SwiftUI
 
-struct HiddenObjGameView: View {
+struct EpilogueThree: View {
     var body: some View {
         ZStack {
             Image("backgroundPolluted")
@@ -23,9 +23,8 @@ struct HiddenObjGameView: View {
     }
 }
 
-struct HiddenObjGameView_Previews: PreviewProvider {
+struct EpilogueThree_Previews: PreviewProvider {
     static var previews: some View {
-        HiddenObjGameView()
-            .previewInterfaceOrientation(.landscapeLeft)
+        EpilogueThree()
     }
 }
