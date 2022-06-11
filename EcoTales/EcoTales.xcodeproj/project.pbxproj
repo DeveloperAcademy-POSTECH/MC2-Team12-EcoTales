@@ -119,6 +119,8 @@
 		F857443B28531A200012346A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */,
+				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				F857443E28531A820012346A /* File1 */,
 			);
 			path = Models;
@@ -347,8 +349,6 @@
 			children = (
 				F857447028531CA60012346A /* File10 */,
 				7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */,
-				7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */,
-				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */,
 			);
 			path = Component;
