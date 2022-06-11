@@ -4,7 +4,6 @@
 //
 //  Created by Seik Oh on 2022/06/09.
 //
-
 import SwiftUI
 
 struct ContinueButton: View {
