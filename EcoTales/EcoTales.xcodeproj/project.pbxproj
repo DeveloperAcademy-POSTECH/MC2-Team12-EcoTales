@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6888E285325AC00B0DB71 /* Color+Extension.swift */; };
+		59B688922853265C00B0DB71 /* PauseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688912853265C00B0DB71 /* PauseButtonStyle.swift */; };
+		59B688982853273500B0DB71 /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688942853273500B0DB71 /* ReplayButton.swift */; };
+		59B688992853273500B0DB71 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688952853273500B0DB71 /* ExitButton.swift */; };
+		59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688962853273500B0DB71 /* ContinueButton.swift */; };
+		59B6889B2853273500B0DB71 /* StoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B688972853273500B0DB71 /* StoryPopup.swift */; };
+		59B6889D2853286300B0DB71 /* PauseEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B6889C2853286300B0DB71 /* PauseEncounter.swift */; };
 		7E3635EA285361DA00EB2CAA /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
 		7E3635EC2853764E00EB2CAA /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
 		7E3635EE28542BAC00EB2CAA /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
@@ -80,6 +87,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59B688902853263F00B0DB71 /* PauseButton */ = {
+			isa = PBXGroup;
+			children = (
+				59B6889C2853286300B0DB71 /* PauseEncounter.swift */,
+				59B688912853265C00B0DB71 /* PauseButtonStyle.swift */,
+			);
+			path = PauseButton;
+			sourceTree = "<group>";
+		};
+		59B68893285326FD00B0DB71 /* StoryPopup */ = {
+			isa = PBXGroup;
+			children = (
+				59B688972853273500B0DB71 /* StoryPopup.swift */,
+				59B688962853273500B0DB71 /* ContinueButton.swift */,
+				59B688942853273500B0DB71 /* ReplayButton.swift */,
+				59B688952853273500B0DB71 /* ExitButton.swift */,
+			);
+			path = StoryPopup;
+			sourceTree = "<group>";
+		};
 		AE9A45172852288800683CCF = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +190,8 @@
 		F857444428531AD30012346A /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				59B68893285326FD00B0DB71 /* StoryPopup */,
+				59B688902853263F00B0DB71 /* PauseButton */,
 				F857444E28531B280012346A /* File5 */,
 			);
 			path = UIComponent;
@@ -171,6 +200,7 @@
 		F857444528531AE00012346A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				59B6888E285325AC00B0DB71 /* Color+Extension.swift */,
 				F857444C28531B180012346A /* File4 */,
 			);
 			path = Extension;
@@ -472,6 +502,8 @@
 			files = (
 				F857447C28531CE20012346A /* File15 in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
+				F857443F28531A820012346A /* File1 in Resources */,
+				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				F857448628532C960012346A /* File18 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
@@ -521,6 +553,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B688982853273500B0DB71 /* ReplayButton.swift in Sources */,
+				59B6889A2853273500B0DB71 /* ContinueButton.swift in Sources */,
+				59B6889B2853273500B0DB71 /* StoryPopup.swift in Sources */,
+				59B688992853273500B0DB71 /* ExitButton.swift in Sources */,
+				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				59B6888F285325AC00B0DB71 /* Color+Extension.swift in Sources */,
+				59B688922853265C00B0DB71 /* PauseButtonStyle.swift in Sources */,
 				7E3635EC2853764E00EB2CAA /* ObjectsToFind.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				7E3635F22854349200EB2CAA /* LocatingHiddenObjView.swift in Sources */,
@@ -528,6 +567,7 @@
 				7E3635EA285361DA00EB2CAA /* HiddenObjGameView.swift in Sources */,
 				7E3635F028542DC300EB2CAA /* HiddenObjectData.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
+				59B6889D2853286300B0DB71 /* PauseEncounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
