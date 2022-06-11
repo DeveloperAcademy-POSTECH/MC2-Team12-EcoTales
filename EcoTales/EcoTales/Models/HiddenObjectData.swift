@@ -8,14 +8,24 @@
 import Foundation
 
 var hiddenObject = [
-    HiddenObject(image: "canHidden", positionX: 758, positionY: 230, rotation: 90, opacity: 1),
-    HiddenObject(image: "plasticbottleHidden", positionX: 493, positionY: 179, rotation: 90, opacity: 0.9),
-    HiddenObject(image: "toothbrushHidden", positionX: 642, positionY: 144, rotation: 315, opacity: 1),
-    HiddenObject(image: "plasticbagHidden", positionX: 91, positionY: 79, rotation: 315, opacity: 0.8),
-    HiddenObject(image: "smokingHidden", positionX: 600, positionY: 227, rotation: 0, opacity: 1),
-    HiddenObject(image: "cutleryHidden", positionX: 253, positionY: 227, rotation: 90, opacity: 1),
-    HiddenObject(image: "strawHidden", positionX: 43, positionY: 202, rotation: 100, opacity: 1),
-    HiddenObject(image: "plasticcupHidden", positionX: 201, positionY: 219, rotation: 0, opacity: 0.9),
-    HiddenObject(image: "glassbottleHidden", positionX: 384, positionY: 207, rotation: 60, opacity: 1),
-    HiddenObject(image: "snackHidden", positionX: 91, positionY: 292, rotation: 90, opacity: 0.8)
+    HiddenObject(image: "canHidden", objectName: "음료 캔",
+                 positionX: 758, positionY: 210, rotation: 270, opacity: 1),
+    HiddenObject(image: "plasticbottleHidden", objectName: "플라스틱 물병",
+                 positionX: 513, positionY: 159, rotation: 270, opacity: 0.9),
+    HiddenObject(image: "toothbrushHidden", objectName: "칫솔",
+                 positionX: 642, positionY: 172, rotation: 45, opacity: 1),
+    HiddenObject(image: "plasticbagHidden", objectName: "비닐봉지",
+                 positionX: 95, positionY: 109, rotation: 45, opacity: 0.8),
+    HiddenObject(image: "smokingHidden", objectName: "담배꽁초",
+                 positionX: 620, positionY: 247, rotation: 0, opacity: 1),
+    HiddenObject(image: "cutleryHidden", objectName: "플라스틱 숟가락과 포크",
+                 positionX: 267, positionY: 207, rotation: 270, opacity: 1),
+    HiddenObject(image: "strawHidden", objectName: "플라스틱 빨대",
+                 positionX: 50, positionY: 180, rotation: 260, opacity: 1),
+    HiddenObject(image: "plasticcupHidden", objectName: "일회용 음료 컵",
+                 positionX: 221, positionY: 240, rotation: 0, opacity: 0.9),
+    HiddenObject(image: "glassbottleHidden", objectName: "유리병",
+                 positionX: 414, positionY: 200, rotation: 300, opacity: 1),
+    HiddenObject(image: "snackHidden", objectName: "과자 봉지",
+                 positionX: 91, positionY: 272, rotation: 270, opacity: 0.8)
 ]

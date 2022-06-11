@@ -12,15 +12,14 @@ struct HiddenObjGameView: View {
         ZStack {
             Image("backgroundPolluted")
                 .resizable()
-                .scaledToFill()
+                .ignoresSafeArea()
+            LocatingHiddenObjView()
             VStack {
                 Image("woodenPanel")
                 Spacer()
                 ObjectsToFind()
             }
-            LocatingHiddenObjView()
         }
-        .ignoresSafeArea()
     }
 }
 
