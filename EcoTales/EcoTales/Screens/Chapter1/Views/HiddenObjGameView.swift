@@ -18,6 +18,7 @@ struct HiddenObjGameView: View {
                 Spacer()
                 ObjectsToFind()
             }
+            LocatingHiddenObjView()
         }
         .ignoresSafeArea()
     }
