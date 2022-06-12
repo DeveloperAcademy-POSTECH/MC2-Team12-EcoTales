@@ -9,13 +9,15 @@ import SwiftUI
 
 struct LaunchScreenView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+//        Text("Hello, world!")
+//            .padding()
+        HiddenObjGameView()
     }
 }
 
 struct LaunchScreenView_Previews: PreviewProvider {
     static var previews: some View {
         LaunchScreenView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

@@ -13,12 +13,12 @@ struct HiddenObjGameView: View {
             Image("backgroundPolluted")
                 .resizable()
                 .ignoresSafeArea()
+            LocatingHiddenObjView()
             VStack {
                 Image("woodenPanel")
                 Spacer()
                 ObjectsToFind()
             }
-            LocatingHiddenObjView()
         }
     }
 }
