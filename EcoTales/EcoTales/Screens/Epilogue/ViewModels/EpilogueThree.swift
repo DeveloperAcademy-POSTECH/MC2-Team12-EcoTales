@@ -10,18 +10,30 @@ import SwiftUI
 struct EpilogueThree: View {
     let images = ["chapterThree_cleanBackground", "chapterTwo_background", "chapterOne_cleanBackground"]
     let imageChangeTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    let transition = AnyTransition.asymmetric(insertion: .slide, removal: .scale).combined(with: .opacity)
+    @State private var imagePage = 2
+    @State private var currentImageIndexCount = 3
     @State private var currentImageIndex = 0
     var body: some View {
         ZStack {
-            Image(images[currentImageIndex])
-                .resizable()
-                .ignoresSafeArea()
-                .transition(AnyTransition.opacity.animation(.easeInOut(duration: 1.0)))
-                .onReceive(imageChangeTimer) { _ in
-                    withAnimation(.easeInOut(duration: 1.0)) {
-                        self.currentImageIndex = (self.currentImageIndex + 1) % self.images.count
+            VStack {
+                Text("Page: \(imagePage)")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 5)
+                    .background(.black.opacity(0.75))
+                Image(images[currentImageIndex])
+                    .resizable()
+                    .ignoresSafeArea()
+                    .transition(transition)
+                    .onReceive(imageChangeTimer) { _ in
+                        if imagePage > 0 {
+                            self.currentImageIndex = (self.currentImageIndex + 1) % self.images.count
+                            imagePage -= 1
+                        }
                     }
-                }
+            }
         }
     }
 }
