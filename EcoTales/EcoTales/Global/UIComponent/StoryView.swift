@@ -32,8 +32,14 @@ struct StoryView: View {
     @Binding var num: Int
     var body: some View {
         ZStack {
-            if chapter == 1 {
-                Image("chapterOne_background")
+            if chapter == 1 && isGameClear == false {
+                Image("chapterOne_pollutedBackground")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .aspectRatio(contentMode: .fill)
+            }
+            if chapter == 1 && isGameClear == true {
+                Image("chapterOne_cleanBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)

@@ -10,12 +10,12 @@ import SwiftUI
 struct HiddenObjGameView: View {
     var body: some View {
         ZStack {
-            Image("backgroundPolluted")
+            Image("chapterOne_pollutedBackground")
                 .resizable()
                 .ignoresSafeArea()
             LocatingHiddenObjView()
             VStack {
-                Image("woodenPanel")
+                Image("game_woodenPanel")
                 Spacer()
                 ObjectsToFind()
             }
