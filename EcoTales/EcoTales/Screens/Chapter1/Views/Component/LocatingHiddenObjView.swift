@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct LocatingHiddenObjView: View {
-//    @State private var isFound = false
-//    @State private var foundObject: String = "none"
-//    @State private var foundObjectPosition: CGPoint = .zero
-//    @State private var foundObjectRotation: Int = 0
     var body: some View {
         ZStack {
             ForEach(hiddenObject, id: \.self) { trash in
-                FoundCircle(trash: trash)
+                EachTrash(trash: trash)
 //                Button(action: {
 //                    withAnimation { isFound.toggle() }
 //                    foundObject = trash.image

@@ -12,7 +12,8 @@ struct HiddenObjGameView: View {
         ZStack {
             Image("chapterOne_pollutedBackground")
                 .resizable()
-                .ignoresSafeArea()
+                .scaledToFill()
+//                .ignoresSafeArea()
                 .onTouch(type: .started, perform: updateLocation)
             LocatingHiddenObjView()
             VStack {
@@ -21,6 +22,7 @@ struct HiddenObjGameView: View {
                 ObjectsToFind()
             }
         }
+        .ignoresSafeArea()
     }
     func updateLocation(_ location: CGPoint) {
         print(location)

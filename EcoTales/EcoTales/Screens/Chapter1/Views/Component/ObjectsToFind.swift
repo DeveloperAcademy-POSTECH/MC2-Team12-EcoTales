@@ -8,10 +8,6 @@
 import SwiftUI
 
 struct ObjectsToFind: View {
-//    @State private var isShowingObjectName = false
-//    @State private var selectedObject = "none"
-//    @State private var selectedObjectPosition: CGRect = .zero
-
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -25,6 +21,7 @@ struct ObjectsToFind: View {
             .padding([.trailing, .leading], 20)
         }
         .padding([.leading, .trailing], 44)
+        .padding(.bottom, 21)
     }
 }
 
