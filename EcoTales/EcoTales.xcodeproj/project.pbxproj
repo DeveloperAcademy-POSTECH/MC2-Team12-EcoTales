@@ -10,6 +10,10 @@
 		2620600A28549A5500ED79C8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620600928549A5500ED79C8 /* File.swift */; };
 		2620600C28549A6200ED79C8 /* File10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620600B28549A6200ED79C8 /* File10.swift */; };
 		2620601128549ADB00ED79C8 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601028549ADB00ED79C8 /* StoryView.swift */; };
+		2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */; };
+		2620601528549E5200ED79C8 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601428549E5200ED79C8 /* StoryData.swift */; };
+		262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */; };
+		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
 		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
 		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 		2620600928549A5500ED79C8 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		2620600B28549A6200ED79C8 /* File10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File10.swift; path = EcoTales/Screens/Map/Views/Component/File10.swift; sourceTree = SOURCE_ROOT; };
 		2620601028549ADB00ED79C8 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChapterOneStoryView.swift; path = EcoTales/Global/UIComponent/ChapterOneStoryView.swift; sourceTree = SOURCE_ROOT; };
+		2620601428549E5200ED79C8 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
+		262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoStoryView.swift; sourceTree = "<group>"; };
+		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		AE9A45202852288800683CCF /* EcoTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A45232852288800683CCF /* EcoTalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTalesApp.swift; sourceTree = "<group>"; };
 		AE9A45252852288800683CCF /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F857443E28531A820012346A /* File1 */,
+				2620601428549E5200ED79C8 /* StoryData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				F857446A28531C680012346A /* Component */,
+				2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				F857446B28531C710012346A /* Component */,
+				262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				F857446C28531C880012346A /* Component */,
+				262060182855088200ED79C8 /* ChapterThreeStoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -504,9 +516,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
+				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620600C28549A6200ED79C8 /* File10.swift in Sources */,
+				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				2620601528549E5200ED79C8 /* StoryData.swift in Sources */,
 				2620600A28549A5500ED79C8 /* File.swift in Sources */,
+				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
