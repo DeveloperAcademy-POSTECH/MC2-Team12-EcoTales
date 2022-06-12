@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MapPopup: View {
     @Binding var iscount: Bool
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             if iscount {
@@ -41,16 +42,14 @@ struct MapPopup: View {
                                     iscount = false
                                 }
                             }, label: {
-                                YesButton()
-                            }) .buttonStyle(PlainButtonStyle())
-                            Button(action: {
-                                // Dismiss the PopUp
-                                withAnimation(.linear(duration: 0.3)) {
-                                    iscount = false
-                                }
-                            }, label: {
                                 NoButton()
                             }) .buttonStyle(PlainButtonStyle())
+                            Button(action: {
+                                // Dismiss the Present View
+                                presentationMode.wrappedValue.dismiss()
+                            }, label: {
+                               YesButton()
+                            }).buttonStyle(PlainButtonStyle())
                         }
                     }
                 }

@@ -61,7 +61,8 @@ struct ExplainGameView: View {
 }
 
 extension View {
-    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true, perform: @escaping (CGPoint) -> Void) -> some View {
+    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
+                 perform: @escaping (CGPoint) -> Void) -> some View {
         self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
     }
 }

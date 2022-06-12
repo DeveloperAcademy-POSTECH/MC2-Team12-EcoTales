@@ -9,7 +9,7 @@ import SwiftUI
 struct StoryPopup: View {
 //    @State private var showPopUp = false
     @Binding var iscount: Bool
-    @State var isShowSheet: Bool = false
+    @State var isShowSheet = false
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
@@ -38,7 +38,8 @@ struct StoryPopup: View {
                     }, label: {
                         ReplayButton()
                     })
-                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView()})// .buttonStyle(PlainButtonStyle())
+                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView() })
+                    // .buttonStyle(PlainButtonStyle())
                     Button(action: {
                         // Dismiss the Present View
                         presentationMode.wrappedValue.dismiss()
@@ -55,5 +56,6 @@ struct StoryPopup: View {
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         StoryPopup(iscount: .constant(true))
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
