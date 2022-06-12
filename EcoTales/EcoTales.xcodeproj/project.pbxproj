@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C16015285598DA002BA1F8 /* TouchLocatingView.swift */; };
 		26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
 		26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
 		26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE32854440E00ED79C8 /* Color+Extension.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15C16015285598DA002BA1F8 /* TouchLocatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLocatingView.swift; sourceTree = "<group>"; };
 		26205FD52854432300ED79C8 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		26205FD72854435D00ED79C8 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		26205FDB2854438800ED79C8 /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15C16014285598C5002BA1F8 /* TouchLocation */ = {
+			isa = PBXGroup;
+			children = (
+				15C16015285598DA002BA1F8 /* TouchLocatingView.swift */,
+			);
+			path = TouchLocation;
+			sourceTree = "<group>";
+		};
 		59B688902853263F00B0DB71 /* PauseButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		F857444428531AD30012346A /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				15C16014285598C5002BA1F8 /* TouchLocation */,
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
@@ -612,6 +623,7 @@
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryData.swift in Sources */,
 				2620600A28549A5500ED79C8 /* File.swift in Sources */,
+				15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */,
 				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 			);

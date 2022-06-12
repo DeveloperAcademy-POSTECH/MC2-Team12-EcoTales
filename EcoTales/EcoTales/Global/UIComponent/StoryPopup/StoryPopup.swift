@@ -9,6 +9,8 @@ import SwiftUI
 struct StoryPopup: View {
 //    @State private var showPopUp = false
     @Binding var iscount: Bool
+    @State var isShowSheet: Bool = false
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             if iscount {
@@ -22,32 +24,31 @@ struct StoryPopup: View {
                 .frame(width: 300, height: 280)
                 VStack(alignment: .center, spacing: 25) {
                     Button(action: {
-                        // Dismiss the PopUp
+                        // Dismiss the Popup
                         withAnimation(.linear(duration: 0.3)) {
                             iscount = false
                         }
                     }, label: {
                         ContinueButton()
-                    }).buttonStyle(PlainButtonStyle())
+                    })
                     Button(action: {
-                        // Dismiss the PopUp
                         withAnimation(.linear(duration: 0.3)) {
-                            iscount = false
+                            isShowSheet = true
                         }
                     }, label: {
                         ReplayButton()
-                    })// .buttonStyle(PlainButtonStyle())
+                    })
+                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView()})// .buttonStyle(PlainButtonStyle())
                     Button(action: {
-                        // Dismiss the PopUp
-                        withAnimation(.linear(duration: 0.3)) {
-                            iscount = false
-                        }
+                        // Dismiss the Present View
+                        presentationMode.wrappedValue.dismiss()
                     }, label: {
                        ExitButton()
                     }).buttonStyle(PlainButtonStyle())
                 }
             }
         }
+        .position(x: 400, y: 200)
     }
 }
 
