@@ -23,6 +23,14 @@
 		26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
 		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
+		2620600A28549A5500ED79C8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620600928549A5500ED79C8 /* File.swift */; };
+		2620601128549ADB00ED79C8 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601028549ADB00ED79C8 /* StoryView.swift */; };
+		2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */; };
+		2620601528549E5200ED79C8 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601428549E5200ED79C8 /* StoryData.swift */; };
+		262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */; };
+		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
+		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
+		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
 		AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A452A2852288900683CCF /* Preview Assets.xcassets */; };
 		AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE9A453228522A3100683CCF /* .swiftlint.yml */; };
@@ -30,12 +38,10 @@
 		F857444928531B000012346A /* File2 in Resources */ = {isa = PBXBuildFile; fileRef = F857444828531B000012346A /* File2 */; };
 		F857444B28531B0C0012346A /* File3 in Resources */ = {isa = PBXBuildFile; fileRef = F857444A28531B0C0012346A /* File3 */; };
 		F857444D28531B180012346A /* File4 in Resources */ = {isa = PBXBuildFile; fileRef = F857444C28531B180012346A /* File4 */; };
-		F857444F28531B280012346A /* File5 in Resources */ = {isa = PBXBuildFile; fileRef = F857444E28531B280012346A /* File5 */; };
 		F857445228531B560012346A /* File6 in Resources */ = {isa = PBXBuildFile; fileRef = F857445128531B560012346A /* File6 */; };
 		F857445F28531C1A0012346A /* File7 in Resources */ = {isa = PBXBuildFile; fileRef = F857445E28531C1A0012346A /* File7 */; };
 		F857446128531C240012346A /* File8 in Resources */ = {isa = PBXBuildFile; fileRef = F857446028531C240012346A /* File8 */; };
 		F857446F28531C9D0012346A /* File9 in Resources */ = {isa = PBXBuildFile; fileRef = F857446E28531C9D0012346A /* File9 */; };
-		F857447128531CA60012346A /* File10 in Resources */ = {isa = PBXBuildFile; fileRef = F857447028531CA60012346A /* File10 */; };
 		F857447328531CB20012346A /* File11 in Resources */ = {isa = PBXBuildFile; fileRef = F857447228531CB20012346A /* File11 */; };
 		F857447628531CC30012346A /* File12 in Resources */ = {isa = PBXBuildFile; fileRef = F857447528531CC30012346A /* File12 */; };
 		F857447828531CCA0012346A /* File13 in Resources */ = {isa = PBXBuildFile; fileRef = F857447728531CCA0012346A /* File13 */; };
@@ -46,6 +52,7 @@
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
+		F857448428532C800012346A /* File in Resources */ = {isa = PBXBuildFile; fileRef = F857448328532C800012346A /* File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,12 @@
 		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
 		7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjectData.swift; sourceTree = "<group>"; };
 		7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatingHiddenObjView.swift; sourceTree = "<group>"; };
+		2620600928549A5500ED79C8 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2620601028549ADB00ED79C8 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChapterOneStoryView.swift; path = EcoTales/Global/UIComponent/ChapterOneStoryView.swift; sourceTree = SOURCE_ROOT; };
+		2620601428549E5200ED79C8 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
+		262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoStoryView.swift; sourceTree = "<group>"; };
+		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		AE9A45202852288800683CCF /* EcoTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A45232852288800683CCF /* EcoTalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTalesApp.swift; sourceTree = "<group>"; };
 		AE9A45252852288800683CCF /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -73,12 +86,10 @@
 		F857444828531B000012346A /* File2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File2; sourceTree = "<group>"; };
 		F857444A28531B0C0012346A /* File3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File3; sourceTree = "<group>"; };
 		F857444C28531B180012346A /* File4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File4; sourceTree = "<group>"; };
-		F857444E28531B280012346A /* File5 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File5; sourceTree = "<group>"; };
 		F857445128531B560012346A /* File6 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File6; sourceTree = "<group>"; };
 		F857445E28531C1A0012346A /* File7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File7; sourceTree = "<group>"; };
 		F857446028531C240012346A /* File8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File8; sourceTree = "<group>"; };
 		F857446E28531C9D0012346A /* File9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File9; sourceTree = "<group>"; };
-		F857447028531CA60012346A /* File10 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File10; sourceTree = "<group>"; };
 		F857447228531CB20012346A /* File11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File11; sourceTree = "<group>"; };
 		F857447528531CC30012346A /* File12 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File12; sourceTree = "<group>"; };
 		F857447728531CCA0012346A /* File13 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File13; sourceTree = "<group>"; };
@@ -89,6 +100,7 @@
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
+		F857448328532C800012346A /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +176,7 @@
 				7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */,
 				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				F857443E28531A820012346A /* File1 */,
+				2620601428549E5200ED79C8 /* StoryData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				F857444E28531B280012346A /* File5 */,
+				2620601028549ADB00ED79C8 /* StoryView.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -362,6 +376,7 @@
 			children = (
 				F857446A28531C680012346A /* Component */,
 				7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */,
+				2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				F857446B28531C710012346A /* Component */,
+				262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				F857446C28531C880012346A /* Component */,
+				262060182855088200ED79C8 /* ChapterThreeStoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				F857448F28549BB70012346A /* MapPopup */,
+				2620600928549A5500ED79C8 /* File.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -535,13 +553,11 @@
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				F857448428532C800012346A /* File17 in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
-				F857447128531CA60012346A /* File10 in Resources */,
 				F857444D28531B180012346A /* File4 in Resources */,
 				F857447628531CC30012346A /* File12 in Resources */,
 				F857446F28531C9D0012346A /* File9 in Resources */,
 				F857444B28531B0C0012346A /* File3 in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
-				F857444F28531B280012346A /* File5 in Resources */,
 				F857445F28531C1A0012346A /* File7 in Resources */,
 				AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */,
 				F857446128531C240012346A /* File8 in Resources */,
@@ -598,6 +614,14 @@
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
 				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
+				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
+				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
+				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
+				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				2620601528549E5200ED79C8 /* StoryData.swift in Sources */,
+				2620600A28549A5500ED79C8 /* File.swift in Sources */,
+				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
+				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
