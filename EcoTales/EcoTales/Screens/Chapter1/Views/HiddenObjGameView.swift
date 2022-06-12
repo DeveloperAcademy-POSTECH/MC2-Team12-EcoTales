@@ -44,7 +44,7 @@ struct TopCollocate: View {
             .background(Color.white)
             Spacer()
         }.padding([.trailing, .leading], 44)
-            .background(Image("woodenPanel"))
+            .background(Image("game_woodenPanel"))
             .frame(height: 50)
     }
 }
