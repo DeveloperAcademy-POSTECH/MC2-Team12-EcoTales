@@ -10,7 +10,7 @@ import SwiftUI
 struct ObjectsToFind: View {
     @State private var isShowingObjectName = false
     @State private var selectedObject: String = "none"
-    @State private var selectedObjectPosX: CGFloat = 0
+    @State private var selectedObjectPosition: CGRect = .zero
 
     var body: some View {
         ZStack {
@@ -19,16 +19,22 @@ struct ObjectsToFind: View {
                 .opacity(0.3)
             HStack {
                 ForEach(hiddenObject, id: \.self) { trash in
-//                    GeometryReader { proxy in
                         Button(action: {
                             withAnimation { isShowingObjectName.toggle() }
                             selectedObject = trash.objectName
-//                            selectedObjectPosX = proxy.frame(in: .local).midX
+//                            selectedObjectPosition = CGPoint(x: trash.positionX, y: trash.positionY)
                         }, label: {
-                            Image(trash.image)
-                                .frame(maxWidth: .infinity)
+                                Image(trash.image)
+                                    .frame(maxWidth: .infinity)
+//                                    .background(
+//                                        GeometryReader { proxy in
+//                                            onTapGesture {
+//                                                selectedObjectPosition = proxy.frame(in: .global)
+//                                            }
+//                                        }
+//                                    )
+
                         })
-//                    }
                 }
             }
             .padding([.trailing, .leading], 20)
@@ -42,7 +48,7 @@ struct ObjectsToFind: View {
                 .background(Color.white)
                 .cornerRadius(10)
                 .shadow(radius: 3, x: 3, y: 3)
-                .offset(x: selectedObjectPosX, y: -62)
+                .offset(x: 0, y: -62)
                 .opacity(isShowingObjectName ? 0.9 : 0)
             )
         }
