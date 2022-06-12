@@ -20,19 +20,19 @@ extension Color {
     }
     // Popup Colors
     static var PopupFillBrown: Color {
-        return Color(hex: "#F4ECCE")
+        return Color(hex: "#FFF7DA")
     }
     static var PopupStrokeBrown: Color {
-        return Color(hex: "#7A5800")
+        return Color(hex: "#976638")
     }
     static var PopupContinueGreen: Color {
-        return Color(hex: "#55A441")
+        return Color(hex: "#2F8410")
     }
     static var PopupReplayYellow: Color {
-        return Color(hex: "#F1B00A")
+        return Color(hex: "#F9B532")
     }
     static var PopupExitRed: Color {
-        return Color(hex: "#D3563B")
+        return Color(hex: "#D95C3C")
     }
     static var PopupWhite: Color {
         return Color(hex: "#FAFAFA")

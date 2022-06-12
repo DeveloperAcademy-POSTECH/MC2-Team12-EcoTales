@@ -41,7 +41,9 @@
 		F857447C28531CE20012346A /* File15 in Resources */ = {isa = PBXBuildFile; fileRef = F857447B28531CE20012346A /* File15 */; };
 		F857447E28531CEE0012346A /* File16 in Resources */ = {isa = PBXBuildFile; fileRef = F857447D28531CEE0012346A /* File16 */; };
 		F857448428532C800012346A /* File17 in Resources */ = {isa = PBXBuildFile; fileRef = F857448328532C800012346A /* File17 */; };
-		F857448628532C960012346A /* File18 in Resources */ = {isa = PBXBuildFile; fileRef = F857448528532C960012346A /* File18 */; };
+		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
+		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
+		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +82,9 @@
 		F857447B28531CE20012346A /* File15 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File15; sourceTree = "<group>"; };
 		F857447D28531CEE0012346A /* File16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File16; sourceTree = "<group>"; };
 		F857448328532C800012346A /* File17 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File17; sourceTree = "<group>"; };
-		F857448528532C960012346A /* File18 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File18; sourceTree = "<group>"; };
+		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
+		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
+		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,9 +447,19 @@
 		F857448228532C580012346A /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				F857448528532C960012346A /* File18 */,
+				F857448F28549BB70012346A /* MapPopup */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		F857448F28549BB70012346A /* MapPopup */ = {
+			isa = PBXGroup;
+			children = (
+				F857449028549BFB0012346A /* MapPopup.swift */,
+				F85744922854A9BB0012346A /* YesButton.swift */,
+				F85744942854A9EC0012346A /* NoButton.swift */,
+			);
+			path = MapPopup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,7 +525,6 @@
 				F857447828531CCA0012346A /* File13 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
-				F857448628532C960012346A /* File18 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				F857448428532C800012346A /* File17 in Resources */,
@@ -567,9 +580,12 @@
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
+				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
+				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */,
+				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
 				26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
 				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
