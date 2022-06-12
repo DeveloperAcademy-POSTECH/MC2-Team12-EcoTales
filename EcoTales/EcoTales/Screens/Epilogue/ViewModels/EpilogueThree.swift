@@ -22,8 +22,6 @@ struct EpilogueThree: View {
             Image(images[currentImageIndex])
                 .resizable()
                 .ignoresSafeArea()
-            // id를 사용해서 이미지를 움직일 수 있게 만들고, 아래에 애니메이션 컨테이너를 추가한다.
-            // https://stackoverflow.com/questions/72591037/animation-doesnt-work-on-anytransition-swiftui
                 .id(imagePage)
                 .transition(transition)
                 .onReceive(imageChangeTimer) { _ in
