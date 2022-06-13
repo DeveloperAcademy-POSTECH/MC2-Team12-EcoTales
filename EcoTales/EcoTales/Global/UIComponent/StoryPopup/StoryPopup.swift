@@ -55,5 +55,6 @@ struct StoryPopup: View {
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         StoryPopup(iscount: .constant(true))
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
