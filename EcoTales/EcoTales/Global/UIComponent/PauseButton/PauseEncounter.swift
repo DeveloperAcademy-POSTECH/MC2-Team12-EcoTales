@@ -14,7 +14,6 @@ struct PauseEncounter: View {
                 self.showPopUp = true
             }, label: {})
             .buttonStyle(PauseButtonStyle())
-            StoryPopup(iscount: $showPopUp)
         }
     }
 }

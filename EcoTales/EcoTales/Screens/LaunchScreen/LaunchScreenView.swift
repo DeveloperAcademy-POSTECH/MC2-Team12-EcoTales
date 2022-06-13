@@ -9,8 +9,6 @@ import SwiftUI
 
 struct LaunchScreenView: View {
     var body: some View {
-//        Text("Hello, world!")
-//            .padding()
         HiddenObjGameView()
     }
 }

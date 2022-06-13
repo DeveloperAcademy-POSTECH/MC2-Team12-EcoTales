@@ -8,20 +8,23 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+    @State private var isShowingPopup = false
     var body: some View {
         ZStack {
             Image("chapterOne_pollutedBackground")
                 .resizable()
                 .scaledToFill()
-            //                .onTouch(type: .started, perform: updateLocation)
             LocatingHiddenObjView()
             VStack {
                 Spacer()
                 ObjectsToFind()
             }
             VStack {
-                TopCollocate()
+                UpperPanelView(isShowingPopUp: $isShowingPopup)
                 Spacer()
+            }
+            if isShowingPopup {
+                StoryPopup(isShowingPopup: $isShowingPopup)
             }
         }
         .ignoresSafeArea()
@@ -31,12 +34,17 @@ struct HiddenObjGameView: View {
     }
 }
 
-struct TopCollocate: View {
-    @State private var showPopUp = false
+struct UpperPanelView: View {
+    @Binding var isShowingPopUp: Bool
     var body: some View {
-        HStack {
-            PauseEncounter()
-                .frame(width: 50, height: 50)
+        ZStack {
+            HStack {
+                Button(action: {
+                    self.isShowingPopUp = true
+                }, label: {})
+                .buttonStyle(PauseButtonStyle())
+                Spacer()
+            }
             HStack {
                 Spacer()
                 Image("turtleCircle")
@@ -46,8 +54,8 @@ struct TopCollocate: View {
                 ExplainGameView()
                 Spacer()
             }
-            .frame(width: 600, height: 50)
-            Spacer()
+            .padding(.trailing, 100)
+//            Spacer()
         }
         .padding([.trailing, .leading], 44)
         .background(Image("game_woodenPanel"))
@@ -60,8 +68,7 @@ struct ExplainGameView: View {
         ZStack {
             // text 받아오는 함수 위치
             Text("설명을 해줄게!")
-                .background(Image("chapterOne_turtleDialog")
-                )
+                .background(Image("chapterOne_turtleDialog"))
         }
         .frame(width: 450, height: 30)
     }

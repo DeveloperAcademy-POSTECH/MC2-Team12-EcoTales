@@ -7,13 +7,12 @@
 import SwiftUI
 
 struct StoryPopup: View {
-    //    @State private var showPopUp = false
-    @Binding var iscount: Bool
-    @State var isShowSheet = false
+    @Binding var isShowingPopup: Bool
+    @State var isGameStoryShow = false
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
-            if iscount {
+            if isShowingPopup {
                 ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -26,19 +25,20 @@ struct StoryPopup: View {
                     Button(action: {
                         // Dismiss the Popup
                         withAnimation(.linear(duration: 0.3)) {
-                            iscount = false
+                            isShowingPopup = false
                         }
                     }, label: {
                         ContinueButton()
                     })
+                    // TODO : 맵쪽에서 만들 기능. merge 후에 초기화 기능으로 바꿔야 함.
                     Button(action: {
                         withAnimation(.linear(duration: 0.3)) {
-                            isShowSheet = true
+                            isGameStoryShow = true
                         }
                     }, label: {
                         ReplayButton()
                     })
-                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView() })
+                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                     Button(action: {
                         // Dismiss the Present View
                         presentationMode.wrappedValue.dismiss()
@@ -48,14 +48,13 @@ struct StoryPopup: View {
                 }
             }
         }
-        .position(x: (UIScreen.main.bounds.maxX / 2) - 30, y: UIScreen.main.bounds.maxY / 2)
     }
 }
 
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            StoryPopup(iscount: .constant(true))
+            StoryPopup(isShowingPopup: .constant(true))
         }
     }
 }

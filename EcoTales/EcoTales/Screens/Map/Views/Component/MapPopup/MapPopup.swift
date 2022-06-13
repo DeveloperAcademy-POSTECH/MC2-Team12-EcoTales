@@ -44,7 +44,7 @@ struct MapPopup: View {
                             }, label: {
                                 YesButton()
                             })
-                            .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView() })
+//                            .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView() })
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
