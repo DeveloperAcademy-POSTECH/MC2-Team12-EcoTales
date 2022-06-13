@@ -51,16 +51,16 @@
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
-		F8EB5D492855DA770058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D482855DA750058C1D0 /* Kyobo Handwriting 2019.otf */; };
-		F8EB5D4B2855DA7B0058C1D0 /* 서울한강 장체B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D472855DA6B0058C1D0 /* 서울한강 장체B.ttf */; };
-		F8EB5D4C2855DA7D0058C1D0 /* 서울한강 장체BL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D412855DA6B0058C1D0 /* 서울한강 장체BL.ttf */; };
-		F8EB5D4D2855DA800058C1D0 /* 서울한강 장체EB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D422855DA6B0058C1D0 /* 서울한강 장체EB.ttf */; };
-		F8EB5D4E2855DA830058C1D0 /* 서울한강 장체L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D432855DA6B0058C1D0 /* 서울한강 장체L.ttf */; };
-		F8EB5D4F2855DA850058C1D0 /* 서울한강 장체M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D402855DA6B0058C1D0 /* 서울한강 장체M.ttf */; };
-		F8EB5D502855DA870058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D3E2855DA6B0058C1D0 /* SeoulHangangB.ttf */; };
-		F8EB5D512855DA8B0058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D3F2855DA6B0058C1D0 /* SeoulHangangEB.ttf */; };
-		F8EB5D522855DA8D0058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D442855DA6B0058C1D0 /* SeoulHangangL.ttf */; };
-		F8EB5D532855DA900058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D452855DA6B0058C1D0 /* SeoulHangangM.ttf */; };
+		F8EB5D66285712E80058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D5D285712E80058C1D0 /* SeoulHangangB.ttf */; };
+		F8EB5D67285712E80058C1D0 /* 서울한강 장체EB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D5E285712E80058C1D0 /* 서울한강 장체EB.ttf */; };
+		F8EB5D68285712E80058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D5F285712E80058C1D0 /* SeoulHangangL.ttf */; };
+		F8EB5D69285712E80058C1D0 /* 서울한강 장체BL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D60285712E80058C1D0 /* 서울한강 장체BL.ttf */; };
+		F8EB5D6A285712E80058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D61285712E80058C1D0 /* SeoulHangangM.ttf */; };
+		F8EB5D6B285712E80058C1D0 /* 서울한강 장체M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D62285712E80058C1D0 /* 서울한강 장체M.ttf */; };
+		F8EB5D6C285712E80058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D63285712E80058C1D0 /* SeoulHangangEB.ttf */; };
+		F8EB5D6D285712E80058C1D0 /* 서울한강 장체B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D64285712E80058C1D0 /* 서울한강 장체B.ttf */; };
+		F8EB5D6E285712E80058C1D0 /* 서울한강 장체L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D65285712E80058C1D0 /* 서울한강 장체L.ttf */; };
+		F8EB5D702857135A0058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D6F2857135A0058C1D0 /* Kyobo Handwriting 2019.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,17 +107,17 @@
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
-		F8EB5D3E2855DA6B0058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SeoulHangangB.ttf; path = ../../../../../../../Downloads/SeoulHangangB.ttf; sourceTree = "<group>"; };
-		F8EB5D3F2855DA6B0058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SeoulHangangEB.ttf; path = ../../../../../../../Downloads/SeoulHangangEB.ttf; sourceTree = "<group>"; };
-		F8EB5D402855DA6B0058C1D0 /* 서울한강 장체M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울한강 장체M.ttf"; path = "../../../../../../../Downloads/서울한강 장체M.ttf"; sourceTree = "<group>"; };
-		F8EB5D412855DA6B0058C1D0 /* 서울한강 장체BL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울한강 장체BL.ttf"; path = "../../../../../../../Downloads/서울한강 장체BL.ttf"; sourceTree = "<group>"; };
-		F8EB5D422855DA6B0058C1D0 /* 서울한강 장체EB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울한강 장체EB.ttf"; path = "../../../../../../../Downloads/서울한강 장체EB.ttf"; sourceTree = "<group>"; };
-		F8EB5D432855DA6B0058C1D0 /* 서울한강 장체L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울한강 장체L.ttf"; path = "../../../../../../../Downloads/서울한강 장체L.ttf"; sourceTree = "<group>"; };
-		F8EB5D442855DA6B0058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SeoulHangangL.ttf; path = ../../../../../../../Downloads/SeoulHangangL.ttf; sourceTree = "<group>"; };
-		F8EB5D452855DA6B0058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SeoulHangangM.ttf; path = ../../../../../../../Downloads/SeoulHangangM.ttf; sourceTree = "<group>"; };
-		F8EB5D472855DA6B0058C1D0 /* 서울한강 장체B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울한강 장체B.ttf"; path = "../../../../../../../Downloads/서울한강 장체B.ttf"; sourceTree = "<group>"; };
-		F8EB5D482855DA750058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Kyobo Handwriting 2019.otf"; path = "../../../../../../../Downloads/Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
 		F8EB5D542855DCB00058C1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EB5D5D285712E80058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
+		F8EB5D5E285712E80058C1D0 /* 서울한강 장체EB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "서울한강 장체EB.ttf"; sourceTree = "<group>"; };
+		F8EB5D5F285712E80058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
+		F8EB5D60285712E80058C1D0 /* 서울한강 장체BL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "서울한강 장체BL.ttf"; sourceTree = "<group>"; };
+		F8EB5D61285712E80058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangM.ttf; sourceTree = "<group>"; };
+		F8EB5D62285712E80058C1D0 /* 서울한강 장체M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "서울한강 장체M.ttf"; sourceTree = "<group>"; };
+		F8EB5D63285712E80058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
+		F8EB5D64285712E80058C1D0 /* 서울한강 장체B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "서울한강 장체B.ttf"; sourceTree = "<group>"; };
+		F8EB5D65285712E80058C1D0 /* 서울한강 장체L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "서울한강 장체L.ttf"; sourceTree = "<group>"; };
+		F8EB5D6F2857135A0058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,16 +281,16 @@
 		F857445028531B480012346A /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				F8EB5D482855DA750058C1D0 /* Kyobo Handwriting 2019.otf */,
-				F8EB5D472855DA6B0058C1D0 /* 서울한강 장체B.ttf */,
-				F8EB5D412855DA6B0058C1D0 /* 서울한강 장체BL.ttf */,
-				F8EB5D422855DA6B0058C1D0 /* 서울한강 장체EB.ttf */,
-				F8EB5D432855DA6B0058C1D0 /* 서울한강 장체L.ttf */,
-				F8EB5D402855DA6B0058C1D0 /* 서울한강 장체M.ttf */,
-				F8EB5D3E2855DA6B0058C1D0 /* SeoulHangangB.ttf */,
-				F8EB5D3F2855DA6B0058C1D0 /* SeoulHangangEB.ttf */,
-				F8EB5D442855DA6B0058C1D0 /* SeoulHangangL.ttf */,
-				F8EB5D452855DA6B0058C1D0 /* SeoulHangangM.ttf */,
+				F8EB5D6F2857135A0058C1D0 /* Kyobo Handwriting 2019.otf */,
+				F8EB5D64285712E80058C1D0 /* 서울한강 장체B.ttf */,
+				F8EB5D60285712E80058C1D0 /* 서울한강 장체BL.ttf */,
+				F8EB5D5E285712E80058C1D0 /* 서울한강 장체EB.ttf */,
+				F8EB5D65285712E80058C1D0 /* 서울한강 장체L.ttf */,
+				F8EB5D62285712E80058C1D0 /* 서울한강 장체M.ttf */,
+				F8EB5D5D285712E80058C1D0 /* SeoulHangangB.ttf */,
+				F8EB5D63285712E80058C1D0 /* SeoulHangangEB.ttf */,
+				F8EB5D5F285712E80058C1D0 /* SeoulHangangL.ttf */,
+				F8EB5D61285712E80058C1D0 /* SeoulHangangM.ttf */,
 				F8EB5D542855DCB00058C1D0 /* Info.plist */,
 			);
 			path = Font;
@@ -579,29 +579,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F857447C28531CE20012346A /* File15 in Resources */,
+				F8EB5D6A285712E80058C1D0 /* SeoulHangangM.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
-				F8EB5D502855DA870058C1D0 /* SeoulHangangB.ttf in Resources */,
-				F8EB5D4B2855DA7B0058C1D0 /* 서울한강 장체B.ttf in Resources */,
+				F8EB5D68285712E80058C1D0 /* SeoulHangangL.ttf in Resources */,
+				F857443F28531A820012346A /* File1 in Resources */,
+				F8EB5D6E285712E80058C1D0 /* 서울한강 장체L.ttf in Resources */,
+				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
+				F8EB5D67285712E80058C1D0 /* 서울한강 장체EB.ttf in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
-				F857443F28531A820012346A /* File1 in Resources */,
-				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
-				F8EB5D522855DA8D0058C1D0 /* SeoulHangangL.ttf in Resources */,
-				F8EB5D4C2855DA7D0058C1D0 /* 서울한강 장체BL.ttf in Resources */,
-				F8EB5D4D2855DA800058C1D0 /* 서울한강 장체EB.ttf in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
 				F857444D28531B180012346A /* File4 in Resources */,
+				F8EB5D702857135A0058C1D0 /* Kyobo Handwriting 2019.otf in Resources */,
 				F857447628531CC30012346A /* File12 in Resources */,
-				F8EB5D532855DA900058C1D0 /* SeoulHangangM.ttf in Resources */,
 				F857446F28531C9D0012346A /* File9 in Resources */,
-				F8EB5D4F2855DA850058C1D0 /* 서울한강 장체M.ttf in Resources */,
+				F8EB5D6B285712E80058C1D0 /* 서울한강 장체M.ttf in Resources */,
+				F8EB5D6D285712E80058C1D0 /* 서울한강 장체B.ttf in Resources */,
 				F857444B28531B0C0012346A /* File3 in Resources */,
-				F8EB5D512855DA8B0058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
-				F8EB5D492855DA770058C1D0 /* Kyobo Handwriting 2019.otf in Resources */,
-				F8EB5D4E2855DA830058C1D0 /* 서울한강 장체L.ttf in Resources */,
+				F8EB5D6C285712E80058C1D0 /* SeoulHangangEB.ttf in Resources */,
+				F8EB5D66285712E80058C1D0 /* SeoulHangangB.ttf in Resources */,
 				F857445F28531C1A0012346A /* File7 in Resources */,
 				AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */,
+				F8EB5D69285712E80058C1D0 /* 서울한강 장체BL.ttf in Resources */,
 				F857446128531C240012346A /* File8 in Resources */,
 				AE9A45282852288900683CCF /* Assets.xcassets in Resources */,
 				F857444928531B000012346A /* File2 in Resources */,
