@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ObjectsToFindView: View {
-    var hiddenObjectList = HiddenObjectData.List
-    
+    var hiddenObjectList = HiddenObjectData().list
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)

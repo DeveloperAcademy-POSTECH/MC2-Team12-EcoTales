@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ObjectsHiddenView: View {
-    var hiddenObjectList = HiddenObjectData.List
+    var hiddenObjectList = HiddenObjectData().list
     
     var body: some View {
         ZStack {

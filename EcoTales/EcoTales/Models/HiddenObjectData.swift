@@ -8,7 +8,7 @@
 import Foundation
 
 struct HiddenObjectData: Hashable {
-    static var List = [
+    var list = [
         HiddenObject(image: "hidden_can", objectName: "음료수 캔",
                      positionX: 758, positionY: 210, rotation: 270, opacity: 1,
                      description: "음료수 캔은 해수욕장에서 가장 많이 발견되는 쓰레기 중 하나야."),
