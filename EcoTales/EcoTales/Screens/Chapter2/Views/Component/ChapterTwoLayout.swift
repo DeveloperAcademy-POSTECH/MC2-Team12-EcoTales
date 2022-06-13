@@ -13,17 +13,26 @@ struct ChapterTwoLayout: View {
             VStack(spacing: 0) {
                 ZStack {
                     HStack {
-                        Image("game_woodenPanel")
-                            .resizable()
-                            .scaledToFit()
-                            .ignoresSafeArea()
+                        ZStack {
+                            Image("game_woodenPanel")
+                                .resizable()
+                                .scaledToFit()
+                                .ignoresSafeArea()
+                            HStack {
+                                //TODO: 현재 레이아웃으로 넣긴 했으나, 눌렀을 때 팝업이 뜨는 기능이 이루어지지 않는다. 33줄에 .opacity(0.5)를 넣으면 희미하지만 나타난다.
+                                PauseEncounter()
+                                    .frame(width: 20, height: 20)
+                                Spacer()
+                                
+                            }
+                            .padding(.horizontal, 30)
+                        }
                     }
                 }
                 ZStack {
                     Image("chapterTwo_background")
                         .resizable()
                         .ignoresSafeArea()
-                        .opacity(0.5)
                 }
             }
             VStack {
