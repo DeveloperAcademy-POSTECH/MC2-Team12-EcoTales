@@ -30,7 +30,6 @@ struct StoryPopup: View {
                     }, label: {
                         ContinueButton()
                     })
-                    // TODO : 맵쪽에서 만들 기능. merge 후에 초기화 기능으로 바꿔야 함.
                     Button(action: {
                         withAnimation(.linear(duration: 0.3)) {
                             isGameStoryShow = true

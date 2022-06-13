@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MapPopup: View {
     @Binding var iscount: Bool
-    @State var isShowSheet = false
+    @State var isGameStoryShow = false
     var body: some View {
         ZStack {
             if iscount {
@@ -39,12 +39,12 @@ struct MapPopup: View {
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
-                                    isShowSheet = false
+                                    isGameStoryShow = false
                                 }
                             }, label: {
                                 YesButton()
                             })
-//                            .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView() })
+//                            .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
