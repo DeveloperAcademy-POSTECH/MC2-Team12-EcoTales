@@ -13,7 +13,7 @@ enum Speaker: String {
     case rain = "레인"
     case mole = "두더지"
     case sherry = "쉐리"
-    case oz = "오즈"
+    case ozz = "오즈"
     case meenu = "미뉴"
     case redpandaAll = "레서 판다 A, B, C"
     case redpandaA = "레서 판다 A"
@@ -112,7 +112,7 @@ let chapterTwoClear = StoryData(
 )
 
 let chapterThreeNotClear = StoryData(
-    speaker: [.naration, .child, .naration, .oz, .child, .oz, .child, .oz, .child, .oz],
+    speaker: [.naration, .child, .naration, .ozz, .child, .ozz, .child, .ozz, .child, .ozz],
     dialog: ["아이는 마지막 재료인 청량한 공기 한 숨을 얻기 위해 높은 산 꼭대기에 올라갔어요.",
              "오늘은 참 날씨가 더운데도 하늘이 뿌옇네. 어디로 가야 청량한 공기 한 숨을 구할 수 있는 걸까? 너무 더우니 잠시 저 나무 밑에서 쉬어가야겠어.",
              "아이가 작은 나무에 기대자, 나뭇가지가 조금 흔들렸어요.",
@@ -126,7 +126,7 @@ let chapterThreeNotClear = StoryData(
 )
 
 let chapterThreeClear = StoryData(
-    speaker: [.oz, .child, .oz, .child, .oz, .child, .oz, .child, .naration],
+    speaker: [.oz, .child, .ozz, .child, .ozz, .child, .ozz, .child, .naration],
     dialog: ["고마워. 네 덕분에 이제 마스크를 쓰지 않아도 맑은 공기를 마실 수 있어. 보답으로 내가 만든 나뭇잎 주머니를 줄게.",
              "우와... 이 주머니에 청량한 공기 한 숨을 담아 가면 되겠다. 드디어 세계수를 구할 비약의 재료 세 가지를 모두 모았어.",
              "축하해 아이야.",
