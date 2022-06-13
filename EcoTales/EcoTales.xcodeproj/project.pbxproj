@@ -28,6 +28,7 @@
 		2620601528549E5200ED79C8 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601428549E5200ED79C8 /* StoryData.swift */; };
 		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
+		595FA01B28570D95006E72D3 /* ChapterTwoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */; };
 		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
 		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
@@ -77,6 +78,7 @@
 		2620601428549E5200ED79C8 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
+		595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoLayout.swift; sourceTree = "<group>"; };
 		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFind.swift; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				F857447528531CC30012346A /* File12 */,
+				595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
+				595FA01B28570D95006E72D3 /* ChapterTwoLayout.swift in Sources */,
 				26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
 				26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */,
