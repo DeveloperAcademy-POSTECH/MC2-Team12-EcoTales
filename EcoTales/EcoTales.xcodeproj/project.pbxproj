@@ -17,8 +17,6 @@
 		26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDD285443A100ED79C8 /* StoryPopup.swift */; };
 		26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDF285443C700ED79C8 /* PauseButtonStyle.swift */; };
 		26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE1285443E000ED79C8 /* PauseEncounter.swift */; };
-		26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
-		26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
 		26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
 		26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */; };
 		26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
@@ -568,8 +566,6 @@
 				F857447828531CCA0012346A /* File13 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
-				F857443F28531A820012346A /* File1 in Resources */,
-				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
 				F857444D28531B180012346A /* File4 in Resources */,
 				F857447628531CC30012346A /* File12 in Resources */,
@@ -627,10 +623,8 @@
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
 				2620601E28559E8000ED79C8 /* IntroView.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
-				26205FF6285445D500ED79C8 /* EcoTalesApp.swift in Sources */,
 				262060242855BDC500ED79C8 /* IntroThree.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
-				26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */,
 				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
 				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
