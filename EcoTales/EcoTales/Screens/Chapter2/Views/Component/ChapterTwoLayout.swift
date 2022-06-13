@@ -49,17 +49,30 @@ struct ChapterTwoLayout: View {
 struct RecycleBins: View {
     var body: some View {
         let recyleBins = ["recycleBin_litter", "recycleBin_vinyl", "recycleBin_can", "recycleBin_plastic", "recycleBin_paper", "recycleBin_glass"]
+        let recycleBinsText = ["일반쓰레기", "비닐", "캔", "플라스틱", "종이", "유리"]
         HStack {
-            ForEach(0..<recyleBins.count) { index in
-                if index == 0 {
-                    Image(recyleBins[index])
+            ForEach(0..<recyleBins.count) { recycleIndex in
+                if recycleIndex == 0 {
+                    VStack{
+                    Text(recycleBinsText[recycleIndex])
+                        .ignoresSafeArea()
+                    Image(recyleBins[recycleIndex])
+                    }
                     Spacer()
-                } else if index == recyleBins.count - 1 {
+                } else if recycleIndex == recyleBins.count - 1 {
                     Spacer()
-                    Image(recyleBins[index])
+                    VStack{
+                    Text(recycleBinsText[recycleIndex])
+                        .ignoresSafeArea()
+                    Image(recyleBins[recycleIndex])
+                    }
                 } else {
                     Spacer()
-                    Image(recyleBins[index])
+                    VStack{
+                    Text(recycleBinsText[recycleIndex])
+                        .ignoresSafeArea()
+                    Image(recyleBins[recycleIndex])
+                    }
                     Spacer()
                 }
             }
