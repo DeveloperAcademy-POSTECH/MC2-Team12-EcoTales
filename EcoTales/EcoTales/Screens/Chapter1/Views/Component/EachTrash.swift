@@ -64,7 +64,7 @@ struct EachTrash: View {
                 .overlay(
                     ZStack(alignment: .center) {
                         Circle()
-                            .fill(.black)
+                            .fill(Color.PopupStrokeBrown)
                             .frame(width: 65, height: 65)
                         Circle()
                             .fill(.orange)
