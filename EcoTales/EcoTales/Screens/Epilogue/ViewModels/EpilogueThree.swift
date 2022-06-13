@@ -11,7 +11,6 @@ struct EpilogueThree: View {
     
     let images = ["chapterThree_cleanBackground", "chapterTwo_background", "chapterOne_cleanBackground"]
     let imageChangeTimer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
-    let transition = AnyTransition.asymmetric(insertion: .slide, removal: .scale).combined(with: .opacity)
     
     @State private var imagePage = 2
     @State private var currentImageIndexCount = 3
@@ -23,7 +22,6 @@ struct EpilogueThree: View {
                 .resizable()
                 .ignoresSafeArea()
                 .id(imagePage)
-                .transition(transition)
                 .onReceive(imageChangeTimer) { _ in
                     if imagePage > 0 {
                         self.currentImageIndex = (self.currentImageIndex + 1) % self.images.count
