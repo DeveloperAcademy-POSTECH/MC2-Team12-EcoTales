@@ -27,10 +27,10 @@
 		262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */; };
 		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
 		2620601E28559E8000ED79C8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601D28559E8000ED79C8 /* IntroView.swift */; };
-		262060202855A04C00ED79C8 /* IntroOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601F2855A04C00ED79C8 /* IntroOne.swift */; };
-		262060222855BDBA00ED79C8 /* IntroTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060212855BDBA00ED79C8 /* IntroTwo.swift */; };
-		262060242855BDC500ED79C8 /* IntroThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060232855BDC500ED79C8 /* IntroThree.swift */; };
-		262060262855BDCC00ED79C8 /* IntroFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060252855BDCC00ED79C8 /* IntroFour.swift */; };
+		262060202855A04C00ED79C8 /* IntroOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601F2855A04C00ED79C8 /* IntroOneView.swift */; };
+		262060222855BDBA00ED79C8 /* IntroTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060212855BDBA00ED79C8 /* IntroTwoView.swift */; };
+		262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060232855BDC500ED79C8 /* IntroThreeView.swift */; };
+		262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060252855BDCC00ED79C8 /* IntroFourView.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
 		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
@@ -73,10 +73,10 @@
 		262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoStoryView.swift; sourceTree = "<group>"; };
 		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		2620601D28559E8000ED79C8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
-		2620601F2855A04C00ED79C8 /* IntroOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroOne.swift; sourceTree = "<group>"; };
-		262060212855BDBA00ED79C8 /* IntroTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroTwo.swift; sourceTree = "<group>"; };
-		262060232855BDC500ED79C8 /* IntroThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroThree.swift; sourceTree = "<group>"; };
-		262060252855BDCC00ED79C8 /* IntroFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFour.swift; sourceTree = "<group>"; };
+		2620601F2855A04C00ED79C8 /* IntroOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroOneView.swift; sourceTree = "<group>"; };
+		262060212855BDBA00ED79C8 /* IntroTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroTwoView.swift; sourceTree = "<group>"; };
+		262060232855BDC500ED79C8 /* IntroThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroThreeView.swift; sourceTree = "<group>"; };
+		262060252855BDCC00ED79C8 /* IntroFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFourView.swift; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
 		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
@@ -341,10 +341,10 @@
 			children = (
 				F857445D28531BF40012346A /* Component */,
 				2620601D28559E8000ED79C8 /* IntroView.swift */,
-				262060212855BDBA00ED79C8 /* IntroTwo.swift */,
-				262060232855BDC500ED79C8 /* IntroThree.swift */,
-				262060252855BDCC00ED79C8 /* IntroFour.swift */,
-				2620601F2855A04C00ED79C8 /* IntroOne.swift */,
+				262060212855BDBA00ED79C8 /* IntroTwoView.swift */,
+				262060232855BDC500ED79C8 /* IntroThreeView.swift */,
+				262060252855BDCC00ED79C8 /* IntroFourView.swift */,
+				2620601F2855A04C00ED79C8 /* IntroOneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -619,11 +619,11 @@
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
-				262060222855BDBA00ED79C8 /* IntroTwo.swift in Sources */,
+				262060222855BDBA00ED79C8 /* IntroTwoView.swift in Sources */,
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
 				2620601E28559E8000ED79C8 /* IntroView.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
-				262060242855BDC500ED79C8 /* IntroThree.swift in Sources */,
+				262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
 				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
@@ -633,13 +633,13 @@
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
-				262060262855BDCC00ED79C8 /* IntroFour.swift in Sources */,
+				262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
 				2620600A28549A5500ED79C8 /* File.swift in Sources */,
 				15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */,
 				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
-				262060202855A04C00ED79C8 /* IntroOne.swift in Sources */,
+				262060202855A04C00ED79C8 /* IntroOneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

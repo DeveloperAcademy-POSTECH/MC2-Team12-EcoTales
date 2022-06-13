@@ -12,13 +12,13 @@ struct IntroView: View {
     var body: some View {
         switch introNumber {
         case 1:
-            IntroOne(introNumber: self.$introNumber)
+            IntroOneView(introNumber: self.$introNumber)
         case 2:
-            IntroTwo(introNumber: self.$introNumber)
+            IntroTwoView(introNumber: self.$introNumber)
         case 3:
-            IntroThree(introNumber: self.$introNumber)
+            IntroThreeView(introNumber: self.$introNumber)
         case 4:
-            IntroFour(introNumber: self.$introNumber)
+            IntroFourView(introNumber: self.$introNumber)
         default:
             MapBackground()
         }
