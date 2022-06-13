@@ -7,14 +7,14 @@
 import SwiftUI
 
 struct StoryPopup: View {
-//    @State private var showPopUp = false
+    //    @State private var showPopUp = false
     @Binding var iscount: Bool
-    @State var isShowSheet: Bool = false
+    @State var isShowSheet = false
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             if iscount {
-                ZStack {
+                ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
@@ -38,22 +38,24 @@ struct StoryPopup: View {
                     }, label: {
                         ReplayButton()
                     })
-                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView()})// .buttonStyle(PlainButtonStyle())
+                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView() })
                     Button(action: {
                         // Dismiss the Present View
                         presentationMode.wrappedValue.dismiss()
                     }, label: {
-                       ExitButton()
+                        ExitButton()
                     }).buttonStyle(PlainButtonStyle())
                 }
             }
         }
-        .position(x: 400, y: 200)
+        .position(x: (UIScreen.main.bounds.maxX / 2) - 30, y: UIScreen.main.bounds.maxY / 2)
     }
 }
 
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
-        StoryPopup(iscount: .constant(true))
+        Group {
+            StoryPopup(iscount: .constant(true))
+        }
     }
 }

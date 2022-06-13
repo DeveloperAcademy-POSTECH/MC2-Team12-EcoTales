@@ -13,12 +13,15 @@ struct HiddenObjGameView: View {
             Image("chapterOne_pollutedBackground")
                 .resizable()
                 .scaledToFill()
-                .onTouch(type: .started, perform: updateLocation)
+            //                .onTouch(type: .started, perform: updateLocation)
             LocatingHiddenObjView()
+            VStack {
+                Spacer()
+                ObjectsToFind()
+            }
             VStack {
                 TopCollocate()
                 Spacer()
-                ObjectsToFind()
             }
         }
         .ignoresSafeArea()
@@ -29,39 +32,44 @@ struct HiddenObjGameView: View {
 }
 
 struct TopCollocate: View {
+    @State private var showPopUp = false
     var body: some View {
         HStack {
             PauseEncounter()
                 .frame(width: 50, height: 50)
-                .padding()
             HStack {
-                Image(systemName: "circle")
-                    .frame(width: 50, height: 30)
+                Spacer()
+                Image("turtleCircle")
+                    .resizable()
+                    .frame(width: 50, height: 46)
                     .padding()
                 ExplainGameView()
+                Spacer()
             }
-            .frame(width: 500, height: 30)
-            .background(Color.white)
+            .frame(width: 600, height: 50)
             Spacer()
-        }.padding([.trailing, .leading], 44)
-            .background(Image("game_woodenPanel"))
-            .frame(height: 50)
+        }
+        .padding([.trailing, .leading], 44)
+        .background(Image("game_woodenPanel"))
+        .frame(height: 50)
     }
 }
 
 struct ExplainGameView: View {
     var body: some View {
-        HStack {
+        ZStack {
             // text 받아오는 함수 위치
             Text("설명을 해줄게!")
+                .background(Image("chapterOne_turtleDialog")
+                )
         }
-        .frame(width: 400, height: 30)
-        .background(Image(systemName: "rectangle"))
+        .frame(width: 450, height: 30)
     }
 }
 
 extension View {
-    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true, perform: @escaping (CGPoint) -> Void) -> some View {
+    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
+                 perform: @escaping (CGPoint) -> Void) -> some View {
         self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
     }
 }
