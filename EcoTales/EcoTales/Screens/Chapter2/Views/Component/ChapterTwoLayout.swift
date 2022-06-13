@@ -26,8 +26,12 @@ struct ChapterTwoLayout: View {
                         .opacity(0.5)
                 }
             }
-            RecycleBins()
+            VStack {
+                Spacer()
+                RecycleBins()
+            }
         }
+        .ignoresSafeArea()
     }
 }
 
@@ -47,6 +51,6 @@ struct RecycleBins: View {
 struct ChapterTwoLayout_Previews: PreviewProvider {
     static var previews: some View {
         ChapterTwoLayout()
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.landscapeRight)
     }
 }
