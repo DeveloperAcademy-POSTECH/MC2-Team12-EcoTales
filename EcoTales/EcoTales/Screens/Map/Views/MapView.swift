@@ -15,19 +15,19 @@ struct MapView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("map_background_Lia")
+                Image(ImageLiteral.mapBackground)
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
 
                 ZStack {
-                    Image("path1")
+                    Image(ImageLiteral.path1to2)
                         .isHidden(!chapterViewModel.isCompleted(chapter: .one))
-                    Image("path2")
+                    Image(ImageLiteral.path2to3)
                         .isHidden(!chapterViewModel.isCompleted(chapter: .two))
-                    Image("path3")
+                    Image(ImageLiteral.path3to4)
                         .isHidden(!chapterViewModel.isCompleted(chapter: .three))
-                    Image("path4")
+                    Image(ImageLiteral.path4to5)
                         .isHidden(!chapterViewModel.isCompleted(chapter: .four))
                 }
 
@@ -43,7 +43,7 @@ struct MapView: View {
                     .disabled(chapterViewModel.isDisabled(chapter: chapter))
                 }
 
-                Image("Child")
+                Image(ImageLiteral.child)
                     .position(chapterViewModel.getChildPosition())
 
                 ChapterView(chapter: selectedChapter,
@@ -75,15 +75,6 @@ struct ChapterView: View {
                 isPop = false
             }
         }
-    }
-}
-
-extension View {
-    func isHidden(_ toggle: Bool) -> some View {
-        if toggle {
-            return AnyView(self.hidden())
-        }
-        return AnyView(self)
     }
 }
 
@@ -140,7 +131,7 @@ class ChapterViewModel: ObservableObject {
 
     func getStageImage(chapter: Chapter) -> String {
         let isCompleted = (chapterCompletion[chapter] ?? false)
-        return isCompleted ? "StageMark" : "StageMarkGray"
+        return isCompleted ? ImageLiteral.activeStageMark : ImageLiteral.inactiveStageMark
     }
 
     private func getLastChapter() -> Chapter {
