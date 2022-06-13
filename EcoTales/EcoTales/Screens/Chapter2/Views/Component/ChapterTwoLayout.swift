@@ -9,12 +9,44 @@ import SwiftUI
 
 struct ChapterTwoLayout: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack(spacing: 0) {
+                ZStack {
+                    HStack {
+                        Image("game_woodenPanel")
+                            .resizable()
+                            .scaledToFit()
+                            .ignoresSafeArea()
+                    }
+                }
+                ZStack {
+                    Image("chapterTwo_background")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .opacity(0.5)
+                }
+            }
+            RecycleBins()
+        }
+    }
+}
+
+struct RecycleBins: View {
+    var body: some View {
+        HStack {
+            Image("recycleBin_litter")
+            Image("recycleBin_vinyl")
+            Image("recycleBin_can")
+            Image("recycleBin_plastic")
+            Image("recycleBin_paper")
+            Image("recycleBin_glass")
+        }
     }
 }
 
 struct ChapterTwoLayout_Previews: PreviewProvider {
     static var previews: some View {
         ChapterTwoLayout()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
