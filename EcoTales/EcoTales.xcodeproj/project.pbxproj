@@ -52,6 +52,8 @@
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
+		F8EB5D5A2856D9170058C1D0 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D592856D9170058C1D0 /* PlaySound.swift */; };
+		F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,9 @@
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
+		F8EB5D582856D8C60058C1D0 /* jumpin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpin.wav; sourceTree = "<group>"; };
+		F8EB5D592856D9170058C1D0 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +215,7 @@
 				F857445728531BA20012346A /* Chapter2 */,
 				F857445628531B960012346A /* Chapter3 */,
 				F857445528531B8C0012346A /* Epilogue */,
+				F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 		F857444328531AC70012346A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB5D552856D7EF0058C1D0 /* Sounds */,
 				F857445028531B480012346A /* Font */,
 				AE9A45272852288900683CCF /* Assets.xcassets */,
 			);
@@ -230,6 +237,7 @@
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
+				F8EB5D592856D9170058C1D0 /* PlaySound.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -490,6 +498,14 @@
 			path = MapPopup;
 			sourceTree = "<group>";
 		};
+		F8EB5D552856D7EF0058C1D0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB5D582856D8C60058C1D0 /* jumpin.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -604,6 +620,7 @@
 				5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */,
 				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
+				F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
@@ -620,6 +637,7 @@
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
+				F8EB5D5A2856D9170058C1D0 /* PlaySound.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryData.swift in Sources */,
 				2620600A28549A5500ED79C8 /* File.swift in Sources */,
