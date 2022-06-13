@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct IntroTwo: View {
+struct IntroTwoView: View {
     @State private var dialogIndex = 0
     @Binding var introNumber: Int
     var body: some View {
@@ -88,10 +88,3 @@ struct IntroTwo: View {
         }
     }
 }
-
-//struct IntroTwo_Previews: PreviewProvider {
-//    static var previews: some View {
-//        IntroTwo()
-//            .previewInterfaceOrientation(.landscapeLeft)
-//    }
-//}
