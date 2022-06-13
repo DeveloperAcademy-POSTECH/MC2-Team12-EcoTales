@@ -37,14 +37,24 @@ struct ChapterTwoLayout: View {
 
 struct RecycleBins: View {
     var body: some View {
+        let recyleBins = ["recycleBin_litter", "recycleBin_vinyl", "recycleBin_can", "recycleBin_plastic", "recycleBin_paper", "recycleBin_glass"]
         HStack {
-            Image("recycleBin_litter")
-            Image("recycleBin_vinyl")
-            Image("recycleBin_can")
-            Image("recycleBin_plastic")
-            Image("recycleBin_paper")
-            Image("recycleBin_glass")
+            ForEach(0..<recyleBins.count) { index in
+                if index == 0 {
+                    Image(recyleBins[index])
+                    Spacer()
+                } else if index == recyleBins.count - 1 {
+                    Spacer()
+                    Image(recyleBins[index])
+                } else {
+                    Spacer()
+                    Image(recyleBins[index])
+                    Spacer()
+                }
+            }
         }
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 30)
     }
 }
 
