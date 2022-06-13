@@ -15,11 +15,11 @@ struct HiddenObjGameView: View {
                 .scaledToFill()
 //                .ignoresSafeArea()
                 .onTouch(type: .started, perform: updateLocation)
-            LocatingHiddenObjView()
+            ObjectsHiddenView()
             VStack {
                 TopCollocate()
                 Spacer()
-                ObjectsToFind()
+                ObjectsToFindView()
             }
         }
         .ignoresSafeArea()

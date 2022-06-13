@@ -1,5 +1,5 @@
 //
-//  ObjectsToFindButton.swift
+//  ObjectsToFindEachView.swift
 //  EcoTales
 //
 //  Created by Eunbee Kang on 2022/06/12.
@@ -7,7 +7,7 @@
 //
 import SwiftUI
 
-struct ObjectsToFindButton: View {
+struct ObjectsToFindEachView: View {
     @State private var isShowingObjectName = false
     @State private var selectedObject = "none"
     var trash: HiddenObject
