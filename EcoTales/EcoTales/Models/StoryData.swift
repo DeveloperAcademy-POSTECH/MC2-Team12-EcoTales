@@ -126,7 +126,7 @@ let chapterThreeNotClear = StoryData(
 )
 
 let chapterThreeClear = StoryData(
-    speaker: [.oz, .child, .ozz, .child, .ozz, .child, .ozz, .child, .naration],
+    speaker: [.ozz, .child, .ozz, .child, .ozz, .child, .ozz, .child, .naration],
     dialog: ["고마워. 네 덕분에 이제 마스크를 쓰지 않아도 맑은 공기를 마실 수 있어. 보답으로 내가 만든 나뭇잎 주머니를 줄게.",
              "우와... 이 주머니에 청량한 공기 한 숨을 담아 가면 되겠다. 드디어 세계수를 구할 비약의 재료 세 가지를 모두 모았어.",
              "축하해 아이야.",
