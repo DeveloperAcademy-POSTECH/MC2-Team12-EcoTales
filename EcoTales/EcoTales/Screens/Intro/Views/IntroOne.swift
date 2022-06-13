@@ -14,7 +14,7 @@ struct IntroOne: View {
         ZStack {
             HStack {
                 Spacer()
-                Image("introOne")
+                Image("intro1_background")
             }
             HStack {
                 VStack(alignment: .leading) {

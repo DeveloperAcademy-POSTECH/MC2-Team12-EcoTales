@@ -13,7 +13,7 @@ struct IntroThree: View {
     var body: some View {
         ZStack {
             HStack {
-                Image("introThree")
+                Image("intro3_background")
                 Spacer()
             }
             HStack {

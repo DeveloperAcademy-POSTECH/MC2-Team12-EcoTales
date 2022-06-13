@@ -33,25 +33,31 @@ struct StoryView: View {
     var body: some View {
         ZStack {
             if chapter == 1 && isGameClear == false {
-                Image("chapterOne_pollutedBackground")
+                Image("chapter1_pollutedBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 1 && isGameClear == true {
-                Image("chapterOne_cleanBackground")
+                Image("chapter1_cleanBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 2 {
-                Image("chapterTwo_background")
+                Image("chapter2_background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             }
-            if chapter == 3 {
-                Image("chapterThree_background")
+            if chapter == 3 && isGameClear == false {
+                Image("chapter3_pollutedBackground")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .aspectRatio(contentMode: .fill)
+            }
+            if chapter == 3 && isGameClear == true {
+                Image("chapter3_cleanBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)

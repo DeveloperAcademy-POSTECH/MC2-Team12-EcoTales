@@ -12,7 +12,7 @@ struct IntroFour: View {
     @Binding var introNumber: Int
     var body: some View {
         ZStack {
-            Image("introFour")
+            Image("intro4_background")
                 .resizable()
                 .ignoresSafeArea()
             HStack {
