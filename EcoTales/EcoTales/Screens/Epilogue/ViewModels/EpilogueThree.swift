@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct EpilogueThree: View {
-    
     let images = ["chapterThree_cleanBackground", "chapterTwo_background", "chapterOne_cleanBackground"]
     let imageChangeTimer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
-    
     @State private var imagePage = 2
-    @State private var currentImageIndexCount = 3
     @State private var currentImageIndex = 0
-    
     var body: some View {
         ZStack {
             Image(images[currentImageIndex])
