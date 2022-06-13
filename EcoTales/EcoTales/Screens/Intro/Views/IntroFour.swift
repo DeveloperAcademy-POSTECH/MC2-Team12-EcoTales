@@ -17,7 +17,7 @@ struct IntroFour: View {
                 .ignoresSafeArea()
             HStack {
                 VStack {
-                    Text(introFour[0])
+                    Text(StoryData().introFour[0])
                         .font(.system(size: 20))
                     HStack {
                         Spacer()
@@ -25,7 +25,7 @@ struct IntroFour: View {
                             .font(.system(size: 20))
                             .opacity(dialogIndex == 0 ? 1 : 0)
                     }
-                    Text(introFour[1])
+                    Text(StoryData().introFour[1])
                         .font(.system(size: 20))
                         .opacity(dialogIndex >= 1 ? 1 : 0)
                     HStack {
@@ -34,7 +34,7 @@ struct IntroFour: View {
                             .font(.system(size: 20))
                     }
                     .opacity(dialogIndex == 1 ? 1 : 0)
-                    Text(introFour[2])
+                    Text(StoryData().introFour[2])
                         .font(.system(size: 20))
                         .opacity(dialogIndex == 2 ? 1 :0)
                     HStack {
@@ -48,7 +48,7 @@ struct IntroFour: View {
             .padding(.horizontal, 50)
         }
         .onTapGesture {
-            if dialogIndex == introOne.count - 1 {
+            if dialogIndex == StoryData().introOne.count - 1 {
                 introNumber += 1
             } else {
                 dialogIndex += 1

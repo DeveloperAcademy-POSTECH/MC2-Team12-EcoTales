@@ -18,7 +18,7 @@ struct IntroOne: View {
             }
             HStack {
                 VStack(alignment: .leading) {
-                    Text(introOne[0])
+                    Text(StoryData().introOne[0])
                         .font(.system(size: 20))
                     HStack {
                         Spacer()
@@ -26,7 +26,7 @@ struct IntroOne: View {
                             .font(.system(size: 20))
                             .opacity(dialogIndex == 0 ? 1 : 0)
                     }
-                    Text(introOne[1])
+                    Text(StoryData().introOne[1])
                         .font(.system(size: 20))
                         .opacity(dialogIndex >= 1 ? 1 : 0)
                     HStack {
@@ -35,7 +35,7 @@ struct IntroOne: View {
                             .font(.system(size: 20))
                     }
                     .opacity(dialogIndex == 1 ? 1 : 0)
-                    Text(introOne[2])
+                    Text(StoryData().introOne[2])
                         .font(.system(size: 20))
                         .opacity(dialogIndex == 2 ? 1 :0)
                     HStack {
@@ -50,7 +50,7 @@ struct IntroOne: View {
             }
         }
         .onTapGesture {
-            if dialogIndex == introOne.count - 1 {
+            if dialogIndex == StoryData().introOne.count - 1 {
                 introNumber += 1
             } else {
                 dialogIndex += 1

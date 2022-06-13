@@ -6,22 +6,22 @@
 //
 import SwiftUI
 
-func selectStory(chapter: Int, isGameClear: Bool) -> StoryData {
+func selectStory(chapter: Int, isGameClear: Bool) -> StoryDataModel {
     switch chapter {
     case 0:
-        return chapterIntro
+        return StoryData().chapterIntro
     case 1:
-        return isGameClear ? chapterOneClear : chapterOneNotClear
+        return isGameClear ? StoryData().chapterOneClear : StoryData().chapterOneNotClear
     case 2:
-        return isGameClear ? chapterTwoClear : chapterTwoNotClear
+        return isGameClear ? StoryData().chapterTwoClear : StoryData().chapterTwoNotClear
     case 3:
-        return isGameClear ? chapterThreeClear : chapterThreeNotClear
+        return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
     case 4:
-        return isGameClear ? chapterFourClear : chapterFourNotClear
+        return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
     case 5:
-        return chapterEpilogue
+        return StoryData().chapterEpilogue
     default:
-        return chapterError
+        return StoryData().chapterError
     }
 }
 

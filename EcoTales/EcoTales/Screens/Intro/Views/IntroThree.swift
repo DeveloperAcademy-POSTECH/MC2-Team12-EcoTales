@@ -20,7 +20,7 @@ struct IntroThree: View {
                 Spacer()
                 VStack(alignment: .leading) {
                     if dialogIndex / 3 == 0 {
-                        Text(introThree[0])
+                        Text(StoryData().introThree[0])
                             .font(.system(size: 20))
                         HStack {
                             Spacer()
@@ -28,7 +28,7 @@ struct IntroThree: View {
                                 .font(.system(size: 20))
                                 .opacity(dialogIndex == 0 ? 1 : 0)
                         }
-                        Text(introThree[1])
+                        Text(StoryData().introThree[1])
                             .font(.system(size: 20))
                             .opacity(dialogIndex >= 1 ? 1 : 0)
                         HStack {
@@ -37,7 +37,7 @@ struct IntroThree: View {
                                 .font(.system(size: 20))
                         }
                         .opacity(dialogIndex == 1 ? 1 : 0)
-                        Text(introThree[2])
+                        Text(StoryData().introThree[2])
                             .font(.system(size: 20))
                             .opacity(dialogIndex >= 2 ? 1 :0)
                         HStack {
@@ -47,7 +47,7 @@ struct IntroThree: View {
                         }
                         .opacity(dialogIndex == 2 ? 1 :0)
                     } else {
-                        Text(introThree[3])
+                        Text(StoryData().introThree[3])
                             .font(.system(size: 20))
                             .opacity(dialogIndex >= 3 ? 1 :0)
                         HStack {
@@ -56,7 +56,7 @@ struct IntroThree: View {
                                 .font(.system(size: 20))
                         }
                         .opacity(dialogIndex == 3 ? 1 :0)
-                        Text(introThree[4])
+                        Text(StoryData().introThree[4])
                             .font(.system(size: 20))
                             .opacity(dialogIndex >= 4 ? 1 :0)
                         HStack {
@@ -66,7 +66,7 @@ struct IntroThree: View {
                         }
                         .opacity(dialogIndex == 4 ? 1 :0)
                     }
-                    Text(introThree[5])
+                    Text(StoryData().introThree[5])
                         .font(.system(size: 20))
                         .opacity(dialogIndex == 5 ? 1 :0)
                     HStack {
@@ -82,7 +82,7 @@ struct IntroThree: View {
             }
         }
         .onTapGesture {
-            if dialogIndex == introTwo.count - 1 {
+            if dialogIndex == StoryData().introTwo.count - 1 {
                 introNumber += 1
             } else {
                 dialogIndex += 1
