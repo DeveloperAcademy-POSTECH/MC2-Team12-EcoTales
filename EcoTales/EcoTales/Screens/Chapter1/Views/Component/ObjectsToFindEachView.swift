@@ -26,7 +26,7 @@ struct ObjectsToFindEachView: View {
                     .font(.system(size: 15))
                     .multilineTextAlignment(.center)
             }
-            .padding(.all, 10)
+            .frame(width: 90, height: 45)
             .background(Color.white)
             .cornerRadius(10)
             .shadow(radius: 3, x: 3, y: 3)
