@@ -9,8 +9,10 @@ import Foundation
 
 struct HiddenObject: Hashable {
     var image: String
+    var objectName: String
     var positionX: Int
     var positionY: Int
     var rotation: Int
     var opacity: Double
+    var description: String
 }
