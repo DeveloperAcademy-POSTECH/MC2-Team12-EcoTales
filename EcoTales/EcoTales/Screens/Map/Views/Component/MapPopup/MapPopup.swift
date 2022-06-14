@@ -12,7 +12,8 @@ struct MapPopup: View {
     @State var isGameStoryShow = false
     var body: some View {
         ZStack {
-            Color.black.opacity(0.4)
+            Color.black
+                .opacity(0.4)
                 .ignoresSafeArea()
             if isMapPopup {
                 ZStack {

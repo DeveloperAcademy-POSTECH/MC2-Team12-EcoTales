@@ -14,7 +14,8 @@ struct StoryPopup: View {
     var body: some View {
         ZStack {
             if isStoryPopup {
-                Color.black.opacity(0.4)
+                Color.black
+                    .opacity(0.4)
                 ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
