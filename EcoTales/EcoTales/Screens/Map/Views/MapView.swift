@@ -40,20 +40,18 @@ struct MapView: View {
                             .frame(width: 50, height: 50)
                     }
                     .position(getStagePosition(chapter: chapter))
-                    .disabled(isDisabled(chapter: chapter))
+                    .disabled(isStageDisabled(chapter: chapter))
                 }
 
                 Image(ImageLiteral.child)
                     .position(getChildPosition())
 
-                ChapterPopUpView(isPop: $isPopUp,
-                                 chapter: selectedChapter)
-
+                ChapterPopUpView(isPop: $isPopUp, chapter: selectedChapter)
             }
         }
     }
 
-    private func isDisabled(chapter: Chapter) -> Bool {
+    private func isStageDisabled(chapter: Chapter) -> Bool {
         if chapter == .one { return false }
         let previousChapter = Chapter(rawValue: chapter.rawValue - 1)!
         let previousCompletion = chapterProgress.completionStatus[previousChapter]!
