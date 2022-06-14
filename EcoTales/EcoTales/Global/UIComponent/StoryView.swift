@@ -63,7 +63,7 @@ struct StoryView: View {
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 4 {
-                Image("chapterFour_background")
+                Image("chapter4_background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
