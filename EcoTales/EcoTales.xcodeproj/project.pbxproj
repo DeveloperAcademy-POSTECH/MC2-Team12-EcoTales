@@ -41,7 +41,6 @@
 		F857444928531B000012346A /* File2 in Resources */ = {isa = PBXBuildFile; fileRef = F857444828531B000012346A /* File2 */; };
 		F857444B28531B0C0012346A /* File3 in Resources */ = {isa = PBXBuildFile; fileRef = F857444A28531B0C0012346A /* File3 */; };
 		F857444D28531B180012346A /* File4 in Resources */ = {isa = PBXBuildFile; fileRef = F857444C28531B180012346A /* File4 */; };
-		F857445228531B560012346A /* File6 in Resources */ = {isa = PBXBuildFile; fileRef = F857445128531B560012346A /* File6 */; };
 		F857445F28531C1A0012346A /* File7 in Resources */ = {isa = PBXBuildFile; fileRef = F857445E28531C1A0012346A /* File7 */; };
 		F857446128531C240012346A /* File8 in Resources */ = {isa = PBXBuildFile; fileRef = F857446028531C240012346A /* File8 */; };
 		F857446F28531C9D0012346A /* File9 in Resources */ = {isa = PBXBuildFile; fileRef = F857446E28531C9D0012346A /* File9 */; };
@@ -54,6 +53,11 @@
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
+		F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */; };
+		F8EB5D7D285723460058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */; };
+		F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */; };
+		F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */; };
+		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +94,6 @@
 		F857444828531B000012346A /* File2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File2; sourceTree = "<group>"; };
 		F857444A28531B0C0012346A /* File3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File3; sourceTree = "<group>"; };
 		F857444C28531B180012346A /* File4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File4; sourceTree = "<group>"; };
-		F857445128531B560012346A /* File6 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File6; sourceTree = "<group>"; };
 		F857445E28531C1A0012346A /* File7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File7; sourceTree = "<group>"; };
 		F857446028531C240012346A /* File8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File8; sourceTree = "<group>"; };
 		F857446E28531C9D0012346A /* File9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File9; sourceTree = "<group>"; };
@@ -103,6 +106,11 @@
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
+		F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangM.ttf; sourceTree = "<group>"; };
+		F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
+		F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
+		F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
+		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,7 +274,11 @@
 		F857445028531B480012346A /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				F857445128531B560012346A /* File6 */,
+				F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */,
+				F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */,
+				F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */,
+				F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */,
+				F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -556,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F857447C28531CE20012346A /* File15 in Resources */,
+				F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
@@ -567,12 +580,15 @@
 				F857446F28531C9D0012346A /* File9 in Resources */,
 				F857444B28531B0C0012346A /* File3 in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
+				F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */,
+				F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */,
 				F857445F28531C1A0012346A /* File7 in Resources */,
 				AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */,
 				F857446128531C240012346A /* File8 in Resources */,
 				AE9A45282852288900683CCF /* Assets.xcassets in Resources */,
+				F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */,
 				F857444928531B000012346A /* File2 in Resources */,
-				F857445228531B560012346A /* File6 in Resources */,
+				F8EB5D7D285723460058C1D0 /* Kyobo Handwriting 2019.otf in Resources */,
 				F857447328531CB20012346A /* File11 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -765,6 +781,7 @@
 				DEVELOPMENT_TEAM = T79FMP6Q2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EcoTales/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -794,6 +811,7 @@
 				DEVELOPMENT_TEAM = T79FMP6Q2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EcoTales/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
