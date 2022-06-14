@@ -11,13 +11,13 @@ struct HiddenObjGameView: View {
     @State private var isShowingPopup = false
     var body: some View {
         ZStack {
-            Image("chapterOne_pollutedBackground")
+            Image("chapter1_pollutedBackground")
                 .resizable()
                 .scaledToFill()
-            LocatingHiddenObjView()
+            ObjectsHiddenView()
             VStack {
                 Spacer()
-                ObjectsToFind()
+                ObjectsToFindView()
             }
             VStack {
                 UpperPanelView(isShowingPopUp: $isShowingPopup)
