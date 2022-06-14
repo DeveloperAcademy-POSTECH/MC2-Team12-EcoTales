@@ -9,10 +9,12 @@ import SwiftUI
 struct StoryPopup: View {
     @Binding var isShowingPopup: Bool
     @State var isGameStoryShow = false
+
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             if isShowingPopup {
+                Color.black.opacity(0.4)
                 ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -32,7 +34,9 @@ struct StoryPopup: View {
                     })
                     Button(action: {
                         withAnimation(.linear(duration: 0.3)) {
+//                            flag = true
                             isGameStoryShow = true
+//                            isShowingPopup = false
                         }
                     }, label: {
                         ReplayButton()

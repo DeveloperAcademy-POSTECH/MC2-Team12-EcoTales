@@ -47,7 +47,7 @@ struct UpperPanelView: View {
             }
             HStack {
                 Spacer()
-                Image("turtleCircle")
+                Image("chapter1_turtleHeadCircle")
                     .resizable()
                     .frame(width: 50, height: 46)
                     .padding()
@@ -55,7 +55,6 @@ struct UpperPanelView: View {
                 Spacer()
             }
             .padding(.trailing, 100)
-//            Spacer()
         }
         .padding([.trailing, .leading], 44)
         .background(Image("game_woodenPanel"))
@@ -68,7 +67,7 @@ struct ExplainGameView: View {
         ZStack {
             // text 받아오는 함수 위치
             Text("설명을 해줄게!")
-                .background(Image("chapterOne_turtleDialog"))
+                .background(Image("chapter1_turtleDialog"))
         }
         .frame(width: 450, height: 30)
     }

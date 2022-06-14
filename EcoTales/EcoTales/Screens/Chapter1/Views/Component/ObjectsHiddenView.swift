@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ObjectsHiddenView: View {
     var hiddenObjectList = HiddenObjectData().list
-    
+
     var body: some View {
         ZStack {
             ForEach(hiddenObjectList, id: \.self) { trash in
