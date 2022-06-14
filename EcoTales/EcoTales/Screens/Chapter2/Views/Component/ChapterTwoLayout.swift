@@ -31,7 +31,7 @@ struct ChapterTwoLayout: View {
                         }
                     }
                 }
-                
+
                 // Background
                 ZStack {
                     Image("chapterTwo_background")
@@ -46,10 +46,10 @@ struct ChapterTwoLayout: View {
                     }
                 }
             }
-            
+
             HStack {
-                ZStack{
-                    HStack{
+                ZStack {
+                    HStack {
                         Image("character_mole")
                             .resizable()
                             .frame(width: 113, height: 86)
@@ -70,7 +70,7 @@ struct ChapterTwoLayout: View {
                 }
             }
             .padding(.leading, 44)
-            
+
             // Recycle Bins
             VStack {
                 Spacer()
@@ -83,12 +83,12 @@ struct ChapterTwoLayout: View {
 
 struct RecycleBins: View {
     var body: some View {
-        
+
         let recyleBins = ["recycleBin_litter", "recycleBin_vinyl",
                           "recycleBin_can", "recycleBin_plastic",
                           "recycleBin_paper", "recycleBin_glass"]
         let recycleBinsText = ["일반쓰레기", "비닐", "캔", "플라스틱", "종이", "유리"]
-        
+
         HStack {
             ForEach(0..<recyleBins.count) { recycleIndex in
                 if recycleIndex == 0 {
