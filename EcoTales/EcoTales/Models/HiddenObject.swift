@@ -14,4 +14,5 @@ struct HiddenObject: Hashable {
     var positionY: Int
     var rotation: Int
     var opacity: Double
+    var description: String
 }

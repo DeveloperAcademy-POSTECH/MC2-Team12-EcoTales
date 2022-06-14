@@ -13,12 +13,13 @@ struct HiddenObjGameView: View {
             Image("chapterOne_pollutedBackground")
                 .resizable()
                 .scaledToFill()
+//                .ignoresSafeArea()
                 .onTouch(type: .started, perform: updateLocation)
-            LocatingHiddenObjView()
+            ObjectsHiddenView()
             VStack {
                 TopCollocate()
                 Spacer()
-                ObjectsToFind()
+                ObjectsToFindView()
             }
         }
         .ignoresSafeArea()
