@@ -35,6 +35,7 @@ struct ChapterTwoLayout: View {
                     Image("chapterTwo_background")
                         .resizable()
                         .ignoresSafeArea()
+                        .opacity(0.5)
                 }
             }
             VStack {
@@ -55,7 +56,6 @@ struct RecycleBins: View {
                 if recycleIndex == 0 {
                     VStack{
                     Text(recycleBinsText[recycleIndex])
-                        .ignoresSafeArea()
                     Image(recyleBins[recycleIndex])
                     }
                     Spacer()
