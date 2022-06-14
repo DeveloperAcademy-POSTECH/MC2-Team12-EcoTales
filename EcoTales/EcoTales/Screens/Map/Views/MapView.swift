@@ -84,11 +84,20 @@ struct MapView: View {
 
     private func getChildPosition() -> CGPoint {
         let completedChapters = chapterProgress.completionStatus
-            .filter { !$0.value }
-            .sorted(by: { $0.key.rawValue < $1.key.rawValue })
-        let lastChapter = completedChapters.isEmpty ? Chapter.one : completedChapters[0].key
-        let position = getStagePosition(chapter: lastChapter)
-        return CGPoint(x: position.x, y: position.y - 50)
+            .filter { $0.value }
+
+        if completedChapters.count != Chapter.allCases.count {
+            let uncompletedChapters = chapterProgress.completionStatus
+                .filter { !$0.value }
+                .sorted(by: { $0.key.rawValue < $1.key.rawValue })
+            let lastChapter = uncompletedChapters.isEmpty ? Chapter.one : uncompletedChapters[0].key
+            let position = getStagePosition(chapter: lastChapter)
+            return CGPoint(x: position.x, y: position.y - 50)
+        }
+        else {
+            let position = getStagePosition(chapter: selectedChapter)
+            return CGPoint(x: position.x, y: position.y - 50)
+        }
     }
 
 }
