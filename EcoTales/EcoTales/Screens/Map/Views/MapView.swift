@@ -93,8 +93,7 @@ struct MapView: View {
             let lastChapter = uncompletedChapters.isEmpty ? Chapter.one : uncompletedChapters[0].key
             let position = getStagePosition(chapter: lastChapter)
             return CGPoint(x: position.x, y: position.y - 50)
-        }
-        else {
+        } else {
             let position = getStagePosition(chapter: selectedChapter)
             return CGPoint(x: position.x, y: position.y - 50)
         }
