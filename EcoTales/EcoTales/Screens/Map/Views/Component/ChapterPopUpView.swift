@@ -7,18 +7,28 @@
 
 import SwiftUI
 
-struct ChapterView: View {
+struct ChapterPopUpView: View {
+
+    @EnvironmentObject var chapterProgress: ChapterProgress
+    @Binding var isPop: Bool
 
     var chapter: Chapter
-    @Binding var chapterViewModel: ChapterViewModel
-    @Binding var isPop: Bool
+
+    private var popUpMessage: String {
+        let isCompleted = chapterProgress.completionStatus[chapter] ?? false
+
+        return isCompleted
+        ? "chapter \(chapter.rawValue) 완료"
+        : "chapter \(chapter.rawValue)미완"
+    }
 
     var body: some View {
         if isPop {
-            Button(chapterViewModel.getPopUpMessage(chapter: chapter)) {
-                chapterViewModel.complete(chapter: chapter)
+            Button(popUpMessage) {
+                chapterProgress.completionStatus[chapter] = true
                 isPop = false
             }
         }
     }
+
 }

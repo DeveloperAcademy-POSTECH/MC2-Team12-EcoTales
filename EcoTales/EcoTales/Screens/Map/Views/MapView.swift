@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MapView: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
-    @StateObject var chapterViewModel = ChapterViewModel()
     @State var isPopUp = false
     @State var selectedChapter = Chapter.one
 
@@ -21,15 +20,15 @@ struct MapView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
 
-                ZStack {
+                Group {
                     Image(ImageLiteral.path1to2)
-                        .isHidden(!chapterViewModel.isCompleted(chapter: .one))
+                        .isHidden(!chapterProgress.completionStatus[.one]!)
                     Image(ImageLiteral.path2to3)
-                        .isHidden(!chapterViewModel.isCompleted(chapter: .two))
+                        .isHidden(!chapterProgress.completionStatus[.two]!)
                     Image(ImageLiteral.path3to4)
-                        .isHidden(!chapterViewModel.isCompleted(chapter: .three))
+                        .isHidden(!chapterProgress.completionStatus[.three]!)
                     Image(ImageLiteral.path4to5)
-                        .isHidden(!chapterViewModel.isCompleted(chapter: .four))
+                        .isHidden(!chapterProgress.completionStatus[.four]!)
                 }
 
                 ForEach(Chapter.allCases) { chapter in
@@ -37,55 +36,31 @@ struct MapView: View {
                         isPopUp.toggle()
                         selectedChapter = chapter
                     } label: {
-                        Image(chapterViewModel.getStageImage(chapter: chapter))
+                        Image(getStageImage(chapter: chapter))
                             .frame(width: 50, height: 50)
                     }
-                    .position(chapterViewModel.getStagePosition(chapter: chapter))
-                    .disabled(chapterViewModel.isDisabled(chapter: chapter))
+                    .position(getStagePosition(chapter: chapter))
+                    .disabled(isDisabled(chapter: chapter))
                 }
 
                 Image(ImageLiteral.child)
-                    .position(chapterViewModel.getChildPosition())
+                    .position(getChildPosition())
 
-                ChapterView(chapter: selectedChapter,
-                            chapterViewModel: Binding<ChapterViewModel>.constant(chapterViewModel),
-                            isPop: $isPopUp)
+                ChapterPopUpView(isPop: $isPopUp,
+                                 chapter: selectedChapter)
 
             }
         }
     }
-}
 
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
-            .previewInterfaceOrientation(.landscapeRight)
-    }
-}
-
-
-class ChapterViewModel: ObservableObject {
-
-    @EnvironmentObject var chapterProgress: ChapterProgress
-
-    func complete(chapter: Chapter) {
-        chapterProgress.completionStatus[chapter] = true
-    }
-
-    func isCompleted(chapter: Chapter) -> Bool {
-        return chapterProgress.completionStatus[chapter]!
-    }
-
-    func getPopUpMessage(chapter: Chapter) -> String {
-        return isCompleted(chapter: chapter) ? "chapter \(chapter.rawValue) 완료" : "chapter \(chapter.rawValue)미완"
-    }
-
-    func isDisabled(chapter: Chapter) -> Bool {
+    private func isDisabled(chapter: Chapter) -> Bool {
         if chapter == .one { return false }
-        return !(isCompleted(chapter: Chapter(rawValue: chapter.rawValue - 1) ?? .five))
+        let previousChapter = Chapter(rawValue: chapter.rawValue - 1)!
+        let previousCompletion = chapterProgress.completionStatus[previousChapter]!
+        return !previousCompletion
     }
 
-    func getStagePosition(chapter: Chapter) -> CGPoint {
+    private func getStagePosition(chapter: Chapter) -> CGPoint {
         switch chapter {
         case .one:
             return CGPoint(x: 110, y: 270)
@@ -100,22 +75,25 @@ class ChapterViewModel: ObservableObject {
         }
     }
 
-    func getStageImage(chapter: Chapter) -> String {
+    private func getStageImage(chapter: Chapter) -> String {
         let isCompleted = (chapterProgress.completionStatus[chapter] ?? false)
         return isCompleted ? ImageLiteral.activeStageMark : ImageLiteral.inactiveStageMark
     }
 
-    private func getLastChapter() -> Chapter {
+    private func getChildPosition() -> CGPoint {
         let completedChapters = chapterProgress.completionStatus
             .filter { !$0.value }
             .sorted(by: { $0.key.rawValue < $1.key.rawValue })
-        return completedChapters.isEmpty ? Chapter.one : completedChapters[0].key
-    }
-
-    func getChildPosition() -> CGPoint {
-        let chapter = getLastChapter()
-        let position = getStagePosition(chapter: chapter)
+        let lastChapter = completedChapters.isEmpty ? Chapter.one : completedChapters[0].key
+        let position = getStagePosition(chapter: lastChapter)
         return CGPoint(x: position.x, y: position.y - 50)
     }
 
+}
+
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView().environmentObject(ChapterProgress())
+            .previewInterfaceOrientation(.landscapeRight)
+    }
 }
