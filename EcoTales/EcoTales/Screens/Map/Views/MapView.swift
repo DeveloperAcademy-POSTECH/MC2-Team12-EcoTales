@@ -46,7 +46,7 @@ struct MapView: View {
                 Image(ImageLiteral.child)
                     .position(getChildPosition())
 
-                ChapterPopUpView(isPop: $isPopUp, chapter: selectedChapter)
+                MapPopup(iscount: $isPopUp, chapter: selectedChapter)
             }
         }
     }
