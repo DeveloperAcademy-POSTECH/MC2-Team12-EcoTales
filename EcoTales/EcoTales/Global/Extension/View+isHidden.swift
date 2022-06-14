@@ -8,10 +8,10 @@
 import SwiftUI
 
 extension View {
-    func isHidden(_ toggle: Bool) -> some View {
+    func isShown(_ toggle: Bool) -> some View {
         if toggle {
-            return AnyView(self.hidden())
+            return AnyView(self)
         }
-        return AnyView(self)
+        return AnyView(self.hidden())
     }
 }

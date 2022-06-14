@@ -22,13 +22,13 @@ struct MapView: View {
 
                 Group {
                     Image(ImageLiteral.path1to2)
-                        .isHidden(!chapterProgress.completionStatus[.one]!)
+                        .isShown(isCompleted(chapter: .one))
                     Image(ImageLiteral.path2to3)
-                        .isHidden(!chapterProgress.completionStatus[.two]!)
+                        .isShown(isCompleted(chapter: .two))
                     Image(ImageLiteral.path3to4)
-                        .isHidden(!chapterProgress.completionStatus[.three]!)
+                        .isShown(isCompleted(chapter: .three))
                     Image(ImageLiteral.path4to5)
-                        .isHidden(!chapterProgress.completionStatus[.four]!)
+                        .isShown(isCompleted(chapter: .four))
                 }
 
                 ForEach(Chapter.allCases) { chapter in
@@ -49,6 +49,10 @@ struct MapView: View {
                 ChapterPopUpView(isPop: $isPopUp, chapter: selectedChapter)
             }
         }
+    }
+
+    private func isCompleted(chapter: Chapter) -> Bool {
+        return chapterProgress.completionStatus[chapter]!
     }
 
     private func isStageDisabled(chapter: Chapter) -> Bool {
