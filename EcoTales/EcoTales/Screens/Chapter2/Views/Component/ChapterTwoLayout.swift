@@ -11,6 +11,7 @@ struct ChapterTwoLayout: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
+                // Top Wooden Panel
                 ZStack {
                     HStack {
                         ZStack {
@@ -24,20 +25,37 @@ struct ChapterTwoLayout: View {
                                     .frame(width: 20, height: 20)
                                 Spacer()
                                 Image("hintBook")
+                                    .resizable()
                                     .frame(width: 57, height: 57)
-                                    
                             }
-                            .padding(.horizontal, 30)
+                            .padding(.horizontal, 44)
                         }
                     }
                 }
+
+                // Background
                 ZStack {
                     Image("chapterTwo_background")
                         .resizable()
                         .ignoresSafeArea()
-                        .opacity(0.5)
+                    VStack{
+                    Image("conveyorBelt")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .frame(width: 300, height: 200, alignment: .top)
+                        Spacer()
+                    }
                 }
             }
+            HStack {
+                Image("character_mole")
+                    .resizable()
+                    .frame(width: 113, height: 86)
+                Spacer()
+            }
+            .padding(.leading, 44)
+
+            // Recycle Bins
             VStack {
                 Spacer()
                 RecycleBins()
@@ -49,36 +67,46 @@ struct ChapterTwoLayout: View {
 
 struct RecycleBins: View {
     var body: some View {
-        let recyleBins = ["recycleBin_litter", "recycleBin_vinyl", "recycleBin_can", "recycleBin_plastic", "recycleBin_paper", "recycleBin_glass"]
+
+        let recyleBins = ["recycleBin_litter", "recycleBin_vinyl",
+                          "recycleBin_can", "recycleBin_plastic",
+                          "recycleBin_paper", "recycleBin_glass"]
         let recycleBinsText = ["일반쓰레기", "비닐", "캔", "플라스틱", "종이", "유리"]
+
         HStack {
             ForEach(0..<recyleBins.count) { recycleIndex in
                 if recycleIndex == 0 {
-                    VStack{
-                    Text(recycleBinsText[recycleIndex])
-                    Image(recyleBins[recycleIndex])
+                    VStack {
+                        Text(recycleBinsText[recycleIndex])
+                        Image(recyleBins[recycleIndex])
+                            .resizable()
+                            .frame(width: 94, height: 121)
                     }
                     Spacer()
                 } else if recycleIndex == recyleBins.count - 1 {
                     Spacer()
-                    VStack{
-                    Text(recycleBinsText[recycleIndex])
-                        .ignoresSafeArea()
-                    Image(recyleBins[recycleIndex])
+                    VStack {
+                        Text(recycleBinsText[recycleIndex])
+                            .ignoresSafeArea()
+                        Image(recyleBins[recycleIndex])
+                            .resizable()
+                            .frame(width: 94, height: 121)
                     }
                 } else {
                     Spacer()
-                    VStack{
-                    Text(recycleBinsText[recycleIndex])
-                        .ignoresSafeArea()
-                    Image(recyleBins[recycleIndex])
+                    VStack {
+                        Text(recycleBinsText[recycleIndex])
+                            .ignoresSafeArea()
+                        Image(recyleBins[recycleIndex])
+                            .resizable()
+                            .frame(width: 94, height: 121)
                     }
                     Spacer()
                 }
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.horizontal, 30)
+        .padding(.horizontal, 44)
     }
 }
 
