@@ -2,20 +2,22 @@
 //  PlaySound.swift
 //  EcoTales
 //
-//  Created by YejiMac on 2022/06/13.
-//
+//  Created by YejiMac on 2022/06/14.
+//  https://www.hackingwithswift.com/forums/swiftui/playing-sound/4921
 
 import AVFoundation
 
-var audioPlayer: AVAudioPlayer?
+var audioPlayer: AVAudioPlayer!
 
-func playSound(sound: String, type: String) {
-    if let path = Bundle.main.path(forResource: sound, ofType: type) {
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
-            audioPlayer?.play()
-        } catch {
-            print("ERROR: Could not find and play the sound file!")
-        }
+func playSounds(_ soundFileName : String) {
+    guard let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil) else {
+        fatalError("Unable to find \(soundFileName) in bundle")
     }
+
+    do {
+        audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+    } catch {
+        print(error.localizedDescription)
+    }
+    audioPlayer.play()
 }
