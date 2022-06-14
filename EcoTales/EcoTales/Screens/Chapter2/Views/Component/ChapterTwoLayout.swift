@@ -19,7 +19,7 @@ struct ChapterTwoLayout: View {
                                 .scaledToFit()
                                 .ignoresSafeArea()
                             HStack {
-                                // TODO: 현재 레이아웃으로 넣긴 했으나, 눌렀을 때 팝업이 뜨는 기능이 필요
+                                // todo: 현재 레이아웃으로 넣긴 했으나, 눌렀을 때 팝업이 뜨는 기능이 필요
                                 PauseEncounter()
                                     .frame(width: 20, height: 20)
                                 Spacer()
@@ -45,7 +45,7 @@ struct ChapterTwoLayout: View {
                         Spacer()
                     }
                     VStack {
-                        // TODO: need to bring list of garbage
+                        // todo: need to bring list of garbage
                         Image("hidden_snack")
                             .resizable()
                             .ignoresSafeArea()
