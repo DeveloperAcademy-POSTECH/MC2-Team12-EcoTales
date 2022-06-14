@@ -14,7 +14,6 @@ struct MapBackground: View {
                 .resizable()
                 .ignoresSafeArea()
         }
-
     }
 }
 
