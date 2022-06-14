@@ -10,7 +10,7 @@ import SwiftUI
 struct HiddenObjGameView: View {
     var body: some View {
         ZStack {
-            Image("chapterOne_pollutedBackground")
+            Image("chapter1_pollutedBackground")
                 .resizable()
                 .scaledToFill()
 //                .ignoresSafeArea()

@@ -6,22 +6,22 @@
 //
 import SwiftUI
 
-func selectStory(chapter: Int, isGameClear: Bool) -> StoryData {
+func selectStory(chapter: Int, isGameClear: Bool) -> StoryDataModel {
     switch chapter {
     case 0:
-        return chapterIntro
+        return StoryData().chapterIntro
     case 1:
-        return isGameClear ? chapterOneClear : chapterOneNotClear
+        return isGameClear ? StoryData().chapterOneClear : StoryData().chapterOneNotClear
     case 2:
-        return isGameClear ? chapterTwoClear : chapterTwoNotClear
+        return isGameClear ? StoryData().chapterTwoClear : StoryData().chapterTwoNotClear
     case 3:
-        return isGameClear ? chapterThreeClear : chapterThreeNotClear
+        return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
     case 4:
-        return isGameClear ? chapterFourClear : chapterFourNotClear
+        return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
     case 5:
-        return chapterEpilogue
+        return StoryData().chapterEpilogue
     default:
-        return chapterError
+        return StoryData().chapterError
     }
 }
 
@@ -33,25 +33,31 @@ struct StoryView: View {
     var body: some View {
         ZStack {
             if chapter == 1 && isGameClear == false {
-                Image("chapterOne_pollutedBackground")
+                Image("chapter1_pollutedBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 1 && isGameClear == true {
-                Image("chapterOne_cleanBackground")
+                Image("chapter1_cleanBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 2 {
-                Image("chapterTwo_background")
+                Image("chapter2_background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
             }
-            if chapter == 3 {
-                Image("chapterThree_background")
+            if chapter == 3 && isGameClear == false {
+                Image("chapter3_pollutedBackground")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .aspectRatio(contentMode: .fill)
+            }
+            if chapter == 3 && isGameClear == true {
+                Image("chapter3_cleanBackground")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
