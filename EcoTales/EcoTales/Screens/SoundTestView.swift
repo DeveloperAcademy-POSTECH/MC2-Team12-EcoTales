@@ -5,27 +5,18 @@
 //  Created by YejiMac on 2022/06/13.
 //
 
+import AVFoundation
 import SwiftUI
 
-
-
 struct SoundTestView: View {
+    @State var audioPlayer: AVAudioPlayer!
     var body: some View {
-        Text("SoundTest")
-        Button(action: {
-            playSound(sound: "jumpin", type: "mp3")
-        }) {
-            Image(systemName: "arrowtriangle.right.circle.fill").resizable()
-                .frame(width: 50, height: 50)
-                .buttonStyle(PlainButtonStyle())
+        ZStack {
+            Text("Play Sound!")
         }
+        .onAppear(perform: {
+            playSounds("mixkit-player-jumping-in-a-video-game-2043.wav")
+        })
     }
 }
 
-struct SoundTestView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            SoundTestView()
-        }
-    }
-}
