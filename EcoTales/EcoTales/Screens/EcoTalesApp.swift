@@ -11,7 +11,8 @@ import SwiftUI
 struct EcoTalesApp: App {
     var body: some Scene {
         WindowGroup {
-            EpilogueThree()
+//            EpilogueThree()
+            MapBackground()
         }
     }
 }

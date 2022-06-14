@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LaunchScreenView: View {
     var body: some View {
-        HiddenObjGameView()
+        HiddenObjGameView(isMapPopup: .constant(false))
     }
 }
 

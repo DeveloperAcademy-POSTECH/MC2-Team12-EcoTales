@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct MapPopup: View {
-    @Binding var iscount: Bool
+    @Binding var isMapPopup: Bool
     @State var isGameStoryShow = false
     var body: some View {
         ZStack {
-            if iscount {
+            Color.black.opacity(0.4)
+                .ignoresSafeArea()
+            if isMapPopup {
                 ZStack {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -31,28 +33,23 @@ struct MapPopup: View {
                                 .padding(.leading, 60)
                             Spacer()
                         }
-
                         Text("이야기를 시작할까요?")
                             .font(.system(size: 24, weight: .heavy))
                             .frame(width: 350, height: 90, alignment: .center)
                         HStack(alignment: .center, spacing: 25) {
                             Button(action: {
                                 // Dismiss the PopUp
-                                withAnimation(.linear(duration: 0.3)) {
-                                    isGameStoryShow = false
-                                }
-                            }, label: {
-                                YesButton()
-                            })
-//                            .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
-                            Button(action: {
-                                // Dismiss the PopUp
-                                withAnimation(.linear(duration: 0.3)) {
-                                    iscount = false
-                                }
+                                isMapPopup = false
                             }, label: {
                                 NoButton()
                             }) .buttonStyle(PlainButtonStyle())
+                            Button(action: {
+                                isGameStoryShow = true
+                            }, label: {
+                                YesButton()
+                            })
+                            .fullScreenCover(isPresented: $isGameStoryShow,
+                                             content: { HiddenObjGameView(isMapPopup: $isMapPopup) })
                         }
                     }
                 }
@@ -64,7 +61,7 @@ struct MapPopup: View {
 
 struct MapPopup_Previews: PreviewProvider {
     static var previews: some View {
-        MapPopup(iscount: .constant(true))
+        MapPopup(isMapPopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

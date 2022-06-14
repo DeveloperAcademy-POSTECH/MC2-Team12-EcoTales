@@ -7,13 +7,13 @@
 import SwiftUI
 
 struct StoryPopup: View {
-    @Binding var isShowingPopup: Bool
+    @Binding var isMapPopup: Bool
+    @Binding var isStoryPopup: Bool
     @State var isGameStoryShow = false
 
-    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
-            if isShowingPopup {
+            if isStoryPopup {
                 Color.black.opacity(0.4)
                 ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
@@ -26,25 +26,19 @@ struct StoryPopup: View {
                 VStack(alignment: .center, spacing: 25) {
                     Button(action: {
                         // Dismiss the Popup
-                        withAnimation(.linear(duration: 0.3)) {
-                            isShowingPopup = false
-                        }
+                        isStoryPopup = false
                     }, label: {
                         ContinueButton()
                     })
                     Button(action: {
-                        withAnimation(.linear(duration: 0.3)) {
-//                            flag = true
                             isGameStoryShow = true
 //                            isShowingPopup = false
-                        }
                     }, label: {
                         ReplayButton()
                     })
-                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
+//                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                     Button(action: {
-                        // Dismiss the Present View
-                        presentationMode.wrappedValue.dismiss()
+                        isMapPopup = false
                     }, label: {
                         ExitButton()
                     }).buttonStyle(PlainButtonStyle())
@@ -57,7 +51,7 @@ struct StoryPopup: View {
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            StoryPopup(isShowingPopup: .constant(true))
+            StoryPopup(isMapPopup: .constant(true), isStoryPopup: .constant(true))
         }
     }
 }

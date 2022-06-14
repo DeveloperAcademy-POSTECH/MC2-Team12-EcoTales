@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
-    @State private var isShowingPopup = false
+    @Binding var isMapPopup: Bool
+    @State private var isStoryPopup = false
     var body: some View {
         ZStack {
             Image("chapter1_pollutedBackground")
@@ -20,11 +21,11 @@ struct HiddenObjGameView: View {
                 ObjectsToFindView()
             }
             VStack {
-                UpperPanelView(isShowingPopUp: $isShowingPopup)
+                UpperPanelView(isStoryPopup: $isStoryPopup)
                 Spacer()
             }
-            if isShowingPopup {
-                StoryPopup(isShowingPopup: $isShowingPopup)
+            if isStoryPopup {
+                StoryPopup(isMapPopup: $isMapPopup, isStoryPopup: $isStoryPopup)
             }
         }
         .ignoresSafeArea()
@@ -35,12 +36,12 @@ struct HiddenObjGameView: View {
 }
 
 struct UpperPanelView: View {
-    @Binding var isShowingPopUp: Bool
+    @Binding var isStoryPopup: Bool
     var body: some View {
         ZStack {
             HStack {
                 Button(action: {
-                    self.isShowingPopUp = true
+                    self.isStoryPopup = true
                 }, label: {})
                 .buttonStyle(PauseButtonStyle())
                 Spacer()
@@ -82,7 +83,7 @@ extension View {
 
 struct HiddenObjGameView_Previews: PreviewProvider {
     static var previews: some View {
-        HiddenObjGameView()
+        HiddenObjGameView(isMapPopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
