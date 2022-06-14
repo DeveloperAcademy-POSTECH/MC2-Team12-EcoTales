@@ -31,7 +31,6 @@
 		262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060232855BDC500ED79C8 /* IntroThreeView.swift */; };
 		262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060252855BDCC00ED79C8 /* IntroFourView.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
-		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
 		AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+isHidden.swift */; };
@@ -87,7 +86,6 @@
 		262060232855BDC500ED79C8 /* IntroThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroThreeView.swift; sourceTree = "<group>"; };
 		262060252855BDCC00ED79C8 /* IntroFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFourView.swift; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
-		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindView.swift; sourceTree = "<group>"; };
 		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
@@ -509,7 +507,6 @@
 			children = (
 				AE9A45362853307600683CCF /* MapView.swift */,
 				F857448228532C580012346A /* Component */,
-				59D461E22854A1BD00FC0C67 /* MapBackground.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -667,7 +664,6 @@
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
-				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,

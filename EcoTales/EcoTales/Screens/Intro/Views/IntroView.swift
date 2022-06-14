@@ -20,7 +20,7 @@ struct IntroView: View {
         case 4:
             IntroFourView(introNumber: self.$introNumber)
         default:
-            MapBackground()
+            MapView()
         }
     }
 }
