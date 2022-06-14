@@ -23,6 +23,9 @@
 		26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
 		AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+isHidden.swift */; };
 		AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF392856D20D0052CD3E /* ImageLiteral.swift */; };
+		AE893CDE285839FC00EE00B3 /* ChapterPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CDD285839FC00EE00B3 /* ChapterPopUpView.swift */; };
+		AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CDF28583A2E00EE00B3 /* Chapter.swift */; };
+		AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CE128583A8300EE00B3 /* ChapterProgress.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
 		AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A452A2852288900683CCF /* Preview Assets.xcassets */; };
 		AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE9A453228522A3100683CCF /* .swiftlint.yml */; };
@@ -60,6 +63,9 @@
 		7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatingHiddenObjView.swift; sourceTree = "<group>"; };
 		AE75CF372856D1840052CD3E /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
 		AE75CF392856D20D0052CD3E /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		AE893CDD285839FC00EE00B3 /* ChapterPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterPopUpView.swift; sourceTree = "<group>"; };
+		AE893CDF28583A2E00EE00B3 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		AE893CE128583A8300EE00B3 /* ChapterProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterProgress.swift; sourceTree = "<group>"; };
 		AE9A45202852288800683CCF /* EcoTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A45232852288800683CCF /* EcoTalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTalesApp.swift; sourceTree = "<group>"; };
 		AE9A45252852288800683CCF /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */,
+				AE893CE128583A8300EE00B3 /* ChapterProgress.swift */,
 				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				F857443E28531A820012346A /* File1 */,
 			);
@@ -220,6 +227,7 @@
 		F857444628531AEA0012346A /* Literal */ = {
 			isa = PBXGroup;
 			children = (
+				AE9A45252852288800683CCF /* LaunchScreenView.swift */,
 				AE75CF392856D20D0052CD3E /* ImageLiteral.swift */,
 			);
 			path = Literal;
@@ -244,7 +252,6 @@
 		F857445328531B730012346A /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A45252852288800683CCF /* LaunchScreenView.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -429,6 +436,7 @@
 		F857448028532C450012346A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AE893CDF28583A2E00EE00B3 /* Chapter.swift */,
 				F857448328532C800012346A /* File17 */,
 			);
 			path = ViewModels;
@@ -447,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				F857448528532C960012346A /* File18 */,
+				AE893CDD285839FC00EE00B3 /* ChapterPopUpView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -565,9 +574,11 @@
 				AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */,
 				26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */,
 				26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */,
+				AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */,
 				26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */,
 				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
+				AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
@@ -576,6 +587,7 @@
 				26205FF7285445D500ED79C8 /* LaunchScreenView.swift in Sources */,
 				AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
+				AE893CDE285839FC00EE00B3 /* ChapterPopUpView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
 			);

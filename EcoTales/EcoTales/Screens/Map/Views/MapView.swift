@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MapView: View {
+    @EnvironmentObject var chapterProgress: ChapterProgress
     @StateObject var chapterViewModel = ChapterViewModel()
     @State var isPopUp = false
     @State var selectedChapter = Chapter.one
@@ -62,46 +63,17 @@ struct MapView_Previews: PreviewProvider {
     }
 }
 
-struct ChapterView: View {
-
-    var chapter: Chapter
-    @Binding var chapterViewModel: ChapterViewModel
-    @Binding var isPop: Bool
-
-    var body: some View {
-        if isPop {
-            Button(chapterViewModel.getPopUpMessage(chapter: chapter)) {
-                chapterViewModel.complete(chapter: chapter)
-                isPop = false
-            }
-        }
-    }
-}
-
-enum Chapter: Int, CaseIterable {
-    case one = 1, two, three, four, five
-}
-
-extension Chapter: Identifiable {
-    var id: RawValue { rawValue }
-}
 
 class ChapterViewModel: ObservableObject {
 
-    @Published var chapterCompletion: [Chapter: Bool]
-
-    init() {
-        chapterCompletion = Chapter.allCases.reduce(into: [Chapter: Bool]()) {
-            $0[$1] = false
-        }
-    }
+    @EnvironmentObject var chapterProgress: ChapterProgress
 
     func complete(chapter: Chapter) {
-        chapterCompletion[chapter] = true
+        chapterProgress.completionStatus[chapter] = true
     }
 
     func isCompleted(chapter: Chapter) -> Bool {
-        return chapterCompletion[chapter]!
+        return chapterProgress.completionStatus[chapter]!
     }
 
     func getPopUpMessage(chapter: Chapter) -> String {
@@ -110,8 +82,7 @@ class ChapterViewModel: ObservableObject {
 
     func isDisabled(chapter: Chapter) -> Bool {
         if chapter == .one { return false }
-        return !isCompleted(chapter: Chapter(rawValue: chapter.rawValue - 1) ?? .five
-        )
+        return !(isCompleted(chapter: Chapter(rawValue: chapter.rawValue - 1) ?? .five))
     }
 
     func getStagePosition(chapter: Chapter) -> CGPoint {
@@ -130,12 +101,12 @@ class ChapterViewModel: ObservableObject {
     }
 
     func getStageImage(chapter: Chapter) -> String {
-        let isCompleted = (chapterCompletion[chapter] ?? false)
+        let isCompleted = (chapterProgress.completionStatus[chapter] ?? false)
         return isCompleted ? ImageLiteral.activeStageMark : ImageLiteral.inactiveStageMark
     }
 
     private func getLastChapter() -> Chapter {
-        let completedChapters = chapterCompletion
+        let completedChapters = chapterProgress.completionStatus
             .filter { !$0.value }
             .sorted(by: { $0.key.rawValue < $1.key.rawValue })
         return completedChapters.isEmpty ? Chapter.one : completedChapters[0].key
