@@ -37,6 +37,11 @@ extension Color {
     static var PopupWhite: Color {
         return Color(hex: "#FAFAFA")
     }
+
+    // Recycling Text box Colors
+    static var RecycleFillWhite: Color {
+        return Color(hex: "#FEF4DE")
+    }
 }
 
 extension Color {

@@ -1,4 +1,3 @@
-//
 //  ChapterTwoLayout.swift
 //  EcoTales
 //
@@ -32,29 +31,46 @@ struct ChapterTwoLayout: View {
                         }
                     }
                 }
-
+                
                 // Background
                 ZStack {
                     Image("chapterTwo_background")
                         .resizable()
                         .ignoresSafeArea()
-                    VStack{
-                    Image("conveyorBelt")
-                        .resizable()
-                        .ignoresSafeArea()
-                        .frame(width: 300, height: 200, alignment: .top)
+                    VStack {
+                        Image("conveyorBelt")
+                            .resizable()
+                            .ignoresSafeArea()
+                            .frame(width: 300, height: 200, alignment: .top)
                         Spacer()
                     }
                 }
             }
+            
             HStack {
-                Image("character_mole")
-                    .resizable()
-                    .frame(width: 113, height: 86)
-                Spacer()
+                ZStack{
+                    HStack{
+                        Image("character_mole")
+                            .resizable()
+                            .frame(width: 113, height: 86)
+                        Spacer()
+                    }
+                    HStack {
+                        VStack {
+                            Text("여기에 텍스트가 들어갑니다")
+                                .multilineTextAlignment(.leading)
+                                .padding()
+                                .frame(width: 150, height: 100)
+                                .background(Ellipse().fill(Color.RecycleFillWhite))
+                        }
+                        .padding(.bottom, 80)
+                        Spacer()
+                    }
+                    .padding(.leading, 90)
+                }
             }
             .padding(.leading, 44)
-
+            
             // Recycle Bins
             VStack {
                 Spacer()
@@ -67,12 +83,12 @@ struct ChapterTwoLayout: View {
 
 struct RecycleBins: View {
     var body: some View {
-
+        
         let recyleBins = ["recycleBin_litter", "recycleBin_vinyl",
                           "recycleBin_can", "recycleBin_plastic",
                           "recycleBin_paper", "recycleBin_glass"]
         let recycleBinsText = ["일반쓰레기", "비닐", "캔", "플라스틱", "종이", "유리"]
-
+        
         HStack {
             ForEach(0..<recyleBins.count) { recycleIndex in
                 if recycleIndex == 0 {
