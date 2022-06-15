@@ -43,7 +43,6 @@
 		F857446128531C240012346A /* File8 in Resources */ = {isa = PBXBuildFile; fileRef = F857446028531C240012346A /* File8 */; };
 		F857446F28531C9D0012346A /* File9 in Resources */ = {isa = PBXBuildFile; fileRef = F857446E28531C9D0012346A /* File9 */; };
 		F857447328531CB20012346A /* File11 in Resources */ = {isa = PBXBuildFile; fileRef = F857447228531CB20012346A /* File11 */; };
-		F857447628531CC30012346A /* File12 in Resources */ = {isa = PBXBuildFile; fileRef = F857447528531CC30012346A /* File12 */; };
 		F857447828531CCA0012346A /* File13 in Resources */ = {isa = PBXBuildFile; fileRef = F857447728531CCA0012346A /* File13 */; };
 		F857447A28531CD50012346A /* File14 in Resources */ = {isa = PBXBuildFile; fileRef = F857447928531CD50012346A /* File14 */; };
 		F857447C28531CE20012346A /* File15 in Resources */ = {isa = PBXBuildFile; fileRef = F857447B28531CE20012346A /* File15 */; };
@@ -94,7 +93,6 @@
 		F857446028531C240012346A /* File8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File8; sourceTree = "<group>"; };
 		F857446E28531C9D0012346A /* File9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File9; sourceTree = "<group>"; };
 		F857447228531CB20012346A /* File11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File11; sourceTree = "<group>"; };
-		F857447528531CC30012346A /* File12 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File12; sourceTree = "<group>"; };
 		F857447728531CCA0012346A /* File13 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File13; sourceTree = "<group>"; };
 		F857447928531CD50012346A /* File14 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File14; sourceTree = "<group>"; };
 		F857447B28531CE20012346A /* File15 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File15; sourceTree = "<group>"; };
@@ -436,7 +434,6 @@
 		F857446B28531C710012346A /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				F857447528531CC30012346A /* File12 */,
 				595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */,
 			);
 			path = Component;
@@ -570,7 +567,6 @@
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
 				F857444D28531B180012346A /* File4 in Resources */,
-				F857447628531CC30012346A /* File12 in Resources */,
 				F857446F28531C9D0012346A /* File9 in Resources */,
 				F857444B28531B0C0012346A /* File3 in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
