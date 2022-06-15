@@ -12,8 +12,7 @@ struct HiddenObjGameView: View {
     var body: some View {
         ZStack {
             Image("chapter1_pollutedBackground")
-                .resizable()
-                .scaledToFill()
+                .backgroundImage()
             ObjectsHiddenView()
             VStack {
                 Spacer()

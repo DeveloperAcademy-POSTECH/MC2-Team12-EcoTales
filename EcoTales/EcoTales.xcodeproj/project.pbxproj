@@ -26,6 +26,7 @@
 		262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */; };
 		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
 		2620601E28559E8000ED79C8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601D28559E8000ED79C8 /* IntroView.swift */; };
+		262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060B3285A2A4400ED79C8 /* Image+Extension.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
 		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
@@ -69,6 +70,7 @@
 		262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoStoryView.swift; sourceTree = "<group>"; };
 		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		2620601D28559E8000ED79C8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		262060B3285A2A4400ED79C8 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
 		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				26205FE32854440E00ED79C8 /* Color+Extension.swift */,
+				262060B3285A2A4400ED79C8 /* Image+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
 				15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */,
 				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,

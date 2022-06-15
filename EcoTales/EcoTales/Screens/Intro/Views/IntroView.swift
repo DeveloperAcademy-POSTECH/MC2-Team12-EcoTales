@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-extension Image: ViewModifier {
-    func backgroundImage() -> some View {
-        self
-            .resizable()
-            .ignoresSafeArea()
-    }
-}
-
 func selectIntroBackground(introNumber: Int) -> String {
     switch introNumber {
     case 1:

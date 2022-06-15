@@ -11,8 +11,7 @@ struct MapBackground: View {
     var body: some View {
         ZStack {
             Image("map_background")
-                .resizable()
-                .ignoresSafeArea()
+                .backgroundImage()
         }
     }
 }

@@ -15,8 +15,7 @@ struct EpilogueThree: View {
     var body: some View {
         ZStack {
             Image(images[currentImageIndex])
-                .resizable()
-                .ignoresSafeArea()
+                .backgroundImage()
                 .id(imagePage)
                 .onReceive(imageChangeTimer) { _ in
                     if imagePage > 0 {
