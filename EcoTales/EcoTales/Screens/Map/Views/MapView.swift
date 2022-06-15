@@ -13,24 +13,24 @@ struct MapView: View {
     @State var selectedChapter = Chapter.zero
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Image(ImageLiteral.mapBackground)
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Image(ImageLiteral.mapBackground)
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
 
-                Group {
-                    Image(ImageLiteral.path1to2)
-                        .isShown(isCompleted(chapter: .zero))
-                    Image(ImageLiteral.path2to3)
-                        .isShown(isCompleted(chapter: .one))
-                    Image(ImageLiteral.path3to4)
-                        .isShown(isCompleted(chapter: .two))
-                    Image(ImageLiteral.path4to5)
-                        .isShown(isCompleted(chapter: .three))
-                }
+            Group {
+                Image(ImageLiteral.path1to2)
+                    .isShown(isCompleted(chapter: .zero))
+                Image(ImageLiteral.path2to3)
+                    .isShown(isCompleted(chapter: .one))
+                Image(ImageLiteral.path3to4)
+                    .isShown(isCompleted(chapter: .two))
+                Image(ImageLiteral.path4to5)
+                    .isShown(isCompleted(chapter: .three))
+            }
 
+            Group {
                 ForEach(Chapter.allCases) { chapter in
                     Button {
                         isPopUp.toggle()
@@ -42,13 +42,14 @@ struct MapView: View {
                     .position(getStagePosition(chapter: chapter))
                     .disabled(isStageDisabled(chapter: chapter))
                 }
-
-                Image(ImageLiteral.child)
-                    .position(getChildPosition())
-
-                MapPopup(iscount: $isPopUp, chapter: selectedChapter)
             }
+
+            Image(ImageLiteral.child)
+                .position(getChildPosition())
+
+            MapPopup(iscount: $isPopUp, chapter: selectedChapter)
         }
+
     }
 
     private func isCompleted(chapter: Chapter) -> Bool {
