@@ -45,7 +45,7 @@ struct ChapterTwoLayout: View {
                         Spacer()
                     }
                     VStack {
-                        // TODO: need to bring list of garbage
+                        // todo: need to bring list of garbage
                         Image("hidden_snack")
                             .resizable()
                             .ignoresSafeArea()
