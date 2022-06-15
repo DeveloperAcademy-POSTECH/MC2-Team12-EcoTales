@@ -14,7 +14,6 @@ struct ObjectsToFindEachView: View {
     @Binding var foundTrash: Set<String>
 
     var body: some View {
-        ZStack {
             Button(action: {
                 withAnimation { isShowingObjectName.toggle() }
                 selectedObject = trash.objectName
@@ -23,11 +22,9 @@ struct ObjectsToFindEachView: View {
                     .frame(maxWidth: .infinity)
             })
             .overlay(
-                ZStack(alignment: .center) {
-                    Text(selectedObject)
-                        .font(.system(size: 15))
-                        .multilineTextAlignment(.center)
-                }
+                Text(selectedObject)
+                    .font(.system(size: 15))
+                    .multilineTextAlignment(.center)
                     .frame(width: 90, height: 45)
                     .background(Color.white)
                     .cornerRadius(10)
@@ -36,6 +33,5 @@ struct ObjectsToFindEachView: View {
                     .opacity(isShowingObjectName ? 0.9 : 0)
             )
             .opacity(!foundTrash.contains(trash.image) ? 1 : 0)
-        }
     }
 }
