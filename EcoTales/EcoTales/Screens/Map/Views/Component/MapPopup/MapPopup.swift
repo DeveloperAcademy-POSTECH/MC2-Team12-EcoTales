@@ -11,7 +11,7 @@ struct MapPopup: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
     @Binding var iscount: Bool
     @State var isGameStoryShow = false
-    var chapter: Chapter = .one
+    var chapter: Chapter = .zero
 
     var body: some View {
         ZStack {

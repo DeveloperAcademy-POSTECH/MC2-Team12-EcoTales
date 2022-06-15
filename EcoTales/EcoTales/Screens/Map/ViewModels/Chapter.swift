@@ -8,19 +8,19 @@
 import Foundation
 
 enum Chapter: Int, CaseIterable {
-    case one = 1, two, three, four, five
+    case zero = 0, one, two, three, four
 
      func name() -> String {
         switch self {
-        case .one:
+        case .zero:
             return "인트로"
-        case .two:
+        case .one:
             return "챕터 1"
-        case .three:
+        case .two:
             return "챕터 2"
-        case .four:
+        case .three:
             return "챕터 3"
-        case .five:
+        case .four:
             return "에필로그"
         }
     }

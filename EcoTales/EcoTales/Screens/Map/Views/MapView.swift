@@ -10,7 +10,7 @@ import SwiftUI
 struct MapView: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
     @State var isPopUp = false
-    @State var selectedChapter = Chapter.one
+    @State var selectedChapter = Chapter.zero
 
     var body: some View {
         NavigationView {
@@ -22,13 +22,13 @@ struct MapView: View {
 
                 Group {
                     Image(ImageLiteral.path1to2)
-                        .isShown(isCompleted(chapter: .one))
+                        .isShown(isCompleted(chapter: .zero))
                     Image(ImageLiteral.path2to3)
-                        .isShown(isCompleted(chapter: .two))
+                        .isShown(isCompleted(chapter: .one))
                     Image(ImageLiteral.path3to4)
-                        .isShown(isCompleted(chapter: .three))
+                        .isShown(isCompleted(chapter: .two))
                     Image(ImageLiteral.path4to5)
-                        .isShown(isCompleted(chapter: .four))
+                        .isShown(isCompleted(chapter: .three))
                 }
 
                 ForEach(Chapter.allCases) { chapter in
@@ -56,7 +56,7 @@ struct MapView: View {
     }
 
     private func isStageDisabled(chapter: Chapter) -> Bool {
-        if chapter == .one { return false }
+        if chapter == .zero { return false }
         let previousChapter = Chapter(rawValue: chapter.rawValue - 1)!
         let previousCompletion = chapterProgress.completionStatus[previousChapter]!
         return !previousCompletion
@@ -64,15 +64,15 @@ struct MapView: View {
 
     private func getStagePosition(chapter: Chapter) -> CGPoint {
         switch chapter {
-        case .one:
+        case .zero:
             return CGPoint(x: 110, y: 270)
-        case .two:
+        case .one:
             return CGPoint(x: 300, y: 320)
-        case .three:
+        case .two:
             return CGPoint(x: 410, y: 210)
-        case .four:
+        case .three:
             return CGPoint(x: 550, y: 125)
-        case .five:
+        case .four:
             return CGPoint(x: 720, y: 300)
         }
     }
@@ -90,7 +90,7 @@ struct MapView: View {
             let uncompletedChapters = chapterProgress.completionStatus
                 .filter { !$0.value }
                 .sorted(by: { $0.key.rawValue < $1.key.rawValue })
-            let lastChapter = uncompletedChapters.isEmpty ? Chapter.one : uncompletedChapters[0].key
+            let lastChapter = uncompletedChapters.isEmpty ? Chapter.zero : uncompletedChapters[0].key
             let position = getStagePosition(chapter: lastChapter)
             return CGPoint(x: position.x, y: position.y - 50)
         } else {
