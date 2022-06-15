@@ -15,7 +15,10 @@ struct ObjectsToFindEachView: View {
 
     var body: some View {
             Button(action: {
-                withAnimation { isShowingObjectName.toggle() }
+                isShowingObjectName.toggle()
+                withAnimation(Animation.easeOut(duration: 0.5).delay(1.0)) {
+                    isShowingObjectName.toggle()
+                }
                 selectedObject = trash.objectName
             }, label: {
                 Image(trash.image)
