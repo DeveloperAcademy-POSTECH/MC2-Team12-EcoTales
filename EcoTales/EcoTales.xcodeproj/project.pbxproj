@@ -45,7 +45,6 @@
 		F857447328531CB20012346A /* File11 in Resources */ = {isa = PBXBuildFile; fileRef = F857447228531CB20012346A /* File11 */; };
 		F857447828531CCA0012346A /* File13 in Resources */ = {isa = PBXBuildFile; fileRef = F857447728531CCA0012346A /* File13 */; };
 		F857447A28531CD50012346A /* File14 in Resources */ = {isa = PBXBuildFile; fileRef = F857447928531CD50012346A /* File14 */; };
-		F857447C28531CE20012346A /* File15 in Resources */ = {isa = PBXBuildFile; fileRef = F857447B28531CE20012346A /* File15 */; };
 		F857447E28531CEE0012346A /* File16 in Resources */ = {isa = PBXBuildFile; fileRef = F857447D28531CEE0012346A /* File16 */; };
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
@@ -95,7 +94,6 @@
 		F857447228531CB20012346A /* File11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File11; sourceTree = "<group>"; };
 		F857447728531CCA0012346A /* File13 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File13; sourceTree = "<group>"; };
 		F857447928531CD50012346A /* File14 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File14; sourceTree = "<group>"; };
-		F857447B28531CE20012346A /* File15 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File15; sourceTree = "<group>"; };
 		F857447D28531CEE0012346A /* File16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File16; sourceTree = "<group>"; };
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
@@ -381,7 +379,6 @@
 		F857446528531C460012346A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F857447B28531CE20012346A /* File15 */,
 				5959E5F128549EAA00F39D9F /* EpilogueThree.swift */,
 			);
 			path = ViewModels;
@@ -558,7 +555,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F857447C28531CE20012346A /* File15 in Resources */,
 				F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
