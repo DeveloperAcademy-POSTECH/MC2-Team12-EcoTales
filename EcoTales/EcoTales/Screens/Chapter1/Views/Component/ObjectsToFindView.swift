@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ObjectsToFindView: View {
     var hiddenObjectList = HiddenObjectData().list
-
+    @Binding var foundTrash: Set<String>
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -17,19 +17,12 @@ struct ObjectsToFindView: View {
                 .opacity(0.3)
             HStack {
                 ForEach(hiddenObjectList, id: \.self) { trash in
-                    ObjectsToFindEachView(trash: trash)
+                    ObjectsToFindEachView(trash: trash, foundTrash: $foundTrash)
                 }
             }
             .padding([.trailing, .leading], 20)
         }
         .padding(.horizontal, 44)
         .padding(.bottom, 21)
-    }
-}
-
-struct ObjectsToFindView_Previews: PreviewProvider {
-    static var previews: some View {
-        ObjectsToFindView()
-            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

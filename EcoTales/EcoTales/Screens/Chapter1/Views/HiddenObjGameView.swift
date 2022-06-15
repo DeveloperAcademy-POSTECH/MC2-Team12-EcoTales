@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+    @State private var foundTrash = Set<String>()
     var body: some View {
         ZStack {
             Image("chapterOne_pollutedBackground")
                 .resizable()
                 .scaledToFill()
-//                .ignoresSafeArea()
                 .onTouch(type: .started, perform: updateLocation)
-            ObjectsHiddenView()
+            ObjectsHiddenView(foundTrash: $foundTrash)
             VStack {
                 TopCollocate()
                 Spacer()
-                ObjectsToFindView()
+                ObjectsToFindView(foundTrash: $foundTrash)
             }
         }
         .ignoresSafeArea()

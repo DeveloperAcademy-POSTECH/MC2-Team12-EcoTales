@@ -9,11 +9,12 @@ import SwiftUI
 
 struct TrashView: View {
     @State private var isFound = false
-    @State private var foundObject = "none"
+    @State private var foundObjectImage = "none"
     @State private var foundObjectPosition: CGPoint = .zero
     @State private var foundObjectRotation: Int = 0
     @State private var isFoundShown = true
     var trash: HiddenObject
+    @Binding var foundTrash: Set<String>
 
     var body: some View {
         if isFoundShown {
@@ -26,9 +27,12 @@ struct TrashView: View {
                     .position(CGPoint(x: trash.positionX, y: trash.positionY))
                     .onTapGesture {
                         isFound.toggle()
-                        foundObject = trash.image
+                        foundObjectImage = trash.image
                         foundObjectPosition = CGPoint(x: trash.positionX, y: trash.positionY)
                         foundObjectRotation = trash.rotation
+                        withAnimation(Animation.easeInOut(duration: 1.0).delay(1.0)) {
+                            foundTrash.insert(trash.image)
+                        }
                     }
                 if isFound {
                     ZStack(alignment: .center) {
@@ -38,7 +42,7 @@ struct TrashView: View {
                         Circle()
                             .fill(.orange)
                             .frame(width: 59, height: 59)
-                        Image(foundObject)
+                        Image(foundObjectImage)
                             .resizable()
                             .frame(width: 50, height: 50)
                             .rotationEffect(.degrees(Double(foundObjectRotation)))

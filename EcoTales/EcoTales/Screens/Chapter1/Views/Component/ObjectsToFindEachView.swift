@@ -11,27 +11,31 @@ struct ObjectsToFindEachView: View {
     @State private var isShowingObjectName = false
     @State private var selectedObject = "none"
     var trash: HiddenObject
+    @Binding var foundTrash: Set<String>
 
     var body: some View {
-        Button(action: {
-            withAnimation { isShowingObjectName.toggle() }
-            selectedObject = trash.objectName
-        }, label: {
-            Image(trash.image)
-                .frame(maxWidth: .infinity)
-        })
-        .overlay(
-            ZStack(alignment: .center) {
-                Text(selectedObject)
-                    .font(.system(size: 15))
-                    .multilineTextAlignment(.center)
-            }
-            .frame(width: 90, height: 45)
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(radius: 3, x: 3, y: 3)
-            .offset(x: 0, y: -62)
-            .opacity(isShowingObjectName ? 0.9 : 0)
-        )
+        ZStack {
+            Button(action: {
+                withAnimation { isShowingObjectName.toggle() }
+                selectedObject = trash.objectName
+            }, label: {
+                Image(trash.image)
+                    .frame(maxWidth: .infinity)
+            })
+            .overlay(
+                ZStack(alignment: .center) {
+                    Text(selectedObject)
+                        .font(.system(size: 15))
+                        .multilineTextAlignment(.center)
+                }
+                    .frame(width: 90, height: 45)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 3, x: 3, y: 3)
+                    .offset(x: 0, y: -62)
+                    .opacity(isShowingObjectName ? 0.9 : 0)
+            )
+            .opacity(!foundTrash.contains(trash.image) ? 1 : 0)
+        }
     }
 }
