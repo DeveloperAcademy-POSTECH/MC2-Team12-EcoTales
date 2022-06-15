@@ -41,7 +41,6 @@ struct ChapterTwoLayout: View {
                     // todo: need to bring list of garbage
                     Image("hidden_snack")
                         .resizable()
-                        .ignoresSafeArea()
                         .frame(width: 120, height: 100, alignment: .top)
                         .padding(.top)
                     Spacer()
@@ -62,7 +61,7 @@ struct ChapterTwoLayout: View {
                                 Text("여기에 텍스트가 들어갑니다")
                                     .multilineTextAlignment(.leading)
                                     .padding()
-                                    .frame(width: 150, height: 100)
+                                    .frame(width: 170, height: 100)
                                     .background(Ellipse().fill(Color.RecycleFillWhite))
                             }
                             .padding(.bottom, 200)
