@@ -54,6 +54,7 @@
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
 		F8EB5D5A2856D9170058C1D0 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D592856D9170058C1D0 /* PlaySound.swift */; };
 		F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */; };
+		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		F8EB5D582856D8C60058C1D0 /* jumpin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpin.wav; sourceTree = "<group>"; };
 		F8EB5D592856D9170058C1D0 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTestView.swift; sourceTree = "<group>"; };
+		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,6 +503,7 @@
 		F8EB5D552856D7EF0058C1D0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */,
 				F8EB5D582856D8C60058C1D0 /* jumpin.wav */,
 			);
 			path = Sounds;
@@ -565,6 +568,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */,
 				F857447C28531CE20012346A /* File15 in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,

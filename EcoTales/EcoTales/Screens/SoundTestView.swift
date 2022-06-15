@@ -15,8 +15,7 @@ struct SoundTestView: View {
             Text("Play Sound!")
         }
         .onAppear(perform: {
-            playSounds("mixkit-player-jumping-in-a-video-game-2043.wav")
+            SoundManager.playSounds("mixkit-player-jumping-in-a-video-game-2043.wav")
         })
     }
 }
-

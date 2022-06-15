@@ -9,14 +9,14 @@ import AVFoundation
 
 var audioPlayer: AVAudioPlayer!
 
-func playSounds(_ soundFileName : String) {
-    guard let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil) else {
-        fatalError("Unable to find \(soundFileName) in bundle")
+struct SoundManager {
+    static func playSounds(_ soundFileName: String) {
+        let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
+        } catch {
+            print(error.localizedDescription)
+        }
+        audioPlayer.play()
     }
-    do {
-        audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-    } catch {
-        print(error.localizedDescription)
-    }
-    audioPlayer.play()
 }
