@@ -27,7 +27,7 @@ struct ChapterTwoLayout: View {
 
             // Background
             ZStack {
-                Image("chapterTwo_background")
+                Image("chapter2_background")
                     .resizable()
                     .ignoresSafeArea()
                 HStack {
@@ -39,14 +39,12 @@ struct ChapterTwoLayout: View {
                             .padding(.bottom, 100)
                         Spacer()
                             .padding(.bottom, 100)
-                        VStack {
                             Text("여기에 텍스트가 들어갑니다")
                                 .multilineTextAlignment(.leading)
                                 .frame(width: 180, height: 120)
                                 .background(Ellipse().fill(Color.RecycleFillWhite))
                                 .padding(.leading, 85)
-                        }
-                        .padding(.bottom, 200)
+                                .padding(.bottom, 200)
                     }
                 }
 
