@@ -25,51 +25,45 @@ struct ChapterTwoLayout: View {
                 .padding(.horizontal, 44)
             }
 
-            // Background and Conveyor belt item
+            // Background
             ZStack {
                 Image("chapterTwo_background")
                     .resizable()
                     .ignoresSafeArea()
-                VStack {
-                    Image("conveyorBelt")
-                        .resizable()
-                        .ignoresSafeArea()
-                        .frame(width: 300, height: 200, alignment: .top)
-                    Spacer()
+                HStack {
+                    // Mole
+                    ZStack(alignment: .leading) {
+                        Image("character_mole")
+                            .resizable()
+                            .frame(width: 113, height: 86)
+                            .padding(.bottom, 100)
+                        Spacer()
+                            .padding(.bottom, 100)
+                        VStack {
+                            Text("여기에 텍스트가 들어갑니다")
+                                .multilineTextAlignment(.leading)
+                                .frame(width: 180, height: 120)
+                                .background(Ellipse().fill(Color.RecycleFillWhite))
+                                .padding(.leading, 85)
+                        }
+                        .padding(.bottom, 200)
+                    }
                 }
+
+                // Conveyor belt and garbage
                 VStack {
-                    // todo: need to bring list of garbage
-                    Image("hidden_snack")
-                        .resizable()
-                        .frame(width: 120, height: 100, alignment: .top)
-                        .padding(.top)
+                    ZStack {
+                        Image("conveyorBelt")
+                            .resizable()
+                            .frame(width: 300, height: 200, alignment: .top)
+                        // todo: need to bring list of garbage
+                        Image("hidden_snack")
+                            .resizable()
+                            .frame(width: 120, height: 100, alignment: .top)
+                    }
                     Spacer()
                 }
 
-                // Mole
-                HStack {
-                    ZStack {
-                        HStack {
-                            Image("character_mole")
-                                .resizable()
-                                .frame(width: 113, height: 86)
-                            Spacer()
-                        }
-                        .padding(.bottom, 100)
-                        HStack {
-                            VStack {
-                                Text("여기에 텍스트가 들어갑니다")
-                                    .multilineTextAlignment(.leading)
-                                    .padding()
-                                    .frame(width: 170, height: 100)
-                                    .background(Ellipse().fill(Color.RecycleFillWhite))
-                            }
-                            .padding(.bottom, 200)
-                            Spacer()
-                        }
-                        .padding(.leading, 90)
-                    }
-                }
                 // Recycle Bins
                 VStack {
                     Spacer()
