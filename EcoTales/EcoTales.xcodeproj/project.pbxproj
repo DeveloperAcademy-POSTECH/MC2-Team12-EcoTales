@@ -124,6 +124,13 @@
 			path = TouchLocation;
 			sourceTree = "<group>";
 		};
+		5944C9FC2859C25100852E53 /* Chapter4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chapter4;
+			sourceTree = "<group>";
+		};
 		59B688902853263F00B0DB71 /* PauseButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				AE9A45232852288800683CCF /* EcoTalesApp.swift */,
+				5944C9FC2859C25100852E53 /* Chapter4 */,
 				F857445328531B730012346A /* LaunchScreen */,
 				F857445428531B7F0012346A /* Intro */,
 				F857447F28532C300012346A /* Map */,
