@@ -47,7 +47,7 @@ func selectIntroStory(introNumber: Int) -> [String] {
 
 struct IntroView: View {
     @State private var introNumber = 1
-    @State private var introIndex = 0
+    @State private var introStoryIndex = 0
     let screenWidth = UIScreen.main.bounds.size.width
 
     var body: some View {
@@ -60,32 +60,32 @@ struct IntroView: View {
                         .frame(width: screenWidth / 2)
                 }
                 VStack(alignment: introNumber == 4 ? .center : .leading, spacing: 10) {
-                    Text(selectIntroStory(introNumber: self.introNumber)[introIndex / 3 * 3 + 0])
+                    Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 0])
                     HStack {
                         if introNumber != 4 {
                             Spacer()
                         }
                         Text("다음")
                     }
-                    .opacity(introIndex.isMultiple(of: 3) ? 1 : 0)
-                    Text(selectIntroStory(introNumber: self.introNumber)[introIndex / 3 * 3 + 1])
-                        .opacity(introIndex % 3 >= 1 ? 1 : 0)
+                    .opacity(introStoryIndex.isMultiple(of: 3) ? 1 : 0)
+                    Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 1])
+                        .opacity(introStoryIndex % 3 >= 1 ? 1 : 0)
                     HStack {
                         if introNumber != 4 {
                             Spacer()
                         }
                         Text("다음")
                     }
-                    .opacity(introIndex % 3 == 1 ? 1 : 0)
-                    Text(selectIntroStory(introNumber: self.introNumber)[introIndex / 3 * 3 + 2])
-                        .opacity(introIndex % 3 >= 2 ? 1 : 0)
+                    .opacity(introStoryIndex % 3 == 1 ? 1 : 0)
+                    Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 2])
+                        .opacity(introStoryIndex % 3 >= 2 ? 1 : 0)
                     HStack {
                         if introNumber != 4 {
                             Spacer()
                         }
                         Text("다음")
                     }
-                    .opacity(introIndex % 3 == 2 ? 1 : 0)
+                    .opacity(introStoryIndex % 3 == 2 ? 1 : 0)
                 }
                 if introNumber == 1 || introNumber == 2 {
                     Spacer()
@@ -94,11 +94,11 @@ struct IntroView: View {
             }
         }
         .onTapGesture {
-            if introIndex == selectIntroStory(introNumber: self.introNumber).count - 1 {
+            if introStoryIndex == selectIntroStory(introNumber: self.introNumber).count - 1 {
                 introNumber += 1
-                introIndex = 0
+                introStoryIndex = 0
             } else {
-                introIndex += 1
+                introStoryIndex += 1
             }
         }
     }
