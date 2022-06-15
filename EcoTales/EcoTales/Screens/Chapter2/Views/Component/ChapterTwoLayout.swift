@@ -15,9 +15,7 @@ struct ChapterTwoLayout: View {
                     HStack {
                         ZStack {
                             Image("game_woodenPanel")
-                                .resizable()
                                 .scaledToFit()
-                                .ignoresSafeArea()
                             HStack {
                                 // todo: 현재 레이아웃으로 넣긴 했으나, 눌렀을 때 팝업이 뜨는 기능이 필요
                                 PauseEncounter()
@@ -34,7 +32,7 @@ struct ChapterTwoLayout: View {
 
                 // Background and Conveyor belt item
                 ZStack {
-                    Image("chapterTwo_background")
+                    Image("chapter2_background")
                         .resizable()
                         .ignoresSafeArea()
                     VStack {
