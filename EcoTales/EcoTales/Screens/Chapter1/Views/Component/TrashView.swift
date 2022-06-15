@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrashView: View {
     @State private var isFound = false
-    @State private var foundObjectImage = "none"
+    @State private var foundObjectImage = "hidden_can"
     @State private var foundObjectPosition: CGPoint = .zero
     @State private var foundObjectRotation: Int = 0
     @State private var isFoundShown = true
@@ -30,7 +30,7 @@ struct TrashView: View {
                         foundObjectImage = trash.image
                         foundObjectPosition = CGPoint(x: trash.positionX, y: trash.positionY)
                         foundObjectRotation = trash.rotation
-                        withAnimation(Animation.easeInOut(duration: 1.0).delay(1.0)) {
+                        withAnimation(Animation.easeInOut(duration: 0.5).delay(0.8)) {
                             foundTrash.insert(trash.image)
                         }
                     }
@@ -50,7 +50,7 @@ struct TrashView: View {
                     .shadow(radius: 3, x: 3, y: 3)
                     .position(foundObjectPosition)
                     .onAppear(perform: {
-                        withAnimation(Animation.easeInOut(duration: 1.0).delay(1.0)) {
+                        withAnimation(Animation.easeInOut(duration: 0.5).delay(0.8)) {
                             isFound.toggle()
                             isFoundShown.toggle()
                         }
