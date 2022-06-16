@@ -33,16 +33,16 @@ struct MapView: View {
                         isPopUp.toggle()
                         selectedChapter = chapter
                     } label: {
-                        Image(getStageImage(chapter: chapter))
+                        Image(stageImage(chapter: chapter))
                             .frame(width: 50, height: 50)
                     }
-                    .position(getStagePosition(chapter: chapter))
+                    .position(stagePosition(chapter: chapter))
                     .disabled(isStageDisabled(chapter: chapter))
                 }
             }
 
             Image(ImageLiteral.child)
-                .position(getChildPosition())
+                .position(childPosition())
 
             MapPopup(iscount: $isPopUp, chapter: selectedChapter)
         }
@@ -60,7 +60,7 @@ struct MapView: View {
         return !previousCompletion
     }
 
-    private func getStagePosition(chapter: Chapter) -> CGPoint {
+    private func stagePosition(chapter: Chapter) -> CGPoint {
         switch chapter {
         case .zero:
             return CGPoint(x: 110, y: 270)
@@ -75,12 +75,12 @@ struct MapView: View {
         }
     }
 
-    private func getStageImage(chapter: Chapter) -> String {
+    private func stageImage(chapter: Chapter) -> String {
         let isCompleted = (chapterProgress.completionStatus[chapter] ?? false)
         return isCompleted ? ImageLiteral.activeStageMark : ImageLiteral.inactiveStageMark
     }
 
-    private func getChildPosition() -> CGPoint {
+    private func childPosition() -> CGPoint {
         let completedChapters = chapterProgress.completionStatus
             .filter { $0.value }
 
@@ -89,10 +89,10 @@ struct MapView: View {
                 .filter { !$0.value }
                 .sorted(by: { $0.key.rawValue < $1.key.rawValue })
             let lastChapter = uncompletedChapters.isEmpty ? Chapter.zero : uncompletedChapters[0].key
-            let position = getStagePosition(chapter: lastChapter)
+            let position = stagePosition(chapter: lastChapter)
             return CGPoint(x: position.x, y: position.y - 50)
         } else {
-            let position = getStagePosition(chapter: selectedChapter)
+            let position = stagePosition(chapter: selectedChapter)
             return CGPoint(x: position.x, y: position.y - 50)
         }
     }
