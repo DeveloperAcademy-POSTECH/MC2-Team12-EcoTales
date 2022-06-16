@@ -61,7 +61,7 @@
 		F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */; };
 		F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */; };
 		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
-		F8EB5D9228585B5E0058C1D0 /* TrashButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D9128585B5E0058C1D0 /* TrashButtonTestView.swift */; };
+		F8EB5D9228585B5E0058C1D0 /* RecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D9128585B5E0058C1D0 /* RecycleView.swift */; };
 		F8EB5D96285A17730058C1D0 /* RecycleObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D95285A17730058C1D0 /* RecycleObjectData.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +121,7 @@
 		F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
 		F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
 		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
-		F8EB5D9128585B5E0058C1D0 /* TrashButtonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashButtonTestView.swift; sourceTree = "<group>"; };
+		F8EB5D9128585B5E0058C1D0 /* RecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleView.swift; sourceTree = "<group>"; };
 		F8EB5D95285A17730058C1D0 /* RecycleObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleObjectData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -426,7 +426,7 @@
 			children = (
 				F857446B28531C710012346A /* Component */,
 				262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */,
-				F8EB5D9128585B5E0058C1D0 /* TrashButtonTestView.swift */,
+				F8EB5D9128585B5E0058C1D0 /* RecycleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -650,7 +650,7 @@
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
 				262060222855BDBA00ED79C8 /* IntroTwoView.swift in Sources */,
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
-				F8EB5D9228585B5E0058C1D0 /* TrashButtonTestView.swift in Sources */,
+				F8EB5D9228585B5E0058C1D0 /* RecycleView.swift in Sources */,
 				2620601E28559E8000ED79C8 /* IntroView.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */,
