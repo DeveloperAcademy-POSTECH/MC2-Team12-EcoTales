@@ -56,7 +56,7 @@ opt_in_rules:
   - quick_discouraged_pending_test
   - reduce_into
   - redundant_nil_coalescing
-  - redundant_type_annotation
+#  - redundant_type_annotation
   - single_test_class
   - sorted_first_last
   - sorted_imports
@@ -94,14 +94,14 @@ custom_rules:
     message: Rule IDs must be all lowercase, snake case and not end with `rule`
     regex: identifier:\s*("\w+_rule"|"\S*[^a-z_]\S*")
     severity: error
-  fatal_error:
-    name: Fatal Error
-    excluded: "Tests/*"
-    message: Prefer using `queuedFatalError` over `fatalError` to avoid leaking compiler host machine paths.
-    regex: \bfatalError\b
-    match_kinds:
-      - identifier
-    severity: error
+#  fatal_error:
+#    name: Fatal Error
+#    excluded: "Tests/*"
+#    message: Prefer using `queuedFatalError` over `fatalError` to avoid leaking compiler host machine paths.
+#    regex: \bfatalError\b
+#    match_kinds:
+#      - identifier
+#    severity: error
   rule_test_function:
     included: Tests/SwiftLintFrameworkTests/RulesTests.swift
     name: Rule Test Function

@@ -28,9 +28,14 @@
 		2620601E28559E8000ED79C8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601D28559E8000ED79C8 /* IntroView.swift */; };
 		262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060B3285A2A4400ED79C8 /* Image+Extension.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
-		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
+		AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+isHidden.swift */; };
+		AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF392856D20D0052CD3E /* ImageLiteral.swift */; };
+		AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */; };
+		AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CDF28583A2E00EE00B3 /* Chapter.swift */; };
+		AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CE128583A8300EE00B3 /* ChapterProgress.swift */; };
+		AE893CE52858A0E500EE00B3 /* File25 in Resources */ = {isa = PBXBuildFile; fileRef = AE893CE42858A0E500EE00B3 /* File25 */; };
 		AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45232852288800683CCF /* EcoTalesApp.swift */; };
 		AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45252852288800683CCF /* LaunchScreenView.swift */; };
 		AE9A45282852288900683CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9A45272852288900683CCF /* Assets.xcassets */; };
@@ -38,6 +43,9 @@
 		AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AE9A453228522A3100683CCF /* .swiftlint.yml */; };
 		F857444928531B000012346A /* File2 in Resources */ = {isa = PBXBuildFile; fileRef = F857444828531B000012346A /* File2 */; };
 		F857444B28531B0C0012346A /* File3 in Resources */ = {isa = PBXBuildFile; fileRef = F857444A28531B0C0012346A /* File3 */; };
+		AE9A45372853307600683CCF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A45362853307600683CCF /* MapView.swift */; };
+		F857443F28531A820012346A /* File1 in Resources */ = {isa = PBXBuildFile; fileRef = F857443E28531A820012346A /* File1 */; };
+		F857444928531B000012346A /* File2 in Resources */ = {isa = PBXBuildFile; fileRef = F857444828531B000012346A /* File2 */; };
 		F857445F28531C1A0012346A /* File7 in Resources */ = {isa = PBXBuildFile; fileRef = F857445E28531C1A0012346A /* File7 */; };
 		F857446128531C240012346A /* File8 in Resources */ = {isa = PBXBuildFile; fileRef = F857446028531C240012346A /* File8 */; };
 		F857446F28531C9D0012346A /* File9 in Resources */ = {isa = PBXBuildFile; fileRef = F857446E28531C9D0012346A /* File9 */; };
@@ -48,6 +56,9 @@
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
+		F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D592856D9170058C1D0 /* SoundManager.swift */; };
+		F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */; };
+		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 		F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */; };
 		F8EB5D7D285723460058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */; };
 		F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */; };
@@ -72,7 +83,6 @@
 		2620601D28559E8000ED79C8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		262060B3285A2A4400ED79C8 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
-		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindView.swift; sourceTree = "<group>"; };
 		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
@@ -80,6 +90,12 @@
 		7E3635F12854349200EB2CAA /* ObjectsHiddenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsHiddenView.swift; sourceTree = "<group>"; };
 		7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindEachView.swift; sourceTree = "<group>"; };
 		7E4405372855E048009DF58B /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
+		AE75CF372856D1840052CD3E /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
+		AE75CF392856D20D0052CD3E /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		AE893CDF28583A2E00EE00B3 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		AE893CE128583A8300EE00B3 /* ChapterProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterProgress.swift; sourceTree = "<group>"; };
+		AE893CE42858A0E500EE00B3 /* File25 */ = {isa = PBXFileReference; lastKnownFileType = text; name = File25; path = EcoTales/Screens/LaunchScreen/File25; sourceTree = SOURCE_ROOT; };
 		AE9A45202852288800683CCF /* EcoTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A45232852288800683CCF /* EcoTalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTalesApp.swift; sourceTree = "<group>"; };
 		AE9A45252852288800683CCF /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -88,6 +104,8 @@
 		AE9A453228522A3100683CCF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		F857444828531B000012346A /* File2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File2; sourceTree = "<group>"; };
 		F857444A28531B0C0012346A /* File3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File3; sourceTree = "<group>"; };
+		AE9A45362853307600683CCF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F857443E28531A820012346A /* File1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File1; sourceTree = "<group>"; };
 		F857445E28531C1A0012346A /* File7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File7; sourceTree = "<group>"; };
 		F857446028531C240012346A /* File8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File8; sourceTree = "<group>"; };
 		F857446E28531C9D0012346A /* File9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File9; sourceTree = "<group>"; };
@@ -98,6 +116,9 @@
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
+		F8EB5D592856D9170058C1D0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTestView.swift; sourceTree = "<group>"; };
+		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 		F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangM.ttf; sourceTree = "<group>"; };
 		F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
 		F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
@@ -184,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */,
+				AE893CE128583A8300EE00B3 /* ChapterProgress.swift */,
 				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				2620601428549E5200ED79C8 /* StoryDataModel.swift */,
 			);
@@ -213,6 +235,7 @@
 				F857445728531BA20012346A /* Chapter2 */,
 				F857445628531B960012346A /* Chapter3 */,
 				F857445528531B8C0012346A /* Epilogue */,
+				F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -220,6 +243,7 @@
 		F857444328531AC70012346A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB5D552856D7EF0058C1D0 /* Sounds */,
 				F857445028531B480012346A /* Font */,
 				AE9A45272852288900683CCF /* Assets.xcassets */,
 			);
@@ -233,6 +257,8 @@
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
+				AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */,
+				F8EB5D592856D9170058C1D0 /* SoundManager.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -242,6 +268,7 @@
 			children = (
 				26205FE32854440E00ED79C8 /* Color+Extension.swift */,
 				262060B3285A2A4400ED79C8 /* Image+Extension.swift */,
+				AE75CF372856D1840052CD3E /* View+isHidden.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -249,7 +276,8 @@
 		F857444628531AEA0012346A /* Literal */ = {
 			isa = PBXGroup;
 			children = (
-				F857444A28531B0C0012346A /* File3 */,
+				AE9A45252852288800683CCF /* LaunchScreenView.swift */,
+				AE75CF392856D20D0052CD3E /* ImageLiteral.swift */,
 			);
 			path = Literal;
 			sourceTree = "<group>";
@@ -257,7 +285,7 @@
 		F857444728531AF30012346A /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F857444828531B000012346A /* File2 */,
+				AE893CDF28583A2E00EE00B3 /* Chapter.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -277,7 +305,7 @@
 		F857445328531B730012346A /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AE9A45252852288800683CCF /* LaunchScreenView.swift */,
+				AE893CE42858A0E500EE00B3 /* File25 */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -466,6 +494,7 @@
 		F857448028532C450012346A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F857444828531B000012346A /* File2 */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -473,8 +502,8 @@
 		F857448128532C4E0012346A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE9A45362853307600683CCF /* MapView.swift */,
 				F857448228532C580012346A /* Component */,
-				59D461E22854A1BD00FC0C67 /* MapBackground.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -495,6 +524,14 @@
 				F85744942854A9EC0012346A /* NoButton.swift */,
 			);
 			path = MapPopup;
+			sourceTree = "<group>";
+		};
+		F8EB5D552856D7EF0058C1D0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -556,12 +593,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */,
+				F857447C28531CE20012346A /* File15 in Resources */,
 				F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
+				AE893CE52858A0E500EE00B3 /* File25 in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
+				F857447628531CC30012346A /* File12 in Resources */,
 				F857446F28531C9D0012346A /* File9 in Resources */,
-				F857444B28531B0C0012346A /* File3 in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
 				F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */,
 				F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */,
@@ -603,22 +643,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9A45372853307600683CCF /* MapView.swift in Sources */,
+				AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */,
 				26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */,
 				26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */,
+				AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */,
 				26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */,
 				5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */,
 				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
+				AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */,
+				F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
 				7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */,
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
+				AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */,
+				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
+				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
 				2620601E28559E8000ED79C8 /* IntroView.swift in Sources */,
+				AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
-				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
@@ -626,6 +674,7 @@
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
+				F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
