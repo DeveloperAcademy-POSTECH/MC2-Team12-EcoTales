@@ -7,14 +7,15 @@
 import SwiftUI
 
 struct StoryPopup: View {
-//    @State private var showPopUp = false
-    @Binding var iscount: Bool
-    @State var isShowSheet: Bool = false
+    @Binding var isShowingPopup: Bool
+    @State var isGameStoryShow = false
+
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
-            if iscount {
-                ZStack {
+            if isShowingPopup {
+                Color.black.opacity(0.4)
+                ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
@@ -26,35 +27,37 @@ struct StoryPopup: View {
                     Button(action: {
                         // Dismiss the Popup
                         withAnimation(.linear(duration: 0.3)) {
-                            iscount = false
+                            isShowingPopup = false
                         }
                     }, label: {
                         ContinueButton()
                     })
                     Button(action: {
                         withAnimation(.linear(duration: 0.3)) {
-                            isShowSheet = true
+//                            flag = true
+                            isGameStoryShow = true
+//                            isShowingPopup = false
                         }
                     }, label: {
                         ReplayButton()
                     })
-                    .fullScreenCover(isPresented: $isShowSheet, content: { HiddenObjGameView()})// .buttonStyle(PlainButtonStyle())
+                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                     Button(action: {
                         // Dismiss the Present View
                         presentationMode.wrappedValue.dismiss()
                     }, label: {
-                       ExitButton()
+                        ExitButton()
                     }).buttonStyle(PlainButtonStyle())
                 }
             }
         }
-        .position(x: 400, y: 200)
     }
 }
 
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
-        StoryPopup(iscount: .constant(true))
-            .previewInterfaceOrientation(.landscapeLeft)
+        Group {
+            StoryPopup(isShowingPopup: .constant(true))
+        }
     }
 }
