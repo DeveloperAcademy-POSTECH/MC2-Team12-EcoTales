@@ -1,5 +1,5 @@
 //
-//  StoryData.swift
+//  StoryDataModel.swift
 //  EcoTales
 //
 //  Created by 김민택 on 2022/06/09.
