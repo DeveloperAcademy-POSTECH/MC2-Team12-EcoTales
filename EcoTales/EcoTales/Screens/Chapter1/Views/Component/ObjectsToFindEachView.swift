@@ -35,6 +35,6 @@ struct ObjectsToFindEachView: View {
                     .offset(x: 0, y: -62)
                     .opacity(isShowingObjectName ? 0.9 : 0)
             )
-            .opacity(!foundTrash.contains(trash.image) ? 1 : 0)
+            .opacity(foundTrash.contains(trash.image) ? 0 : 1)
     }
 }
