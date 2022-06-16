@@ -7,16 +7,18 @@
 
 import AVFoundation
 
-var audioPlayer: AVAudioPlayer!
+//var audioPlayer: AVAudioPlayer!
 
 struct SoundManager {
+    static var audioPlayer: AVAudioPlayer!
     static func playSounds(_ soundFileName: String) {
+        
         let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: nil)
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
+            self.audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
         } catch {
             print(error.localizedDescription)
         }
-        audioPlayer.play()
+        self.audioPlayer.play()
     }
 }
