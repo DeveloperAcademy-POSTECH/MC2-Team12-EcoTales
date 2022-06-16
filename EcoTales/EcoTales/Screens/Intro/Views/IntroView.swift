@@ -10,15 +10,15 @@ import SwiftUI
 func selectIntroBackground(introNumber: Int) -> String {
     switch introNumber {
     case 1:
-        return "intro1_background"
+        return ImageLiteral.intro1Background
     case 2:
-        return "intro2_background"
+        return ImageLiteral.intro2Background
     case 3:
-        return "intro3_background"
+        return ImageLiteral.intro3Background
     case 4:
-        return "intro4_background"
+        return ImageLiteral.intro4Background
     default:
-        return "intro1_background"
+        return ImageLiteral.intro1Background
     }
 }
 
@@ -38,8 +38,10 @@ func selectIntroStory(introNumber: Int) -> [String] {
 }
 
 struct IntroView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var introNumber = 1
     @State private var introStoryIndex = 0
+    @Binding var isIntroSeen: Bool
     let screenWidth = UIScreen.main.bounds.size.width
 
     var body: some View {
@@ -50,60 +52,43 @@ struct IntroView: View {
                 if introNumber == 3 {
                     Spacer()
                 }
-                VStack(alignment: introNumber == 4 ? .center : .leading, spacing: 10) {
+                VStack(alignment: introNumber != 4 ? .leading : .center) {
                     Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 0])
-                        .font(.custom("SeoulHangangM", size: 20))
                     HStack {
-                        if introNumber != 4 {
-                            Spacer()
-                        }
-                        Text("다음 ☞")
-                            .font(.custom("SeoulHangangM", size: 20))
+                        Spacer()
+                        Text("다음")
                     }
                     .opacity(introStoryIndex.isMultiple(of: 3) ? 1 : 0)
                     Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 1])
-                        .font(.custom("SeoulHangangM", size: 20))
                         .opacity(introStoryIndex % 3 >= 1 ? 1 : 0)
                     HStack {
-                        if introNumber != 4 {
-                            Spacer()
-                        }
-                        Text("다음 ☞")
-                            .font(.custom("SeoulHangangM", size: 20))
+                        Spacer()
+                        Text("다음")
                     }
                     .opacity(introStoryIndex % 3 == 1 ? 1 : 0)
                     Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 2])
-                        .font(.custom("SeoulHangangM", size: 20))
                         .opacity(introStoryIndex % 3 >= 2 ? 1 : 0)
                     HStack {
-                        if introNumber != 4 {
-                            Spacer()
-                        }
-                        Text("다음 ☞")
-                            .font(.custom("SeoulHangangM", size: 20))
+                        Spacer()
+                        Text("다음")
                     }
                     .opacity(introStoryIndex % 3 == 2 ? 1 : 0)
                 }
-                .frame(maxWidth: introNumber == 4 ? .infinity : UIScreen.main.bounds.width * 0.45)
-                if introNumber == 1 || introNumber == 2 {
-                    Spacer()
-                }
+                .frame(width: screenWidth * 0.45)
             }
         }
         .onTapGesture {
             if introStoryIndex == selectIntroStory(introNumber: self.introNumber).count - 1 {
-                introNumber += 1
-                introStoryIndex = 0
+                if introNumber == 4 {
+                    isIntroSeen = true
+                    presentationMode.wrappedValue.dismiss()
+                } else {
+                    introNumber += 1
+                    introStoryIndex = 0
+                }
             } else {
                 introStoryIndex += 1
             }
         }
-    }
-}
-
-struct IntroView_Previews: PreviewProvider {
-    static var previews: some View {
-        IntroView()
-            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
