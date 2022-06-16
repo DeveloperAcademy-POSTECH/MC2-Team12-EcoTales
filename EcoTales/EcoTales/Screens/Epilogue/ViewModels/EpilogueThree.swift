@@ -16,9 +16,9 @@ struct EpilogueThree: View {
             VStack {
                 Image("woodenPanel")
                 Spacer()
-                ObjectsToFindView()
+//                ObjectsToFindView()
             }
-            ObjectsHiddenView()
+//            ObjectsHiddenView()
         }
     }
 }

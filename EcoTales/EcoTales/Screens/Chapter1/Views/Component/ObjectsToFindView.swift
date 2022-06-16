@@ -12,9 +12,11 @@ struct ObjectsToFindView: View {
     @Binding var foundTrash: Set<String>
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .frame(height: 70)
-                .opacity(0.3)
+            if foundTrash.count != 10 {
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(height: 70)
+                    .opacity(0.3)
+            }
             HStack {
                 ForEach(hiddenObjectList, id: \.self) { trash in
                     ObjectsToFindEachView(trash: trash, foundTrash: $foundTrash)
