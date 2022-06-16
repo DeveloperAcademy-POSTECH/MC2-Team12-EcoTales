@@ -1,14 +1,16 @@
 //
-//  StoryPopup.swift
+//  Chapter3_MapPopup.swift
 //  EcoTales
 //
-//  Created by Seik Oh on 2022/06/09.
+//  Created by 임 용관 on 2022/06/16.
 //
+
 import SwiftUI
 
-struct StoryPopup: View {
+struct Chapter3StoryPopup: View {
     @Binding var isMapPopup: Bool
     @Binding var isStoryPopup: Bool
+    @EnvironmentObject var chapter3UserValue: Chapter3UserSettings
     var body: some View {
         ZStack {
             if isStoryPopup {
@@ -30,7 +32,11 @@ struct StoryPopup: View {
                         ContinueButton()
                     })
                     Button(action: {
+                        chapter3UserValue.lifeCounter = 3
                         isStoryPopup = false
+                        for index in 0...4 {
+                            chapter3UserValue.isShowCircle[index] = false
+                        }
                     }, label: {
                         ReplayButton()
                     })
@@ -45,10 +51,8 @@ struct StoryPopup: View {
     }
 }
 
-struct StoryPopup_Previews: PreviewProvider {
+struct Chapter3StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            StoryPopup(isMapPopup: .constant(true), isStoryPopup: .constant(true))
-        }
+        Chapter3StoryPopup(isMapPopup: .constant(true), isStoryPopup: .constant(true))
     }
 }

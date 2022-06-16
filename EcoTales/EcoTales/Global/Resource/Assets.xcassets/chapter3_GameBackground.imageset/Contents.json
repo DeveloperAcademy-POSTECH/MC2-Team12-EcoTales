@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "chapter3_GameBackground.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "chapter3_GameBackground.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
