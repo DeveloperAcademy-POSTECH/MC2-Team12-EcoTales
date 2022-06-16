@@ -4,18 +4,22 @@
 //
 //  Created by Seik Oh on 2022/06/16.
 //
-
+import AVFoundation
 import SwiftUI
 
 struct PandaGameView: View {
     @State private var showGameClear = false
     @State private var isGameFinished = false
     @State private var isShowingPopup = false
+    @State var audioPlayer: AVAudioPlayer!
     var body: some View {
         ZStack {
             Image("chapterFour-gameBackground")
                 .resizable()
                 .ignoresSafeArea()
+                .onTapGesture(  perform: {
+                    SoundManager.playSounds("mixkit-player-jumping-in-a-video-game-2043.wav")
+                })
             VStack {
                 HStack {
                     Button(action: {
@@ -47,6 +51,9 @@ struct PandaGameView: View {
                 Image("chapterFour_gameClear")
                     .resizable()
                     .scaledToFit()
+                    .onAppear(perform: {
+                        SoundManager.playSounds("correctAnswer.mp3")
+                    })
             }
             if isShowingPopup {
                 StoryPopup(isShowingPopup: $isShowingPopup)

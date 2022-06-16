@@ -17,23 +17,22 @@
 		26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDD285443A100ED79C8 /* StoryPopup.swift */; };
 		26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FDF285443C700ED79C8 /* PauseButtonStyle.swift */; };
 		26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE1285443E000ED79C8 /* PauseEncounter.swift */; };
-		26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFind.swift */; };
-		26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* LocatingHiddenObjView.swift */; };
+		26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EB2853764E00EB2CAA /* ObjectsToFindView.swift */; };
+		26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635F12854349200EB2CAA /* ObjectsHiddenView.swift */; };
 		26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */; };
 		2620600A28549A5500ED79C8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620600928549A5500ED79C8 /* File.swift */; };
 		2620601128549ADB00ED79C8 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601028549ADB00ED79C8 /* StoryView.swift */; };
 		2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */; };
 		2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601428549E5200ED79C8 /* StoryDataModel.swift */; };
-		262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */; };
 		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
-		5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920AEC4285AABAA000D6225 /* PandaGameView.swift */; };
 		2620601E28559E8000ED79C8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601D28559E8000ED79C8 /* IntroView.swift */; };
 		262060202855A04C00ED79C8 /* IntroOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601F2855A04C00ED79C8 /* IntroOneView.swift */; };
 		262060222855BDBA00ED79C8 /* IntroTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060212855BDBA00ED79C8 /* IntroTwoView.swift */; };
 		262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060232855BDC500ED79C8 /* IntroThreeView.swift */; };
 		262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060252855BDCC00ED79C8 /* IntroFourView.swift */; };
+		5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920AEC4285AABAA000D6225 /* PandaGameView.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
-		595FA01B28570D95006E72D3 /* ChapterTwoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */; };
+		597F375E285B0AEC002631FA /* correctAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597F375D285B0AEC002631FA /* correctAnswer.mp3 */; };
 		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
@@ -58,12 +57,12 @@
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
 		F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D592856D9170058C1D0 /* SoundManager.swift */; };
 		F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */; };
-		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 		F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */; };
 		F8EB5D7D285723460058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */; };
 		F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */; };
 		F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */; };
 		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
+		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +78,6 @@
 		2620601028549ADB00ED79C8 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChapterOneStoryView.swift; path = EcoTales/Global/UIComponent/ChapterOneStoryView.swift; sourceTree = SOURCE_ROOT; };
 		2620601428549E5200ED79C8 /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
-		262060162855056F00ED79C8 /* ChapterTwoStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoStoryView.swift; sourceTree = "<group>"; };
 		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		2620601D28559E8000ED79C8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		2620601F2855A04C00ED79C8 /* IntroOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroOneView.swift; sourceTree = "<group>"; };
@@ -89,6 +87,7 @@
 		5920AEC4285AABAA000D6225 /* PandaGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaGameView.swift; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
 		595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoLayout.swift; sourceTree = "<group>"; };
+		597F375D285B0AEC002631FA /* correctAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswer.mp3; sourceTree = "<group>"; };
 		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindView.swift; sourceTree = "<group>"; };
@@ -119,12 +118,12 @@
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
 		F8EB5D592856D9170058C1D0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTestView.swift; sourceTree = "<group>"; };
-		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 		F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangM.ttf; sourceTree = "<group>"; };
 		F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
 		F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
 		F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
 		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
+		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +539,7 @@
 		F8EB5D552856D7EF0058C1D0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				597F375D285B0AEC002631FA /* correctAnswer.mp3 */,
 				F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */,
 			);
 			path = Sounds;
@@ -605,7 +605,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */,
-				F857447C28531CE20012346A /* File15 in Resources */,
 				F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
 				F857443F28531A820012346A /* File1 in Resources */,
@@ -618,6 +617,7 @@
 				F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */,
 				F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */,
 				F857445F28531C1A0012346A /* File7 in Resources */,
+				597F375E285B0AEC002631FA /* correctAnswer.mp3 in Resources */,
 				AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */,
 				F857446128531C240012346A /* File8 in Resources */,
 				AE9A45282852288900683CCF /* Assets.xcassets in Resources */,
@@ -677,8 +677,8 @@
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
-				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
-				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
+				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
+				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
 				5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
