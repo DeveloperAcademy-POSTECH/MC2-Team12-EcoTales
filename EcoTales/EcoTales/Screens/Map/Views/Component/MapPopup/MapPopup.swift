@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MapPopup: View {
     @Binding var isMapPopup: Bool
-    @State var isGameStoryShow = false
+    @State private var isGameStoryShow = false
     var body: some View {
         ZStack {
             Color.black

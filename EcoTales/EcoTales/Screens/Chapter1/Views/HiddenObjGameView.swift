@@ -30,9 +30,6 @@ struct HiddenObjGameView: View {
         }
         .ignoresSafeArea()
     }
-    func updateLocation(_ location: CGPoint) {
-        print(location)
-    }
 }
 
 struct UpperPanelView: View {
@@ -71,13 +68,6 @@ struct ExplainGameView: View {
                 .background(Image("chapter1_turtleDialog"))
         }
         .frame(width: 450, height: 30)
-    }
-}
-
-extension View {
-    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
-                 perform: @escaping (CGPoint) -> Void) -> some View {
-        self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
     }
 }
 
