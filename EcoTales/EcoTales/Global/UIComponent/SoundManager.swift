@@ -1,5 +1,5 @@
 //
-//  PlaySound.swift
+//  SoundManager.swift
 //  EcoTales
 //
 //  Created by YejiMac on 2022/06/14.
