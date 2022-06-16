@@ -6,19 +6,48 @@
 //
 
 enum Speaker: String {
-    case naration = "나레이션"
-    case photo = "경각심사진"
-    case child = "아이"
-    case turtle = "거북이"
-    case rain = "레인"
-    case mole = "두더지"
-    case sherry = "쉐리"
-    case ozz = "오즈"
-    case meenu = "미뉴"
-    case redpandaAll = "레서 판다 A, B, C"
-    case redpandaA = "레서 판다 A"
-    case redpandaB = "레서 판다 B"
-    case redpandaC = "레서 판다 C"
+    case naration
+    case photo
+    case child
+    case turtle
+    case rain
+    case mole
+    case sherry
+    case ozz
+    case meenu
+    case redpandaAll
+    case redpandaA
+    case redpandaB
+    case redpandaC
+    
+    func speakerName() -> String {
+        switch self {
+        case .child:
+            return "아이"
+        case .turtle:
+            return "거북이"
+        case .rain:
+            return "레인"
+        case .mole:
+            return "두더지"
+        case .sherry:
+            return "쉐리"
+        case .ozz:
+            return "오즈"
+        case .meenu:
+            return "미뉴"
+        case .redpandaAll:
+            return "레서 판다 A, B, C"
+        case .redpandaA:
+            return "레서 판다 A"
+        case .redpandaB:
+            return "레서 판다 B"
+        case .redpandaC:
+            return "레서 판다 C"
+        default:
+            return "오류"
+        }
+    }
 }
 
 struct StoryDataModel {
