@@ -30,6 +30,8 @@ struct PandaGameView: View {
             }
 
             if showGameClear {
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
                 Image("chapterFour_gameClear")
                     .resizable()
                     .scaledToFit()
