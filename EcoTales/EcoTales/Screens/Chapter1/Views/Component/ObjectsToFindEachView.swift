@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ObjectsToFindEachView: View {
     @State private var isShowingObjectName = false
-    @State private var selectedObject = "none"
+    @State private var selectedObject = "hidden_can"
     var trash: HiddenObject
     @Binding var foundTrash: Set<String>
 
