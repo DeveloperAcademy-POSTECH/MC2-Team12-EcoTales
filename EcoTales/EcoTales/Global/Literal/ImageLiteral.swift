@@ -16,4 +16,13 @@ enum ImageLiteral {
     static var child = "character_child"
     static var activeStageMark = "map_stageMark"
     static var inactiveStageMark = "map_stageMarkGray"
+    static var recycleBinLitter = "recycleBin_litter"
+    static var recycleBinVinyl = "recycleBin_vinyl"
+    static var recycleBinCan = "recycleBin_can"
+    static var recycleBinPlastic = "recycleBin_plastic"
+    static var recycleBinPaper = "recycleBin_paper"
+    static var recycleBinGlass = "recycleBin_glass"
 }
+
+
+
