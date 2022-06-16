@@ -9,11 +9,11 @@ import Foundation
 
 enum ImageLiteral {
     static var mapBackground = "map_background"
-    static var path1to2 = "path1"
-    static var path2to3 = "path2"
-    static var path3to4 = "path3"
-    static var path4to5 = "path4"
-    static var child = "child"
-    static var activeStageMark = "stageMark"
-    static var inactiveStageMark = "stageMarkGray"
+    static var path1to2 = "map_path1"
+    static var path2to3 = "map_path2"
+    static var path3to4 = "map_path3"
+    static var path4to5 = "map_path4"
+    static var child = "character_child"
+    static var activeStageMark = "map_stageMark"
+    static var inactiveStageMark = "map_stageMarkGray"
 }
