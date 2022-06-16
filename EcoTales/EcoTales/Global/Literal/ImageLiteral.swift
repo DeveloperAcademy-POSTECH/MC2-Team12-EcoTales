@@ -22,6 +22,18 @@ enum ImageLiteral {
     static var recycleBinPlastic = "recycleBin_plastic"
     static var recycleBinPaper = "recycleBin_paper"
     static var recycleBinGlass = "recycleBin_glass"
+    static var litter = "recycle_litter"
+    static var egg = "recycle_egg"
+    static var bag = "recycle_plasticBag"
+    static var snack = "recycle_snack"
+    static var coke = "recycle_coke"
+    static var drink = "recycle_drinkCan"
+    static var straw = "recycle_straw"
+    static var water = "recycle_water"
+    static var box = "recycle_paperBox"
+    static var newspaper = "recycle_newspaper"
+    static var cup = "recycle_glassCup"
+    static var bottle = "recycle_glassBottle"
 }
 
 

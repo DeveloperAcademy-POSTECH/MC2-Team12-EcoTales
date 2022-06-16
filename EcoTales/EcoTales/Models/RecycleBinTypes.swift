@@ -12,7 +12,7 @@ enum RecycleBinTypes {
     case recycleBinPlastic
     case recycleBinPaper
     case recycleBinGlass
-    
+
     func recycleName() -> String {
         switch self {
         case .recycleBinLitter:
@@ -29,7 +29,7 @@ enum RecycleBinTypes {
             return "유리"
         }
     }
-    
+
     func recycleImage() -> String {
         switch self {
         case .recycleBinLitter:

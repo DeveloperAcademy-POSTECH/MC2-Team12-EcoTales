@@ -66,6 +66,7 @@
 		F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */; };
 		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
 		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
+		F8EB5D9A285B75710058C1D0 /* RecycleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D99285B75710058C1D0 /* RecycleObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +130,7 @@
 		F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
 		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
 		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
+		F8EB5D99285B75710058C1D0 /* RecycleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				2620601428549E5200ED79C8 /* StoryDataModel.swift */,
 				597F375F285B5726002631FA /* RecycleBinTypes.swift */,
+				F8EB5D99285B75710058C1D0 /* RecycleObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
+				F8EB5D9A285B75710058C1D0 /* RecycleObject.swift in Sources */,
 				15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */,
 				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,

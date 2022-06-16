@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "conveyorBelt.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "recycle_straw.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
