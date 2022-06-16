@@ -9,21 +9,17 @@ import SwiftUI
 
 struct PandaGameView: View {
     @State private var showGameClear = false
+    @State private var isGameFinished = false
     var body: some View {
         ZStack {
             Image("chapterFour-gameBackground")
                 .resizable()
                 .ignoresSafeArea()
 
-            if showGameClear {
-                Image("chapterFour_gameClear")
-                    .resizable()
-                    .scaledToFit()
-            }
-
             Group {
                 Button(action: {
                     showGameClear.toggle()
+                    isGameFinished.toggle()
                 }) {
                     Image("character_meenuDoctor")
                         .resizable()
@@ -31,6 +27,12 @@ struct PandaGameView: View {
                         .frame(width: 50, height: 50, alignment: .center)
                 }
                 .position(x: 520, y: 110)
+            }
+
+            if showGameClear {
+                Image("chapterFour_gameClear")
+                    .resizable()
+                    .scaledToFit()
             }
         }
     }
