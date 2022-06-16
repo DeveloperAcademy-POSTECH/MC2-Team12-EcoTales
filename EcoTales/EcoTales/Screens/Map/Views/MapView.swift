@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MapView: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
-    @State var isPopUp = false
-    @State var selectedChapter = Chapter.zero
+    @State var isPopUp: Bool = false
+    @State var selectedChapter: Chapter = Chapter.zero
 
     var body: some View {
         ZStack {

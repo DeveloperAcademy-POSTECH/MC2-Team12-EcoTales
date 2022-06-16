@@ -56,7 +56,7 @@ opt_in_rules:
   - quick_discouraged_pending_test
   - reduce_into
   - redundant_nil_coalescing
-  - redundant_type_annotation
+#  - redundant_type_annotation
   - single_test_class
   - sorted_first_last
   - sorted_imports
