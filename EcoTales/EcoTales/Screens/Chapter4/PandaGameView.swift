@@ -15,7 +15,15 @@ struct PandaGameView: View {
             Image("chapterFour-gameBackground")
                 .resizable()
                 .ignoresSafeArea()
-
+            VStack {
+                HStack {
+                    PauseEncounter()
+                    Spacer()
+                }
+                .padding(.top, 10)
+                .padding(.leading, 10)
+                Spacer()
+            }
             Group {
                 Button(action: {
                     showGameClear.toggle()
@@ -28,7 +36,7 @@ struct PandaGameView: View {
                 }
                 .position(x: 520, y: 110)
             }
-
+            
             if showGameClear {
                 Color.black.opacity(0.4)
                     .ignoresSafeArea()
