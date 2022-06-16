@@ -32,7 +32,7 @@ struct HiddenObjGameView: View {
     }
 }
 
-struct UpperPanelView: View {
+private struct UpperPanelView: View {
     @Binding var isStoryPopup: Bool
     var body: some View {
         ZStack {
@@ -60,7 +60,7 @@ struct UpperPanelView: View {
     }
 }
 
-struct ExplainGameView: View {
+private struct ExplainGameView: View {
     var body: some View {
         ZStack {
             // text 받아오는 함수 위치

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152D05AD285AD30900307491 /* FindWrongGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152D05AC285AD30900307491 /* FindWrongGameView.swift */; };
 		26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
 		26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
 		26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE32854440E00ED79C8 /* Color+Extension.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152D05AC285AD30900307491 /* FindWrongGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWrongGameView.swift; sourceTree = "<group>"; };
 		26205FD52854432300ED79C8 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		26205FD72854435D00ED79C8 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		26205FDB2854438800ED79C8 /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 			children = (
 				F857446C28531C880012346A /* Component */,
 				262060182855088200ED79C8 /* ChapterThreeStoryView.swift */,
+				152D05AC285AD30900307491 /* FindWrongGameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
+				152D05AD285AD30900307491 /* FindWrongGameView.swift in Sources */,
 				7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */,
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
 				262060222855BDBA00ED79C8 /* IntroTwoView.swift in Sources */,

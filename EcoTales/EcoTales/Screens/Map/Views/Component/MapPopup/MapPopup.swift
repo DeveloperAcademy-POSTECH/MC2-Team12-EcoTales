@@ -50,7 +50,7 @@ struct MapPopup: View {
                                 YesButton()
                             })
                             .fullScreenCover(isPresented: $isGameStoryShow,
-                                             content: { HiddenObjGameView(isMapPopup: $isMapPopup) })
+                                             content: { FindWrongGameView(isMapPopup: $isMapPopup) })
                         }
                     }
                 }
