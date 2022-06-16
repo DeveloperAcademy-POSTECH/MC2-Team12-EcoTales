@@ -62,6 +62,7 @@
 		F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */; };
 		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
 		F8EB5D9228585B5E0058C1D0 /* TrashButtonTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D9128585B5E0058C1D0 /* TrashButtonTestView.swift */; };
+		F8EB5D96285A17730058C1D0 /* RecycleObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D95285A17730058C1D0 /* RecycleObjectData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,7 @@
 		F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
 		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
 		F8EB5D9128585B5E0058C1D0 /* TrashButtonTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashButtonTestView.swift; sourceTree = "<group>"; };
+		F8EB5D95285A17730058C1D0 /* RecycleObjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleObjectData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				F857443E28531A820012346A /* File1 */,
 				2620601428549E5200ED79C8 /* StoryDataModel.swift */,
+				F8EB5D95285A17730058C1D0 /* RecycleObjectData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				F8EB5D96285A17730058C1D0 /* RecycleObjectData.swift in Sources */,
 				262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
 				2620600A28549A5500ED79C8 /* File.swift in Sources */,
