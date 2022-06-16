@@ -10,6 +10,7 @@ import SwiftUI
 struct PandaGameView: View {
     @State private var showGameClear = false
     @State private var isGameFinished = false
+    @State private var isShowingPopup = false
     var body: some View {
         ZStack {
             Image("chapterFour-gameBackground")
@@ -17,7 +18,10 @@ struct PandaGameView: View {
                 .ignoresSafeArea()
             VStack {
                 HStack {
-                    PauseEncounter()
+                    Button(action: {
+                        self.isShowingPopup = true
+                    }, label: {})
+                    .buttonStyle(PauseButtonStyle())
                     Spacer()
                 }
                 .padding(.top, 10)
@@ -28,7 +32,8 @@ struct PandaGameView: View {
                 Button(action: {
                     showGameClear.toggle()
                     isGameFinished.toggle()
-                }) {
+                })
+                {
                     Image("character_meenuDoctor")
                         .resizable()
                         .scaledToFit()
@@ -36,13 +41,16 @@ struct PandaGameView: View {
                 }
                 .position(x: 520, y: 110)
             }
-            
             if showGameClear {
                 Color.black.opacity(0.4)
                     .ignoresSafeArea()
                 Image("chapterFour_gameClear")
                     .resizable()
                     .scaledToFit()
+            }
+            if isShowingPopup {
+                StoryPopup(isShowingPopup: $isShowingPopup)
+                    .ignoresSafeArea()
             }
         }
     }
