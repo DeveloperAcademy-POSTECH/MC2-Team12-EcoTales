@@ -49,39 +49,44 @@ struct IntroView: View {
             HStack {
                 if introNumber == 3 {
                     Spacer()
-                        .frame(width: screenWidth / 2)
                 }
                 VStack(alignment: introNumber == 4 ? .center : .leading, spacing: 10) {
                     Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 0])
+                        .font(.custom("SeoulHangangM", size: 20))
                     HStack {
                         if introNumber != 4 {
                             Spacer()
                         }
-                        Text("다음")
+                        Text("다음 ☞")
+                            .font(.custom("SeoulHangangM", size: 20))
                     }
                     .opacity(introStoryIndex.isMultiple(of: 3) ? 1 : 0)
                     Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 1])
+                        .font(.custom("SeoulHangangM", size: 20))
                         .opacity(introStoryIndex % 3 >= 1 ? 1 : 0)
                     HStack {
                         if introNumber != 4 {
                             Spacer()
                         }
-                        Text("다음")
+                        Text("다음 ☞")
+                            .font(.custom("SeoulHangangM", size: 20))
                     }
                     .opacity(introStoryIndex % 3 == 1 ? 1 : 0)
                     Text(selectIntroStory(introNumber: self.introNumber)[introStoryIndex / 3 * 3 + 2])
+                        .font(.custom("SeoulHangangM", size: 20))
                         .opacity(introStoryIndex % 3 >= 2 ? 1 : 0)
                     HStack {
                         if introNumber != 4 {
                             Spacer()
                         }
-                        Text("다음")
+                        Text("다음 ☞")
+                            .font(.custom("SeoulHangangM", size: 20))
                     }
                     .opacity(introStoryIndex % 3 == 2 ? 1 : 0)
                 }
+                .frame(maxWidth: introNumber == 4 ? .infinity : UIScreen.main.bounds.width * 0.45)
                 if introNumber == 1 || introNumber == 2 {
                     Spacer()
-                        .frame(width: screenWidth / 2)
                 }
             }
         }
