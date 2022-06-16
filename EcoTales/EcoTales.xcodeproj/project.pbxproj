@@ -280,7 +280,7 @@
 		F857444728531AF30012346A /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F857444828531B000012346A /* File2 */,
+				AE893CDF28583A2E00EE00B3 /* Chapter.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -495,7 +495,7 @@
 		F857448028532C450012346A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				AE893CDF28583A2E00EE00B3 /* Chapter.swift */,
+				F857444828531B000012346A /* File2 */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
