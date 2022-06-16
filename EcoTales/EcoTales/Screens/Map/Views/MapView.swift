@@ -54,7 +54,7 @@ struct MapView: View {
     }
 
     private func isStageDisabled(chapter: Chapter) -> Bool {
-        if chapter == .zero { return false }
+        guard chapter != .zero else { return false }
         let previousChapter = Chapter(rawValue: chapter.rawValue - 1) ?? .zero
         let previousCompletion = chapterProgress.completionStatus[previousChapter]!
         return !previousCompletion
