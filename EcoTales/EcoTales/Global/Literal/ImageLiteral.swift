@@ -29,15 +29,15 @@ enum ImageLiteral {
     static var child = "character_child"
     static var meenu = "character_meenu"
     static var mole = "character_mole"
-    static var oz = "character_oz"
+    static var ozz = "character_oz"
     static var rain = "character_rain"
     static var redPanda = "character_redPanda"
     static var redPandas = "character_redPandas"
     static var sherry = "character_sherry"
-    
+
     static var epilogueValley = "epilogue_valley"
     static var woodenPanel = "game_woodenPanel"
-    
+
     static var dialogField = "global_dialogField"
     static var nameField = "global_nameField"
     // MARK: - Hidden Game Object Image
