@@ -7,6 +7,9 @@
 import SwiftUI
 
 struct RecycleGameView: View {
+
+    let randomObject = Int.random(in: 0...12)
+
     var body: some View {
         VStack(spacing: 0) {
             // Top Wooden Panel
@@ -52,7 +55,7 @@ struct RecycleGameView: View {
                         Image("conveyorBelt")
                             .resizable()
                             .frame(width: 300, height: 200, alignment: .top)
-                        Image("hidden_snack")
+                        Image(RecycleObject(rawValue: randomObject)!.recycleObjectImage())
                             .resizable()
                             .frame(width: 120, height: 100, alignment: .top)
                     }

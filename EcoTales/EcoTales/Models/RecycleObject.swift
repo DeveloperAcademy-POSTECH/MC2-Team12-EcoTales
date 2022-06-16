@@ -5,8 +5,8 @@
 //  Created by YejiMac on 2022/06/16.
 //
 
-enum RecycleObject {
-    case litter
+enum RecycleObject : Int {
+    case litter = 0
     case egg
     case bag
     case snack
@@ -18,7 +18,7 @@ enum RecycleObject {
     case newspaper
     case cup
     case bottle
-    
+
     func recycleObjectImage() -> String {
         switch self {
         case .litter:
