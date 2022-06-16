@@ -14,10 +14,7 @@ struct MapView: View {
 
     var body: some View {
         ZStack {
-            Image(ImageLiteral.mapBackground)
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+            BackgroundImage(ImageLiteral.mapBackground)
 
             Group {
                 Image(ImageLiteral.path1to2)

@@ -35,6 +35,7 @@
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
 		AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+isHidden.swift */; };
 		AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF392856D20D0052CD3E /* ImageLiteral.swift */; };
+		AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */; };
 		AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CDF28583A2E00EE00B3 /* Chapter.swift */; };
 		AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CE128583A8300EE00B3 /* ChapterProgress.swift */; };
 		AE893CE52858A0E500EE00B3 /* File25 in Resources */ = {isa = PBXBuildFile; fileRef = AE893CE42858A0E500EE00B3 /* File25 */; };
@@ -94,6 +95,7 @@
 		7E4405372855E048009DF58B /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
 		AE75CF372856D1840052CD3E /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
 		AE75CF392856D20D0052CD3E /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 		AE893CDF28583A2E00EE00B3 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		AE893CE128583A8300EE00B3 /* ChapterProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterProgress.swift; sourceTree = "<group>"; };
 		AE893CE42858A0E500EE00B3 /* File25 */ = {isa = PBXFileReference; lastKnownFileType = text; name = File25; path = EcoTales/Screens/LaunchScreen/File25; sourceTree = SOURCE_ROOT; };
@@ -255,6 +257,7 @@
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
+				AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
 				2620601E28559E8000ED79C8 /* IntroView.swift in Sources */,
+				AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
