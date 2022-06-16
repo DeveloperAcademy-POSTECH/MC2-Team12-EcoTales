@@ -21,13 +21,13 @@ struct MapView: View {
 
             Group {
                 Image(ImageLiteral.path1to2)
-                    .isShown(isCompleted(chapter: .zero))
+                    .showToggle(isCompleted(chapter: .zero))
                 Image(ImageLiteral.path2to3)
-                    .isShown(isCompleted(chapter: .one))
+                    .showToggle(isCompleted(chapter: .one))
                 Image(ImageLiteral.path3to4)
-                    .isShown(isCompleted(chapter: .two))
+                    .showToggle(isCompleted(chapter: .two))
                 Image(ImageLiteral.path4to5)
-                    .isShown(isCompleted(chapter: .three))
+                    .showToggle(isCompleted(chapter: .three))
             }
 
             Group {

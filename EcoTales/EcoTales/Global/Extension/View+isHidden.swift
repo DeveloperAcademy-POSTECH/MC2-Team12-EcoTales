@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-    func isShown(_ toggle: Bool) -> some View {
+    func showToggle(_ toggle: Bool) -> some View {
         if toggle {
             return AnyView(self)
         }
