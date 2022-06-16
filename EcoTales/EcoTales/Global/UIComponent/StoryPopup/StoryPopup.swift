@@ -10,7 +10,6 @@ struct StoryPopup: View {
     @Binding var isMapPopup: Bool
     @Binding var isStoryPopup: Bool
     @State var isGameStoryShow = false
-
     var body: some View {
         ZStack {
             if isStoryPopup {
@@ -32,17 +31,15 @@ struct StoryPopup: View {
                         ContinueButton()
                     })
                     Button(action: {
-                            isGameStoryShow = true
-//                            isShowingPopup = false
+                        isGameStoryShow = true
                     }, label: {
                         ReplayButton()
                     })
-//                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                     Button(action: {
                         isMapPopup = false
                     }, label: {
                         ExitButton()
-                    }).buttonStyle(PlainButtonStyle())
+                    })
                 }
             }
         }
