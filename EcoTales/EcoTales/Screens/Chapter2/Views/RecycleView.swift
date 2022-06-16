@@ -12,14 +12,14 @@ import SwiftUI
 
 struct RecycleView: View {
     //쓰레기가 쓰레기통과 일치하는지 확인하는 함수
-//    func CheckGarbage(garbage: Int, recyclingBin: Int) {
-//
-//    }
-    @State var rightGarbage = false
+    func CheckGarbage(garbage: Int, recyclingBin: Int) {
 
+    }
+    @State var rightGarbage = false
+    @State var random: String = ""
     var body: some View {
         VStack {
-            Image("recycle_plasticBag")
+            Image(random)
                 .resizable()
                 .frame(width: 100, height: 100)
             HStack {
@@ -37,7 +37,10 @@ struct RecycleView: View {
                         .padding()
                 }
                 .buttonStyle(PlainButtonStyle())
-                Button(action: {}) {
+                // random 버튼
+                Button(action: {
+                    self.random = chooseRandomImage()
+                }) {
                     Image("recyclingBin_can")
                         .resizable()
                         .frame(width: 100, height: 150)
@@ -47,6 +50,30 @@ struct RecycleView: View {
             }
         }
     }
+}
+
+//var images = [
+//    "recycle_cokeCan",
+//    "recycle_glassCup",
+//    "recycle_mugCup",
+//    "recycle_straw",
+//    "recycle_plasticBag",
+//    "recycle_snack",
+//    "recycle_water",
+//    "recycle_paperBox",
+//    "recycle_glassBottle",
+//    "recycle_drinkCan",
+//    "recycle_newspaper"]
+
+var images = [
+    "recycle_cokeCan",
+    "recycle_glassCup",
+    "recycle_straw"]
+
+func chooseRandomImage() -> String {
+    let array = images
+    let result = array.randomElement()!
+    return result
 }
 
 struct RecycleView_Previews: PreviewProvider {
