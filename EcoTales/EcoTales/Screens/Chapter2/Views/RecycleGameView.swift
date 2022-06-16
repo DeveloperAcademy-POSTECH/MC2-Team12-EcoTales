@@ -14,7 +14,6 @@ struct RecycleGameView: View {
                 Image("game_woodenPanel")
                     .scaledToFit()
                 HStack {
-                    // todo: 현재 레이아웃으로 넣긴 했으나, 눌렀을 때 팝업이 뜨는 기능이 필요
                     PauseEncounter()
                         .frame(width: 20, height: 20)
                     Spacer()
@@ -54,7 +53,6 @@ struct RecycleGameView: View {
                         Image("conveyorBelt")
                             .resizable()
                             .frame(width: 300, height: 200, alignment: .top)
-                        // todo: need to bring list of garbage
                         Image("hidden_snack")
                             .resizable()
                             .frame(width: 120, height: 100, alignment: .top)
