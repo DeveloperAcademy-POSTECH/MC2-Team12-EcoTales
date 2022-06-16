@@ -11,6 +11,8 @@ struct MapView: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
     @State var isPopUp: Bool = false
     @State var selectedChapter: Chapter = Chapter.zero
+    @State var isGameStoryShow = false
+    @State var isGameClear = false
 
     var body: some View {
         ZStack {
@@ -44,8 +46,10 @@ struct MapView: View {
             Image(ImageLiteral.child)
                 .position(childPosition())
 
-            MapPopup(iscount: $isPopUp, chapter: selectedChapter)
+            MapPopup(iscount: $isPopUp, isGameStoryShow: self.$isGameStoryShow, chapter: selectedChapter)
         }
+        .fullScreenCover(isPresented: $isGameStoryShow,
+                         content: { StoryView(chapter: $selectedChapter, isGameClear: self.$isGameClear) })
 
     }
 
@@ -72,6 +76,8 @@ struct MapView: View {
             return CGPoint(x: 550, y: 125)
         case .four:
             return CGPoint(x: 720, y: 300)
+        default:
+            return CGPoint(x: 0, y: 0)
         }
     }
 

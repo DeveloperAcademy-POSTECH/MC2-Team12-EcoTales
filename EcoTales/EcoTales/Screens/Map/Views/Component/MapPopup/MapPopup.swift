@@ -10,7 +10,7 @@ import SwiftUI
 struct MapPopup: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
     @Binding var iscount: Bool
-    @State var isGameStoryShow = false
+    @Binding var isGameStoryShow: Bool
     var chapter: Chapter = .zero
 
     var body: some View {
@@ -42,9 +42,13 @@ struct MapPopup: View {
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
-                                    isGameStoryShow = false
-                                    chapterProgress.completionStatus[chapter] = true
-                                    iscount = false
+                                    if chapter == .zero {
+                                        chapterProgress.completionStatus[chapter] = true
+                                    } else {
+                                        isGameStoryShow = true
+                                    }
+//                                    chapterProgress.completionStatus[chapter] = true
+//                                    iscount = false
                                 }
                             }, label: {
                                 YesButton()
@@ -64,12 +68,5 @@ struct MapPopup: View {
                 .frame(width: 350, height: 280)
             }
         }
-    }
-}
-
-struct MapPopup_Previews: PreviewProvider {
-    static var previews: some View {
-        MapPopup(iscount: .constant(true))
-            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
