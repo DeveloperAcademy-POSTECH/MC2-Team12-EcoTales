@@ -59,6 +59,9 @@
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
 		F85744932854A9BB0012346A /* YesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744922854A9BB0012346A /* YesButton.swift */; };
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
+		F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D592856D9170058C1D0 /* SoundManager.swift */; };
+		F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */; };
+		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 		F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */; };
 		F8EB5D7D285723460058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */; };
 		F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */; };
@@ -120,6 +123,9 @@
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
 		F85744922854A9BB0012346A /* YesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesButton.swift; sourceTree = "<group>"; };
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
+		F8EB5D592856D9170058C1D0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTestView.swift; sourceTree = "<group>"; };
+		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 		F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangM.ttf; sourceTree = "<group>"; };
 		F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
 		F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 				F857445728531BA20012346A /* Chapter2 */,
 				F857445628531B960012346A /* Chapter3 */,
 				F857445528531B8C0012346A /* Epilogue */,
+				F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		F857444328531AC70012346A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB5D552856D7EF0058C1D0 /* Sounds */,
 				F857445028531B480012346A /* Font */,
 				AE9A45272852288900683CCF /* Assets.xcassets */,
 			);
@@ -258,6 +266,7 @@
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
 				AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */,
+				F8EB5D592856D9170058C1D0 /* SoundManager.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -530,6 +539,14 @@
 			path = MapPopup;
 			sourceTree = "<group>";
 		};
+		F8EB5D552856D7EF0058C1D0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -589,6 +606,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */,
 				F857447C28531CE20012346A /* File15 in Resources */,
 				F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
@@ -649,6 +667,7 @@
 				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
 				AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */,
+				F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
@@ -671,6 +690,7 @@
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
+				F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
 				262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
