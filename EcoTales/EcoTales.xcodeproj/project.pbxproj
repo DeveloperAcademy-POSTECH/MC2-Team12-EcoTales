@@ -36,6 +36,7 @@
 		AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+isHidden.swift */; };
 		AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF392856D20D0052CD3E /* ImageLiteral.swift */; };
 		AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */; };
+		AE811B46285B070D003792B9 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE811B45285B070D003792B9 /* TimerView.swift */; };
 		AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CDF28583A2E00EE00B3 /* Chapter.swift */; };
 		AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE893CE128583A8300EE00B3 /* ChapterProgress.swift */; };
 		AE893CE52858A0E500EE00B3 /* File25 in Resources */ = {isa = PBXBuildFile; fileRef = AE893CE42858A0E500EE00B3 /* File25 */; };
@@ -61,12 +62,12 @@
 		F85744952854A9EC0012346A /* NoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85744942854A9EC0012346A /* NoButton.swift */; };
 		F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D592856D9170058C1D0 /* SoundManager.swift */; };
 		F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */; };
-		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 		F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */; };
 		F8EB5D7D285723460058C1D0 /* Kyobo Handwriting 2019.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */; };
 		F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */; };
 		F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */; };
 		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
+		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		AE75CF372856D1840052CD3E /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
 		AE75CF392856D20D0052CD3E /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		AE811B45285B070D003792B9 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		AE893CDF28583A2E00EE00B3 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		AE893CE128583A8300EE00B3 /* ChapterProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterProgress.swift; sourceTree = "<group>"; };
 		AE893CE42858A0E500EE00B3 /* File25 */ = {isa = PBXFileReference; lastKnownFileType = text; name = File25; path = EcoTales/Screens/LaunchScreen/File25; sourceTree = SOURCE_ROOT; };
@@ -125,12 +127,12 @@
 		F85744942854A9EC0012346A /* NoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoButton.swift; sourceTree = "<group>"; };
 		F8EB5D592856D9170058C1D0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTestView.swift; sourceTree = "<group>"; };
-		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 		F8EB5D71285720190058C1D0 /* SeoulHangangM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangM.ttf; sourceTree = "<group>"; };
 		F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kyobo Handwriting 2019.otf"; sourceTree = "<group>"; };
 		F8EB5D76285723460058C1D0 /* SeoulHangangL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangL.ttf; sourceTree = "<group>"; };
 		F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangEB.ttf; sourceTree = "<group>"; };
 		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
+		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				F857447528531CC30012346A /* File12 */,
+				AE811B45285B070D003792B9 /* TimerView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE811B46285B070D003792B9 /* TimerView.swift in Sources */,
 				AE9A45372853307600683CCF /* MapView.swift in Sources */,
 				AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */,
 				26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */,
