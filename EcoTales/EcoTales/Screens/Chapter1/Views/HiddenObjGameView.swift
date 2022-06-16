@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+    @State private var isShowingPopup = false
     var body: some View {
         ZStack {
-            Image("chapterOne_pollutedBackground")
+            Image("chapter1_pollutedBackground")
                 .resizable()
                 .scaledToFill()
-                .onTouch(type: .started, perform: updateLocation)
-            LocatingHiddenObjView()
+            ObjectsHiddenView()
             VStack {
-                TopCollocate()
                 Spacer()
-                ObjectsToFind()
+                ObjectsToFindView()
+            }
+            VStack {
+                UpperPanelView(isShowingPopUp: $isShowingPopup)
+                Spacer()
+            }
+            if isShowingPopup {
+                StoryPopup(isShowingPopup: $isShowingPopup)
             }
         }
         .ignoresSafeArea()
@@ -28,40 +34,48 @@ struct HiddenObjGameView: View {
     }
 }
 
-struct TopCollocate: View {
+struct UpperPanelView: View {
+    @Binding var isShowingPopUp: Bool
     var body: some View {
-        HStack {
-            PauseEncounter()
-                .frame(width: 50, height: 50)
-                .padding()
+        ZStack {
             HStack {
-                Image(systemName: "circle")
-                    .frame(width: 50, height: 30)
+                Button(action: {
+                    self.isShowingPopUp = true
+                }, label: {})
+                .buttonStyle(PauseButtonStyle())
+                Spacer()
+            }
+            HStack {
+                Spacer()
+                Image("chapter1_turtleHeadCircle")
+                    .resizable()
+                    .frame(width: 50, height: 46)
                     .padding()
                 ExplainGameView()
+                Spacer()
             }
-            .frame(width: 500, height: 30)
-            .background(Color.white)
-            Spacer()
-        }.padding([.trailing, .leading], 44)
-            .background(Image("game_woodenPanel"))
-            .frame(height: 50)
+            .padding(.trailing, 100)
+        }
+        .padding([.trailing, .leading], 44)
+        .background(Image("game_woodenPanel"))
+        .frame(height: 50)
     }
 }
 
 struct ExplainGameView: View {
     var body: some View {
-        HStack {
+        ZStack {
             // text 받아오는 함수 위치
             Text("설명을 해줄게!")
+                .background(Image("chapter1_turtleDialog"))
         }
-        .frame(width: 400, height: 30)
-        .background(Image(systemName: "rectangle"))
+        .frame(width: 450, height: 30)
     }
 }
 
 extension View {
-    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true, perform: @escaping (CGPoint) -> Void) -> some View {
+    func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
+                 perform: @escaping (CGPoint) -> Void) -> some View {
         self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
     }
 }
