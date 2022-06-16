@@ -30,21 +30,20 @@ struct RecycleGameView: View {
                     .resizable()
                     .ignoresSafeArea()
                 HStack {
-                    // Mole
-                    ZStack(alignment: .leading) {
-                        Image("character_mole")
-                            .resizable()
-                            .frame(width: 113, height: 86)
-                            .padding(.bottom, 100)
-                        Spacer()
-                            .padding(.bottom, 100)
+                    // Mole and speech bubble
+                    ZStack(alignment: .topLeading) {
                         Text("여기에 텍스트가 들어갑니다")
                             .multilineTextAlignment(.leading)
                             .frame(width: 180, height: 120)
                             .background(Ellipse().fill(Color.RecycleFillWhite))
                             .padding(.leading, 85)
                             .padding(.bottom, 200)
+                        Image("character_mole")
+                            .resizable()
+                            .frame(width: 113, height: 86)
+                            .padding(.top, 80)
                     }
+                    Spacer()
                 }
 
                 // Conveyor belt and garbage
