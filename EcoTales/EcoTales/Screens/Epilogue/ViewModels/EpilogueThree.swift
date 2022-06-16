@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct EpilogueThree: View {
-    let images = ["chapter3_cleanBackground", "chapter2_background", "chapter1_cleanBackground"]
+    let images = [ImageLiteral.chapter3CleanBackground,
+                  ImageLiteral.chapter2Background,
+                  ImageLiteral.chapter1CleanBackground]
     let imageChangeTimer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
     @State private var imagePage = 2
     @State private var currentImageIndex = 0

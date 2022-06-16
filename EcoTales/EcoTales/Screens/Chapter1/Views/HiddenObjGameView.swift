@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HiddenObjGameView: View {
     @State private var isShowingPopup = false
+    @Binding var isGameClear: Bool
     var body: some View {
         ZStack {
-            Image("chapter1_pollutedBackground")
+            Image(ImageLiteral.chapter1PollutedBackground)
                 .backgroundImage()
             ObjectsHiddenView()
             VStack {
@@ -27,6 +28,7 @@ struct HiddenObjGameView: View {
             }
         }
         .ignoresSafeArea()
+        .navigationBarHidden(true)
     }
     func updateLocation(_ location: CGPoint) {
         print(location)
@@ -66,7 +68,7 @@ struct ExplainGameView: View {
         ZStack {
             // text 받아오는 함수 위치
             Text("설명을 해줄게!")
-                .background(Image("chapter1_turtleDialog"))
+                .background(Image(ImageLiteral.chapter1TurtleDialog))
         }
         .frame(width: 450, height: 30)
     }
@@ -76,12 +78,5 @@ extension View {
     func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
                  perform: @escaping (CGPoint) -> Void) -> some View {
         self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
-    }
-}
-
-struct HiddenObjGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        HiddenObjGameView()
-            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
