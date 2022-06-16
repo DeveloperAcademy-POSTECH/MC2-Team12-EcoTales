@@ -7,9 +7,7 @@
 import SwiftUI
 
 struct RecycleGameView: View {
-
-    let randomObject = Int.random(in: 0...12)
-
+    @State var randomObject = [0,1,2,3,4,5,6,7,8,9,10,11].shuffled()
     var body: some View {
         VStack(spacing: 0) {
             // Top Wooden Panel
@@ -26,7 +24,6 @@ struct RecycleGameView: View {
                 }
                 .padding(.horizontal, 44)
             }
-
             // Background
             ZStack {
                 Image("chapter2_background")
@@ -48,24 +45,24 @@ struct RecycleGameView: View {
                     }
                     Spacer()
                 }
-
                 // Conveyor belt and garbage
                 VStack {
                     ZStack {
                         Image("conveyorBelt")
                             .resizable()
                             .frame(width: 300, height: 200, alignment: .top)
-                        Image(RecycleObject(rawValue: randomObject)!.recycleObjectImage())
-                            .resizable()
-                            .frame(width: 120, height: 100, alignment: .top)
+                        if !randomObject.isEmpty {
+                            Image(RecycleObject(rawValue: randomObject[0])!.recycleObjectImage())
+                                .resizable()
+                                .frame(width: 120, height: 100, alignment: .top)
+                        }
                     }
                     Spacer()
                 }
-
                 // Recycle Bins
                 VStack {
                     Spacer()
-                    RecycleBins()
+                    RecycleBins(randomObject: $randomObject)
                 }
             }
         }
@@ -74,21 +71,34 @@ struct RecycleGameView: View {
 }
 
 struct RecycleBins: View {
+    @Binding var randomObject: [Int]
+    //    private var s재활용 = RecycleObject
     var body: some View {
-
         let recycleBinArray: [RecycleBinTypes] = [.recycleBinLitter, .recycleBinVinyl,
                                                   .recycleBinCan, .recycleBinPlastic,
                                                   .recycleBinPaper, .recycleBinGlass]
-
         HStack {
             ForEach(0..<recycleBinArray.count) { recycleIndex in
                 Spacer()
                 VStack {
                     Text(recycleBinArray[recycleIndex].recycleName())
                         .ignoresSafeArea()
-                    Image(recycleBinArray[recycleIndex].recycleImage())
-                        .resizable()
-                        .frame(width: 94, height: 121)
+                    Button {
+                        if recycleBinArray[recycleIndex].recycleName() == RecycleObject(rawValue: randomObject[0])!.recycleObjectName() {
+                            randomObject.remove(at: 0)
+                            SoundManager.playSounds("boxingSound.wav")
+                        }
+                        else {
+                            SoundManager.playSounds("SLIP.mp3")
+                        }
+                    } label: {
+                        Image(recycleBinArray[recycleIndex].recycleImage())
+                            .resizable()
+                            .frame(width: 94, height: 121)
+                    }
+                    //                    Image(recycleBinArray[recycleIndex].recycleImage())
+                    //                        .resizable()
+                    //                        .frame(width: 94, height: 121)
                 }
                 Spacer()
             }

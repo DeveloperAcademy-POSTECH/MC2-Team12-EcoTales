@@ -33,7 +33,7 @@ enum ImageLiteral {
     static var box = "recycle_paperBox"
     static var newspaper = "recycle_newspaper"
     static var cup = "recycle_glassCup"
-    static var bottle = "recycle_glassBottle"
+    static var mug = "recycle_mugCup"
 }
 
 

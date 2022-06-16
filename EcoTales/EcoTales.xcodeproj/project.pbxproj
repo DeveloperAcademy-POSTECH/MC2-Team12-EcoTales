@@ -67,6 +67,8 @@
 		F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */; };
 		F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */; };
 		F8EB5D9A285B75710058C1D0 /* RecycleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB5D99285B75710058C1D0 /* RecycleObject.swift */; };
+		F8EB5D9C285BA2BF0058C1D0 /* boxingSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D9B285BA2BF0058C1D0 /* boxingSound.wav */; };
+		F8EB5D9E285BA3720058C1D0 /* SLIP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EB5D9D285BA3720058C1D0 /* SLIP.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +133,8 @@
 		F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulHangangB.ttf; sourceTree = "<group>"; };
 		F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-player-jumping-in-a-video-game-2043.wav"; sourceTree = "<group>"; };
 		F8EB5D99285B75710058C1D0 /* RecycleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleObject.swift; sourceTree = "<group>"; };
+		F8EB5D9B285BA2BF0058C1D0 /* boxingSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boxingSound.wav; sourceTree = "<group>"; };
+		F8EB5D9D285BA3720058C1D0 /* SLIP.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SLIP.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -542,7 +546,9 @@
 		F8EB5D552856D7EF0058C1D0 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB5D9D285BA3720058C1D0 /* SLIP.mp3 */,
 				F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */,
+				F8EB5D9B285BA2BF0058C1D0 /* boxingSound.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -613,6 +619,7 @@
 				AE893CE52858A0E500EE00B3 /* File25 in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
 				F857446F28531C9D0012346A /* File9 in Resources */,
+				F8EB5D9C285BA2BF0058C1D0 /* boxingSound.wav in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
 				F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */,
 				F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */,
@@ -620,6 +627,7 @@
 				AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */,
 				F857446128531C240012346A /* File8 in Resources */,
 				AE9A45282852288900683CCF /* Assets.xcassets in Resources */,
+				F8EB5D9E285BA3720058C1D0 /* SLIP.mp3 in Resources */,
 				599F4C4B285B5F0E00D0D26F /* FileChapterTwoViews in Resources */,
 				F8EB5D72285720190058C1D0 /* SeoulHangangM.ttf in Resources */,
 				F857444928531B000012346A /* File2 in Resources */,
