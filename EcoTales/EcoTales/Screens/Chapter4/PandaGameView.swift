@@ -28,6 +28,9 @@ struct PandaGameView: View {
                         self.isShowingPopup = true
                     }, label: {})
                     .buttonStyle(PauseButtonStyle())
+                    Image("chapter4_mainCharacterHeadCircle")
+                        .scaledToFit()
+                        .padding(.leading, 10)
                     Spacer()
                 }
                 .padding(.top, 10)
@@ -51,9 +54,7 @@ struct PandaGameView: View {
             if showGameClear {
                 Color.black.opacity(0.4)
                     .ignoresSafeArea()
-                Image("chapterFour_gameClear")
-                    .resizable()
-                    .scaledToFit()
+                Image("gameClear")
                     .onAppear(perform: {
                         SoundManager.playSounds("correctAnswer.mp3")
                     })
