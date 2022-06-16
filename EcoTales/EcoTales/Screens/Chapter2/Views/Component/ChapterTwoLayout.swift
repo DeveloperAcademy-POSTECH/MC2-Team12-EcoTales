@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ChapterTwoLayout: View {
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 0) {	
             // Top Wooden Panel
             ZStack {
                 Image("game_woodenPanel")
@@ -27,7 +27,7 @@ struct ChapterTwoLayout: View {
 
             // Background
             ZStack {
-                Image("chapter2_background")
+                Image("chapterTwo_background")
                     .resizable()
                     .ignoresSafeArea()
                 HStack {
@@ -39,17 +39,17 @@ struct ChapterTwoLayout: View {
                             .padding(.bottom, 100)
                         Spacer()
                             .padding(.bottom, 100)
-                            Text("여기에 텍스트가 들어갑니다")
-                                .multilineTextAlignment(.leading)
-                                .frame(width: 180, height: 120)
-                                .background(Ellipse().fill(Color.RecycleFillWhite))
-                                .padding(.leading, 85)
-                                .padding(.bottom, 200)
+                        Text("여기에 텍스트가 들어갑니다")
+                            .multilineTextAlignment(.leading)
+                            .frame(width: 180, height: 120)
+                            .background(Ellipse().fill(Color.RecycleFillWhite))
+                            .padding(.leading, 85)
+                            .padding(.bottom, 200)
                     }
                 }
 
                 // Conveyor belt and garbage
-                VStack {
+                VStack(spacing: -30) {
                     ZStack {
                         Image("conveyorBelt")
                             .resizable()
@@ -59,14 +59,15 @@ struct ChapterTwoLayout: View {
                             .resizable()
                             .frame(width: 120, height: 100, alignment: .top)
                     }
-                    Spacer()
+                    // Spacer()
+                    RecycleBins()
                 }
 
                 // Recycle Bins
-                VStack {
-                    Spacer()
-                    RecycleBins()
-                }
+//                VStack {
+//                    Spacer()
+//                    RecycleBins()
+//                }
             }
         }
         .ignoresSafeArea()

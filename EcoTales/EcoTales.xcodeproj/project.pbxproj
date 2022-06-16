@@ -27,6 +27,7 @@
 		2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */; };
 		2620601528549E5200ED79C8 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601428549E5200ED79C8 /* StoryData.swift */; };
 		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
+		5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920AEC4285AABAA000D6225 /* PandaGameView.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
 		595FA01B28570D95006E72D3 /* ChapterTwoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */; };
 		59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461E22854A1BD00FC0C67 /* MapBackground.swift */; };
@@ -70,6 +71,7 @@
 		2620601228549E0C00ED79C8 /* ChapterOneStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChapterOneStoryView.swift; path = EcoTales/Global/UIComponent/ChapterOneStoryView.swift; sourceTree = SOURCE_ROOT; };
 		2620601428549E5200ED79C8 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
+		5920AEC4285AABAA000D6225 /* PandaGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaGameView.swift; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
 		595FA01A28570D95006E72D3 /* ChapterTwoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTwoLayout.swift; sourceTree = "<group>"; };
 		59D461E22854A1BD00FC0C67 /* MapBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBackground.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		5944C9FC2859C25100852E53 /* Chapter4 */ = {
 			isa = PBXGroup;
 			children = (
+				5920AEC4285AABAA000D6225 /* PandaGameView.swift */,
 			);
 			path = Chapter4;
 			sourceTree = "<group>";
@@ -214,13 +217,13 @@
 			isa = PBXGroup;
 			children = (
 				AE9A45232852288800683CCF /* EcoTalesApp.swift */,
-				5944C9FC2859C25100852E53 /* Chapter4 */,
 				F857445328531B730012346A /* LaunchScreen */,
 				F857445428531B7F0012346A /* Intro */,
 				F857447F28532C300012346A /* Map */,
 				F857445828531BB10012346A /* Chapter1 */,
 				F857445728531BA20012346A /* Chapter2 */,
 				F857445628531B960012346A /* Chapter3 */,
+				5944C9FC2859C25100852E53 /* Chapter4 */,
 				F857445528531B8C0012346A /* Epilogue */,
 			);
 			path = Screens;
@@ -633,6 +636,7 @@
 				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFind.swift in Sources */,
 				26205FFF285445D500ED79C8 /* LocatingHiddenObjView.swift in Sources */,
+				5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
