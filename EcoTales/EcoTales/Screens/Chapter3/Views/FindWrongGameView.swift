@@ -149,16 +149,17 @@ private struct FindWrongScreenView: View {
                 .onTapGesture {
                     chapter3UserValue.lifeCounter -= 1
                 }
-            findWrongButton(0, x1: 405, x2: 188, x2: 30, y2: 188)
-            findWrongButton(1, x1: 600, x2: 170, x2: 230, y2: 170)
-            findWrongButton(2, x1: 520, x2: 40, x2: 150, y2: 40)
-            findWrongButton(3, x1: 530, x2: 280, x2: 160, y2: 280)
-            findWrongButton(4, x1: 590, x2: 260, x2: 220, y2: 260)
+            findWrongButton(0, x1: 405, y1: 188, x2: 30, y2: 188, circleSize: 150)
+            findWrongButton(1, x1: 580, y1: 140, x2: 210, y2: 140, circleSize: 120)
+            findWrongButton(2, x1: 510, y1: 40, x2: 140, y2: 40, circleSize: 80)
+            findWrongButton(3, x1: 510, y1: 280, x2: 140, y2: 280, circleSize: 80)
+            findWrongButton(4, x1: 570, y1: 260, x2: 200, y2: 260, circleSize: 80)
         }
     }
     @ViewBuilder
-    func findWrongButton( _ circleNum: Int, x1 positionX1: Int, x2 positionY1: Int,
-                          x2 positionX2: Int, y2 positionY2: Int) -> some View {
+    func findWrongButton( _ circleNum: Int, x1 positionX1: Int, y1 positionY1: Int,
+                          x2 positionX2: Int, y2 positionY2: Int, circleSize: Int
+    ) -> some View {
         Button {
             chapter3UserValue.isShowCircle[circleNum] = true
             chapter3UserValue.circleScore = circleNum
@@ -172,7 +173,7 @@ private struct FindWrongScreenView: View {
             Image(systemName: "circle")
                 .resizable()
                 .foregroundColor(Color.red)
-                .frame(width: 80, height: 80)
+                .frame(width: CGFloat(circleSize), height: CGFloat(circleSize))
                 .opacity(chapter3UserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
         .position(x: CGFloat(positionX1), y: CGFloat(positionY1))
@@ -188,7 +189,7 @@ private struct FindWrongScreenView: View {
         } label: {
             Image(systemName: "circle")
                 .resizable()
-                .frame(width: 80, height: 80)
+                .frame(width: CGFloat(circleSize), height: CGFloat(circleSize))
                 .opacity(chapter3UserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
         .position(x: CGFloat(positionX2), y: CGFloat(positionY2))
