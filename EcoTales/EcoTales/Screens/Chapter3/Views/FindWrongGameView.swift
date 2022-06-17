@@ -149,11 +149,11 @@ private struct FindWrongScreenView: View {
                 .onTapGesture {
                     chapter3UserValue.lifeCounter -= 1
                 }
-            findWrongButton(0, x1: 405, y1: 188, x2: 30, y2: 188, circleSize: 150)
+            findWrongButton(0, x1: 405, y1: 198, x2: 30, y2: 198, circleSize: 140)
             findWrongButton(1, x1: 580, y1: 140, x2: 210, y2: 140, circleSize: 120)
-            findWrongButton(2, x1: 510, y1: 40, x2: 140, y2: 40, circleSize: 80)
-            findWrongButton(3, x1: 510, y1: 280, x2: 140, y2: 280, circleSize: 80)
-            findWrongButton(4, x1: 570, y1: 260, x2: 200, y2: 260, circleSize: 80)
+            findWrongButton(2, x1: 505, y1: 20, x2: 135, y2: 20, circleSize: 60)
+            findWrongButton(3, x1: 520, y1: 280, x2: 150, y2: 280, circleSize: 70)
+            findWrongButton(4, x1: 570, y1: 260, x2: 200, y2: 260, circleSize: 70)
         }
     }
     @ViewBuilder
