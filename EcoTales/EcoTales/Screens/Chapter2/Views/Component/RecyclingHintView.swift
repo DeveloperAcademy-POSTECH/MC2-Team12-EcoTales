@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct RecyclingHintView: View {
-    let tabOffsetY = CGFloat(-140)
-    let tabOffsetX = [0, 50, 100, 150, 200, 250]
     var body: some View {
         VStack {
             ZStack {
