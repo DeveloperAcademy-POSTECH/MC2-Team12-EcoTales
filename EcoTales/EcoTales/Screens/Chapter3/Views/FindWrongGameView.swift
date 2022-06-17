@@ -172,7 +172,6 @@ private struct FindWrongScreenView: View {
         } label: {
             Image(systemName: "circle")
                 .resizable()
-                .foregroundColor(Color.red)
                 .frame(width: CGFloat(circleSize), height: CGFloat(circleSize))
                 .opacity(chapter3UserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
