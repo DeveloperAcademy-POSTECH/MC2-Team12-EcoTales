@@ -37,6 +37,12 @@ extension Color {
     static var PopupWhite: Color {
         return Color(hex: "#FAFAFA")
     }
+    static var HintFillWhite: Color {
+        return Color(hex: "F8F6F2")
+    }
+    static var HintBehindBrown: Color {
+        return Color(hex: "573F00")
+    }
 }
 
 extension Color {
