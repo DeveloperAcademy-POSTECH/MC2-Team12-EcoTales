@@ -22,7 +22,6 @@ struct HiddenObjGameView: View {
                 Image("chapterOne_pollutedBackground")
                     .resizable()
                     .scaledToFill()
-                    .onTouch(type: .started, perform: updateLocation)
             }
             ObjectsHiddenView(foundTrash: $foundTrash)
             VStack {
