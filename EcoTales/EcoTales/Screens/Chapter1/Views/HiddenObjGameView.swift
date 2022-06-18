@@ -8,16 +8,32 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+    @State private var foundTrash = Set<String>()
+    @State private var isHiddenObjGameClear = false
     @State private var isShowingPopup = false
     var body: some View {
         ZStack {
-            Image("chapter1_pollutedBackground")
-                .resizable()
-                .scaledToFill()
-            ObjectsHiddenView()
+            if foundTrash.count == 10 {
+                withAnimation(Animation.easeInOut(duration: 1)) {
+                Image("chapterOne_cleanBackground")
+                    .resizable()
+                    .scaledToFill()
+                }
+            } else {
+                Image("chapterOne_pollutedBackground")
+                    .resizable()
+                    .scaledToFill()
+            }
+            ObjectsHiddenView(foundTrash: $foundTrash)
             VStack {
                 Spacer()
-                ObjectsToFindView()
+                ObjectsToFindView(foundTrash: $foundTrash)
+            }
+            if foundTrash.count == 10 {
+                Text("완료!") // 스테이지 클리어 이미지로 교체 예정
+                    .onTapGesture {
+                        isHiddenObjGameClear.toggle()
+                    }
             }
             VStack {
                 UpperPanelView(isShowingPopUp: $isShowingPopup)
@@ -28,6 +44,7 @@ struct HiddenObjGameView: View {
             }
         }
         .ignoresSafeArea()
+        .navigationBarHidden(true)
     }
     func updateLocation(_ location: CGPoint) {
         print(location)
