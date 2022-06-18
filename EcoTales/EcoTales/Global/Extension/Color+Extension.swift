@@ -37,6 +37,12 @@ extension Color {
     static var PopupWhite: Color {
         return Color(hex: "#FAFAFA")
     }
+    static var TimerBackgroundBrown: Color {
+        return Color(hex: "#F9E7D7")
+    }
+    static var TimerProgressRed: Color {
+        return Color(hex: "#CC3F2B")
+    }
 }
 
 extension Color {

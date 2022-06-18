@@ -45,11 +45,11 @@ struct ProgressBar: View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 15, style: .circular)
-                    .foregroundColor(.PauseFillBrown)
+                    .foregroundColor(.TimerBackgroundBrown)
                     .frame(height: geo.size.height)
 
                 RoundedRectangle(cornerRadius: 15, style: .circular)
-                    .fill(.red)
+                    .foregroundColor(.TimerProgressRed)
                     .frame(width: min(geo.size.width, geo.size.width * progress), height: geo.size.height * 0.5)
                     .animation(.linear, value: progress)
 
