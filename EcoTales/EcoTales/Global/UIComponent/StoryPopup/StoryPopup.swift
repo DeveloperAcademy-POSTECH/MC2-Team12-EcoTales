@@ -14,7 +14,8 @@ struct StoryPopup: View {
             if isStoryPopup {
                 Color.black
                     .opacity(0.4)
-                ZStack(alignment: .center) {
+                Group {
+//                ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
@@ -30,7 +31,6 @@ struct StoryPopup: View {
                         ContinueButton()
                     })
                     Button(action: {
-                        isStoryPopup = false
                     }, label: {
                         ReplayButton()
                     })

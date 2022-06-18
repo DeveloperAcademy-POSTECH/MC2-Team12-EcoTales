@@ -1,5 +1,5 @@
 //
-//  Chapter3_MapPopup.swift
+//  ChapterThreeStoryPopup.swift
 //  EcoTales
 //
 //  Created by 임 용관 on 2022/06/16.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct Chapter3StoryPopup: View {
+struct ChapterThreeStoryPopup: View {
     @Binding var isMapPopup: Bool
     @Binding var isStoryPopup: Bool
-    @EnvironmentObject var chapter3UserValue: Chapter3UserSettings
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
     var body: some View {
         ZStack {
             if isStoryPopup {
                 Color.black
                     .opacity(0.4)
-                ZStack(alignment: .center) {
+                Group {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
@@ -32,10 +32,10 @@ struct Chapter3StoryPopup: View {
                         ContinueButton()
                     })
                     Button(action: {
-                        chapter3UserValue.lifeCounter = 3
+                        chapterThreeUserValue.lifeCount = 3
                         isStoryPopup = false
                         for index in 0...4 {
-                            chapter3UserValue.isShowCircle[index] = false
+                            chapterThreeUserValue.isShowCircle[index] = false
                         }
                     }, label: {
                         ReplayButton()
@@ -51,8 +51,8 @@ struct Chapter3StoryPopup: View {
     }
 }
 
-struct Chapter3StoryPopup_Previews: PreviewProvider {
+struct ChapterThreeStoryPopup_Previews: PreviewProvider {
     static var previews: some View {
-        Chapter3StoryPopup(isMapPopup: .constant(true), isStoryPopup: .constant(true))
+        ChapterThreeStoryPopup(isMapPopup: .constant(true), isStoryPopup: .constant(true))
     }
 }
