@@ -46,11 +46,18 @@ struct ProgressBar: View {
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 15, style: .circular)
                     .foregroundColor(.PauseFillBrown)
+                    .frame(height: geo.size.height)
 
                 RoundedRectangle(cornerRadius: 15, style: .circular)
                     .fill(.red)
-                    .frame(width: min(geo.size.width, geo.size.width * progress), height: geo.size.height * 0.6)
+                    .frame(width: min(geo.size.width, geo.size.width * progress), height: geo.size.height * 0.5)
                     .animation(.linear, value: progress)
+
+                Image(ImageLiteral.chapter2Timer)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: geo.size.height * 1.5, alignment: .leading)
+                    .offset(x: -10, y: 0)
             }
         }
         .frame(height: 25)

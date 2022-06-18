@@ -16,4 +16,5 @@ enum ImageLiteral {
     static var child = "character_child"
     static var activeStageMark = "map_stageMark"
     static var inactiveStageMark = "map_stageMarkGray"
+    static var chapter2Timer = "chapter2_timer"
 }
