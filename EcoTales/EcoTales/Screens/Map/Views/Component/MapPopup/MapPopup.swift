@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct MapPopup: View {
+    @EnvironmentObject var chapterProgress: ChapterProgress
     @Binding var iscount: Bool
+    @State var isGameStoryShow = false
+    var chapter: Chapter = .zero
+
     var body: some View {
         ZStack {
             if iscount {
@@ -20,7 +24,7 @@ struct MapPopup: View {
                         .strokeBorder(Color.PauseStrokeBrown, lineWidth: 5)
                     VStack {
                         HStack {
-                            Text("인트로")
+                            Text("\(chapter.name())")
                                 .font(.system(size: 20, weight: .heavy))
                                 .background(
                                     RoundedRectangle(cornerRadius: 50)
@@ -38,11 +42,14 @@ struct MapPopup: View {
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
+                                    isGameStoryShow = false
+                                    chapterProgress.completionStatus[chapter] = true
                                     iscount = false
                                 }
                             }, label: {
                                 YesButton()
-                            }) .buttonStyle(PlainButtonStyle())
+                            })
+//                            .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {

@@ -10,11 +10,12 @@ struct PauseEncounter: View {
     @State private var showPopUp = false
     var body: some View {
         ZStack {
-            Button(action: {
-                self.showPopUp = true
-            }, label: {})
-            .buttonStyle(PauseButtonStyle())
-            StoryPopup(iscount: $showPopUp)
+            ZStack {
+                Button(action: {
+                    self.showPopUp = true
+                }, label: {})
+                .buttonStyle(PauseButtonStyle())
+            }
         }
     }
 }
