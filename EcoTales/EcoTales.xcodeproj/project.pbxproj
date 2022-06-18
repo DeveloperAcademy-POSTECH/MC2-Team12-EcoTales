@@ -35,6 +35,8 @@
 		599F4C4B285B5F0E00D0D26F /* FileChapterTwoViews in Resources */ = {isa = PBXBuildFile; fileRef = 599F4C4A285B5F0E00D0D26F /* FileChapterTwoViews */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
+		7E44053A285B4585009DF58B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E440539285B4585009DF58B /* SplashView.swift */; };
+		7E44053C285B5357009DF58B /* Maplestory OTF Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E44053B285B534A009DF58B /* Maplestory OTF Bold.otf */; };
 		AE75CF382856D1840052CD3E /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+isHidden.swift */; };
 		AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF392856D20D0052CD3E /* ImageLiteral.swift */; };
 		AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */; };
@@ -97,6 +99,8 @@
 		7E3635F12854349200EB2CAA /* ObjectsHiddenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsHiddenView.swift; sourceTree = "<group>"; };
 		7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindEachView.swift; sourceTree = "<group>"; };
 		7E4405372855E048009DF58B /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
+		7E440539285B4585009DF58B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		7E44053B285B534A009DF58B /* Maplestory OTF Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Bold.otf"; sourceTree = "<group>"; };
 		AE75CF372856D1840052CD3E /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
 		AE75CF392856D20D0052CD3E /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 		F857445028531B480012346A /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				7E44053B285B534A009DF58B /* Maplestory OTF Bold.otf */,
 				F8EB5D74285723460058C1D0 /* Kyobo Handwriting 2019.otf */,
 				F8EB5D78285723460058C1D0 /* SeoulHangangB.ttf */,
 				F8EB5D77285723460058C1D0 /* SeoulHangangEB.ttf */,
@@ -311,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				AE893CE42858A0E500EE00B3 /* File25 */,
+				7E440539285B4585009DF58B /* SplashView.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -606,6 +612,8 @@
 				F8EB5D942859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav in Resources */,
 				F8EB5D80285723460058C1D0 /* SeoulHangangEB.ttf in Resources */,
 				F857447828531CCA0012346A /* File13 in Resources */,
+				7E44053C285B5357009DF58B /* Maplestory OTF Bold.otf in Resources */,
+				F857443F28531A820012346A /* File1 in Resources */,
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				AE893CE52858A0E500EE00B3 /* File25 in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
@@ -676,6 +684,7 @@
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
 				2620601E28559E8000ED79C8 /* IntroView.swift in Sources */,
 				AE7D7B8D285ADDA8009F7970 /* BackgroundImage.swift in Sources */,
+				7E44053A285B4585009DF58B /* SplashView.swift in Sources */,
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				595FA01B28570D95006E72D3 /* RecycleGameView.swift in Sources */,
 				262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */,
