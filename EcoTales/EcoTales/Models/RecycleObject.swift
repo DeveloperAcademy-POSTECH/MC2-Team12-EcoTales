@@ -6,74 +6,62 @@
 //
 
 enum RecycleObject: Int {
-    case litter = 0
-    case egg
-    case bag
-    case snack
-    case coke
-    case drink
-    case straw
-    case water
-    case box
-    case newspaper
-    case cup
-    case mug
-    
-    func recycleObjectName() -> String {
+    case recycleGameLitter = 0
+    case recycleGameEgg
+    case recycleGamePlasticBag
+    case recycleGameSnack
+    case recycleGameCoke
+    case recycleGameDrink
+    case recycleGameStraw
+    case recycleGameWater
+    case recycleGamePaperBox
+    case recycleGameNewspaper
+    case recycleGameGlassCup
+    case recycleGameMug
+
+    func recycleObjectType() -> String {
         switch self {
-        case .litter:
+        case .recycleGameLitter, .recycleGameEgg:
             return "일반쓰레기"
-        case .snack:
+        case .recycleGameSnack, .recycleGamePlasticBag:
             return "비닐"
-        case .coke:
+        case .recycleGameCoke, .recycleGameDrink:
             return "캔"
-        case .straw:
+        case .recycleGameStraw, .recycleGameWater:
             return "플라스틱"
-        case .box:
+        case .recycleGamePaperBox, .recycleGameNewspaper:
             return "종이"
-        case .cup:
-            return "유리"
-        case .egg:
-            return "일반쓰레기"
-        case .bag:
-            return "비닐"
-        case .drink:
-            return "캔"
-        case .water:
-            return "플라스틱"
-        case .newspaper:
-            return "종이"
-        case .mug:
+        case .recycleGameGlassCup, .recycleGameMug:
             return "유리"
         }
     }
 
     func recycleObjectImage() -> String {
         switch self {
-        case .litter:
-            return ImageLiteral.litter
-        case .egg:
-            return ImageLiteral.egg
-        case .bag:
-            return ImageLiteral.bag
-        case .snack:
-            return ImageLiteral.snack
-        case .coke:
-            return ImageLiteral.coke
-        case .drink:
-            return ImageLiteral.drink
-        case .straw:
-            return ImageLiteral.straw
-        case .water:
-            return ImageLiteral.water
-        case .box:
-            return ImageLiteral.box
-        case .newspaper:
-            return ImageLiteral.newspaper
-        case .cup:
-            return ImageLiteral.cup
-        case .mug:
-            return ImageLiteral.mug
+        case .recycleGameLitter:
+            return ImageLiteral.recycleGameLitter
+        case .recycleGameEgg:
+            return ImageLiteral.recycleGameEgg
+        case .recycleGamePlasticBag:
+            return ImageLiteral.recycleGamePlasticBag
+        case .recycleGameSnack:
+            return ImageLiteral.recycleGameSnack
+        case .recycleGameCoke:
+            return ImageLiteral.recycleGameCoke
+        case .recycleGameDrink:
+            return ImageLiteral.recycleGameDrink
+        case .recycleGameStraw:
+            return ImageLiteral.recycleGameStraw
+        case .recycleGameWater:
+            return ImageLiteral.recycleGameWater
+        case .recycleGamePaperBox:
+            return ImageLiteral.recycleGamePaperBox
+        case .recycleGameNewspaper:
+            return ImageLiteral.recycleGameNewspaper
+        case .recycleGameGlassCup:
+            return ImageLiteral.recycleGameGlassCup
+        case .recycleGameMug:
+            return ImageLiteral.recycleGameMug
         }
     }
 }

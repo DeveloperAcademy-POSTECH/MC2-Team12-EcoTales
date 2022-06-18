@@ -95,7 +95,7 @@ struct RecycleBins: View {
                     Button {
                         if !randomObject.isEmpty {
                             if recycleBinArray[recycleIndex].recycleName() ==
-                                RecycleObject(rawValue: randomObject[0])!.recycleObjectName() {
+                                RecycleObject(rawValue: randomObject[0])!.recycleObjectType() {
                                 randomObject.remove(at: 0)
                                 SoundManager.playSounds("boxingSound.wav")}
                             else {
