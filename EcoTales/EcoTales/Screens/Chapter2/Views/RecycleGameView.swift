@@ -8,7 +8,10 @@ import SwiftUI
 
 struct RecycleGameView: View {
     @State var randomObject = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].shuffled()
+    @State private var isWrong = false
     @State private var isGameClear = false
+    @State private var isGameOver = false
+
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
@@ -19,7 +22,7 @@ struct RecycleGameView: View {
                     HStack {
                         PauseEncounter()
                             .frame(width: 20, height: 20)
-                        TimerView()
+                        TimerView(isWrong: $isWrong, isGameOver: $isGameOver)
                         Image("hintBook")
                             .resizable()
                             .frame(width: 57, height: 57)
@@ -64,7 +67,7 @@ struct RecycleGameView: View {
                     // Recycle Bins
                     VStack {
                         Spacer()
-                        RecycleBins(randomObject: $randomObject, isGameClear: $isGameClear)
+                        RecycleBins(randomObject: $randomObject, isWrong: $isWrong, isGameClear: $isGameClear)
                     }
                 }
             }
@@ -75,6 +78,13 @@ struct RecycleGameView: View {
                     .foregroundColor(Color.white)
                     .font(.title)
             }
+            if isGameOver {
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
+                Text("Game Over!")
+                    .foregroundColor(Color.white)
+                    .font(.title)
+            }
         }
         .ignoresSafeArea()
     }
@@ -82,6 +92,7 @@ struct RecycleGameView: View {
 
 struct RecycleBins: View {
     @Binding var randomObject: [Int]
+    @Binding var isWrong: Bool
     @Binding var isGameClear: Bool
     var body: some View {
         let recycleBinArray: [RecycleBinTypes] = [.recycleBinLitter, .recycleBinVinyl,
@@ -99,6 +110,7 @@ struct RecycleBins: View {
                                 randomObject.remove(at: 0)
                                 SoundManager.playSounds("boxingSound.wav")}
                             else {
+                                isWrong = true
                                 SoundManager.playSounds("SLIP.mp3")
                             }
                             if randomObject.isEmpty {

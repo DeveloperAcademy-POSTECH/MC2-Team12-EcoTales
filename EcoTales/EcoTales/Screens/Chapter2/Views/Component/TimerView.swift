@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct TimerView: View {
-    @State var progress: CGFloat = 0.98
-    @State var isGameFinish: Bool = false
+    @State private var progress: CGFloat = 0.98
+    @Binding var isWrong: Bool
+    @Binding var isGameOver: Bool
 
     var body: some View {
         GeometryReader { geo in
@@ -39,8 +40,14 @@ struct TimerView: View {
     func timer() {
         Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
             progress -= 0.003
-            if progress <= 0 {
-                isGameFinish = true
+
+            if isWrong {
+                progress -= 0.05
+                isWrong = false
+            }
+
+            if progress <= 0.035 {
+                isGameOver = true
                 timer.invalidate()
             }
         }
@@ -50,6 +57,6 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(isWrong: .constant(false), isGameOver: .constant(false))
     }
 }
