@@ -12,36 +12,6 @@ struct TimerView: View {
     @State var isGameFinish: Bool = false
 
     var body: some View {
-        VStack {
-            ProgressBar(initialProgress: $progress)
-            Button {
-                timer()
-            } label: {
-                Text("Start")
-            }
-        }
-
-    }
-
-    func timer() {
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
-            progress -= 0.01
-            if progress <= 0 {
-                isGameFinish = true
-                timer.invalidate()
-            }
-        }
-    }
-}
-
-struct ProgressBar: View {
-    @Binding var progress: CGFloat
-
-    init(initialProgress: Binding<CGFloat>) {
-        self._progress = initialProgress
-    }
-
-    var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 15, style: .circular)
@@ -60,8 +30,20 @@ struct ProgressBar: View {
                     .offset(x: -10, y: 0)
             }
         }
-        .frame(height: 25)
-        .padding()
+        .frame(height: 23)
+        .padding([.horizontal, .bottom], 10)
+        .padding(.leading, 15)
+        .onAppear(perform: { timer() })
+    }
+
+    func timer() {
+        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
+            progress -= 0.003
+            if progress <= 0 {
+                isGameFinish = true
+                timer.invalidate()
+            }
+        }
     }
 
 }

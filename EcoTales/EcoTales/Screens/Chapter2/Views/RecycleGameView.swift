@@ -16,7 +16,7 @@ struct RecycleGameView: View {
                 HStack {
                     PauseEncounter()
                         .frame(width: 20, height: 20)
-                    Spacer()
+                    TimerView()
                     Image("hintBook")
                         .resizable()
                         .frame(width: 57, height: 57)
