@@ -12,7 +12,7 @@ struct FindWrongGameView: View {
     @Binding var isStagePopup: Bool
     @State private var isPausePopup = false
     @State private var isFindWrongClear = false
-    @StateObject private var chapterThreeUserValue = ChapterThreeUserSettings()
+    @StateObject private var chapterThreeUserValue = ChapterThreeUserSetting()
 
     var body: some View {
         ZStack {
@@ -72,7 +72,7 @@ struct FindWrongGameView: View {
 private struct UpperPanelView: View {
 
     @Binding var isCloseStoryPopup: Bool
-    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSetting
 
     var body: some View {
         HStack {
@@ -96,7 +96,7 @@ private struct UpperPanelView: View {
 private struct ExplainGameView: View {
 
     private var owlLine = ["콜록! 콜록! 공장 매연은 나빠!", "공장 매연은 동물들에게 나빠!", "직구 배송을 주의하자!", "대중교통을 이용하자!", "자동차는 되도록 자제하자!"]
-    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSetting
 
     var body: some View {
         ZStack {

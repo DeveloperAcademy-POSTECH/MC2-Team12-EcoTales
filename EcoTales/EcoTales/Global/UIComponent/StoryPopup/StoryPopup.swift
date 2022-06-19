@@ -47,6 +47,7 @@ struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
+                .previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }

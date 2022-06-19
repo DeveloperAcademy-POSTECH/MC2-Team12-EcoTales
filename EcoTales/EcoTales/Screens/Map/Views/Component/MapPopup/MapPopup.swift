@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct MapPopup: View {
-    @Binding var isStagePopup: Bool
-    @State private var isPausePopup = false
     @EnvironmentObject var chapterProgress: ChapterProgress
-    @Binding var isPausePopup: Bool
+    @Binding var isStagePopup: Bool
     @Binding var isIntroShow: Bool
     @Binding var isGameStoryShow: Bool
+
     var chapter: Chapter = .zero
 
     var body: some View {
         ZStack {
-            Dim()
             if isStagePopup {
+                Dim()
                 ZStack {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -51,7 +50,6 @@ struct MapPopup: View {
                                     } else {
                                         isGameStoryShow = true
                                     }
-                                    iscount = false
                                 }
                             }, label: {
                                 YesButton()
@@ -59,18 +57,13 @@ struct MapPopup: View {
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
-                                    isPausePopup = false
+                                    isGameStoryShow = false
+                                    isStagePopup = false
                                 }
                             }, label: {
                                 NoButton()
-                            }) .buttonStyle(PlainButtonStyle())
-                            Button(action: {
-                                isPausePopup = true
-                            }, label: {
-                                YesButton()
                             })
-                            .fullScreenCover(isPresented: $isPausePopup,
-                                             content: { FindWrongGameView(isStagePopup: $isStagePopup) })
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                 }

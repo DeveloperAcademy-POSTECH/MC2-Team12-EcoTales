@@ -8,9 +8,9 @@ import AVFoundation
 import SwiftUI
 
 struct PandaGameView: View {
-
+    @Binding var isStagePopup: Bool
+    @State private var isPausePopup = false
     @State private var showGameClear = false
-    @State private var isShowingPopup = false
 
     var body: some View {
         ZStack {
@@ -24,7 +24,7 @@ struct PandaGameView: View {
                 ZStack {
                     HStack {
                         Button {
-                            self.isShowingPopup = true
+                            self.isPausePopup = true
                             } label: {}
                             .buttonStyle(PauseButtonStyle())
                             // TODO: 아예 PauseButton이나 PauseButtonLabel을 만드는 게 좋을 것 같다는 생각이 들었습니다. 추후에 수정이 가능하다면 수정합니다.
@@ -74,17 +74,10 @@ struct PandaGameView: View {
                     })
             }
 
-            if isShowingPopup {
-                StoryPopup(isShowingPopup: $isShowingPopup)
+            if isPausePopup {
+                StoryPopup(isStagePopup: $isStagePopup, isPausePopup: $isPausePopup)
                     .ignoresSafeArea()
             }
         }
-    }
-}
-
-struct PandaGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        PandaGameView()
-            .previewInterfaceOrientation(.landscapeRight)
     }
 }

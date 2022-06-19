@@ -11,6 +11,7 @@ struct EpilogueTwo: View {
     @State private var epilogueNumber = 0
     @State private var epilogueIndex = 0
     @State private var isFinished = false
+    @State private var isStagePopup = false
     @State private var chapter: Chapter = .four
 
     var body: some View {
@@ -59,7 +60,7 @@ struct EpilogueTwo: View {
                 }
             } else if isFinished == true {
                 NavigationLink(isActive: $isFinished,
-                               destination: { StoryView(chapter: $chapter) },
+                               destination: { StoryView(isStagePopup: $isStagePopup, chapter: $chapter) },
                                label: { Text("a") })
             }
         }

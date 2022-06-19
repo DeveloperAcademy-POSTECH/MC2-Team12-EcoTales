@@ -9,6 +9,7 @@ import SwiftUI
 struct StoryView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var storyIndex = 0
+    @Binding var isStagePopup: Bool
     @State private var isGameShow = false
     @State private var isGameClear = false
     @Binding var chapter: Chapter
@@ -112,7 +113,7 @@ struct StoryView: View {
     func chapterGame() -> some View {
         switch chapter {
         case .one:
-            return HiddenObjGameView(isGameClear: self.$isGameClear)
+            return HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup)
 //        case .two:
 //            return
 //        case .three:
@@ -120,7 +121,7 @@ struct StoryView: View {
 //        case .four:
 //            return
         default:
-            return HiddenObjGameView(isGameClear: self.$isGameClear)
+            return HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup)
         }
     }
 

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+    @Binding var isGameClear: Bool
     @Binding var isStagePopup: Bool
     @State private var isPausePopup = false
     @State private var foundTrash = Set<String>()
@@ -16,12 +17,12 @@ struct HiddenObjGameView: View {
         ZStack {
             if foundTrash.count == 10 {
                 withAnimation(Animation.easeInOut(duration: 1)) {
-                Image("chapterOne_cleanBackground")
+                Image("chapter1_cleanBackground")
                     .resizable()
                     .scaledToFill()
                 }
             } else {
-                Image("chapterOne_pollutedBackground")
+                Image("chapter1_pollutedBackground")
                     .resizable()
                     .scaledToFill()
             }
@@ -37,7 +38,7 @@ struct HiddenObjGameView: View {
                     }
             }
             VStack {
-                UpperPanelView(isCloseStoryPopup: $isPausePopup)
+                UpperPanelView(isPausePopup: $isPausePopup)
                 Spacer()
             }
             if isPausePopup {
@@ -50,12 +51,12 @@ struct HiddenObjGameView: View {
 }
 
 private struct UpperPanelView: View {
-    @Binding var isCloseStoryPopup: Bool
+    @Binding var isPausePopup: Bool
     var body: some View {
         ZStack {
             HStack {
                 Button(action: {
-                    self.isCloseStoryPopup = true
+                    self.isPausePopup = true
                 }, label: {})
                 .buttonStyle(PauseButtonStyle())
                 Spacer()
@@ -90,7 +91,7 @@ private struct ExplainGameView: View {
 
 struct HiddenObjGameView_Previews: PreviewProvider {
     static var previews: some View {
-        HiddenObjGameView(isStagePopup: .constant(true))
+        HiddenObjGameView(isGameClear: .constant(true), isStagePopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
