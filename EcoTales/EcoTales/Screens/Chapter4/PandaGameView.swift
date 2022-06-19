@@ -11,7 +11,6 @@ struct PandaGameView: View {
 
     @State private var showGameClear = false
     @State private var isShowingPopup = false
-    @State var audioPlayer: AVAudioPlayer!
 
     var body: some View {
         ZStack {
