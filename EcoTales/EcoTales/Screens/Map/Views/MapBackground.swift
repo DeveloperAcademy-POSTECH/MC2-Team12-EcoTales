@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct MapBackground: View {
-    @State private var isCloseMapPopup = false
+    @State private var isStagePopup = false
     var body: some View {
         ZStack {
             Image("map_background")
                 .resizable()
                 .ignoresSafeArea()
             Button(action: {
-                self.isCloseMapPopup = true
+                self.isStagePopup = true
             }, label: {})
             .buttonStyle(PauseButtonStyle())
-            if isCloseMapPopup {
-                MapPopup(isCloseMapPopup: $isCloseMapPopup)
+            if isStagePopup {
+                MapPopup(isStagePopup: $isStagePopup)
             }
         }
     }

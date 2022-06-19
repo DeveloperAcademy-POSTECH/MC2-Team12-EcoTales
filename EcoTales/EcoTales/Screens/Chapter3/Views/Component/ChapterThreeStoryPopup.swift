@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ChapterThreeStoryPopup: View {
-    @Binding var isCloseMapPopup: Bool
-    @Binding var isCloseStoryPopup: Bool
+    @Binding var isStagePopup: Bool
+    @Binding var isPausePopup: Bool
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
     var body: some View {
         ZStack {
-            if isCloseStoryPopup {
+            if isPausePopup {
                 Color.black
                     .opacity(0.4)
                 Group {
@@ -27,13 +27,13 @@ struct ChapterThreeStoryPopup: View {
                 VStack(alignment: .center, spacing: 25) {
                     Button(action: {
                         // Dismiss the Popup
-                        isCloseStoryPopup = false
+                        isPausePopup = false
                     }, label: {
                         ContinueButton()
                     })
                     Button(action: {
                         chapterThreeUserValue.lifeCount = 3
-                        isCloseStoryPopup = false
+                        isPausePopup = false
                         for index in 0...4 {
                             chapterThreeUserValue.isShowCircle[index] = false
                         }
@@ -41,7 +41,7 @@ struct ChapterThreeStoryPopup: View {
                         ReplayButton()
                     })
                     Button(action: {
-                        isCloseMapPopup = false
+                        isStagePopup = false
                     }, label: {
                         ExitButton()
                     })
@@ -53,6 +53,6 @@ struct ChapterThreeStoryPopup: View {
 
 struct ChapterThreeStoryPopup_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterThreeStoryPopup(isCloseMapPopup: .constant(true), isCloseStoryPopup: .constant(true))
+        ChapterThreeStoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
     }
 }

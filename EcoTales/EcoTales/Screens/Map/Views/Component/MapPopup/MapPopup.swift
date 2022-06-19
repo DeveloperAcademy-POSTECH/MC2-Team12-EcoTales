@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct MapPopup: View {
-    @Binding var isCloseMapPopup: Bool
-    @State private var isGameStoryShow = false
+    @Binding var isStagePopup: Bool
+    @State private var isPausePopup = false
     var body: some View {
         ZStack {
             Color.black
                 .opacity(0.4)
                 .ignoresSafeArea()
-            if isCloseMapPopup {
+            if isStagePopup {
                 ZStack {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -40,17 +40,17 @@ struct MapPopup: View {
                         HStack(alignment: .center, spacing: 25) {
                             Button(action: {
                                 // Dismiss the PopUp
-                                isCloseMapPopup = false
+                                isStagePopup = false
                             }, label: {
                                 NoButton()
                             }) .buttonStyle(PlainButtonStyle())
                             Button(action: {
-                                isGameStoryShow = true
+                                isPausePopup = true
                             }, label: {
                                 YesButton()
                             })
-                            .fullScreenCover(isPresented: $isGameStoryShow,
-                                             content: { FindWrongGameView(isCloseMapPopup: $isCloseMapPopup) })
+                            .fullScreenCover(isPresented: $isPausePopup,
+                                             content: { FindWrongGameView(isStagePopup: $isStagePopup) })
                         }
                     }
                 }
@@ -62,7 +62,7 @@ struct MapPopup: View {
 
 struct MapPopup_Previews: PreviewProvider {
     static var previews: some View {
-        MapPopup(isCloseMapPopup: .constant(true))
+        MapPopup(isStagePopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
