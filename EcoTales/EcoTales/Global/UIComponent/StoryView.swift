@@ -17,7 +17,7 @@ struct StoryView: View {
         NavigationView {
             ZStack {
                 Image(chapterBackground(chapter: self.chapter, isGameClear: self.isGameClear))
-                    .backgroundImage()
+                    .backgroundStyle()
                     .aspectRatio(contentMode: .fill)
 
                 HStack {

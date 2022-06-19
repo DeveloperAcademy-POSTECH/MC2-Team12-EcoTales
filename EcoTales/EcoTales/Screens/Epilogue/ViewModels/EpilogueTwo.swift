@@ -16,7 +16,7 @@ struct EpilogueTwo: View {
     var body: some View {
         ZStack {
             Image(eplilogueBackground())
-                .backgroundImage()
+                .backgroundStyle()
             if epilogueNumber == 0 {
                 VStack {
                     Spacer()

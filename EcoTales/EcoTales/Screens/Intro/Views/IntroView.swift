@@ -18,7 +18,7 @@ struct IntroView: View {
     var body: some View {
         ZStack {
             Image(introBackground())
-                .backgroundImage()
+                .backgroundStyle()
             HStack {
                 if introNumber == 3 {
                     Spacer()

@@ -18,7 +18,7 @@ extension Image: ViewModifier {
      Image("imageName").backgroundImage()
      ```
      */
-    func backgroundImage() -> some View {
+    func backgroundStyle() -> some View {
         self
             .resizable()
             .ignoresSafeArea()

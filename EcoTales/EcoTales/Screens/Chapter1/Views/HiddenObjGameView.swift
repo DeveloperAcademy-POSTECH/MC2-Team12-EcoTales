@@ -13,7 +13,7 @@ struct HiddenObjGameView: View {
     var body: some View {
         ZStack {
             Image(ImageLiteral.chapter1PollutedBackground)
-                .backgroundImage()
+                .backgroundStyle()
             ObjectsHiddenView()
             VStack {
                 Spacer()
