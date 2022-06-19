@@ -44,7 +44,6 @@ struct MapPopup: View {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
                                     if chapter == .zero {
-//                                        chapterProgress.completionStatus[chapter] = true
                                         isIntroShow = true
                                     } else {
                                         isGameStoryShow = true
@@ -54,7 +53,6 @@ struct MapPopup: View {
                             }, label: {
                                 YesButton()
                             })
-//                            .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
