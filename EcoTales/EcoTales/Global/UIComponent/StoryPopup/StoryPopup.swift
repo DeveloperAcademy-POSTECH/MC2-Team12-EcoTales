@@ -15,6 +15,7 @@ struct StoryPopup: View {
         ZStack {
             if isShowingPopup {
                 Color.black.opacity(0.4)
+                    .ignoresSafeArea()
                 ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -41,7 +42,7 @@ struct StoryPopup: View {
                     }, label: {
                         ReplayButton()
                     })
-                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
+//                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
                     Button(action: {
                         // Dismiss the Present View
                         presentationMode.wrappedValue.dismiss()
@@ -58,6 +59,7 @@ struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             StoryPopup(isShowingPopup: .constant(true))
+                .previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }
