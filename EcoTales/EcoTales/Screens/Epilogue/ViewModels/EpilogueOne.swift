@@ -9,30 +9,46 @@ import SwiftUI
 
 struct EpilogueOne: View {
     let images = [ImageLiteral.chapter3CleanBackground,
-                  ImageLiteral.chapter2Background,
+                  ImageLiteral.chapter2CleanBackground,
+                  ImageLiteral.chapter1CleanBackground,
                   ImageLiteral.chapter1CleanBackground]
-    let imageChangeTimer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
-    @State private var imagePage = 2
+
     @State private var currentImageIndex = 0
+    @State private var isFinished = false
+
     var body: some View {
-        ZStack {
-            Image(images[currentImageIndex])
-                .backgroundImage()
-                .id(imagePage)
-                .onReceive(imageChangeTimer) { _ in
-                    if imagePage > 0 {
-                        self.currentImageIndex = (self.currentImageIndex + 1) % self.images.count
-                        imagePage -= 1
+            NavigationView {
+                if isFinished {
+                    NavigationLink(isActive: $isFinished,
+                                   destination: { EpilogueTwo() },
+                                   label: { Image(ImageLiteral.chapter1CleanBackground) })
+                } else {
+                    VStack {
+                        Image(images[currentImageIndex])
+                            .resizable()
+                            .ignoresSafeArea()
+                            .id(currentImageIndex)
+                            .onAppear(perform: { timer() })
                     }
+                    .animation(.easeInOut(duration: 2), value: currentImageIndex)
                 }
+            }
         }
-        .animation(.easeInOut(duration: 2), value: imagePage)
-    }
+
+        func timer() {
+            Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { timer in
+                if currentImageIndex + 1 == images.count - 1 {
+                    isFinished = true
+                    timer.invalidate()
+                }
+                currentImageIndex += 1
+            }
+        }
 }
 
 struct EpilogueOne_Previews: PreviewProvider {
     static var previews: some View {
         EpilogueOne()
-            .previewInterfaceOrientation(.landscapeRight)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

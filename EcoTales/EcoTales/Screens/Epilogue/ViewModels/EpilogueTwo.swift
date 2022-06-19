@@ -10,6 +10,8 @@ import SwiftUI
 struct EpilogueTwo: View {
     @State private var epilogueNumber = 0
     @State private var epilogueIndex = 0
+    @State private var isFinished = false
+    @State private var chapter: Chapter = .four
 
     var body: some View {
         ZStack {
@@ -22,7 +24,7 @@ struct EpilogueTwo: View {
                         .font(.seoulHangangM.story)
                 }
                 .padding(.bottom, 30)
-            } else {
+            } else if epilogueNumber == 1 {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(epilogueDialog(position: 0))
@@ -55,6 +57,10 @@ struct EpilogueTwo: View {
                     .frame(width: UIScreen.main.bounds.width * 0.45)
                     Spacer()
                 }
+            } else if isFinished == true {
+                NavigationLink(isActive: $isFinished,
+                               destination: { StoryView(chapter: $chapter) },
+                               label: { Text("a") })
             }
         }
         .onTapGesture {
@@ -69,10 +75,13 @@ struct EpilogueTwo: View {
                 if epilogueIndex != StoryData().epilogueTwoDialog.count - 1 {
                     epilogueIndex += 1
                 } else {
-                    // active navigation
+                    epilogueNumber += 1
+                    epilogueIndex = 0
+                    isFinished = true
                 }
             }
         }
+        .navigationBarHidden(true)
     }
 
     private func eplilogueBackground() -> String {
