@@ -11,7 +11,7 @@ struct YesButton: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.PopupExitRed)
+                .fill(Color.PopupContinueGreen)
                 .frame(width: 120, height: 55)
                 .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
             HStack(spacing: 27) {

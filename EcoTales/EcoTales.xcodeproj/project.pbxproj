@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C16015285598DA002BA1F8 /* TouchLocatingView.swift */; };
+		152D05AD285AD30900307491 /* FindWrongGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152D05AC285AD30900307491 /* FindWrongGameView.swift */; };
+		156FC559285B796D00A696E1 /* ChapterThreeStoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */; };
+		15B76C06285F736B0040373B /* ChapterUserSettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C05285F736B0040373B /* ChapterUserSettingData.swift */; };
+		15B76C08285F89B20040373B /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C07285F89B20040373B /* Dim.swift */; };
+		15B76C0A285F8F8B0040373B /* FindWrongScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C09285F8F8B0040373B /* FindWrongScreenView.swift */; };
+		15B76C0C285F8FC90040373B /* ShowHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C0B285F8FC90040373B /* ShowHeart.swift */; };
 		26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
 		26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
 		26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE32854440E00ED79C8 /* Color+Extension.swift */; };
@@ -55,6 +60,7 @@
 		F857446F28531C9D0012346A /* File9 in Resources */ = {isa = PBXBuildFile; fileRef = F857446E28531C9D0012346A /* File9 */; };
 		F857447328531CB20012346A /* File11 in Resources */ = {isa = PBXBuildFile; fileRef = F857447228531CB20012346A /* File11 */; };
 		F857447828531CCA0012346A /* File13 in Resources */ = {isa = PBXBuildFile; fileRef = F857447728531CCA0012346A /* File13 */; };
+		F857447C28531CE20012346A /* File15 in Resources */ = {isa = PBXBuildFile; fileRef = F857447B28531CE20012346A /* File15 */; };
 		F857447A28531CD50012346A /* File14 in Resources */ = {isa = PBXBuildFile; fileRef = F857447928531CD50012346A /* File14 */; };
 		F857447E28531CEE0012346A /* File16 in Resources */ = {isa = PBXBuildFile; fileRef = F857447D28531CEE0012346A /* File16 */; };
 		F857449128549BFB0012346A /* MapPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F857449028549BFB0012346A /* MapPopup.swift */; };
@@ -74,7 +80,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15C16015285598DA002BA1F8 /* TouchLocatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchLocatingView.swift; sourceTree = "<group>"; };
+		152D05AC285AD30900307491 /* FindWrongGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWrongGameView.swift; sourceTree = "<group>"; };
+		156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryPopup.swift; sourceTree = "<group>"; };
+		15B76C05285F736B0040373B /* ChapterUserSettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterUserSettingData.swift; sourceTree = "<group>"; };
+		15B76C07285F89B20040373B /* Dim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dim.swift; sourceTree = "<group>"; };
+		15B76C09285F8F8B0040373B /* FindWrongScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWrongScreenView.swift; sourceTree = "<group>"; };
+		15B76C0B285F8FC90040373B /* ShowHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeart.swift; sourceTree = "<group>"; };
 		26205FD52854432300ED79C8 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		26205FD72854435D00ED79C8 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		26205FDB2854438800ED79C8 /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
@@ -123,6 +134,7 @@
 		F857446E28531C9D0012346A /* File9 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File9; sourceTree = "<group>"; };
 		F857447228531CB20012346A /* File11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File11; sourceTree = "<group>"; };
 		F857447728531CCA0012346A /* File13 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File13; sourceTree = "<group>"; };
+		F857447B28531CE20012346A /* File15 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File15; sourceTree = "<group>"; };
 		F857447928531CD50012346A /* File14 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File14; sourceTree = "<group>"; };
 		F857447D28531CEE0012346A /* File16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = File16; sourceTree = "<group>"; };
 		F857449028549BFB0012346A /* MapPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPopup.swift; sourceTree = "<group>"; };
@@ -231,6 +243,7 @@
 				AE893CE128583A8300EE00B3 /* ChapterProgress.swift */,
 				7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */,
 				2620601428549E5200ED79C8 /* StoryDataModel.swift */,
+				15B76C05285F736B0040373B /* ChapterUserSettingData.swift */,
 				597F375F285B5726002631FA /* RecycleBinTypes.swift */,
 				F8EB5D99285B75710058C1D0 /* RecycleObject.swift */,
 			);
@@ -279,10 +292,10 @@
 		F857444428531AD30012346A /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
-				15C16014285598C5002BA1F8 /* TouchLocation */,
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
+				15B76C07285F89B20040373B /* Dim.swift */,
 				AE7D7B8C285ADDA8009F7970 /* BackgroundImage.swift */,
 				F8EB5D592856D9170058C1D0 /* SoundManager.swift */,
 			);
@@ -464,6 +477,7 @@
 			children = (
 				F857446C28531C880012346A /* Component */,
 				262060182855088200ED79C8 /* ChapterThreeStoryView.swift */,
+				152D05AC285AD30900307491 /* FindWrongGameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -498,7 +512,10 @@
 		F857446C28531C880012346A /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				F857447928531CD50012346A /* File14 */,
+				2620600928549A5500ED79C8 /* File.swift */,
+				15B76C0B285F8FC90040373B /* ShowHeart.swift */,
+				156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */,
+				15B76C09285F8F8B0040373B /* FindWrongScreenView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -632,6 +649,7 @@
 				AE9A453328522A3100683CCF /* .swiftlint.yml in Resources */,
 				F857447E28531CEE0012346A /* File16 in Resources */,
 				F857446F28531C9D0012346A /* File9 in Resources */,
+				F857444B28531B0C0012346A /* File3 in Resources */,
 				F8EB5D9C285BA2BF0058C1D0 /* boxingSound.wav in Resources */,
 				F857447A28531CD50012346A /* File14 in Resources */,
 				F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */,
@@ -693,6 +711,7 @@
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
+				152D05AD285AD30900307491 /* FindWrongGameView.swift in Sources */,
 				7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */,
 				26205FF1285445D500ED79C8 /* PauseButtonStyle.swift in Sources */,
 				26205FF2285445D500ED79C8 /* PauseEncounter.swift in Sources */,
@@ -708,8 +727,10 @@
 				591ED884285F3EC0009EFF6D /* SoundLiteral.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
+				15B76C0A285F8F8B0040373B /* FindWrongScreenView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
+				15B76C08285F89B20040373B /* Dim.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
 				5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */,
@@ -718,11 +739,16 @@
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
 				F8EB5D5A2856D9170058C1D0 /* SoundManager.swift in Sources */,
 				AE9A45262852288800683CCF /* LaunchScreenView.swift in Sources */,
+				262060262855BDCC00ED79C8 /* IntroFourView.swift in Sources */,
+				15B76C06285F736B0040373B /* ChapterUserSettingData.swift in Sources */,
 				262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */,
 				2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */,
+				156FC559285B796D00A696E1 /* ChapterThreeStoryPopup.swift in Sources */,
+				2620600A28549A5500ED79C8 /* File.swift in Sources */,
 				F8EB5D9A285B75710058C1D0 /* RecycleObject.swift in Sources */,
 				15C16016285598DA002BA1F8 /* TouchLocatingView.swift in Sources */,
 				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
+				15B76C0C285F8FC90040373B /* ShowHeart.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

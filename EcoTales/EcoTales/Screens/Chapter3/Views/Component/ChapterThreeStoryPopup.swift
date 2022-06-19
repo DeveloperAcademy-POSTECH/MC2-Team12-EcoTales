@@ -1,14 +1,18 @@
 //
-//  StoryPopup.swift
+//  ChapterThreeStoryPopup.swift
 //  EcoTales
 //
-//  Created by Seik Oh on 2022/06/09.
+//  Created by 임 용관 on 2022/06/16.
 //
+
 import SwiftUI
 
-struct StoryPopup: View {
+struct ChapterThreeStoryPopup: View {
+
     @Binding var isStagePopup: Bool
     @Binding var isPausePopup: Bool
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+
     var body: some View {
         ZStack {
             if isPausePopup {
@@ -21,6 +25,7 @@ struct StoryPopup: View {
                         .strokeBorder(Color.PauseStrokeBrown, lineWidth: 5)
                 }
                 .frame(width: 300, height: 280)
+
                 VStack(alignment: .center, spacing: 25) {
                     Button(action: {
                         // Dismiss the Popup
@@ -29,6 +34,11 @@ struct StoryPopup: View {
                         ContinueButton()
                     })
                     Button(action: {
+                        chapterThreeUserValue.lifeCount = 3
+                        isPausePopup = false
+                        for index in 0...4 {
+                            chapterThreeUserValue.isShowCircle[index] = false
+                        }
                     }, label: {
                         ReplayButton()
                     })
@@ -43,10 +53,8 @@ struct StoryPopup: View {
     }
 }
 
-struct StoryPopup_Previews: PreviewProvider {
+struct ChapterThreeStoryPopup_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
-        }
+        ChapterThreeStoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
     }
 }
