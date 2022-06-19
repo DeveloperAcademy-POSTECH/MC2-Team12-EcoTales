@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "chapter2_timer.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "character_mole.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
