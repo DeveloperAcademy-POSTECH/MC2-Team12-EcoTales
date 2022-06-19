@@ -11,15 +11,7 @@ import SwiftUI
 struct EcoTalesApp: App {
     var body: some Scene {
         WindowGroup {
-<<<<<<< HEAD
-<<<<<<< HEAD
             ContentView()
-=======
-            IntroView()
->>>>>>> main
-=======
-            ContentView()
->>>>>>> main
         }
     }
 }

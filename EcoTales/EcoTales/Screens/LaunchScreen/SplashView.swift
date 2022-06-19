@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SplashView: View {
+    @Binding var isSplash: Bool
+
     var body: some View {
         ZStack {
             BackgroundImage("launchScreen_background")
@@ -33,21 +35,15 @@ struct SplashView: View {
             .padding(.bottom, 60)
         }
         .ignoresSafeArea()
+        .onTapGesture {
+            isSplash = false
+        }
     }
-}
-
-extension Font {
-    struct MapleFont {
-        let title = Font.custom("Maplestory OTF Bold", size: 92)
-        let subtitle = Font.custom("Maplestory OTF Bold", size: 30)
-        let startButton = Font.custom("Maplestory OTF Bold", size: 20)
-    }
-    static let mapleFont = MapleFont()
 }
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashView()
+        SplashView(isSplash: .constant(true))
             .previewInterfaceOrientation(.landscapeRight)
     }
 }

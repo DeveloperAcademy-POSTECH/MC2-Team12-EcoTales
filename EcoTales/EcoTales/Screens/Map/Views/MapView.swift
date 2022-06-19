@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MapView: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
-    @State var isPopUp: Bool = false
+    @State var isStagePopUp: Bool = false
     @State var selectedChapter: Chapter = Chapter.zero
     @State var isIntroStart = false
     @State var isChapterStart = false
@@ -33,7 +33,7 @@ struct MapView: View {
             Group {
                 ForEach(Chapter.allCases) { chapter in
                     Button {
-                        isPopUp.toggle()
+                        isStagePopUp.toggle()
                         selectedChapter = chapter
                     } label: {
                         Image(stageImage(chapter: chapter))
@@ -47,13 +47,13 @@ struct MapView: View {
             Image(ImageLiteral.child)
                 .position(childPosition())
 
-            MapPopup(iscount: $isPopUp, isIntroShow: self.$isIntroStart,
+            MapPopup(isStagePopup: $isStagePopUp, isIntroShow: self.$isIntroStart,
                      isGameStoryShow: self.$isChapterStart, chapter: selectedChapter)
         }
         .fullScreenCover(isPresented: $isIntroStart,
                          content: { IntroView(isIntroSeen: $isIntroSeen) })
         .fullScreenCover(isPresented: $isChapterStart,
-                         content: { StoryView(chapter: $selectedChapter) })
+                         content: { StoryView(isStagePopup: $isStagePopUp, chapter: $selectedChapter) })
     }
 
     private func isCompleted(chapter: Chapter) -> Bool {

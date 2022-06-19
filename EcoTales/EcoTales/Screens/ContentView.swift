@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var body: some View {
         if isSplash {
-            LaunchScreenView(isSplash: self.$isSplash)
+            SplashView(isSplash: $isSplash)
         } else {
             if isIntroSeen {
                 MapView(isIntroSeen: $isIntroSeen).environmentObject(ChapterProgress())

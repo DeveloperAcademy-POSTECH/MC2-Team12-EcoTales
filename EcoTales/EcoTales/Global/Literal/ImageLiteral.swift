@@ -14,11 +14,7 @@ enum ImageLiteral {
     static var path2to3 = "map_path2"
     static var path3to4 = "map_path3"
     static var path4to5 = "map_path4"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     static var childHead = "chapter4_mainCharacterHeadCircle"
->>>>>>> main
     static var activeStageMark = "map_stageMark"
     static var inactiveStageMark = "map_stageMarkGray"
     // MARK: - Chapter Background Image
@@ -62,14 +58,6 @@ enum ImageLiteral {
     static var intro2Background = "intro2_background"
     static var intro3Background = "intro3_background"
     static var intro4Background = "intro4_background"
-<<<<<<< HEAD
-=======
-    static var child = "character_child"
-    static var childHead = "chapter4_mainCharacterHeadCircle"
-    static var activeStageMark = "map_stageMark"
-    static var inactiveStageMark = "map_stageMarkGray"
-=======
->>>>>>> main
     static var chapter2Timer = "chapter2_timer"
     static var recycleBinLitter = "recycleBin_litter"
     static var recycleBinVinyl = "recycleBin_vinyl"
@@ -93,8 +81,4 @@ enum ImageLiteral {
     static var meenuDoctor = "character_meenuDoctor"
     static var pandaBackground = "chapterFour-gameBackground"
     static var turtleDialog = "chapter1_turtleDialog"
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
 }

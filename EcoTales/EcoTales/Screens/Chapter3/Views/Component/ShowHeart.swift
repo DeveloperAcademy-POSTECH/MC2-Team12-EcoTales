@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShowHeart: View {
 
-    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSetting
 
     var body: some View {
         ZStack {

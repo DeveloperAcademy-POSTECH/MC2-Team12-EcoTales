@@ -11,7 +11,7 @@ struct ChapterThreeStoryPopup: View {
 
     @Binding var isStagePopup: Bool
     @Binding var isPausePopup: Bool
-    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSetting
 
     var body: some View {
         ZStack {

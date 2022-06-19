@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FindWrongScreenView: View {
 
-    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+    @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSetting
     @Binding var isFindWrongClear: Bool
 
     var body: some View {

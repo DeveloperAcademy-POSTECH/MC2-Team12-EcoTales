@@ -8,27 +8,17 @@
 import SwiftUI
 
 struct MapPopup: View {
-    @Binding var isStagePopup: Bool
-    @State private var isPausePopup = false
     @EnvironmentObject var chapterProgress: ChapterProgress
-<<<<<<< HEAD
-<<<<<<< HEAD
-    @Binding var iscount: Bool
+    @Binding var isStagePopup: Bool
     @Binding var isIntroShow: Bool
     @Binding var isGameStoryShow: Bool
-=======
->>>>>>> main
-=======
-    @Binding var isPausePopup: Bool
-    @Binding var isIntroShow: Bool
-    @Binding var isGameStoryShow: Bool
->>>>>>> main
+
     var chapter: Chapter = .zero
 
     var body: some View {
         ZStack {
-            Dim()
             if isStagePopup {
+                Dim()
                 ZStack {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -55,16 +45,11 @@ struct MapPopup: View {
                                 // Dismiss the PopUp
                                 isStagePopup = false
                                 withAnimation(.linear(duration: 0.3)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> main
                                     if chapter == .zero {
                                         isIntroShow = true
                                     } else {
                                         isGameStoryShow = true
                                     }
-                                    iscount = false
                                 }
                             }, label: {
                                 YesButton()
@@ -72,26 +57,13 @@ struct MapPopup: View {
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
-<<<<<<< HEAD
-                                    iscount = false
-=======
                                     isGameStoryShow = false
-                                    chapterProgress.completionStatus[chapter] = true
->>>>>>> main
-=======
-                                    isPausePopup = false
->>>>>>> main
+                                    isStagePopup = false
                                 }
                             }, label: {
                                 NoButton()
-                            }) .buttonStyle(PlainButtonStyle())
-                            Button(action: {
-                                isPausePopup = true
-                            }, label: {
-                                YesButton()
                             })
-                            .fullScreenCover(isPresented: $isPausePopup,
-                                             content: { FindWrongGameView(isStagePopup: $isStagePopup) })
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                 }
@@ -100,16 +72,3 @@ struct MapPopup: View {
         }
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-struct MapPopup_Previews: PreviewProvider {
-    static var previews: some View {
-        MapPopup(isStagePopup: .constant(true))
-            .previewInterfaceOrientation(.landscapeLeft)
-    }
-}
->>>>>>> main
-=======
->>>>>>> main

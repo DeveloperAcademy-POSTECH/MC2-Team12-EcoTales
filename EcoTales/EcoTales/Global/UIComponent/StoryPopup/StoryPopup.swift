@@ -11,22 +11,9 @@ struct StoryPopup: View {
     @Binding var isPausePopup: Bool
     var body: some View {
         ZStack {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            if isShowingPopup {
-                Color.black.opacity(0.4)
-                    .ignoresSafeArea()
-                ZStack(alignment: .center) {
-=======
             if isPausePopup {
                 Dim()
                 Group {
->>>>>>> main
-=======
-            if isPausePopup {
-                Dim()
-                Group {
->>>>>>> main
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
@@ -45,13 +32,6 @@ struct StoryPopup: View {
                     }, label: {
                         ReplayButton()
                     })
-<<<<<<< HEAD
-<<<<<<< HEAD
-//                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
-=======
->>>>>>> main
-=======
->>>>>>> main
                     Button(action: {
                         isStagePopup = false
                     }, label: {
@@ -66,16 +46,8 @@ struct StoryPopup: View {
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            StoryPopup(isShowingPopup: .constant(true))
+            StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
                 .previewInterfaceOrientation(.landscapeLeft)
-=======
-            StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
->>>>>>> main
-=======
-            StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
->>>>>>> main
         }
     }
 }
