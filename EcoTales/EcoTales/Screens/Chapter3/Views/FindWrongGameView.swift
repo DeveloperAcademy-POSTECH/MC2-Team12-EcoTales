@@ -42,7 +42,8 @@ struct FindWrongGameView: View {
 
             if chapterThreeUserValue.lifeCount < 1 {
                 // Game Over
-                Color.black.opacity(0.4)
+                Color.black
+                    .opacity(0.4)
                     .ignoresSafeArea()
                 Image("gameOver")
                     .resizable()
@@ -55,7 +56,8 @@ struct FindWrongGameView: View {
             if isFindWrongClear {
                 // Game Clear
                 ZStack {
-                    Color.black.opacity(0.4)
+                    Color.black
+                        .opacity(0.4)
                     Image("gameClear")
                         .resizable()
                         .scaledToFit()
