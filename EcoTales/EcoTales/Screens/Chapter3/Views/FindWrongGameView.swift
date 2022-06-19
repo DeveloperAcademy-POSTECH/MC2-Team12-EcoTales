@@ -14,8 +14,8 @@ class ChapterThreeUserSettings: ObservableObject {
 }
 
 struct FindWrongGameView: View {
-    @Binding var isMapPopup: Bool
-    @State private var isStoryPopup = false
+    @Binding var isCloseMapPopup: Bool
+    @State private var isCloseStoryPopup = false
     @State private var isFindWrongClear = false
     @StateObject private var chapterThreeUserValue = ChapterThreeUserSettings()
     var body: some View {
@@ -25,7 +25,7 @@ struct FindWrongGameView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             VStack(spacing: 0) {
-                UpperPanelView(isStoryPopup: $isStoryPopup)
+                UpperPanelView(isCloseStoryPopup: $isCloseStoryPopup)
                     .environmentObject(chapterThreeUserValue)
                     .padding(.vertical, 5)
                 FindWrongScreenView(isFindWrongClear: $isFindWrongClear)
@@ -43,7 +43,7 @@ struct FindWrongGameView: View {
                     .resizable()
                     .scaledToFit()
                     .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: { isMapPopup = false })
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: { isCloseMapPopup = false })
                     }
             }
             if isFindWrongClear {
@@ -54,13 +54,13 @@ struct FindWrongGameView: View {
                         .resizable()
                         .scaledToFit()
                         .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: { isMapPopup = false })
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: { isCloseMapPopup = false })
                         }
                 }
                 .ignoresSafeArea()
             }
-            if isStoryPopup {
-                ChapterThreeStoryPopup(isMapPopup: $isMapPopup, isStoryPopup: $isStoryPopup)
+            if isCloseStoryPopup {
+                ChapterThreeStoryPopup(isCloseMapPopup: $isCloseMapPopup, isCloseStoryPopup: $isCloseStoryPopup)
                     .environmentObject(chapterThreeUserValue)
                     .ignoresSafeArea()
             }
@@ -70,12 +70,12 @@ struct FindWrongGameView: View {
 }
 
 private struct UpperPanelView: View {
-    @Binding var isStoryPopup: Bool
+    @Binding var isCloseStoryPopup: Bool
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
     var body: some View {
         HStack {
             Button(action: {
-                self.isStoryPopup = true
+                self.isCloseStoryPopup = true
             }, label: {})
             .buttonStyle(PauseButtonStyle())
             Spacer()
@@ -124,8 +124,7 @@ private struct HeartTake: View {
             }
         }
     }
-    @ViewBuilder
-    func heartTake( _ lifeCounter: Int) -> some View {
+    @ViewBuilder func heartTake( _ lifeCounter: Int) -> some View {
         HStack {
             Spacer()
             if lifeCounter > 0 {
@@ -156,9 +155,8 @@ private struct FindWrongScreenView: View {
             findWrongButton(4, x1: 570, y1: 260, x2: 200, y2: 260, circleSize: 70)
         }
     }
-
     @ViewBuilder func findWrongButton( _ circleNum: Int, x1 positionX1: Int, y1 positionY1: Int,
-                          x2 positionX2: Int, y2 positionY2: Int, circleSize: Int
+                                       x2 positionX2: Int, y2 positionY2: Int, circleSize: Int
     ) -> some View {
         Button {
             chapterThreeUserValue.isShowCircle[circleNum] = true
@@ -197,7 +195,7 @@ private struct FindWrongScreenView: View {
 
 struct FindWrongGameView_Previews: PreviewProvider {
     static var previews: some View {
-        FindWrongGameView(isMapPopup: .constant(true))
+        FindWrongGameView(isCloseMapPopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }

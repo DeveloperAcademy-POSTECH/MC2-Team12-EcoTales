@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct MapPopup: View {
-    @Binding var isMapPopup: Bool
+    @Binding var isCloseMapPopup: Bool
     @State private var isGameStoryShow = false
     var body: some View {
         ZStack {
             Color.black
                 .opacity(0.4)
                 .ignoresSafeArea()
-            if isMapPopup {
+            if isCloseMapPopup {
                 ZStack {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
@@ -40,7 +40,7 @@ struct MapPopup: View {
                         HStack(alignment: .center, spacing: 25) {
                             Button(action: {
                                 // Dismiss the PopUp
-                                isMapPopup = false
+                                isCloseMapPopup = false
                             }, label: {
                                 NoButton()
                             }) .buttonStyle(PlainButtonStyle())
@@ -50,7 +50,7 @@ struct MapPopup: View {
                                 YesButton()
                             })
                             .fullScreenCover(isPresented: $isGameStoryShow,
-                                             content: { FindWrongGameView(isMapPopup: $isMapPopup) })
+                                             content: { FindWrongGameView(isCloseMapPopup: $isCloseMapPopup) })
                         }
                     }
                 }
@@ -62,7 +62,7 @@ struct MapPopup: View {
 
 struct MapPopup_Previews: PreviewProvider {
     static var previews: some View {
-        MapPopup(isMapPopup: .constant(true))
+        MapPopup(isCloseMapPopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
