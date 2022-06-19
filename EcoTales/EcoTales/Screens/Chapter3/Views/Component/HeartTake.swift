@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HeartTake: View {
+
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+
     var body: some View {
         ZStack {
             HStack {
@@ -28,6 +30,7 @@ struct HeartTake: View {
             }
         }
     }
+
     @ViewBuilder func heartTake( _ lifeCount: Int) -> some View {
         HStack {
             Spacer()
