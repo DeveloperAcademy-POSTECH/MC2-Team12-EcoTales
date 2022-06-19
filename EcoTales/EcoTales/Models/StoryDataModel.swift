@@ -50,41 +50,6 @@ enum Speaker: String {
             return "오류"
         }
     }
-
-    func speakerImage() -> some View {
-        switch self {
-        case .child:
-            return AnyView(Image(ImageLiteral.child)
-                .resizable()
-                .frame(width: 140, height: 250))
-        case .turtle, .rain:
-            return AnyView(Image(ImageLiteral.rain)
-                .resizable()
-                .frame(width: 150, height: 240))
-        case .mole:
-            return AnyView(Image(ImageLiteral.mole)
-                .padding(.bottom, 60))
-        case .sherry:
-            return AnyView(Image(ImageLiteral.sherry)
-                .padding(.bottom, 60))
-        case .ozz:
-            return AnyView(Image(ImageLiteral.ozz)
-                .resizable()
-                .frame(width: 150, height: 250))
-        case .meenu:
-            return AnyView(Image(ImageLiteral.meenu)
-                .resizable()
-                .frame(width: 140, height: 250))
-        case .redpandaAll:
-            return AnyView(Image(ImageLiteral.redPandas))
-        case .redpandaA, .redpandaB, .redpandaC:
-            return AnyView(Image(ImageLiteral.redPanda)
-                .resizable()
-                .frame(width: 140, height: 250))
-        default:
-            return AnyView(Image(ImageLiteral.child))
-        }
-    }
 }
 
 struct StoryDataModel {
