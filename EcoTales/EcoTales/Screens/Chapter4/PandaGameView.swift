@@ -19,7 +19,7 @@ struct PandaGameView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .onTapGesture(  perform: {
-                    SoundManager.playSounds("mixkit-player-jumping-in-a-video-game-2043.wav")
+                    SoundManager.playSounds(SoundLiteral.SoundForWrong)
                 })
             VStack {
                 ZStack {
@@ -67,7 +67,7 @@ struct PandaGameView: View {
                     .scaledToFit()
                     .ignoresSafeArea()
                     .onAppear(perform: {
-                        SoundManager.playSounds("correctAnswer.mp3")
+                        SoundManager.playSounds(SoundLiteral.SoundForRight)
                     })
                     .onTapGesture(  perform: {
                         // todo: go to next view
