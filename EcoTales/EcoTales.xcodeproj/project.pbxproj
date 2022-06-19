@@ -26,7 +26,9 @@
 		262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060B3285A2A4400ED79C8 /* Image+Extension.swift */; };
 		265B143E285B727F0027FD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B143D285B727F0027FD5F /* ContentView.swift */; };
 		265B1440285B96360027FD5F /* file222 in Resources */ = {isa = PBXBuildFile; fileRef = 265B143F285B96360027FD5F /* file222 */; };
-		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
+		26D2EFCB285E481C0064A7CF /* EpilogueTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D2EFCA285E481C0064A7CF /* EpilogueTwo.swift */; };
+		26D2EFCD285EE4030064A7CF /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D2EFCC285EE4030064A7CF /* Font+Extension.swift */; };
+		5959E5F228549EAA00F39D9F /* EpilogueOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueOne.swift */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
 		AE75CF382856D1840052CD3E /* View+showToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75CF372856D1840052CD3E /* View+showToggle.swift */; };
@@ -77,7 +79,9 @@
 		262060B3285A2A4400ED79C8 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		265B143D285B727F0027FD5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		265B143F285B96360027FD5F /* file222 */ = {isa = PBXFileReference; lastKnownFileType = text; name = file222; path = EcoTales/Screens/file222; sourceTree = SOURCE_ROOT; };
-		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
+		26D2EFCA285E481C0064A7CF /* EpilogueTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueTwo.swift; sourceTree = "<group>"; };
+		26D2EFCC285EE4030064A7CF /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		5959E5F128549EAA00F39D9F /* EpilogueOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueOne.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindView.swift; sourceTree = "<group>"; };
 		7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObject.swift; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 				26205FE32854440E00ED79C8 /* Color+Extension.swift */,
 				262060B3285A2A4400ED79C8 /* Image+Extension.swift */,
 				AE75CF372856D1840052CD3E /* View+showToggle.swift */,
+				26D2EFCC285EE4030064A7CF /* Font+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -401,7 +406,8 @@
 		F857446528531C460012346A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				5959E5F128549EAA00F39D9F /* EpilogueThree.swift */,
+				5959E5F128549EAA00F39D9F /* EpilogueOne.swift */,
+				26D2EFCA285E481C0064A7CF /* EpilogueTwo.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -637,16 +643,18 @@
 				AE9A45372853307600683CCF /* MapView.swift in Sources */,
 				AE75CF3A2856D20D0052CD3E /* ImageLiteral.swift in Sources */,
 				26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */,
+				26D2EFCB285E481C0064A7CF /* EpilogueTwo.swift in Sources */,
 				26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */,
 				AE893CE028583A2E00EE00B3 /* Chapter.swift in Sources */,
 				26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */,
-				5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */,
+				5959E5F228549EAA00F39D9F /* EpilogueOne.swift in Sources */,
 				26205FED285445D500ED79C8 /* ContinueButton.swift in Sources */,
 				26205FEE285445D500ED79C8 /* ReplayButton.swift in Sources */,
 				AE893CE228583A8300EE00B3 /* ChapterProgress.swift in Sources */,
 				F8EB5D5C2856DC160058C1D0 /* SoundTestView.swift in Sources */,
 				265B143E285B727F0027FD5F /* ContentView.swift in Sources */,
 				26205FEF285445D500ED79C8 /* ExitButton.swift in Sources */,
+				26D2EFCD285EE4030064A7CF /* Font+Extension.swift in Sources */,
 				26205FF0285445D500ED79C8 /* StoryPopup.swift in Sources */,
 				F85744932854A9BB0012346A /* YesButton.swift in Sources */,
 				7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */,
