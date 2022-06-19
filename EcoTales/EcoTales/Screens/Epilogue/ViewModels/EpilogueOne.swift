@@ -1,5 +1,5 @@
 //
-//  EpilogueThree.swift
+//  EpilogueOne.swift
 //  EcoTales
 //
 //  Created by Seik Oh on 2022/06/11.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EpilogueThree: View {
+struct EpilogueOne: View {
     let images = [ImageLiteral.chapter3CleanBackground,
                   ImageLiteral.chapter2Background,
                   ImageLiteral.chapter1CleanBackground]
@@ -30,9 +30,9 @@ struct EpilogueThree: View {
     }
 }
 
-struct EpilogueThree_Previews: PreviewProvider {
+struct EpilogueOne_Previews: PreviewProvider {
     static var previews: some View {
-        EpilogueThree()
+        EpilogueOne()
             .previewInterfaceOrientation(.landscapeRight)
     }
 }
