@@ -14,16 +14,19 @@ class ChapterThreeUserSettings: ObservableObject {
 }
 
 struct FindWrongGameView: View {
+
     @Binding var isCloseMapPopup: Bool
     @State private var isCloseStoryPopup = false
     @State private var isFindWrongClear = false
     @StateObject private var chapterThreeUserValue = ChapterThreeUserSettings()
+
     var body: some View {
         ZStack {
             Image("chapter3_GameWoodPanel")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+
             VStack(spacing: 0) {
                 UpperPanelView(isCloseStoryPopup: $isCloseStoryPopup)
                     .environmentObject(chapterThreeUserValue)
@@ -32,9 +35,11 @@ struct FindWrongGameView: View {
                     .environmentObject(chapterThreeUserValue)
             }
             .padding(.horizontal, 44)
+
             Image("Chapter3_tape")
                 .resizable()
                 .allowsHitTesting(false)
+
             if chapterThreeUserValue.lifeCount < 1 {
                 // Game Over
                 Color.black.opacity(0.4)
@@ -46,6 +51,7 @@ struct FindWrongGameView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: { isCloseMapPopup = false })
                     }
             }
+
             if isFindWrongClear {
                 // Game Clear
                 ZStack {
@@ -59,6 +65,7 @@ struct FindWrongGameView: View {
                 }
                 .ignoresSafeArea()
             }
+
             if isCloseStoryPopup {
                 ChapterThreeStoryPopup(isCloseMapPopup: $isCloseMapPopup, isCloseStoryPopup: $isCloseStoryPopup)
                     .environmentObject(chapterThreeUserValue)
@@ -70,8 +77,10 @@ struct FindWrongGameView: View {
 }
 
 private struct UpperPanelView: View {
+
     @Binding var isCloseStoryPopup: Bool
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+
     var body: some View {
         HStack {
             Button(action: {
