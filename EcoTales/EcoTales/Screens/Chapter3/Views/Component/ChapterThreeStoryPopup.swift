@@ -14,8 +14,7 @@ struct ChapterThreeStoryPopup: View {
     var body: some View {
         ZStack {
             if isPausePopup {
-                Color.black
-                    .opacity(0.4)
+                Dim()
                 Group {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)

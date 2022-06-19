@@ -10,6 +10,7 @@
 		152D05AD285AD30900307491 /* FindWrongGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152D05AC285AD30900307491 /* FindWrongGameView.swift */; };
 		156FC559285B796D00A696E1 /* ChapterThreeStoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */; };
 		15B76C06285F736B0040373B /* ChapterUserSettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C05285F736B0040373B /* ChapterUserSettingData.swift */; };
+		15B76C08285F89B20040373B /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C07285F89B20040373B /* Dim.swift */; };
 		26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
 		26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
 		26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE32854440E00ED79C8 /* Color+Extension.swift */; };
@@ -68,6 +69,7 @@
 		152D05AC285AD30900307491 /* FindWrongGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWrongGameView.swift; sourceTree = "<group>"; };
 		156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryPopup.swift; sourceTree = "<group>"; };
 		15B76C05285F736B0040373B /* ChapterUserSettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterUserSettingData.swift; sourceTree = "<group>"; };
+		15B76C07285F89B20040373B /* Dim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dim.swift; sourceTree = "<group>"; };
 		26205FD52854432300ED79C8 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		26205FD72854435D00ED79C8 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		26205FDB2854438800ED79C8 /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				59B68893285326FD00B0DB71 /* StoryPopup */,
 				59B688902853263F00B0DB71 /* PauseButton */,
 				2620601028549ADB00ED79C8 /* StoryView.swift */,
+				15B76C07285F89B20040373B /* Dim.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
+				15B76C08285F89B20040373B /* Dim.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
 				262060172855056F00ED79C8 /* ChapterTwoStoryView.swift in Sources */,

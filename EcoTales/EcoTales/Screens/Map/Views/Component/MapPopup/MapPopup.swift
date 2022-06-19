@@ -12,9 +12,7 @@ struct MapPopup: View {
     @State private var isPausePopup = false
     var body: some View {
         ZStack {
-            Color.black
-                .opacity(0.4)
-                .ignoresSafeArea()
+            Dim()
             if isStagePopup {
                 ZStack {
                     RoundedRectangle(cornerRadius: 50)

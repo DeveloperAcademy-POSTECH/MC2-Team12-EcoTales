@@ -12,10 +12,8 @@ struct StoryPopup: View {
     var body: some View {
         ZStack {
             if isPausePopup {
-                Color.black
-                    .opacity(0.4)
+                Dim()
                 Group {
-//                ZStack(alignment: .center) {
                     RoundedRectangle(cornerRadius: 50)
                         .fill(Color.PopupFillBrown)
                         .shadow(color: .black.opacity(0.25), radius: 4, x: 4, y: 4)
