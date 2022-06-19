@@ -6,168 +6,143 @@
 //
 import SwiftUI
 
-func selectStory(chapter: Int, isGameClear: Bool) -> StoryDataModel {
-    switch chapter {
-    case 0:
-        return StoryData().chapterIntro
-    case 1:
-        return isGameClear ? StoryData().chapterOneClear : StoryData().chapterOneNotClear
-    case 2:
-        return isGameClear ? StoryData().chapterTwoClear : StoryData().chapterTwoNotClear
-    case 3:
-        return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
-    case 4:
-        return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
-    case 5:
-        return StoryData().chapterEpilogue
-    default:
-        return StoryData().chapterError
-    }
-}
-
 struct StoryView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var storyIndex = 0
-    @Binding var chapter: Int
-    @Binding var isGameClear: Bool
-    @Binding var num: Int
+    @State private var isGameShow = false
+    @State private var isGameClear = false
+    @Binding var chapter: Chapter
+
     var body: some View {
-        ZStack {
-            if chapter == 1 && isGameClear == false {
-                Image("chapter1_pollutedBackground")
-                    .backgroundImage()
+        NavigationView {
+            ZStack {
+                Image(chapterBackground())
+                    .backgroundStyle()
                     .aspectRatio(contentMode: .fill)
-            }
-            if chapter == 1 && isGameClear == true {
-                Image("chapter1_cleanBackground")
-                    .backgroundImage()
-                    .aspectRatio(contentMode: .fill)
-            }
-            if chapter == 2 {
-                Image("chapter2_background")
-                    .backgroundImage()
-                    .aspectRatio(contentMode: .fill)
-            }
-            if chapter == 3 && isGameClear == false {
-                Image("chapter3_pollutedBackground")
-                    .backgroundImage()
-                    .aspectRatio(contentMode: .fill)
-            }
-            if chapter == 3 && isGameClear == true {
-                Image("chapter3_cleanBackground")
-                    .backgroundImage()
-                    .aspectRatio(contentMode: .fill)
-            }
-            if chapter == 4 {
-                Image("chapter4_background")
-                    .backgroundImage()
-                    .aspectRatio(contentMode: .fill)
-            }
-            // 배경
-            HStack {
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "레인" ||
-                    selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "거북이" {
-                    Image("character_rain")
+
+                HStack {
+                    speakCharacter()
+                    Spacer()
+                    Image(ImageLiteral.child)
                         .resizable()
-                        .frame(width: 150.0, height: 240.0)
+                        .scaledToFit()
                 }
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "쉐리" && isGameClear == true {
-                    Image("character_sherry")
-                        .padding(.bottom, 60)
-//                        .resizable()
-//                        .frame(width: 140.0, height: 250.0)
-                }
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "두더지" ||
-                    (selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "쉐리" && isGameClear == false) {
-                    Image("character_mole")
-                        .padding(.bottom, 60)
-//                        .resizable()
-//                        .frame(width: 140.0, height: 250.0)
-                }
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "오즈" {
-                    Image("character_oz")
-                        .resizable()
-                        .frame(width: 140.0, height: 250.0)
-                }
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "미뉴" {
-                    Image("character_meenu")
-                        .resizable()
-                        .frame(width: 140.0, height: 250.0)
-                }
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "레서 판다 A" ||
-                    selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "레서 판다 B" ||
-                    selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "레서 판다 C" {
-                    Image("character_redPanda")
-                        .resizable()
-                        .frame(width: 140.0, height: 250.0)
-                }
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "레서 판다 A, B, C" {
-                    Image("character_redPandas")
-                        .resizable()
-                        .frame(width: 140.0, height: 250.0)
-                }
-                Spacer()
-                if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                    .speaker[storyIndex].rawValue == "아이" {
-                    Image("character_child")
-                        .resizable()
-                        .frame(width: 140.0, height: 250.0)
-                }
-            }
-            .padding(EdgeInsets(top: 50, leading: 70, bottom: 10, trailing: 70))
-            // 이미지
-            VStack {
-                Spacer()
-                ZStack(alignment: .topLeading) {
-                    Text(selectStory(chapter: self.chapter, isGameClear: self.isGameClear).dialog[storyIndex])
-                        .frame(width: 650, height: 80, alignment: .topLeading)
-                        .lineSpacing(10)
-                        .background(
-                            Image("global_dialogField")
-                                .resizable()
-                                .frame(width: 750, height: 150)
-                        )
-                        .padding(.top, 45)
-                    if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                        .speaker[storyIndex].rawValue != "나레이션" {
-                        Text(selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
-                            .speaker[storyIndex].rawValue)
-                            .frame(width: 120, height: 30, alignment: .center)
+                .padding(EdgeInsets(top: 50, leading: 70, bottom: 10, trailing: 70))
+
+                VStack {
+                    Spacer()
+                    ZStack(alignment: .topLeading) {
+                        Text(chapterStory().dialog[storyIndex])
+                            .frame(width: 650, height: 80, alignment: .topLeading)
                             .lineSpacing(10)
                             .background(
-                                Image("global_nameField")
+                                Image(ImageLiteral.dialogField)
                                     .resizable()
-                                    .frame(width: 140, height: 50)
+                                    .frame(width: 750, height: 150)
                             )
+                            .padding(.top, 45)
+                        if chapterStory().speaker[storyIndex] != .naration {
+                            Text(chapterStory().speaker[storyIndex].speakerName())
+                                .frame(width: 120, height: 30, alignment: .center)
+                                .lineSpacing(10)
+                                .background(
+                                    Image(ImageLiteral.nameField)
+                                        .resizable()
+                                        .frame(width: 140, height: 50)
+                                )
+                        }
                     }
                 }
+                .padding(.bottom, 30)
+                if isGameShow {
+                    NavigationLink(isActive: self.$isGameShow,
+                                   destination: { chapterGame() },
+                                   label: {
+                        Text("a")
+                    })
+                }
             }
-            .padding(.bottom, 30)
+            .onTapGesture {
+                if storyIndex == (chapterStory()
+                    .speaker.count - 1) {
+                    if isGameClear {
+                        presentationMode.wrappedValue.dismiss()
+                    } else {
+                        isGameShow = true
+                        storyIndex = 0
+                    }
+                } else {
+                    storyIndex += 1
+                }
+            }
         }
-        .onTapGesture {
-            if storyIndex == (selectStory(chapter: self.chapter, isGameClear: self.isGameClear).speaker.count - 1) {
-                num += 1
-                storyIndex = 0
-            } else {
-                storyIndex += 1
-            }
+        .navigationBarHidden(true)
+    }
+
+    func chapterStory() -> StoryDataModel {
+        switch chapter {
+        case .zero:
+            return StoryData().chapterIntro
+        case .one:
+            return isGameClear ? StoryData().chapterOneClear : StoryData().chapterOneNotClear
+        case .two:
+            return isGameClear ? StoryData().chapterTwoClear : StoryData().chapterTwoNotClear
+        case .three:
+            return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
+        case .four:
+            return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
+        }
+    }
+
+    func chapterBackground() -> String {
+        switch chapter {
+        case .one:
+            return isGameClear ? ImageLiteral.chapter1CleanBackground : ImageLiteral.chapter1PollutedBackground
+        case .two:
+            return isGameClear ? ImageLiteral.chapter2CleanBackground : ImageLiteral.chapter2PollutedBackground
+        case .three:
+            return isGameClear ? ImageLiteral.chapter3CleanBackground : ImageLiteral.chapter3Pollutedbackground
+        case .four:
+            return ImageLiteral.chapter4Background
+        default:
+            return ImageLiteral.chapter1PollutedBackground
+        }
+    }
+
+    func chapterGame() -> some View {
+        switch chapter {
+        case .one:
+            return HiddenObjGameView(isGameClear: self.$isGameClear)
+//        case .two:
+//            return
+//        case .three:
+//            return
+//        case .four:
+//            return
+        default:
+            return HiddenObjGameView(isGameClear: self.$isGameClear)
+        }
+    }
+
+    func speakCharacter() -> some View {
+        switch chapterStory()
+            .speaker[storyIndex] {
+        case .turtle, .rain:
+            return Image(ImageLiteral.rain)
+        case .mole, .dirtySherry:
+            return Image(ImageLiteral.mole)
+        case .sherry:
+            return Image(ImageLiteral.sherry)
+        case .ozz:
+            return Image(ImageLiteral.ozz)
+        case .meenu:
+            return Image(ImageLiteral.meenu)
+        case .redpandaA, .redpandaB, .redpandaC:
+            return Image(ImageLiteral.redPanda)
+        case .redpandaAll:
+            return Image(ImageLiteral.redPandas)
+        default:
+            return Image(ImageLiteral.child)
         }
     }
 }
-
-// struct StoryView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StoryView()
-//            .previewInterfaceOrientation(.landscapeLeft)
-//    }
-// }

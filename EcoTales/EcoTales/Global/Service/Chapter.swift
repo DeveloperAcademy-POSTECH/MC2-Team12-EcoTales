@@ -21,7 +21,7 @@ enum Chapter: Int, CaseIterable {
         case .three:
             return "챕터 3"
         case .four:
-            return "에필로그"
+            return "챕터 4"
         }
     }
 }

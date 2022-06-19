@@ -82,7 +82,7 @@ private struct ExplainGameView: View {
         ZStack {
             // text 받아오는 함수 위치
             Text("설명을 해줄게!")
-                .background(Image("chapter1_turtleDialog"))
+                .background(Image(ImageLiteral.chapter1TurtleDialog))
         }
         .frame(width: 450, height: 30)
     }

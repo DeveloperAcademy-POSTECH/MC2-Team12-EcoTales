@@ -14,6 +14,7 @@ class ChapterProgress: ObservableObject {
         completionStatus = Chapter.allCases.reduce(into: [Chapter: Bool]()) {
             $0[$1] = false
         }
+        completionStatus[.zero] = true
     }
 
 }

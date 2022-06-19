@@ -1,5 +1,5 @@
 //
-//  View+isHidden.swift
+//  View+showToggle.swift
 //  EcoTales
 //
 //  Created by 리아 on 2022/06/13.
