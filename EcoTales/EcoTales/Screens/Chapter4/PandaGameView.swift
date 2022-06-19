@@ -27,6 +27,7 @@ struct PandaGameView: View {
                             self.isShowingPopup = true
                             } label: {}
                             .buttonStyle(PauseButtonStyle())
+                            // TODO: 아예 PauseButton이나 PauseButtonLabel을 만드는 게 좋을 것 같다는 생각이 들었습니다. 추후에 수정이 가능하다면 수정합니다.
                         Spacer()
                     }
                     .padding(.top, 5)
