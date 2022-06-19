@@ -5,6 +5,8 @@
 //  Created by 김민택 on 2022/06/09.
 //
 
+import SwiftUI
+
 enum Speaker: String {
     case naration
     case photo
@@ -19,7 +21,7 @@ enum Speaker: String {
     case redpandaA
     case redpandaB
     case redpandaC
-    
+
     func speakerName() -> String {
         switch self {
         case .child:
@@ -48,12 +50,50 @@ enum Speaker: String {
             return "오류"
         }
     }
+
+    func speakerImage() -> some View {
+        switch self {
+        case .child:
+            return AnyView(Image(ImageLiteral.child)
+                .resizable()
+                .frame(width: 140, height: 250))
+        case .turtle, .rain:
+            return AnyView(Image(ImageLiteral.rain)
+                .resizable()
+                .frame(width: 150, height: 240))
+        case .mole:
+            return AnyView(Image(ImageLiteral.mole)
+                .padding(.bottom, 60))
+        case .sherry:
+            return AnyView(Image(ImageLiteral.sherry)
+                .padding(.bottom, 60))
+        case .ozz:
+            return AnyView(Image(ImageLiteral.ozz)
+                .resizable()
+                .frame(width: 150, height: 250))
+        case .meenu:
+            return AnyView(Image(ImageLiteral.meenu)
+                .resizable()
+                .frame(width: 140, height: 250))
+        case .redpandaAll:
+            return AnyView(Image(ImageLiteral.redPandas))
+        case .redpandaA, .redpandaB, .redpandaC:
+            return AnyView(Image(ImageLiteral.redPanda)
+                .resizable()
+                .frame(width: 140, height: 250))
+        default:
+            return AnyView(Image(ImageLiteral.child))
+        }
+    }
 }
 
 struct StoryDataModel {
     let speaker: [Speaker]
     let dialog: [String]
+//    var isReadyToUse: Bool
 }
+
+let abc: [StoryDataModel] = []
 
 struct StoryData {
     let chapterError = StoryDataModel(
@@ -219,8 +259,26 @@ struct StoryData {
     )
 
     let chapterEpilogue = StoryDataModel(
-        speaker: [.naration],
-        dialog: ["에필로그"]
+        speaker: [.meenu,
+                  .meenu,
+                  .photo,
+                  .meenu,
+                  .meenu,
+                  .meenu,
+                  .child,
+                  .meenu,
+                  .meenu,
+                  .meenu],
+        dialog: ["아이야, 네가 한 행동은 정말 대단한 일이었어.",
+                 "이걸 기념해서 네가 모아온 재료로 반지를 만들어 줄게",
+                 "",
+                 "지구 모양의 반지란다. 지구는 우리가 삶을 살아가는 터전이지.",
+                 "세계수의 나뭇잎 모양 반지란다. 그리고 우리가 삶을 살아가는 터전인 자연을 의미하기도 하지.",
+                 "...",
+                 "미뉴, 무슨 일이 있는 거예요?",
+                 "이 마을은 네 덕분에 깨끗해졌지만, 지구 세상에는 아직도 오염된 환경으로 인해 고통받는 친구들이 많단다.",
+                 "아이야.. 너와 같은 아이들의 도움이 필요해.",
+                 "나와 계속 함께하며 세계를 지키는 영웅이 되어보겠니?"]
     )
 
     let introOne = ["세상에서 가장 아름답고, 푸르른 마을에 한 아이가 살았어요.",
@@ -247,4 +305,20 @@ struct StoryData {
     let introFour = ["\"알겠어! 나라도 무언가를 해봐야겠어! 나, 재료를 찾으러 다녀올게. 세계수를 잘 부탁해\"",
                      "그 길로 아이는 바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 찾기 위한 여정을 떠났어요.",
                      "어디에 가야 바다의 깨끗한 소금물 한 바가지를 구할 수 있을까요?"]
+
+    let epilogueTwoSentence = ["세계수가 너무도 그리웠던 아이는, 한걸음에 언덕으로 달려갔어요.",
+                       "그런데, 꿈만 같은 일이 일어났어요."]
+
+    let epilogueTwoDialog = ["세계수가 싱싱하고 튼튼한 모습으로 아이를 맞이하는 것이 아니겠어요?",
+                         "'어? 아직 치료약을 먹지 않았는데?'",
+                         "아이는 크게 놀랐지만, 너무 기쁜 나머지 세계수의 품에 쏘옥 안겼어요.",
+                         "\"아이야, 고맙구나. 네 힘으로 나를 살렸어.\"",
+                         "\"그렇지만, 제가 가져온 재료가 아무 의미 없었는 걸요?\"",
+                         "세계수는 아이를 쓰다듬으며 말했어요.",
+                         "\"그렇지 않단다. 네가 청소한 바다의 깨끗한 물이 비가 되어 내 목을 적셨고,\"",
+                         "\"네가 청소한 대지의 흙으로 나의 뿌리를 덮었고,\"",
+                         "\"네가 청소한 대기의 공기로 내가 숨을 쉴 수 있었단다.\"",
+                         "\"너의 행동 하나 하나가 나를 살렸어.\"",
+                         "아이의 가슴은 따뜻해졌고, 얼굴에는 행복한 미소가 피었어요.",
+                         "그 모습을 지켜본 레서 판다의 얼굴에도 미소가 걸렸어요."]
 }
