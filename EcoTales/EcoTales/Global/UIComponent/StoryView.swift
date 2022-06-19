@@ -6,59 +6,29 @@
 //
 import SwiftUI
 
-func selectStory(chapter: Chapter, isGameClear: Bool) -> StoryDataModel {
-    switch chapter {
-    case .zero:
-        return StoryData().chapterIntro
-    case .one:
-        return isGameClear ? StoryData().chapterOneClear : StoryData().chapterOneNotClear
-    case .two:
-        return isGameClear ? StoryData().chapterTwoClear : StoryData().chapterTwoNotClear
-    case .three:
-        return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
-    case .four:
-        return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
-    case .five:
-        return StoryData().chapterEpilogue
-    }
-}
-
-func selectBackground(chapter: Chapter, isGameClear: Bool) -> String {
-    switch chapter {
-    case .one:
-        return isGameClear ? ImageLiteral.chapter1CleanBackground : ImageLiteral.chapter1PollutedBackground
-    case .two:
-        return ImageLiteral.chapter2Background
-    case .three:
-        return isGameClear ? ImageLiteral.chapter3CleanBackground : ImageLiteral.chapter3Pollutedbackground
-    case .four:
-        return ImageLiteral.chapter4Background
-    default:
-        return ImageLiteral.chapter1PollutedBackground
-    }
-}
-
 struct StoryView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var storyIndex = 0
     @State private var isGameShow = false
+    @State private var isGameClear = false
     @Binding var chapter: Chapter
-    @Binding var isGameClear: Bool
+
     var body: some View {
         NavigationView {
             ZStack {
-                Image(selectBackground(chapter: self.chapter, isGameClear: self.isGameClear))
+                Image(chapterBackground(chapter: self.chapter, isGameClear: self.isGameClear))
                     .backgroundImage()
                     .aspectRatio(contentMode: .fill)
                 HStack {
-    //
+                    Image(ImageLiteral.meenu)
+                    Spacer()
+                    Image(ImageLiteral.child)
                 }
                 .padding(EdgeInsets(top: 50, leading: 70, bottom: 10, trailing: 70))
-                // 이미지
                 VStack {
                     Spacer()
                     ZStack(alignment: .topLeading) {
-                        Text(selectStory(chapter: self.chapter, isGameClear: self.isGameClear).dialog[storyIndex])
+                        Text(chapterStory(chapter: self.chapter, isGameClear: self.isGameClear).dialog[storyIndex])
                             .frame(width: 650, height: 80, alignment: .topLeading)
                             .lineSpacing(10)
                             .background(
@@ -67,9 +37,9 @@ struct StoryView: View {
                                     .frame(width: 750, height: 150)
                             )
                             .padding(.top, 45)
-                        if selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
+                        if chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
                             .speaker[storyIndex] != .naration {
-                            Text(selectStory(chapter: self.chapter, isGameClear: self.isGameClear)
+                            Text(chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
                                 .speaker[storyIndex].speakerName())
                                 .frame(width: 120, height: 30, alignment: .center)
                                 .lineSpacing(10)
@@ -91,7 +61,7 @@ struct StoryView: View {
                 }
             }
             .onTapGesture {
-                if storyIndex == (selectStory(chapter: self.chapter, isGameClear: self.isGameClear).speaker.count - 1) {
+                if storyIndex == (chapterStory(chapter: self.chapter, isGameClear: self.isGameClear).speaker.count - 1) {
                     if isGameClear {
                         presentationMode.wrappedValue.dismiss()
                     } else {
@@ -102,6 +72,38 @@ struct StoryView: View {
                     storyIndex += 1
                 }
             }
+        }
+    }
+    
+    func chapterStory(chapter: Chapter, isGameClear: Bool) -> StoryDataModel {
+        switch chapter {
+        case .zero:
+            return StoryData().chapterIntro
+        case .one:
+            return isGameClear ? StoryData().chapterOneClear : StoryData().chapterOneNotClear
+        case .two:
+            return isGameClear ? StoryData().chapterTwoClear : StoryData().chapterTwoNotClear
+        case .three:
+            return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
+        case .four:
+            return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
+        case .five:
+            return StoryData().chapterEpilogue
+        }
+    }
+    
+    func chapterBackground(chapter: Chapter, isGameClear: Bool) -> String {
+        switch chapter {
+        case .one:
+            return isGameClear ? ImageLiteral.chapter1CleanBackground : ImageLiteral.chapter1PollutedBackground
+        case .two:
+            return ImageLiteral.chapter2Background
+        case .three:
+            return isGameClear ? ImageLiteral.chapter3CleanBackground : ImageLiteral.chapter3Pollutedbackground
+        case .four:
+            return ImageLiteral.chapter4Background
+        default:
+            return ImageLiteral.chapter1PollutedBackground
         }
     }
 }
