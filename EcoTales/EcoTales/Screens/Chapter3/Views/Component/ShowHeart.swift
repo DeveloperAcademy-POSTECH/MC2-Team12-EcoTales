@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeartTake: View {
+struct ShowHeart: View {
 
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
 
@@ -25,13 +25,11 @@ struct HeartTake: View {
                     .resizable()
                     .frame(width: 30, height: 30)
             }
-            HStack {
-                heartTake( chapterThreeUserValue.lifeCount )
-            }
+            heartTake(chapterThreeUserValue.lifeCount)
         }
     }
 
-    @ViewBuilder func heartTake( _ lifeCount: Int) -> some View {
+    @ViewBuilder func heartTake(_ lifeCount: Int) -> some View {
         HStack {
             Spacer()
             if lifeCount > 0 {
@@ -47,6 +45,6 @@ struct HeartTake: View {
 
 struct HeartTake_Previews: PreviewProvider {
     static var previews: some View {
-        HeartTake()
+        ShowHeart()
     }
 }

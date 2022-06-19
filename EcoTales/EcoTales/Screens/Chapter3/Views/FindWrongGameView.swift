@@ -88,7 +88,7 @@ private struct UpperPanelView: View {
             Spacer()
             ExplainGameView()
             Spacer()
-            HeartTake()
+            ShowHeart()
         }
     }
 }
