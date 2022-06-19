@@ -61,7 +61,6 @@ struct IntroView: View {
             if introStoryIndex == introStory().count - 1 {
                 if introNumber == 4 {
                     isIntroSeen = true
-//                    chapterProgress.completionStatus[.zero] = true
                     presentationMode.wrappedValue.dismiss()
                 } else {
                     introNumber += 1
