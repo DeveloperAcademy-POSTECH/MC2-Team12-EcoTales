@@ -47,7 +47,8 @@ struct MapView: View {
             Image(ImageLiteral.child)
                 .position(childPosition())
 
-            MapPopup(iscount: $isPopUp, isIntroShow: self.$isIntroStart, isGameStoryShow: self.$isChapterStart, chapter: selectedChapter)
+            MapPopup(iscount: $isPopUp, isIntroShow: self.$isIntroStart,
+                     isGameStoryShow: self.$isChapterStart, chapter: selectedChapter)
         }
         .fullScreenCover(isPresented: $isIntroStart,
                          content: { IntroView(isIntroSeen: $isIntroSeen) })
