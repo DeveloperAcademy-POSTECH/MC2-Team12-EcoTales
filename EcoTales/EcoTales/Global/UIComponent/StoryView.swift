@@ -41,10 +41,8 @@ struct StoryView: View {
                                     .frame(width: 750, height: 150)
                             )
                             .padding(.top, 45)
-                        if chapterStory()
-                            .speaker[storyIndex] != .naration {
-                            Text(chapterStory()
-                                .speaker[storyIndex].speakerName())
+                        if chapterStory().speaker[storyIndex] != .naration {
+                            Text(chapterStory().speaker[storyIndex].speakerName())
                                 .frame(width: 120, height: 30, alignment: .center)
                                 .lineSpacing(10)
                                 .background(
