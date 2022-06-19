@@ -7,11 +7,11 @@
 import SwiftUI
 
 struct StoryPopup: View {
-    @Binding var isMapPopup: Bool
-    @Binding var isStoryPopup: Bool
+    @Binding var isCloseMapPopup: Bool
+    @Binding var isCloseStoryPopup: Bool
     var body: some View {
         ZStack {
-            if isStoryPopup {
+            if isCloseStoryPopup {
                 Color.black
                     .opacity(0.4)
                 Group {
@@ -26,7 +26,7 @@ struct StoryPopup: View {
                 VStack(alignment: .center, spacing: 25) {
                     Button(action: {
                         // Dismiss the Popup
-                        isStoryPopup = false
+                        isCloseStoryPopup = false
                     }, label: {
                         ContinueButton()
                     })
@@ -35,7 +35,7 @@ struct StoryPopup: View {
                         ReplayButton()
                     })
                     Button(action: {
-                        isMapPopup = false
+                        isCloseMapPopup = false
                     }, label: {
                         ExitButton()
                     })
@@ -48,7 +48,7 @@ struct StoryPopup: View {
 struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            StoryPopup(isMapPopup: .constant(true), isStoryPopup: .constant(true))
+            StoryPopup(isCloseMapPopup: .constant(true), isCloseStoryPopup: .constant(true))
         }
     }
 }
