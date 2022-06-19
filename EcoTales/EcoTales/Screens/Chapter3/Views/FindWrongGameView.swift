@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-class ChapterThreeUserSettings: ObservableObject {
-    @Published var circleScore = 0
-    @Published var isShowCircle = Array(repeating: false, count: 5)
-    @Published var lifeCount = 3
-}
-
 struct FindWrongGameView: View {
 
     @Binding var isStagePopup: Bool
