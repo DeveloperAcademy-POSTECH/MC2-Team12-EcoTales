@@ -57,7 +57,8 @@ struct RecycleGameView: View {
                                 .resizable()
                                 .frame(width: 300, height: 200, alignment: .top)
                             if !randomObject.isEmpty {
-                                Image(RecycleObject(rawValue: randomObject[0])!.recycleObjectImage())
+                                let recycleObjectZero = RecycleObject(rawValue: randomObject[0]) ?? .egg
+                                Image(recycleObjectZero.recycleObjectImage())
                                     .resizable()
                                     .frame(width: 120, height: 100, alignment: .top)
                             }
@@ -105,8 +106,9 @@ struct RecycleBins: View {
                     Text(recycleBinArray[recycleIndex].recycleName())
                     Button {
                         if !randomObject.isEmpty {
+                            let recycleObjectZero = RecycleObject(rawValue: randomObject[0]) ?? .egg
                             if recycleBinArray[recycleIndex].recycleName() ==
-                                RecycleObject(rawValue: randomObject[0])!.recycleObjectType() {
+                                recycleObjectZero.recycleObjectType() {
                                 randomObject.remove(at: 0)
                                 SoundManager.playSounds("boxingSound.wav")}
                             else {
