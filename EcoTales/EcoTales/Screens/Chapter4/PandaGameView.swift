@@ -17,7 +17,7 @@ struct PandaGameView: View {
             Image(ImageLiteral.pandaBackground)
                 .resizable()
                 .ignoresSafeArea()
-                .onTapGesture(  perform: {
+                .onTapGesture(perform: {
                     SoundManager.playSounds(SoundLiteral.soundForWrong)
                 })
             VStack {
