@@ -14,6 +14,7 @@ enum ImageLiteral {
     static var path3to4 = "map_path3"
     static var path4to5 = "map_path4"
     static var child = "character_child"
+    static var childHead = "chapter4_mainCharacterHeadCircle"
     static var activeStageMark = "map_stageMark"
     static var inactiveStageMark = "map_stageMarkGray"
     static var chapter2Timer = "chapter2_timer"
@@ -35,4 +36,8 @@ enum ImageLiteral {
     static var recycleGameNewspaper = "recycle_newspaper"
     static var recycleGameGlassCup = "recycle_glassCup"
     static var recycleGameMug = "recycle_mugCup"
+    static var gameClear = "game_gameClear"
+    static var meenuDoctor = "character_meenuDoctor"
+    static var pandaBackground = "chapterFour-gameBackground"
+    static var turtleDialog = "chapter1_turtleDialog"
 }

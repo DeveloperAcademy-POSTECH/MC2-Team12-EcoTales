@@ -25,9 +25,12 @@
 		2620601528549E5200ED79C8 /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601428549E5200ED79C8 /* StoryDataModel.swift */; };
 		262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060182855088200ED79C8 /* ChapterThreeStoryView.swift */; };
 		2620601E28559E8000ED79C8 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2620601D28559E8000ED79C8 /* IntroView.swift */; };
+		591ED884285F3EC0009EFF6D /* SoundLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591ED883285F3EC0009EFF6D /* SoundLiteral.swift */; };
+		5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5920AEC4285AABAA000D6225 /* PandaGameView.swift */; };
 		262060B4285A2A4400ED79C8 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262060B3285A2A4400ED79C8 /* Image+Extension.swift */; };
 		5959E5F228549EAA00F39D9F /* EpilogueThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959E5F128549EAA00F39D9F /* EpilogueThree.swift */; };
 		595FA01B28570D95006E72D3 /* RecycleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FA01A28570D95006E72D3 /* RecycleGameView.swift */; };
+		597F375E285B0AEC002631FA /* correctAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597F375D285B0AEC002631FA /* correctAnswer.mp3 */; };
 		597F3760285B5726002631FA /* RecycleBinTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F375F285B5726002631FA /* RecycleBinTypes.swift */; };
 		7E4405362855C572009DF58B /* ObjectsToFindEachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405352855C572009DF58B /* ObjectsToFindEachView.swift */; };
 		7E4405382855E048009DF58B /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4405372855E048009DF58B /* TrashView.swift */; };
@@ -85,8 +88,11 @@
 		262060182855088200ED79C8 /* ChapterThreeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryView.swift; sourceTree = "<group>"; };
 		2620601D28559E8000ED79C8 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		262060B3285A2A4400ED79C8 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		591ED883285F3EC0009EFF6D /* SoundLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLiteral.swift; sourceTree = "<group>"; };
+		5920AEC4285AABAA000D6225 /* PandaGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaGameView.swift; sourceTree = "<group>"; };
 		5959E5F128549EAA00F39D9F /* EpilogueThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpilogueThree.swift; sourceTree = "<group>"; };
 		595FA01A28570D95006E72D3 /* RecycleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleGameView.swift; sourceTree = "<group>"; };
+		597F375D285B0AEC002631FA /* correctAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswer.mp3; sourceTree = "<group>"; };
 		597F375F285B5726002631FA /* RecycleBinTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleBinTypes.swift; sourceTree = "<group>"; };
 		7E3635E9285361DA00EB2CAA /* HiddenObjGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenObjGameView.swift; sourceTree = "<group>"; };
 		7E3635EB2853764E00EB2CAA /* ObjectsToFindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsToFindView.swift; sourceTree = "<group>"; };
@@ -152,6 +158,14 @@
 				15C16015285598DA002BA1F8 /* TouchLocatingView.swift */,
 			);
 			path = TouchLocation;
+			sourceTree = "<group>";
+		};
+		5944C9FC2859C25100852E53 /* Chapter4 */ = {
+			isa = PBXGroup;
+			children = (
+				5920AEC4285AABAA000D6225 /* PandaGameView.swift */,
+			);
+			path = Chapter4;
 			sourceTree = "<group>";
 		};
 		59B688902853263F00B0DB71 /* PauseButton */ = {
@@ -245,6 +259,7 @@
 				F857445828531BB10012346A /* Chapter1 */,
 				F857445728531BA20012346A /* Chapter2 */,
 				F857445628531B960012346A /* Chapter3 */,
+				5944C9FC2859C25100852E53 /* Chapter4 */,
 				F857445528531B8C0012346A /* Epilogue */,
 				F8EB5D5B2856DC160058C1D0 /* SoundTestView.swift */,
 			);
@@ -289,6 +304,7 @@
 			children = (
 				AE9A45252852288800683CCF /* LaunchScreenView.swift */,
 				AE75CF392856D20D0052CD3E /* ImageLiteral.swift */,
+				591ED883285F3EC0009EFF6D /* SoundLiteral.swift */,
 			);
 			path = Literal;
 			sourceTree = "<group>";
@@ -543,6 +559,7 @@
 			isa = PBXGroup;
 			children = (
 				F8EB5D9D285BA3720058C1D0 /* SLIP.mp3 */,
+				597F375D285B0AEC002631FA /* correctAnswer.mp3 */,
 				F8EB5D932859B5820058C1D0 /* mixkit-player-jumping-in-a-video-game-2043.wav */,
 				F8EB5D9B285BA2BF0058C1D0 /* boxingSound.wav */,
 			);
@@ -620,6 +637,7 @@
 				F8EB5D7F285723460058C1D0 /* SeoulHangangL.ttf in Resources */,
 				F8EB5D81285723460058C1D0 /* SeoulHangangB.ttf in Resources */,
 				F857445F28531C1A0012346A /* File7 in Resources */,
+				597F375E285B0AEC002631FA /* correctAnswer.mp3 in Resources */,
 				AE9A452B2852288900683CCF /* Preview Assets.xcassets in Resources */,
 				F857446128531C240012346A /* File8 in Resources */,
 				AE9A45282852288900683CCF /* Assets.xcassets in Resources */,
@@ -687,10 +705,14 @@
 				F857449128549BFB0012346A /* MapPopup.swift in Sources */,
 				595FA01B28570D95006E72D3 /* RecycleGameView.swift in Sources */,
 				262060242855BDC500ED79C8 /* IntroThreeView.swift in Sources */,
+				591ED884285F3EC0009EFF6D /* SoundLiteral.swift in Sources */,
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
+				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
+				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
+				5920AEC5285AABAA000D6225 /* PandaGameView.swift in Sources */,
 				26206000285445D500ED79C8 /* HiddenObjGameView.swift in Sources */,
 				2620601128549ADB00ED79C8 /* StoryView.swift in Sources */,
 				2620601328549E0C00ED79C8 /* ChapterOneStoryView.swift in Sources */,
