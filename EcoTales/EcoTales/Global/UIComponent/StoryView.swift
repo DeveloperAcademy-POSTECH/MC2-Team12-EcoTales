@@ -34,38 +34,32 @@ struct StoryView: View {
         ZStack {
             if chapter == 1 && isGameClear == false {
                 Image("chapter1_pollutedBackground")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                    .backgroundImage()
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 1 && isGameClear == true {
                 Image("chapter1_cleanBackground")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                    .backgroundImage()
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 2 {
                 Image("chapter2_background")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                    .backgroundImage()
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 3 && isGameClear == false {
                 Image("chapter3_pollutedBackground")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                    .backgroundImage()
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 3 && isGameClear == true {
                 Image("chapter3_cleanBackground")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                    .backgroundImage()
                     .aspectRatio(contentMode: .fill)
             }
             if chapter == 4 {
                 Image("chapter4_background")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
+                    .backgroundImage()
                     .aspectRatio(contentMode: .fill)
             }
             // 배경
