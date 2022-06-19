@@ -11,6 +11,8 @@
 		156FC559285B796D00A696E1 /* ChapterThreeStoryPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */; };
 		15B76C06285F736B0040373B /* ChapterUserSettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C05285F736B0040373B /* ChapterUserSettingData.swift */; };
 		15B76C08285F89B20040373B /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C07285F89B20040373B /* Dim.swift */; };
+		15B76C0A285F8F8B0040373B /* FindWrongScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C09285F8F8B0040373B /* FindWrongScreenView.swift */; };
+		15B76C0C285F8FC90040373B /* HeartTake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B76C0B285F8FC90040373B /* HeartTake.swift */; };
 		26205FE6285445D500ED79C8 /* HiddenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635ED28542BAB00EB2CAA /* HiddenObject.swift */; };
 		26205FE7285445D500ED79C8 /* HiddenObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3635EF28542DC300EB2CAA /* HiddenObjectData.swift */; };
 		26205FEC285445D500ED79C8 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26205FE32854440E00ED79C8 /* Color+Extension.swift */; };
@@ -70,6 +72,8 @@
 		156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterThreeStoryPopup.swift; sourceTree = "<group>"; };
 		15B76C05285F736B0040373B /* ChapterUserSettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterUserSettingData.swift; sourceTree = "<group>"; };
 		15B76C07285F89B20040373B /* Dim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dim.swift; sourceTree = "<group>"; };
+		15B76C09285F8F8B0040373B /* FindWrongScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWrongScreenView.swift; sourceTree = "<group>"; };
+		15B76C0B285F8FC90040373B /* HeartTake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTake.swift; sourceTree = "<group>"; };
 		26205FD52854432300ED79C8 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		26205FD72854435D00ED79C8 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		26205FDB2854438800ED79C8 /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
@@ -463,7 +467,9 @@
 			isa = PBXGroup;
 			children = (
 				2620600928549A5500ED79C8 /* File.swift */,
+				15B76C0B285F8FC90040373B /* HeartTake.swift */,
 				156FC558285B796D00A696E1 /* ChapterThreeStoryPopup.swift */,
+				15B76C09285F8F8B0040373B /* FindWrongScreenView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -648,6 +654,7 @@
 				F85744952854A9EC0012346A /* NoButton.swift in Sources */,
 				59D461E32854A1BD00FC0C67 /* MapBackground.swift in Sources */,
 				26205FFE285445D500ED79C8 /* ObjectsToFindView.swift in Sources */,
+				15B76C0A285F8F8B0040373B /* FindWrongScreenView.swift in Sources */,
 				7E4405382855E048009DF58B /* TrashView.swift in Sources */,
 				26205FFF285445D500ED79C8 /* ObjectsHiddenView.swift in Sources */,
 				15B76C08285F89B20040373B /* Dim.swift in Sources */,
@@ -662,6 +669,7 @@
 				156FC559285B796D00A696E1 /* ChapterThreeStoryPopup.swift in Sources */,
 				2620600A28549A5500ED79C8 /* File.swift in Sources */,
 				262060192855088200ED79C8 /* ChapterThreeStoryView.swift in Sources */,
+				15B76C0C285F8FC90040373B /* HeartTake.swift in Sources */,
 				AE9A45242852288800683CCF /* EcoTalesApp.swift in Sources */,
 				262060202855A04C00ED79C8 /* IntroOneView.swift in Sources */,
 			);

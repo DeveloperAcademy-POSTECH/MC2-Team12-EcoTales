@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ChapterThreeStoryPopup: View {
+
     @Binding var isStagePopup: Bool
     @Binding var isPausePopup: Bool
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSettings
+
     var body: some View {
         ZStack {
             if isPausePopup {
@@ -23,6 +25,7 @@ struct ChapterThreeStoryPopup: View {
                         .strokeBorder(Color.PauseStrokeBrown, lineWidth: 5)
                 }
                 .frame(width: 300, height: 280)
+
                 VStack(alignment: .center, spacing: 25) {
                     Button(action: {
                         // Dismiss the Popup
