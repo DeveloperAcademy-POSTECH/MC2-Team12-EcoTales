@@ -148,15 +148,20 @@ private struct FindWrongScreenView: View {
                 .onTapGesture {
                     chapterThreeUserValue.lifeCount -= 1
                 }
-            findWrongButton(0, x1: 405, y1: 198, x2: 30, y2: 198, circleSize: 140)
-            findWrongButton(1, x1: 580, y1: 140, x2: 210, y2: 140, circleSize: 120)
-            findWrongButton(2, x1: 505, y1: 20, x2: 135, y2: 20, circleSize: 60)
-            findWrongButton(3, x1: 520, y1: 280, x2: 150, y2: 280, circleSize: 70)
-            findWrongButton(4, x1: 570, y1: 260, x2: 200, y2: 260, circleSize: 70)
+            findWrongButton(0, firstCircle: CGPoint(x: 405, y: 198),
+                            secondCircle: CGPoint(x: 30, y: 198), circleSize: 140)
+            findWrongButton(1, firstCircle: CGPoint(x: 580, y: 140),
+                            secondCircle: CGPoint(x: 210, y: 140), circleSize: 120)
+            findWrongButton(2, firstCircle: CGPoint(x: 505, y: 20),
+                            secondCircle: CGPoint(x: 135, y: 20), circleSize: 60)
+            findWrongButton(3, firstCircle: CGPoint(x: 520, y: 280),
+                            secondCircle: CGPoint(x: 150, y: 280), circleSize: 70)
+            findWrongButton(4, firstCircle: CGPoint(x: 570, y: 260),
+                            secondCircle: CGPoint(x: 200, y: 260), circleSize: 70)
         }
     }
-    @ViewBuilder func findWrongButton( _ circleNum: Int, x1 positionX1: Int, y1 positionY1: Int,
-                                       x2 positionX2: Int, y2 positionY2: Int, circleSize: Int
+    @ViewBuilder func findWrongButton( _ circleNum: Int, firstCircle: CGPoint,
+                                       secondCircle: CGPoint, circleSize: CGFloat
     ) -> some View {
         Button {
             chapterThreeUserValue.isShowCircle[circleNum] = true
@@ -170,10 +175,10 @@ private struct FindWrongScreenView: View {
         } label: {
             Image(systemName: "circle")
                 .resizable()
-                .frame(width: CGFloat(circleSize), height: CGFloat(circleSize))
+                .frame(width: circleSize, height: circleSize)
                 .opacity(chapterThreeUserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
-        .position(x: CGFloat(positionX1), y: CGFloat(positionY1))
+        .position(x: firstCircle.x, y: firstCircle.y)
         Button {
             chapterThreeUserValue.isShowCircle[circleNum] = true
             chapterThreeUserValue.circleScore = circleNum
@@ -186,10 +191,10 @@ private struct FindWrongScreenView: View {
         } label: {
             Image(systemName: "circle")
                 .resizable()
-                .frame(width: CGFloat(circleSize), height: CGFloat(circleSize))
+                .frame(width: circleSize, height: circleSize)
                 .opacity(chapterThreeUserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
-        .position(x: CGFloat(positionX2), y: CGFloat(positionY2))
+        .position(x: secondCircle.x, y: secondCircle.y)
     }
 }
 
