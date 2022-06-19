@@ -25,7 +25,7 @@ enum ImageLiteral {
     static var recycleBinGlass = "recycleBin_glass"
     static var gameClear = "game_gameClear"
     static var meenuDoctor = "character_meenuDoctor"
-    static var pandaBackground = "chapter4_background"
+    static var pandaBackground = "chapterFour-gameBackground"
     static var turtleDialog = "chapter1_turtleDialog"
 }
 
