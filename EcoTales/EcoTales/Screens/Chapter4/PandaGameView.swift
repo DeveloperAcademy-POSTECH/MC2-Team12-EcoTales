@@ -69,7 +69,7 @@ struct PandaGameView: View {
                     .onAppear(perform: {
                         SoundManager.playSounds(SoundLiteral.soundForRight)
                     })
-                    .onTapGesture(  perform: {
+                    .onTapGesture(perform: {
                         // todo: go to next view
                     })
             }
