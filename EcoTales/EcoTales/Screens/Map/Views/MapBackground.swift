@@ -13,8 +13,11 @@ struct MapBackground: View {
         ZStack {
             Image("map_background")
 <<<<<<< HEAD
+<<<<<<< HEAD
                 .backgroundImage()
 =======
+=======
+>>>>>>> main
                 .resizable()
                 .ignoresSafeArea()
             Button(action: {
@@ -24,6 +27,9 @@ struct MapBackground: View {
             if isStagePopup {
                 MapPopup(isStagePopup: $isStagePopup)
             }
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
         }
     }

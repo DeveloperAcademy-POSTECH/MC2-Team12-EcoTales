@@ -12,10 +12,16 @@ struct MapPopup: View {
     @State private var isPausePopup = false
     @EnvironmentObject var chapterProgress: ChapterProgress
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Binding var iscount: Bool
     @Binding var isIntroShow: Bool
     @Binding var isGameStoryShow: Bool
 =======
+>>>>>>> main
+=======
+    @Binding var isPausePopup: Bool
+    @Binding var isIntroShow: Bool
+    @Binding var isGameStoryShow: Bool
 >>>>>>> main
     var chapter: Chapter = .zero
 
@@ -50,6 +56,9 @@ struct MapPopup: View {
                                 isStagePopup = false
                                 withAnimation(.linear(duration: 0.3)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
                                     if chapter == .zero {
                                         isIntroShow = true
                                     } else {
@@ -63,10 +72,14 @@ struct MapPopup: View {
                             Button(action: {
                                 // Dismiss the PopUp
                                 withAnimation(.linear(duration: 0.3)) {
+<<<<<<< HEAD
                                     iscount = false
 =======
                                     isGameStoryShow = false
                                     chapterProgress.completionStatus[chapter] = true
+>>>>>>> main
+=======
+                                    isPausePopup = false
 >>>>>>> main
                                 }
                             }, label: {
@@ -88,6 +101,7 @@ struct MapPopup: View {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 struct MapPopup_Previews: PreviewProvider {
@@ -96,4 +110,6 @@ struct MapPopup_Previews: PreviewProvider {
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
+>>>>>>> main
+=======
 >>>>>>> main

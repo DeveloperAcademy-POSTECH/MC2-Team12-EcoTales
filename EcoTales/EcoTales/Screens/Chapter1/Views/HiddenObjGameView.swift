@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HiddenObjGameView: View {
 <<<<<<< HEAD
+<<<<<<< HEAD
     @State private var isShowingPopup = false
     @Binding var isGameClear: Bool
     var body: some View {
@@ -17,6 +18,8 @@ struct HiddenObjGameView: View {
                 .backgroundStyle()
             ObjectsHiddenView()
 =======
+=======
+>>>>>>> main
     @Binding var isStagePopup: Bool
     @State private var isPausePopup = false
     @State private var foundTrash = Set<String>()
@@ -35,6 +38,9 @@ struct HiddenObjGameView: View {
                     .scaledToFill()
             }
             ObjectsHiddenView(foundTrash: $foundTrash)
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
             VStack {
                 Spacer()
@@ -57,9 +63,12 @@ struct HiddenObjGameView: View {
         .ignoresSafeArea()
         .navigationBarHidden(true)
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
     func updateLocation(_ location: CGPoint) {
         print(location)
+=======
+>>>>>>> main
 =======
 >>>>>>> main
     }
@@ -105,15 +114,21 @@ private struct ExplainGameView: View {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 extension View {
     func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
                  perform: @escaping (CGPoint) -> Void) -> some View {
         self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
 =======
+=======
+>>>>>>> main
 struct HiddenObjGameView_Previews: PreviewProvider {
     static var previews: some View {
         HiddenObjGameView(isStagePopup: .constant(true))
             .previewInterfaceOrientation(.landscapeLeft)
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
     }
 }

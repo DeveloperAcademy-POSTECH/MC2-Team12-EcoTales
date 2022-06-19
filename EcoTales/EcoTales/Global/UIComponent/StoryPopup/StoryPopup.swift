@@ -12,10 +12,16 @@ struct StoryPopup: View {
     var body: some View {
         ZStack {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if isShowingPopup {
                 Color.black.opacity(0.4)
                     .ignoresSafeArea()
                 ZStack(alignment: .center) {
+=======
+            if isPausePopup {
+                Dim()
+                Group {
+>>>>>>> main
 =======
             if isPausePopup {
                 Dim()
@@ -40,7 +46,10 @@ struct StoryPopup: View {
                         ReplayButton()
                     })
 <<<<<<< HEAD
+<<<<<<< HEAD
 //                    .fullScreenCover(isPresented: $isGameStoryShow, content: { HiddenObjGameView() })
+=======
+>>>>>>> main
 =======
 >>>>>>> main
                     Button(action: {
@@ -58,8 +67,12 @@ struct StoryPopup_Previews: PreviewProvider {
     static var previews: some View {
         Group {
 <<<<<<< HEAD
+<<<<<<< HEAD
             StoryPopup(isShowingPopup: .constant(true))
                 .previewInterfaceOrientation(.landscapeLeft)
+=======
+            StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
+>>>>>>> main
 =======
             StoryPopup(isStagePopup: .constant(true), isPausePopup: .constant(true))
 >>>>>>> main
