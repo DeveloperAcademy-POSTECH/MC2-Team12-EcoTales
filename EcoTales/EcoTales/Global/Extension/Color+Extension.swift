@@ -37,7 +37,14 @@ extension Color {
     static var PopupWhite: Color {
         return Color(hex: "#FAFAFA")
     }
+    // Recycle Game Colors
+    static var TimerBackgroundBrown: Color {
+        return Color(hex: "#F9E7D7")
+    }
+    static var TimerProgressRed: Color {
+        return Color(hex: "#CC3F2B")
     // Recycling Text box Colors
+    }
     static var RecycleFillWhite: Color {
         return Color(hex: "#FEF4DE")
     }

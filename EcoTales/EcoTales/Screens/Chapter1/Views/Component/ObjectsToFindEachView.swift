@@ -9,29 +9,32 @@ import SwiftUI
 
 struct ObjectsToFindEachView: View {
     @State private var isShowingObjectName = false
-    @State private var selectedObject = "none"
+    @State private var selectedObject = "hidden_can"
     var trash: HiddenObject
+    @Binding var foundTrash: Set<String>
 
     var body: some View {
-        Button(action: {
-            withAnimation { isShowingObjectName.toggle() }
-            selectedObject = trash.objectName
-        }, label: {
-            Image(trash.image)
-                .frame(maxWidth: .infinity)
-        })
-        .overlay(
-            ZStack(alignment: .center) {
+            Button(action: {
+                isShowingObjectName.toggle()
+                withAnimation(Animation.easeOut(duration: 0.5).delay(1.0)) {
+                    isShowingObjectName.toggle()
+                }
+                selectedObject = trash.objectName
+            }, label: {
+                Image(trash.image)
+                    .frame(maxWidth: .infinity)
+            })
+            .overlay(
                 Text(selectedObject)
                     .font(.system(size: 15))
                     .multilineTextAlignment(.center)
-            }
-            .padding(.all, 10)
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(radius: 3, x: 3, y: 3)
-            .offset(x: 0, y: -62)
-            .opacity(isShowingObjectName ? 0.9 : 0)
-        )
+                    .frame(width: 90, height: 45)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 3, x: 3, y: 3)
+                    .offset(x: 0, y: -62)
+                    .opacity(isShowingObjectName ? 0.9 : 0)
+            )
+            .opacity(foundTrash.contains(trash.image) ? 0 : 1)
     }
 }
