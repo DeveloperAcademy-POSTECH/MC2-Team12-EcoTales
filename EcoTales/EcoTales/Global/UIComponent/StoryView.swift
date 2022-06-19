@@ -16,7 +16,7 @@ struct StoryView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image(chapterBackground(chapter: self.chapter, isGameClear: self.isGameClear))
+                Image(chapterBackground())
                     .backgroundStyle()
                     .aspectRatio(contentMode: .fill)
 
@@ -32,7 +32,7 @@ struct StoryView: View {
                 VStack {
                     Spacer()
                     ZStack(alignment: .topLeading) {
-                        Text(chapterStory(chapter: self.chapter, isGameClear: self.isGameClear).dialog[storyIndex])
+                        Text(chapterStory().dialog[storyIndex])
                             .frame(width: 650, height: 80, alignment: .topLeading)
                             .lineSpacing(10)
                             .background(
@@ -41,9 +41,9 @@ struct StoryView: View {
                                     .frame(width: 750, height: 150)
                             )
                             .padding(.top, 45)
-                        if chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
+                        if chapterStory()
                             .speaker[storyIndex] != .naration {
-                            Text(chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
+                            Text(chapterStory()
                                 .speaker[storyIndex].speakerName())
                                 .frame(width: 120, height: 30, alignment: .center)
                                 .lineSpacing(10)
@@ -65,7 +65,7 @@ struct StoryView: View {
                 }
             }
             .onTapGesture {
-                if storyIndex == (chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
+                if storyIndex == (chapterStory()
                     .speaker.count - 1) {
                     if isGameClear {
                         presentationMode.wrappedValue.dismiss()
@@ -81,7 +81,7 @@ struct StoryView: View {
         .navigationBarHidden(true)
     }
 
-    func chapterStory(chapter: Chapter, isGameClear: Bool) -> StoryDataModel {
+    func chapterStory() -> StoryDataModel {
         switch chapter {
         case .zero:
             return StoryData().chapterIntro
@@ -98,7 +98,7 @@ struct StoryView: View {
         }
     }
 
-    func chapterBackground(chapter: Chapter, isGameClear: Bool) -> String {
+    func chapterBackground() -> String {
         switch chapter {
         case .one:
             return isGameClear ? ImageLiteral.chapter1CleanBackground : ImageLiteral.chapter1PollutedBackground
@@ -127,9 +127,9 @@ struct StoryView: View {
             return HiddenObjGameView(isGameClear: self.$isGameClear)
         }
     }
-    
+
     func speakCharacter() -> some View {
-        switch chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
+        switch chapterStory()
             .speaker[storyIndex] {
         case .turtle, .rain:
             return Image(ImageLiteral.rain)
