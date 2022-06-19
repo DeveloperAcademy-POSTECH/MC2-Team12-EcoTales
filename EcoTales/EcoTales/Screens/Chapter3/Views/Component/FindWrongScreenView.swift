@@ -50,7 +50,7 @@ struct FindWrongScreenView: View {
                 .frame(width: circleSize, height: circleSize)
                 .opacity(chapterThreeUserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
-        .position(x: firstCircle.x, y: firstCircle.y)
+        .position(firstCircle)
 
         Button {
             chapterThreeUserValue.isShowCircle[circleNum] = true
@@ -67,6 +67,6 @@ struct FindWrongScreenView: View {
                 .frame(width: circleSize, height: circleSize)
                 .opacity(chapterThreeUserValue.isShowCircle[circleNum] ? 1.0 : 0.0)
         }
-        .position(x: secondCircle.x, y: secondCircle.y)
+        .position(secondCircle)
     }
 }
