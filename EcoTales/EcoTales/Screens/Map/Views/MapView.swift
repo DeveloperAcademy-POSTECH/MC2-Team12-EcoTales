@@ -11,8 +11,9 @@ struct MapView: View {
     @EnvironmentObject var chapterProgress: ChapterProgress
     @State var isPopUp: Bool = false
     @State var selectedChapter: Chapter = Chapter.zero
-    @State var isGameStoryShow = false
-    @State var isGameClear = false
+    @State var isIntroStart = false
+    @State var isChapterStart = false
+    @Binding var isIntroSeen: Bool
 
     var body: some View {
         ZStack {
@@ -46,11 +47,12 @@ struct MapView: View {
             Image(ImageLiteral.child)
                 .position(childPosition())
 
-            MapPopup(iscount: $isPopUp, isGameStoryShow: self.$isGameStoryShow, chapter: selectedChapter)
+            MapPopup(iscount: $isPopUp, isIntroShow: self.$isIntroStart, isGameStoryShow: self.$isChapterStart, chapter: selectedChapter)
         }
-        .fullScreenCover(isPresented: $isGameStoryShow,
-                         content: { StoryView(chapter: $selectedChapter, isGameClear: self.$isGameClear) })
-
+        .fullScreenCover(isPresented: $isIntroStart,
+                         content: { IntroView(isIntroSeen: $isIntroSeen) })
+        .fullScreenCover(isPresented: $isChapterStart,
+                         content: { StoryView(chapter: $selectedChapter) })
     }
 
     private func isCompleted(chapter: Chapter) -> Bool {
@@ -103,11 +105,4 @@ struct MapView: View {
         }
     }
 
-}
-
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView().environmentObject(ChapterProgress())
-            .previewInterfaceOrientation(.landscapeRight)
-    }
 }

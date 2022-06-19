@@ -16,7 +16,7 @@ struct ContentView: View {
             LaunchScreenView(isSplash: self.$isSplash)
         } else {
             if isIntroSeen {
-                MapView().environmentObject(ChapterProgress())
+                MapView(isIntroSeen: $isIntroSeen).environmentObject(ChapterProgress())
             } else {
                 IntroView(isIntroSeen: self.$isIntroSeen)
             }
