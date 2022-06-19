@@ -15,7 +15,7 @@ struct PandaGameView: View {
 
     var body: some View {
         ZStack {
-            Image("chapterFour-gameBackground")
+            Image(ImageLiteral.pandaBackground)
                 .resizable()
                 .ignoresSafeArea()
                 .onTapGesture(  perform: {
@@ -33,7 +33,7 @@ struct PandaGameView: View {
                     .padding(.top, 5)
                     .padding(.leading, 10)
                     HStack {
-                        Image("chapter4_mainCharacterHeadCircle")
+                        Image(ImageLiteral.childHead)
                             .scaledToFit()
                             .frame(alignment: .center)
                             .padding(.top, 5)
@@ -51,7 +51,7 @@ struct PandaGameView: View {
                 Button {
                     showGameClear.toggle()
                 } label: {
-                    Image("character_meenuDoctor")
+                    Image(ImageLiteral.meenuDoctor)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50, alignment: .center)
@@ -62,7 +62,7 @@ struct PandaGameView: View {
             if showGameClear {
                 Color.black.opacity(0.4)
                     .ignoresSafeArea()
-                Image("gameClear")
+                Image(ImageLiteral.gameClear)
                     .resizable()
                     .scaledToFit()
                     .ignoresSafeArea()
