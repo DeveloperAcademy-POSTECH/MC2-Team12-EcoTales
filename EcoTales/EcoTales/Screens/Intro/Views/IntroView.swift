@@ -102,7 +102,7 @@ struct IntroView: View {
             return ["Error!", "Error!", "Error!"]
         }
     }
-    
+
     func introStoryContent(position: Int) -> String {
         return introStory()[introStoryIndex / 3 * 3 + position]
     }
