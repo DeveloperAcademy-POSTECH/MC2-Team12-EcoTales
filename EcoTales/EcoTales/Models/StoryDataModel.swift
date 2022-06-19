@@ -14,6 +14,7 @@ enum Speaker: String {
     case turtle
     case rain
     case mole
+    case dirtySherry
     case sherry
     case ozz
     case meenu
@@ -32,6 +33,8 @@ enum Speaker: String {
             return "레인"
         case .mole:
             return "두더지"
+        case .dirtySherry:
+            return "쉐리"
         case .sherry:
             return "쉐리"
         case .ozz:
@@ -110,8 +113,8 @@ struct StoryData {
     )
 
     let chapterTwoNotClear = StoryDataModel(
-        speaker: [.naration, .naration, .mole, .child, .sherry, .child, .sherry, .child,
-                  .sherry, .child, .sherry, .child, .sherry, .child, .sherry, .sherry, .child],
+        speaker: [.naration, .naration, .mole, .child, .dirtySherry, .child, .dirtySherry, .child,
+                  .dirtySherry, .child, .dirtySherry, .child, .dirtySherry, .child, .dirtySherry, .dirtySherry, .child],
         dialog: ["아이는 대지의 흙 한 줌을 찾기 위해 숲을 향해 걸었어요. 숲에 도착했지만 오염물질과 쓰레기가 많아 마땅한 흙을 찾기 어려웠어요.",
                  "계속 걸어가고 있던 중, 마침 땅 속에서 나온 두더지를 마주쳤어요.",
                  "아이 참.. 이것 참 곤란하네..",

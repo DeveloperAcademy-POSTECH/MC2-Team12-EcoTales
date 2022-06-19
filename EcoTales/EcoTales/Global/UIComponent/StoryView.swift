@@ -21,7 +21,7 @@ struct StoryView: View {
                     .aspectRatio(contentMode: .fill)
 
                 HStack {
-                    Image(ImageLiteral.meenu)
+                    speakCharacter()
                     Spacer()
                     Image(ImageLiteral.child)
                         .resizable()
@@ -125,6 +125,28 @@ struct StoryView: View {
 //            return
         default:
             return HiddenObjGameView(isGameClear: self.$isGameClear)
+        }
+    }
+    
+    func speakCharacter() -> some View {
+        switch chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
+            .speaker[storyIndex] {
+        case .turtle, .rain:
+            return Image(ImageLiteral.rain)
+        case .mole, .dirtySherry:
+            return Image(ImageLiteral.mole)
+        case .sherry:
+            return Image(ImageLiteral.sherry)
+        case .ozz:
+            return Image(ImageLiteral.ozz)
+        case .meenu:
+            return Image(ImageLiteral.meenu)
+        case .redpandaA, .redpandaB, .redpandaC:
+            return Image(ImageLiteral.redPanda)
+        case .redpandaAll:
+            return Image(ImageLiteral.redPandas)
+        default:
+            return Image(ImageLiteral.child)
         }
     }
 }
