@@ -124,11 +124,11 @@ private struct HeartTake: View {
             }
         }
     }
-    @ViewBuilder func heartTake( _ lifeCounter: Int) -> some View {
+    @ViewBuilder func heartTake( _ lifeCount: Int) -> some View {
         HStack {
             Spacer()
-            if lifeCounter > 0 {
-                ForEach(1...lifeCounter, id: \.self) { _ in
+            if lifeCount > 0 {
+                ForEach(1...lifeCount, id: \.self) { _ in
                     Image("findWrong_heartFill")
                         .resizable()
                         .frame(width: 30, height: 30)
