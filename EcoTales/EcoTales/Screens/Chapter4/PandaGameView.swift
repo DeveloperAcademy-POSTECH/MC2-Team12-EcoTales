@@ -37,7 +37,7 @@ struct PandaGameView: View {
                             .scaledToFit()
                             .frame(alignment: .center)
                             .padding(.top, 5)
-                        Image("chapter1_turtleDialog")
+                        Image(ImageLiteral.turtleDialog)
                             .scaledToFit()
                             .frame(alignment: .center)
                             .overlay(Text("치료약을 만들기 위해 레서판다 미뉴를 찾아보자!"))

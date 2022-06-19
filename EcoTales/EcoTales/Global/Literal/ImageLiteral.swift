@@ -26,6 +26,7 @@ enum ImageLiteral {
     static var gameClear = "game_gameClear"
     static var meenuDoctor = "character_meenuDoctor"
     static var pandaBackground = "chapter4_background"
+    static var turtleDialog = "chapter1_turtleDialog"
 }
 
 
