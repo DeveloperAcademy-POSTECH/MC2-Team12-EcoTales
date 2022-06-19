@@ -11,7 +11,11 @@ import SwiftUI
 struct EcoTalesApp: App {
     var body: some Scene {
         WindowGroup {
+<<<<<<< HEAD
             ContentView()
+=======
+            IntroView()
+>>>>>>> main
         }
     }
 }

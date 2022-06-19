@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+<<<<<<< HEAD
     @State private var isShowingPopup = false
     @Binding var isGameClear: Bool
     var body: some View {
@@ -15,33 +16,62 @@ struct HiddenObjGameView: View {
             Image(ImageLiteral.chapter1PollutedBackground)
                 .backgroundStyle()
             ObjectsHiddenView()
+=======
+    @Binding var isStagePopup: Bool
+    @State private var isPausePopup = false
+    @State private var foundTrash = Set<String>()
+    @State private var isHiddenObjGameClear = false
+    var body: some View {
+        ZStack {
+            if foundTrash.count == 10 {
+                withAnimation(Animation.easeInOut(duration: 1)) {
+                Image("chapterOne_cleanBackground")
+                    .resizable()
+                    .scaledToFill()
+                }
+            } else {
+                Image("chapterOne_pollutedBackground")
+                    .resizable()
+                    .scaledToFill()
+            }
+            ObjectsHiddenView(foundTrash: $foundTrash)
+>>>>>>> main
             VStack {
                 Spacer()
-                ObjectsToFindView()
+                ObjectsToFindView(foundTrash: $foundTrash)
+            }
+            if foundTrash.count == 10 {
+                Text("완료!") // 스테이지 클리어 이미지로 교체 예정
+                    .onTapGesture {
+                        isHiddenObjGameClear.toggle()
+                    }
             }
             VStack {
-                UpperPanelView(isShowingPopUp: $isShowingPopup)
+                UpperPanelView(isCloseStoryPopup: $isPausePopup)
                 Spacer()
             }
-            if isShowingPopup {
-                StoryPopup(isShowingPopup: $isShowingPopup)
+            if isPausePopup {
+                StoryPopup(isStagePopup: $isStagePopup, isPausePopup: $isPausePopup)
             }
         }
         .ignoresSafeArea()
         .navigationBarHidden(true)
+<<<<<<< HEAD
     }
     func updateLocation(_ location: CGPoint) {
         print(location)
+=======
+>>>>>>> main
     }
 }
 
-struct UpperPanelView: View {
-    @Binding var isShowingPopUp: Bool
+private struct UpperPanelView: View {
+    @Binding var isCloseStoryPopup: Bool
     var body: some View {
         ZStack {
             HStack {
                 Button(action: {
-                    self.isShowingPopUp = true
+                    self.isCloseStoryPopup = true
                 }, label: {})
                 .buttonStyle(PauseButtonStyle())
                 Spacer()
@@ -63,7 +93,7 @@ struct UpperPanelView: View {
     }
 }
 
-struct ExplainGameView: View {
+private struct ExplainGameView: View {
     var body: some View {
         ZStack {
             // text 받아오는 함수 위치
@@ -74,9 +104,16 @@ struct ExplainGameView: View {
     }
 }
 
+<<<<<<< HEAD
 extension View {
     func onTouch(type: TouchLocatingView.TouchType = .all, limitToBounds: Bool = true,
                  perform: @escaping (CGPoint) -> Void) -> some View {
         self.modifier(TouchLocater(type: type, limitToBounds: limitToBounds, perform: perform))
+=======
+struct HiddenObjGameView_Previews: PreviewProvider {
+    static var previews: some View {
+        HiddenObjGameView(isStagePopup: .constant(true))
+            .previewInterfaceOrientation(.landscapeLeft)
+>>>>>>> main
     }
 }
