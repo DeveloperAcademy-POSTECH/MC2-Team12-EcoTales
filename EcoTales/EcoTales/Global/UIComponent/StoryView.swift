@@ -19,12 +19,16 @@ struct StoryView: View {
                 Image(chapterBackground(chapter: self.chapter, isGameClear: self.isGameClear))
                     .backgroundImage()
                     .aspectRatio(contentMode: .fill)
+
                 HStack {
                     Image(ImageLiteral.meenu)
                     Spacer()
                     Image(ImageLiteral.child)
+                        .resizable()
+                        .scaledToFit()
                 }
                 .padding(EdgeInsets(top: 50, leading: 70, bottom: 10, trailing: 70))
+
                 VStack {
                     Spacer()
                     ZStack(alignment: .topLeading) {
@@ -54,14 +58,15 @@ struct StoryView: View {
                 .padding(.bottom, 30)
                 if isGameShow {
                     NavigationLink(isActive: self.$isGameShow,
-                                   destination: { HiddenObjGameView(isGameClear: self.$isGameClear) },
+                                   destination: { chapterGame() },
                                    label: {
                         Text("a")
                     })
                 }
             }
             .onTapGesture {
-                if storyIndex == (chapterStory(chapter: self.chapter, isGameClear: self.isGameClear).speaker.count - 1) {
+                if storyIndex == (chapterStory(chapter: self.chapter, isGameClear: self.isGameClear)
+                    .speaker.count - 1) {
                     if isGameClear {
                         presentationMode.wrappedValue.dismiss()
                     } else {
@@ -73,8 +78,9 @@ struct StoryView: View {
                 }
             }
         }
+        .navigationBarHidden(true)
     }
-    
+
     func chapterStory(chapter: Chapter, isGameClear: Bool) -> StoryDataModel {
         switch chapter {
         case .zero:
@@ -91,19 +97,34 @@ struct StoryView: View {
             return StoryData().chapterEpilogue
         }
     }
-    
+
     func chapterBackground(chapter: Chapter, isGameClear: Bool) -> String {
         switch chapter {
         case .one:
             return isGameClear ? ImageLiteral.chapter1CleanBackground : ImageLiteral.chapter1PollutedBackground
         case .two:
-            return ImageLiteral.chapter2Background
+            return isGameClear ? ImageLiteral.chapter2CleanBackground : ImageLiteral.chapter2PollutedBackground
         case .three:
             return isGameClear ? ImageLiteral.chapter3CleanBackground : ImageLiteral.chapter3Pollutedbackground
         case .four:
             return ImageLiteral.chapter4Background
         default:
             return ImageLiteral.chapter1PollutedBackground
+        }
+    }
+
+    func chapterGame() -> some View {
+        switch chapter {
+        case .one:
+            return HiddenObjGameView(isGameClear: self.$isGameClear)
+//        case .two:
+//            return
+//        case .three:
+//            return
+//        case .four:
+//            return
+        default:
+            return HiddenObjGameView(isGameClear: self.$isGameClear)
         }
     }
 }
