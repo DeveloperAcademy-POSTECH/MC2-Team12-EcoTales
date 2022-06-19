@@ -91,8 +91,6 @@ struct StoryView: View {
             return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
         case .four:
             return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
-        case .five:
-            return StoryData().chapterEpilogue
         }
     }
 
