@@ -8,6 +8,6 @@
 import Foundation
 
 enum SoundLiteral {
-    static var SoundForWrong = "mixkit-player-jumping-in-a-video-game-2043.wav"
-    static var SoundForRight  = "correctAnswer.mp3"
+    static var soundForWrong = "mixkit-player-jumping-in-a-video-game-2043.wav"
+    static var soundForRight = "correctAnswer.mp3"
 }
