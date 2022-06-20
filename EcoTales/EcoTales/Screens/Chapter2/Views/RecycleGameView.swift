@@ -7,17 +7,19 @@
 import SwiftUI
 
 struct RecycleGameView: View {
+    @EnvironmentObject var chapterProgress: ChapterProgress
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var randomObject = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].shuffled()
     @State private var isWrong = false
-    @State private var isGameClear = false
     @State private var isGameOver = false
+    @Binding var isGameClear: Bool
 
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
                 // Top Wooden Panel
                 ZStack {
-                    Image("game_woodenPanel")
+                    Image(ImageLiteral.woodenPanel)
                         .scaledToFit()
                     HStack {
                         PauseEncounter()
@@ -31,7 +33,7 @@ struct RecycleGameView: View {
                 }
                 // Background
                 ZStack {
-                    Image("chapter2_background")
+                    Image(ImageLiteral.chapter2PollutedBackground)
                         .resizable()
                         .ignoresSafeArea()
                     HStack {
@@ -43,9 +45,7 @@ struct RecycleGameView: View {
                                 .background(Ellipse().fill(Color.RecycleFillWhite))
                                 .padding(.leading, 85)
                                 .padding(.bottom, 200)
-                            Image("character_mole")
-                                .resizable()
-                                .frame(width: 113, height: 86)
+                            Image(ImageLiteral.mole)
                                 .padding(.top, 80)
                         }
                         Spacer()
@@ -73,7 +73,8 @@ struct RecycleGameView: View {
                 }
             }
             if isGameClear {
-                Color.black.opacity(0.4)
+                Color.black
+                    .opacity(0.4)
                     .ignoresSafeArea()
                 Text("Game Clear!")
                     .foregroundColor(Color.white)
@@ -88,6 +89,12 @@ struct RecycleGameView: View {
             }
         }
         .ignoresSafeArea()
+        .onTapGesture {
+            if isGameClear {
+                presentationMode.wrappedValue.dismiss()
+                chapterProgress.completionStatus[.two] = true
+            }
+        }
     }
 }
 
@@ -129,12 +136,5 @@ struct RecycleBins: View {
             }
         }
         .frame(maxWidth: .infinity)
-    }
-}
-
-struct RecycleGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecycleGameView()
-            .previewInterfaceOrientation(.landscapeRight)
     }
 }

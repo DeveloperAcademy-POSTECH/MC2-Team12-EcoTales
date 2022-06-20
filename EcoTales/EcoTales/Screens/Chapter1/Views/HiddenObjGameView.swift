@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+    @EnvironmentObject var chapterProgress: ChapterProgress
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var isGameClear: Bool
     @Binding var isStagePopup: Bool
     @State private var isPausePopup = false
@@ -17,12 +19,12 @@ struct HiddenObjGameView: View {
         ZStack {
             if foundTrash.count == 10 {
                 withAnimation(Animation.easeInOut(duration: 1)) {
-                Image("chapter1_cleanBackground")
+                    Image(ImageLiteral.chapter1CleanBackground)
                     .resizable()
                     .scaledToFill()
                 }
             } else {
-                Image("chapter1_pollutedBackground")
+                Image(ImageLiteral.chapter1PollutedBackground)
                     .resizable()
                     .scaledToFill()
             }
@@ -32,9 +34,15 @@ struct HiddenObjGameView: View {
                 ObjectsToFindView(foundTrash: $foundTrash)
             }
             if foundTrash.count == 10 {
-                Text("완료!") // 스테이지 클리어 이미지로 교체 예정
+                Image(ImageLiteral.gameClear)
+                    .resizable()
+                    .padding(50)
+                    .scaledToFit()
                     .onTapGesture {
                         isHiddenObjGameClear.toggle()
+                        isGameClear = true
+                        presentationMode.wrappedValue.dismiss()
+                        chapterProgress.completionStatus[.one] = true
                     }
             }
             VStack {

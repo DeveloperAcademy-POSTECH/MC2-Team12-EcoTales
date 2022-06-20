@@ -30,7 +30,7 @@ struct TrashView: View {
                         foundObjectImage = trash.image
                         foundObjectPosition = CGPoint(x: trash.positionX, y: trash.positionY)
                         foundObjectRotation = trash.rotation
-                        withAnimation(Animation.easeInOut(duration: 0.5).delay(0.8)) {
+                        _ = withAnimation(Animation.easeInOut(duration: 0.5).delay(0.8)) {
                             foundTrash.insert(trash.image)
                         }
                     }

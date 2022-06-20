@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct FindWrongGameView: View {
-
+    @EnvironmentObject var chapterProgress: ChapterProgress
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var isStagePopup: Bool
     @State private var isPausePopup = false
-    @State private var isFindWrongClear = false
+    @Binding var isGameClear: Bool
     @StateObject private var chapterThreeUserValue = ChapterThreeUserSetting()
 
     var body: some View {
         ZStack {
-            Image("chapter3_GameWoodPanel")
+            Image(ImageLiteral.chapter3Pollutedbackground)
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -25,7 +26,7 @@ struct FindWrongGameView: View {
                 UpperPanelView(isCloseStoryPopup: $isPausePopup)
                     .environmentObject(chapterThreeUserValue)
                     .padding(.vertical, 5)
-                FindWrongScreenView(isFindWrongClear: $isFindWrongClear)
+                FindWrongScreenView(isFindWrongClear: $isGameClear)
                     .environmentObject(chapterThreeUserValue)
             }
             .padding(.horizontal, 44)
@@ -45,7 +46,7 @@ struct FindWrongGameView: View {
                     }
             }
 
-            if isFindWrongClear {
+            if isGameClear {
                 // Game Clear
                 ZStack {
                     Dim()
@@ -66,6 +67,13 @@ struct FindWrongGameView: View {
             }
         }
         .ignoresSafeArea()
+        .onTapGesture {
+            if isGameClear {
+                presentationMode.wrappedValue.dismiss()
+                chapterProgress.completionStatus[.three] = true
+            }
+        }
+        .navigationBarHidden(true)
     }
 }
 
@@ -101,15 +109,8 @@ private struct ExplainGameView: View {
     var body: some View {
         ZStack {
             Text(owlLine[chapterThreeUserValue.circleScore])
-                .background(Image("chapter1_turtleDialog"))
+                .background(Image(ImageLiteral.chapter1TurtleDialog))
         }
         .frame(width: 450, height: 30)
-    }
-}
-
-struct FindWrongGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        FindWrongGameView(isStagePopup: .constant(true))
-            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
