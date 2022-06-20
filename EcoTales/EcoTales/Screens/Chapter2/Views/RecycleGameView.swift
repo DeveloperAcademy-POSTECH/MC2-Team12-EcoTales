@@ -73,19 +73,16 @@ struct RecycleGameView: View {
                 }
             }
             if isGameClear {
-                Color.black
-                    .opacity(0.4)
-                    .ignoresSafeArea()
-                Text("Game Clear!")
-                    .foregroundColor(Color.white)
-                    .font(.title)
+                Dim()
+                Image("gameClear")
+                    .resizable()
+                    .scaledToFit()
             }
             if isGameOver {
-                Color.black.opacity(0.4)
-                    .ignoresSafeArea()
-                Text("Game Over!")
-                    .foregroundColor(Color.white)
-                    .font(.title)
+                Dim()
+                Image("gameOver")
+                    .resizable()
+                    .scaledToFit()
             }
         }
         .ignoresSafeArea()

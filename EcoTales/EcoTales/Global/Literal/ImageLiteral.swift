@@ -26,6 +26,7 @@ enum ImageLiteral {
     static var chapter2CleanBackground = "chapter2_cleanBackground"
     static var chapter3CleanBackground = "chapter3_cleanBackground"
     static var chapter3Pollutedbackground = "chapter3_pollutedBackground"
+    static var chapter3GameWoodPanel = "chapter3_GameWoodPanel"
     static var chapter4Background = "chapter4_background"
     // MARK: - Character Image
     static var child = "character_child"
