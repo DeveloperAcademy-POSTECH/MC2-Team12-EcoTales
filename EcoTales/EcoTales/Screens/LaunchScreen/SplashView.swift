@@ -22,15 +22,11 @@ struct SplashView: View {
                     .font(.mapleFont.subtitle)
                     .foregroundColor(Color.PopupStrokeBrown)
                     .shadow(color: .white, radius: 10, x: 0, y: 0)
-                Button(action: {
-                    // to Intro or MapView
-                }, label: {
-                    Text("화면을 눌러서 시작하기")
-                        .padding(.top, 1)
-                        .font(.mapleFont.startButton)
-                        .foregroundColor(Color.PopupFillBrown)
-                        .shadow(color: .black, radius: 10, x: 0, y: 0)
-                })
+                Text("화면을 눌러서 시작하기")
+                    .padding(.top, 1)
+                    .font(.mapleFont.startButton)
+                    .foregroundColor(Color.PopupFillBrown)
+                    .shadow(color: .black, radius: 10, x: 0, y: 0)
             }
             .padding(.bottom, 60)
         }

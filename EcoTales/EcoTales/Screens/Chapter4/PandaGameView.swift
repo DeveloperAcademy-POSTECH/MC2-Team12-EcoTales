@@ -8,7 +8,10 @@ import AVFoundation
 import SwiftUI
 
 struct PandaGameView: View {
+    @EnvironmentObject var chapterProgress: ChapterProgress
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var isStagePopup: Bool
+    @Binding var isGameClear: Bool
     @State private var isPausePopup = false
     @State private var showGameClear = false
 
@@ -51,7 +54,7 @@ struct PandaGameView: View {
                 Button {
                     showGameClear.toggle()
                 } label: {
-                    Image(ImageLiteral.meenuDoctor)
+                    Image(ImageLiteral.meenu)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50, alignment: .center)
@@ -70,7 +73,9 @@ struct PandaGameView: View {
                         SoundManager.playSounds(SoundLiteral.soundForRight)
                     })
                     .onTapGesture(perform: {
-                        // TODO: go to next view
+                        isGameClear = true
+                        presentationMode.wrappedValue.dismiss()
+                        chapterProgress.completionStatus[.four] = true
                     })
             }
 
@@ -79,5 +84,6 @@ struct PandaGameView: View {
                     .ignoresSafeArea()
             }
         }
+        .navigationBarHidden(true)
     }
 }
