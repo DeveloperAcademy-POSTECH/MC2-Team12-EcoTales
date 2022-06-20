@@ -40,16 +40,20 @@ struct StoryView: View {
                 VStack {
                     Spacer()
                     ZStack(alignment: .topLeading) {
-                        Text(chapterStory().dialog[storyIndex])
-                            .frame(width: 650, height: 80, alignment: .topLeading)
-                            .lineSpacing(10)
-                            .background(
-                                Image(ImageLiteral.dialogField)
-                                    .resizable()
-                                    .frame(width: 750, height: 150)
-                            )
-                            .padding(.top, 45)
-                        if chapterStory().speaker[storyIndex] != .naration && chapterStory().speaker[storyIndex] != .chapter1Photo {
+                        if chapterStory().speaker[storyIndex] != .chapter1Photo {
+                            Text(chapterStory().dialog[storyIndex])
+                                .frame(width: 650, height: 80, alignment: .topLeading)
+                                .lineSpacing(10)
+                                .background(
+                                    Image(ImageLiteral.dialogField)
+                                        .resizable()
+                                        .frame(width: 750, height: 150)
+                                )
+                                .padding(.top, 45)
+                        }
+                        if chapterStory().speaker[storyIndex] != .naration &&
+                            chapterStory().speaker[storyIndex] != .chapter1Photo &&
+                            chapterStory().speaker[storyIndex] != .photo {
                             Text(chapterStory().speaker[storyIndex].speakerName())
                                 .frame(width: 120, height: 30, alignment: .center)
                                 .lineSpacing(10)

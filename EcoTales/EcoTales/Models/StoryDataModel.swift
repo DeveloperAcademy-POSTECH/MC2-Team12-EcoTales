@@ -9,6 +9,7 @@ import SwiftUI
 
 enum Speaker: String {
     case naration
+    case photo
     case chapter1Photo
     case child
     case turtle
