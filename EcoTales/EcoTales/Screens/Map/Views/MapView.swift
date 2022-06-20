@@ -79,8 +79,6 @@ struct MapView: View {
             return CGPoint(x: 550, y: 125)
         case .four:
             return CGPoint(x: 720, y: 300)
-        default:
-            return CGPoint(x: 0, y: 0)
         }
     }
 
