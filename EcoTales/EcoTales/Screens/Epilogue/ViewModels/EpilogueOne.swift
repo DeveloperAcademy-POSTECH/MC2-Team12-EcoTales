@@ -33,6 +33,7 @@ struct EpilogueOne: View {
                     .animation(.easeInOut(duration: 2), value: currentImageIndex)
                 }
             }
+            .navigationBarHidden(true)
         }
 
         func timer() {

@@ -435,8 +435,8 @@
 		F857446528531C460012346A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				5959E5F128549EAA00F39D9F /* EpilogueOne.swift */,
 				26D2EFCA285E481C0064A7CF /* EpilogueTwo.swift */,
+				5959E5F128549EAA00F39D9F /* EpilogueOne.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -852,7 +852,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EcoTales/Preview Content\"";
-				DEVELOPMENT_TEAM = T79FMP6Q2L;
+				DEVELOPMENT_TEAM = F2SSSA5NRF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcoTales/Info.plist;
@@ -882,7 +882,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EcoTales/Preview Content\"";
-				DEVELOPMENT_TEAM = T79FMP6Q2L;
+				DEVELOPMENT_TEAM = F2SSSA5NRF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcoTales/Info.plist;
