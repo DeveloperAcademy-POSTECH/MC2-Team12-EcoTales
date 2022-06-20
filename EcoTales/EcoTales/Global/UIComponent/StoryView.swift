@@ -24,9 +24,16 @@ struct StoryView: View {
                 HStack {
                     speakCharacter()
                     Spacer()
-                    Image(ImageLiteral.child)
-                        .resizable()
-                        .scaledToFit()
+                    if chapterStory().speaker[storyIndex] == .child {
+                        Image(ImageLiteral.child)
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    if chapterStory().speaker[storyIndex] == .chapter1Photo {
+                        Image("chapter1_photo")
+                            .resizable()
+                            .frame(width: 540, height: 330)
+                    }
                 }
                 .padding(EdgeInsets(top: 50, leading: 70, bottom: 10, trailing: 70))
 
@@ -42,7 +49,7 @@ struct StoryView: View {
                                     .frame(width: 750, height: 150)
                             )
                             .padding(.top, 45)
-                        if chapterStory().speaker[storyIndex] != .naration {
+                        if chapterStory().speaker[storyIndex] != .naration && chapterStory().speaker[storyIndex] != .chapter1Photo {
                             Text(chapterStory().speaker[storyIndex].speakerName())
                                 .frame(width: 120, height: 30, alignment: .center)
                                 .lineSpacing(10)
@@ -113,15 +120,15 @@ struct StoryView: View {
     func chapterGame() -> some View {
         switch chapter {
         case .one:
-            return HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup)
-//        case .two:
-//            return
-//        case .three:
-//            return
-//        case .four:
-//            return
+            return AnyView(HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup))
+        case .two:
+            return AnyView(RecycleGameView(isGameClear: self.$isGameClear))
+        case .three:
+            return AnyView(FindWrongGameView(isStagePopup: $isStagePopup, isGameClear: $isGameClear))
+        case .four:
+            return AnyView(PandaGameView(isStagePopup: $isStagePopup, isGameClear: $isGameClear))
         default:
-            return HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup)
+            return AnyView(HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup))
         }
     }
 
@@ -129,21 +136,23 @@ struct StoryView: View {
         switch chapterStory()
             .speaker[storyIndex] {
         case .turtle, .rain:
-            return Image(ImageLiteral.rain)
+            return AnyView(Image(ImageLiteral.rain))
         case .mole, .dirtySherry:
-            return Image(ImageLiteral.mole)
+            return AnyView(Image(ImageLiteral.mole)
+                .padding(.bottom, 80))
         case .sherry:
-            return Image(ImageLiteral.sherry)
+            return AnyView(Image(ImageLiteral.sherry)
+                .padding(.bottom, 80))
         case .ozz:
-            return Image(ImageLiteral.ozz)
+            return AnyView(Image(ImageLiteral.ozz))
         case .meenu:
-            return Image(ImageLiteral.meenu)
+            return AnyView(Image(ImageLiteral.meenu))
         case .redpandaA, .redpandaB, .redpandaC:
-            return Image(ImageLiteral.redPanda)
+            return AnyView(Image(ImageLiteral.redPanda))
         case .redpandaAll:
-            return Image(ImageLiteral.redPandas)
+            return AnyView(Image(ImageLiteral.redPandas))
         default:
-            return Image(ImageLiteral.child)
+            return AnyView(Image(ImageLiteral.child).resizable().frame(width: 0, height: 0))
         }
     }
 }
