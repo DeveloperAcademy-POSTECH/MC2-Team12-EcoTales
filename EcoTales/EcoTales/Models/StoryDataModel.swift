@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Speaker: String {
     case naration
-    case photo
+    case chapter1Photo
     case child
     case turtle
     case rain
@@ -94,7 +94,7 @@ struct StoryData {
     )
 
     let chapterOneClear = StoryDataModel(
-        speaker: [.rain, .child, .rain, .child, .rain, .photo, .rain,
+        speaker: [.rain, .child, .rain, .child, .rain, .chapter1Photo, .rain,
                   .naration, .naration, .naration, .naration, .naration, .naration],
         dialog: ["참 잘했어! 네 덕분에 바다가 깨끗해졌어. 이제 이 바다에는 쓰레기들 때문에 죽는 친구들이 없어질거야",
                  "내가 도움이 되었다니 다행이야",
@@ -135,7 +135,7 @@ struct StoryData {
     )
 
     let chapterTwoClear = StoryDataModel(
-        speaker: [.sherry, .sherry, .child, .sherry, .child, .sherry, .photo, .sherry, .child, .sherry, .child],
+        speaker: [.sherry, .sherry, .child, .sherry, .child, .sherry, .chapter1Photo, .sherry, .child, .sherry, .child],
         dialog: ["좋았어! 이제 좀 신나는걸!!",
                  "잘했어 아이야~ 이게 바로 대지의 흙 한 줌이야.",
                  "이게 다 네 덕분이야 쉐리~",
@@ -178,21 +178,20 @@ struct StoryData {
 
     let chapterFourNotClear = StoryDataModel(
         speaker: [.child, .child, .child, .redpandaAll, .child, .redpandaA, .child,
-                  .redpandaB, .child, .redpandaC, .child, .naration, .naration, .naration],
-        dialog: ["드디어 레서판다씨의 마을이다!",
-                 "그런데 레서판다씨가... 많아!!",
-                 "독수리아가 얘기한대로면 분명 한 분이실텐데...",
+                  .redpandaB, .child, .redpandaC, .child, .naration, .naration],
+        dialog: ["드디어 레서판다 마을이다!",
+                 "그런데 레서판다가... 많아!!",
+                 "독수리아가 얘기한대로면 분명 미뉴는 이 중 한 분이실텐데...",
                  "판다~",
-                 "혹시 독수리한테 편지를 전해주신 분이신가요?",
-                 "분이신가요~",
-                 "혹시 당신이 독수리한테 편지를 전해주신 분인가요?",
-                 "분인가요~",
-                 "혹시 당신이 독수리한테 편지를 전해주신 판다인가요?",
-                 "판다인가요~",
-                 "(그러고 보니... 레서 판다씨는 평상시 장난기가 많다고 들었어... 이 중에서 진짜 판다씨를 찾아보자!)",
-                 "레서 판다의 마을에 왔지만 장난기가 많은 레서 판다가 친구들 사이에 숨어있네요.",
-                 "하지만 괜찮아요. 우리에겐 진짜 판다씨의 모습이 있는 사진이 있으니까요!",
-                 "진짜 판다씨를 찾아봐요!"]
+                 "혹시 미뉴이신가요?",
+                 "미뉴이신가요~",
+                 "혹시 당신이 미뉴이신가요?",
+                 "미뉴이신가요~",
+                 "혹시 당신이 미뉴이신가요?",
+                 "미뉴이신가요~",
+                 "(그러고 보니... 레서 판다들은 평상시 장난기가 많다고 들었어... 이 중에서 진짜 미뉴를 찾아보자!)",
+                 "레서 판다의 마을에 왔지만 장난기가 많은 레서 판다 미뉴가 친구들 사이에 숨어있네요.",
+                 "미뉴를 찾아봐요!"]
     )
 
     let chapterFourClear = StoryDataModel(
@@ -229,7 +228,7 @@ struct StoryData {
     let chapterEpilogue = StoryDataModel(
         speaker: [.meenu,
                   .meenu,
-                  .photo,
+                  .chapter1Photo,
                   .meenu,
                   .meenu,
                   .meenu,
