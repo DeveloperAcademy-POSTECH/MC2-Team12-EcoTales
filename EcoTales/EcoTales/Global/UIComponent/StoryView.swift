@@ -8,11 +8,13 @@ import SwiftUI
 
 struct StoryView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var chapterProgress: ChapterProgress
     @State private var storyIndex = 0
     @Binding var isStagePopup: Bool
     @State private var isGameShow = false
     @State private var isGameClear = false
     @Binding var chapter: Chapter
+    @State private var isEpilogueStart = false
 
     var body: some View {
         NavigationView {
@@ -70,15 +72,22 @@ struct StoryView: View {
                     NavigationLink(isActive: self.$isGameShow,
                                    destination: { chapterGame() },
                                    label: {
-                        Text("a")
+                        Text("")
                     })
+                }
+                if isEpilogueStart {
+                    NavigationLink(isActive: $isEpilogueStart, destination: { EpilogueOne() }, label: { Text("") })
                 }
             }
             .onTapGesture {
                 if storyIndex == (chapterStory()
                     .speaker.count - 1) {
                     if isGameClear {
-                        presentationMode.wrappedValue.dismiss()
+                        if chapter == .four {
+                            isEpilogueStart = true
+                        } else {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     } else {
                         isGameShow = true
                         storyIndex = 0
@@ -103,6 +112,8 @@ struct StoryView: View {
             return isGameClear ? StoryData().chapterThreeClear : StoryData().chapterThreeNotClear
         case .four:
             return isGameClear ? StoryData().chapterFourClear : StoryData().chapterFourNotClear
+        case .epilogue:
+            return StoryData().chapterEpilogue
         }
     }
 
@@ -131,6 +142,8 @@ struct StoryView: View {
             return AnyView(FindWrongGameView(isStagePopup: $isStagePopup, isGameClear: $isGameClear))
         case .four:
             return AnyView(PandaGameView(isStagePopup: $isStagePopup, isGameClear: $isGameClear))
+        case .epilogue:
+            return AnyView(MapView(isIntroSeen: .constant(false)).environmentObject(chapterProgress))
         default:
             return AnyView(HiddenObjGameView(isGameClear: self.$isGameClear, isStagePopup: $isStagePopup))
         }
@@ -143,6 +156,9 @@ struct StoryView: View {
             return AnyView(Image(ImageLiteral.rain))
         case .mole, .dirtySherry:
             return AnyView(Image(ImageLiteral.mole)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, alignment: .center)
                 .padding(.bottom, 80))
         case .sherry:
             return AnyView(Image(ImageLiteral.sherry)
@@ -150,7 +166,11 @@ struct StoryView: View {
         case .ozz:
             return AnyView(Image(ImageLiteral.ozz))
         case .meenu:
-            return AnyView(Image(ImageLiteral.meenu))
+            return AnyView(Image(ImageLiteral.meenu)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 160, alignment: .center)
+                .padding([.trailing, .bottom], 70))
         case .redpandaA, .redpandaB, .redpandaC:
             return AnyView(Image(ImageLiteral.redPanda))
         case .redpandaAll:

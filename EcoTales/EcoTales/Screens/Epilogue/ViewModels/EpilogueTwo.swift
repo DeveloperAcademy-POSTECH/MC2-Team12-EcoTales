@@ -60,7 +60,7 @@ struct EpilogueTwo: View {
                 }
             } else if isFinished == true {
                 NavigationLink(isActive: $isFinished,
-                               destination: { StoryView(isStagePopup: $isStagePopup, chapter: $chapter) },
+                               destination: { StoryView(isStagePopup: $isStagePopup, chapter: .constant(.epilogue)) },
                                label: { Text("a") })
             }
         }
