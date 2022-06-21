@@ -7,4 +7,62 @@
 */
 
 "다음" = "Next";
-"아이는 근처 바다에 도착했어요." = "ddddd";
+
+// MARK:- CH3 Air Pollution Story
+"아이는 마지막 재료인 청량한 공기 한 숨을 얻기 위해 높은 산 꼭대기에 올라갔어요." = "The child climbed to the top of a high mountain to get the last ingredient, a breath of fresh air.";
+"오늘은 참 날씨가 더운데도 하늘이 뿌옇네. 어디로 가야 청량한 공기 한 숨을 구할 수 있는 걸까? 너무 더우니 잠시 저 나무 밑에서 쉬어가야겠어." = "(sweaty) The sky is cloudy even though it's hot today. Where should I go to get a breath of fresh air? It’s just too hot. Maybe I'll take a break under that tree for a while.";
+"아이가 작은 나무에 기대자, 나뭇가지가 조금 흔들렸어요." = "When the child leaned against the small tree, the branch shook a little.";
+"콜록 콜록.. 누가 이 오즈님의 낮잠을 방해하는거야!" = "Cough cough… Who's disturbing me, Oz’s, nap?";
+"앗, 미안해, 오즈. 누가 있는지 몰랐어." = "Oh, I'm sorry, Oz. I didn't know anyone was there.";
+"콜록 콜록.. 여긴 공기가 안 좋아서 동물들이 없고 조용해. 넌 무슨 일로 이 곳에 온 거야?" = "Cough cough… The air is bad here, so there are no animals and it's quiet. What brings you here?";
+"세계수가 많이 아파. 비약의 재료인 청량한 공기 한 숨을 찾고 있어." = "The World Tree is ill. I'm looking for a breath of fresh air, the ingredient of a cure.";
+"저기 사람들이 만든 공장들과 수많은 자동차들이 보이지? 콜록.. 저것들이 우리가 사는 지구의 공기를 오염시키고 있어." = "Do you see the factories that people built over there and the many cars? Cough... they're polluting the air on our planet.";
+"우리가 매일 마시는 공기를? 그럼 어떻게 해야 하지?" = "The air we breathe every day? Then what should I do?";
+"응. 옛날에 그것들이 없었던 때는 항상 공기가 맑고 하늘이 파랬어. 예전과 비교해서 지금 달라진 것들을 찾아서 없애면 괜찮아질지도 몰라." = "Yes, well… In the past, when they were not there, the air was always clear and the sky was blue. It might be better if we find and get rid of the things that have changed compared to the past.";
+
+"고마워. 네 덕분에 이제 마스크를 쓰지 않아도 맑은 공기를 마실 수 있어. 보답으로 내가 만든 나뭇잎 주머니를 줄게." = "Thank you. Now I can breathe without using a mask. I’ll give you this leaf pocket as gratitude.";
+"우와... 이 주머니에 청량한 공기 한 숨을 담아 가면 되겠다. 드디어 세계수를 구할 비약의 재료 세 가지를 모두 모았어." = "Wow.. I’ll be able to put in the fresh air here. Finally I’ve got all three ingredients.";
+"축하해 아이야." = "Congratulations, Child";
+"고마워~ 이제 드디어 내 친구를 치료할 수 있게 됐어!" = "Thank you~ I can finaly cure my friend!";
+"나도 네 덕분에 기침이 멈추게 됐어" = "Thanks to you, I’m able to stop coughing";
+"정말 잘 됐다!" = "Good for you!";
+"고마워~ 네 친구를 꼭 치료할 수 있길 바라 아이야." = "Thank you! I hope you cure your friend.";
+"응 고마워 오즈. 안녕~" = "Thank you Oz. Bye~";
+"그렇게 아이는 세 가지 재료를 모두 모아 레서판다씨를 찾아가기 시작했습니다." = "And with the child having collected all three ingredients, it was time to find the lesser panda.";
+
+// MARK:- CH1 HiddenObjcetGame
+
+"음료수 캔" = "drinkCan";
+"플라스틱\n물병" = "plastic\nBottle";
+"칫솔" = "toothBrush";
+"비닐봉지" = "plastic\nBag";
+"담배꽁초" = "cigarette\nWaste";
+"플라스틱\n숟가락과 포크" = "plastic\nCutlery";
+"플라스틱\n빨대" = "plastic\nStraw";
+"일회용\n음료 컵" = "disposable\nCup";
+"유리병" = "glass\nBottle";
+"과자 봉지" = "crisp\nPacket";
+
+"음료수 캔은 해수욕장에서 가장 많이 발견되는 쓰레기 중 하나야." = "Cans are one of the many trash found on the beach.";
+"플라스틱 쓰레기는 미세플라스틱이 되어 우리에게도 나쁜 영향을 줘." = "Plastic trash becomes microplastic which are bad for us.";
+"칫솔모가 분리되지 않은 칫솔은 재활용이 되지 않는 쓰레기야." = "Toothbrush with bush cannot be recycled.";
+"비닐봉지를 그냥 버리면 자연 분해되는데 15년 이상의 시간이 걸려." = "Vinyl takes 15 years to naturally break down.";
+"아무렇게나 버린 담배꽁초는 빗물에 쓸려 바다로 흘러가." = "Thrown away cigarette waste floats to the sea due to rain.";
+"한 번 쓰고 버리는 일회용 수저는 사용을 줄이는 것이 좋아." = "It is better to reduce the use of disposable spoons that are used and thrown away.";
+"무심코 버린 빨대가 바다거북이의 코에 박혀 발견된 적이 있어." = "An accidentally discarded straw was found stuck in the nose of a sea turtle.";
+"일회용 플라스틱 컵은 해수욕장 쓰레기 1위야." = "Disposable plastic cups are the number one beach waste.";
+"유리 쓰레기는 작게 깨져 바다 생물들의 생명을 위협할 수 있어." = "Glass breaks down into small pieces and threaten the life of sea creatures.";
+"과자봉지 역시 바다에서 많이 발견되는 쓰레기야." = "Many crisp packets are found in the sea.";
+
+// MARK:- RecycleGame
+
+
+// MARK:- FindWrongObjectGame
+"콜록! 콜록! 공장 매연은 나빠!" = "Cough! Cough! Factory smoke is bad!";
+"공장 매연은 동물들에게 나빠!" = "Factory smoke is harmful for animals!";
+"직구 배송을 주의하자!" = "Let’s decrease direct purchase orders!";
+"대중교통을 이용하자!" = "Let’s use public transport!";
+"자동차는 되도록 자제하자!" = "Let’s avoid using cars!";
+
+// MARK:- PandaGame
+
