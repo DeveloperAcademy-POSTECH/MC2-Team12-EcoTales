@@ -59,6 +59,7 @@ enum ImageLiteral {
     static var intro2Background = "intro2_background"
     static var intro3Background = "intro3_background"
     static var intro4Background = "intro4_background"
+    
     static var chapter2Timer = "chapter2_timer"
     static var recycleBinLitter = "recycleBin_litter"
     static var recycleBinVinyl = "recycleBin_vinyl"
@@ -81,4 +82,6 @@ enum ImageLiteral {
     static var gameClear = "game_gameClear"
     static var pandaBackground = "chapterFour-gameBackground"
     static var turtleDialog = "chapter1_turtleDialog"
+    
+    static var GameWoodPanel = "chapter3_GameWoodPanel"
 }

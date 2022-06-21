@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum Chapter: Int, CaseIterable {
     case zero = 0, one, two, three, four, epilogue
 
-     func name() -> String {
+     func name() -> LocalizedStringKey {
         switch self {
         case .zero:
             return "인트로"

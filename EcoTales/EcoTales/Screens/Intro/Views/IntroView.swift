@@ -14,6 +14,7 @@ struct IntroView: View {
     @State private var introStoryIndex = 0
     @Binding var isIntroSeen: Bool
     let screenWidth = UIScreen.main.bounds.size.width
+    private let title: LocalizedStringKey = "다음"
 
     var body: some View {
         ZStack {
@@ -87,7 +88,7 @@ struct IntroView: View {
         }
     }
 
-    func introStory() -> [String] {
+    func introStory() -> [LocalizedStringKey] {
         switch introNumber {
         case 1:
             return StoryData().introOne
@@ -102,7 +103,7 @@ struct IntroView: View {
         }
     }
 
-    func introStoryContent(position: Int) -> String {
+    func introStoryContent(position: Int) -> LocalizedStringKey {
         return introStory()[introStoryIndex / 3 * 3 + position]
     }
 }

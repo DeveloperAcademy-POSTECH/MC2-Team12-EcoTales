@@ -5,6 +5,8 @@
 //  Created by Seik Oh on 2022/06/16.
 //
 
+import SwiftUI
+
 enum RecycleBinTypes {
     case recycleBinLitter
     case recycleBinVinyl
@@ -13,7 +15,7 @@ enum RecycleBinTypes {
     case recycleBinPaper
     case recycleBinGlass
 
-    func recycleName() -> String {
+    func recycleName() -> LocalizedStringKey {
         switch self {
         case .recycleBinLitter:
             return "일반쓰레기"

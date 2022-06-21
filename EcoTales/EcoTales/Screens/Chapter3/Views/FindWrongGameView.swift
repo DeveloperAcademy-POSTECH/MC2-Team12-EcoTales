@@ -103,7 +103,8 @@ private struct UpperPanelView: View {
 
 private struct ExplainGameView: View {
 
-    private var owlLine = ["콜록! 콜록! 공장 매연은 나빠!", "공장 매연은 동물들에게 나빠!", "직구 배송을 주의하자!", "대중교통을 이용하자!", "자동차는 되도록 자제하자!"]
+    private var owlLine: [LocalizedStringKey] = ["콜록! 콜록! 공장 매연은 나빠!", "공장 매연은 동물들에게 나빠!",
+                                                 "직구 배송을 주의하자!", "대중교통을 이용하자!", "자동차는 되도록 자제하자!"]
     @EnvironmentObject var chapterThreeUserValue: ChapterThreeUserSetting
 
     var body: some View {
@@ -112,5 +113,12 @@ private struct ExplainGameView: View {
                 .background(Image(ImageLiteral.chapter1TurtleDialog))
         }
         .frame(width: 450, height: 30)
+    }
+}
+
+struct FindWrongGameView_Previews: PreviewProvider {
+    static var previews: some View {
+        FindWrongGameView(isStagePopup: .constant(true), isGameClear: .constant(false))
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
