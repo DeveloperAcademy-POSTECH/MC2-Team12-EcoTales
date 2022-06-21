@@ -114,3 +114,10 @@ private struct ExplainGameView: View {
         .frame(width: 450, height: 30)
     }
 }
+
+struct FindWrongGameView_Previews: PreviewProvider {
+    static var previews: some View {
+        FindWrongGameView(isStagePopup: .constant(true), isGameClear: .constant(false))
+            .previewInterfaceOrientation(.landscapeLeft)
+    }
+}
