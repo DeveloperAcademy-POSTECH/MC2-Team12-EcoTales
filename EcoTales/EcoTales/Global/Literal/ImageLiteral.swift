@@ -83,5 +83,5 @@ enum ImageLiteral {
     static var pandaBackground = "chapterFour-gameBackground"
     static var turtleDialog = "chapter1_turtleDialog"
     
-    static var chapter3GameWoodPanel = "chapter3_GameWoodPanel"
+    static var GameWoodPanel = "chapter3_GameWoodPanel"
 }
