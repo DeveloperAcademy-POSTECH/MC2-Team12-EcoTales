@@ -8,22 +8,128 @@
 
 "다음" = "Next";
 
+// Character Name
+"아이" = "Child";
+"거북이" = "Turtle";
+"레인" = "Rain";
+"두더지" = "Mole";
+"쉐리" = "Sherry";
+"오즈" = "Oz";
+"미뉴" = "Meenu";
+"레서 판다 A, B, C" = "Lesser Panda A, B, C";
+"레서 판다 A" = "Lesser Panda A";
+"레서 판다 B" = "Lesser Panda B";
+"레서 판다 C" = "Lesser Panda C";
+"오류" = "Error!";
+
+// Intro One
+"세상에서 가장 아름답고, 푸르른 마을에 한 아이가 살았어요." = "Once upon a time, there lived a child who lived in the most beautiful green village in the world.";
+"귀여운 다람쥐 이웃들, 듬직한 독수리 친구, 어머니 같이 포근한 세계수는 아이의 가족이 되어주었어요." = "The cute squirrel neighbors, the reliable Eagle, and the World Tree who was as warm as a mother all became the child’s family.";
+"아이와 친구들은 서로를 아껴주며 의지하며 행복하게 살고 있었어요." = "They all cared for and relied on each other.";
+
+// Intro Two
+"그런데, 어느 날부터 하루가 지날수록 하늘이 어두워지고 날씨가 더워지기 시작했어요." = "But one day, the sky became darker and the weather started to get hotter.";
+"아이도, 자연 친구들도 변한 날씨에 힘들어했어요." = "The child and nature friends had a hard time with the changing weather.";
+"결국, 다정했던 세계수도 알 수 없는 병에 걸려버리고 말았어요." = "In the end, the friendly World Tree fell ill with an unknown disease.";
+"푸르고 빳빳했던 나뭇잎이 노랗게 변하고 시들해졌고," = "The fresh, green leaves turned yellow and withered.";
+"늘 아이를 안아주던 가지도 바람이 불면 부러질 듯이 약해보였어요." = "The branches that always hugged the child looked so weak as if it would break from the wind.";
+"아이는 태어나서 느껴본 슬픔 중 가장 큰 슬픔을 느꼈어요." = "The child felt the greatest sadness that was never felt before.";
+
+// Intro Three
+"독수리는 아이가 매일 흐느끼며 우는 모습을 보니 마음이 너무 아팠어요." = "The Eagle felt heartbroken when she saw the child sobbing and crying every day.";
+"'이 문제를 해결할 수 있는 방법은 없을까?'" = "‘Is there any way to cure the World Tree?’";
+"고민하던 독수리는 하늘을 날아다니며 지혜로운 자를 찾아다녔어요." = "The Eagle flew through the sky, searching for the Wise One.";
+"독수리가 답을 찾았는지, 다시 아이에게 왔네요." = "Soon, the Eagle came back.";
+"\"아이야, 레서판다 미뉴가 답을 알고 있대!\"" = "“Hey, I found that Lesser Panda Meenu knows how to cure the World Tree!”";
+"\"판다 씨에게 몇 가지 재료만 가지고 가면, 병들어 있는 세계수를 치료할 치료약을 만들어 주신다고 하셨어\"" = "“With a few ingredients, a cure can be made!”";
+"\"정말로? 어떤 재료를 찾아가면 되는 거야? 정말로 이걸로 세계수를 살릴 수 있어?\"" = "“Really? What ingredients should I find? Can it really save the World Tree?”";
+"\"그럼. 치료약을 만드는 데 필요한 3가지 재료를 판다 씨에게 전해주면 돼.\"" = "“Of course. Three ingredients are needed.”";
+"\"바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 찾아오렴. 나는 세계수를 돌보고 있을게\"" = "“One bucket of clean sea water, a handful of earth soil, and a breath of fresh air. I’ll take care of the World Tree while you go find the ingredients.”";
+
+// Intro Four
+"\"알겠어! 나라도 무언가를 해봐야겠어! 나, 재료를 찾으러 다녀올게. 세계수를 잘 부탁해\"" = "“Got it! I’d better get going! Please take care of the World Tree while I’m gone.”";
+"그 길로 아이는 바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 찾기 위한 여정을 떠났어요." = "And so the child’s journey began.\nThe quest to get the three ingredients to cure the World Tree.";
+"어디에 가야 바다의 깨끗한 소금물 한 바가지를 구할 수 있을까요?" = "“Where can I go to get a bucket of clean salt water?”";
+
+// Chapter1 Not Clear
+"아이는 근처 바다에 도착했어요." = "The child reached the sea.";
+"와 바다다! 여기라면 깨끗한 소금물 한 바가지를 구할 수 있겠지?" = "Wow, it’s the sea! I’ll be able to get a clean bucket of sea water here, right?";
+"아이고.. 힘들다 힘들어" = "ugh.. my back…";
+"어? 거북이다. 거북이한테 물어볼까?" = "Huh? A turtle. Maybe I should ask the turtle.";
+"안녕 거북아?" = "Hello turtle?";
+"누구냐 넌! 너도 바다를 더럽히러 온 거야? 내가 혼쭐을 내주마!" = "Who are you! Did you also come to pollute the sea? I’ll teach you a lesson!";
+"잠깐만, 아니야! 나는 바다의 깨끗한 소금물 한 바가지를 구하러 왔어" = "Wait, no! I’m here to get a bucket of clean salt water from the sea.";
+"깨끗한 소금물 한 바가지?" = "A bucket of clean salt water?";
+"응! 너 혹시 그게 어디있는지 아니 거북아?" = "Yes! Do you know where it is, turtle?";
+"내 이름은 레인이야. 지금은 깨끗한 소금물 한 바가지를 구할 수 없어." = "My name is Rain. And you can’t get a bucket of clean salt water right now.";
+"레인이었구나! 그런데 구할 수 없다니? 왜?!" = "Oh, it was Rain! But we can’t get it? Why?!";
+"여길 봐. 바다가 쓰레기로 뒤덮여 있잖아. 이렇게 더러운 곳에 그런게 있겠어? 나도 바다를 청소하고 있지만, 나는 너무 느려서 언제 다 할 수 있을지 모르겠어." = "Just look. The sea is covered with trash. How could there be such a thing in this dirty place? I'm cleaning the sea, but I'm slow I don't know when I’ll be able to finish.";
+"그럼 내가 도와줄게! 같이 청소하자." = "Then I'll help you! Let's clean up together.";
+"와 고마워. 그러면 바다에서 쓰레기를 찾아서 없애보자!" = "Wow, thanks. Then let's find the trash and get rid of it!";
+
+// Chapter1 Clear
+"참 잘했어! 네 덕분에 바다가 깨끗해졌어. 이제 이 바다에는 쓰레기들 때문에 죽는 친구들이 없어질거야" = "Well done! Thanks to you, the sea is now clean. There will be no friends in this sea dying of garbage.";
+"내가 도움이 되었다니 다행이야" = "I'm glad I was helpful.";
+"자, 이게 바로 깨끗한 소금물 한 바가지야. 이걸로 네 친구를 꼭 치료하길 바라.." = "Well, this is a bucket of clean salt water. I hope you heal your friend with this…";
+"난 이제 대지의 흙 한 줌을 구하러 갈 거야. 레인, 너는?" = "I'm going to go get a handful of earth soil now. Rain, what about you?";
+"이 바다는 깨끗해졌지만, 아직 다른 바다는 쓰레기들 때문에 죽어가는 친구들이 이렇게 많아." = "This sea is clean, but there are still other seas where so many friends are dying of garbage.";
+"난 이제 다른 바다를 청소하러 갈거야. 고마웠어 안녕~" = "I’ll be off to clean up the other seas now. Thank you until now! Bye!";
+"아이는 길을 가면서 곰곰이 생각해봤어요." = "The child thought hard while he went on his way.";
+"바다에 있는 쓰레기는 아이에게 익숙한 것들이었어요."="The garbage in the sea were all familiar.";
+"평소에 들고 다녔던 물통, 즐겨먹던 플라스틱 도시락, 매일 사용하던 빨대..."="The water bottles, plastic picnic baskets, plastic straws..";
+"아이는 자신의 행동을 되돌아봤어요."="The child reflected on his past actions.";
+"내가 많이 사용했던 물건들이 쉽게 쓰레기가 되는구나..."="‘The things I used easily became garbage…";
+"앞으로는 바다 친구들을 위해서 조금씩 줄어야겠다."="I should make less garbage for the sea friends from now on’";
+"아이는 다짐하며 대지의 마을을 향해 발길을 재촉했어요."="With this in mind, the child hurried.";
+"설명을 해줄게!" = "This is a Find Hidden objects Game!";
+
+// Chapter2 Not Clear
+"아이는 대지의 흙 한 줌을 찾기 위해 숲을 향해 걸었어요. 숲에 도착했지만 오염물질과 쓰레기가 많아 마땅한 흙을 찾기 어려웠어요." = "The child walked to the forest to find a handful of earth soil. When the child arrived, it was hard to find the right soil because there were a lot of pollutants and trash.";
+"계속 걸어가고 있던 중, 마침 땅 속에서 나온 두더지를 마주쳤어요." = "As walking, the child came across a mole coming out of the ground.";
+"아이 참.. 이것 참 곤란하네.." = "Oh, my… This is really difficult.";
+"두더지야 안녕~" = "Mole. Hi, how are you~?";
+"하나도 안녕하지 못해. 난 쉐리야" = "I am not well at all. And my name is Sherry.";
+"무슨 일 있니, 쉐리?" = "What's wrong, Sherry?";
+"기껏 새 옷을 샀는데, 이걸 봐 여기 이 더러운 쓰레기들 때문에 새로산 내 옷이 다 더러워져 버렸어." = "I've bought new clothes, but look at this. My new clothes are all dirty because of this mess here.";
+"저런.. 참 안됐구나.." = "Oh no… I'm sorry to hear that.";
+"그런데 여긴 무슨 일로 온 거야?" = "So what brings you here?";
+"아, 나는 대지의 흙 한 줌을 찾고 있어. 혹시 어디에 있는지 아니?" = "Oh, I'm looking for a handful of earth soil. Do you know where it is?";
+"네가 찾는 대지의 흙 한 줌은 여기에 없어. 저 아무렇게나 버려진 쓰레기들 때문이지" = "The handful of earth you're looking for isn't here. It's because of the trash that's thrown anywhere and everywhere.";
+"그럼 어쩌지.." = "What should I do?";
+"저 쓰레기들을 분리수거해 볼까? 그러면 니가 원하는 대지의 흙 한 줌을 구할 수 있을거야." = "How about we separate the garbage? Then you can get a handful of earth soil you want.";
+"좋아, 하지만 쉐리. 나는 분리수거를 어떻게 해야하는지 잘 몰라.." = "All right, but Sherry. I don't know how to recycle.";
+"걱정마. 내가 알려줄게." = "Don’t worry. I’ll help you out.";
+"여기 쓰레기들 보이지? 이 쓰레기는 플라스틱, 이건 캔, 이건 종이야! 내가 땅에서 쓰레기를 주워서 컨베이어 벨트에 올려줄테니 너는 쓰레기를 잘 분류해줘" = "You see the garbage here? This is plastic, this is a can, and this is paper! I’ll pick up the garbage from the ground and put it on the conveyor belt, so please sort out the trash.";
+"좋아, 한번 도전해볼게" = "Okay, I’ll give it a try.";
+
+// Chapter2 Clear
+"좋았어! 이제 좀 신나는걸!!" = "Great! Now it’s fun!";
+"잘했어 아이야~ 이게 바로 대지의 흙 한 줌이야." = "Well done, child. Here is a handful of earth soil.";
+"이게 다 네 덕분이야 쉐리~" = "This is all thanks to you, Sherry.";
+"아니야 다 네가 잘 해줬기 때문이야." = "No, it's all because you've been nice.";
+"이제 땅도 깨끗해졌으니 쉐리 네 옷들도 더러워지지 않겠다." = "Now that the ground is clean, Sherry's clothes won't get dirty either.";
+"덕분에 내 옷들이 더러워지지 않을 수 있을 것 같아. 하지만 앞으로도 분리수거를 제대로 하지 않으면 다시 땅이 더러워지겠지.." = "Thanks to that, I think my clothes won't get dirty. But in the future, if we do not properly separate waste, the ground will become dirty again..";
+"" = "";
+"아 생각하기도 싫다!!" = "Oh, I hate to even think about it!";
+"걱정마 쉐리, 앞으로 나도 분리수거를 열심히 할게" = "Don't worry, Sherry, I'll do my best to separate garbage from now on.";
+"고마워, 그럼 잘가~" = "Thank you, then bye~";
+"응 안녕 쉐리~" = "Yeah Bye Sherry~";
 
 // chapterFourClear
 "레서 판다 미뉴! 여기에 계셨군요!" = "Lesser Panda Meenu! There you are!";
 "지난 봄에 왔을 때는 조용하고 황량한 곳이었는데, 지금은 엄청 아름다워요!" = "When I came here last spring, it was a quiet and dry place, but now it's so beautiful!";
- "처음 보는 판다들도 많아요" = "There are a lot of lesser pandas that I've never seen before";
- "그래. 대나무 숲이 생기를 되찾고 나서, 떠났던 레서 판다들이 다시 돌아왔단다." = "Yeah. After the bamboo forest came back to life, the lesser pandas that left came back.";
- "오랜만에 보니 반갑구나. 무슨 일이니?" = "It's nice to see you after a long time. What's the matter?";
- "아이는 그동안 마을에 생긴 일과 세계수에 대한 것을 미뉴에게 말해주었어요." = "The child told Meenu about what had happened to the village and the World Tree.";
- "그리고 바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 주머니에서 꺼내며 말했어요." = " The child took out a bucket of clean salt water, a handful of earth soil, and a breath of fresh air out of the pocket.";
- "미뉴! 치료약을 만들 재료를 여기 다 찾아왔어요! 이걸로 어서 세계수를 살릴 약을 만들어주세요." = "Meenu! I've got all the ingredients here to make the cure! Please use these to make the cure for the World Tree.";
- "어? 그런데 재료를 바라보는 미뉴의 표정이 의미심장하네요?" = "Hmm? But the lesser panda has a meaningful look at the ingredients.";
- "약을 만들 재료가 부족한 걸까요?" = "Is there not enough ingredients to make the medicine?";
- "대단하구나 아이야. 네가 재료를 충분히 구해줬으니, 이제 세계수한테로 가볼까?" = "Child, you are amazing. Now that you've got the ingredients, shall we go to the World Tree?";
- "네? 치료약은요?" = "What? What about the cure?";
- "우선 나와 함께 가보자꾸나" = "Let's go with me first.";
- "아이는 고개를 갸우뚱 거리면서 미뉴를 따라 마을을 향해 발걸음을 옮겼어요." = "The child tilted his head and followed Meenu towards the village.";
+"처음 보는 판다들도 많아요" = "There are a lot of lesser pandas that I've never seen before";
+"그래. 대나무 숲이 생기를 되찾고 나서, 떠났던 레서 판다들이 다시 돌아왔단다." = "Yeah. After the bamboo forest came back to life, the lesser pandas that left came back.";
+"오랜만에 보니 반갑구나. 무슨 일이니?" = "It's nice to see you after a long time. What's the matter?";
+"아이는 그동안 마을에 생긴 일과 세계수에 대한 것을 미뉴에게 말해주었어요." = "The child told Meenu about what had happened to the village and the World Tree.";
+"그리고 바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 주머니에서 꺼내며 말했어요." = " The child took out a bucket of clean salt water, a handful of earth soil, and a breath of fresh air out of the pocket.";
+"미뉴! 치료약을 만들 재료를 여기 다 찾아왔어요! 이걸로 어서 세계수를 살릴 약을 만들어주세요." = "Meenu! I've got all the ingredients here to make the cure! Please use these to make the cure for the World Tree.";
+"어? 그런데 재료를 바라보는 미뉴의 표정이 의미심장하네요?" = "Hmm? But the lesser panda has a meaningful look at the ingredients.";
+"약을 만들 재료가 부족한 걸까요?" = "Is there not enough ingredients to make the medicine?";
+"대단하구나 아이야. 네가 재료를 충분히 구해줬으니, 이제 세계수한테로 가볼까?" = "Child, you are amazing. Now that you've got the ingredients, shall we go to the World Tree?";
+"네? 치료약은요?" = "What? What about the cure?";
+"우선 나와 함께 가보자꾸나" = "Let's go with me first.";
+"아이는 고개를 갸우뚱 거리면서 미뉴를 따라 마을을 향해 발걸음을 옮겼어요." = "The child tilted his head and followed Meenu towards the village.";
 
 // epilogueTwoSentence
 "세계수가 너무도 그리웠던 아이는, 한걸음에 언덕으로 달려갔어요." = "The child, who missed the World Tree so much, ran to the hill.";
@@ -53,72 +159,3 @@
 "이 마을은 네 덕분에 깨끗해졌지만, 지구 세상에는 아직도 오염된 환경으로 인해 고통받는 친구들이 많단다." = "This town has become clean thanks to you, but there are still many friends who suffer from the polluted environment in the world.";
 "아이야.. 너와 같은 아이들의 도움이 필요해." = "Child, I need the help of children like you.";
 "나와 계속 함께하며 세계를 지키는 영웅이 되어보겠니?" = "Will you help me and become a hero who protects the world?";
-=======
-"아이" = "Child";
-"거북이" = "Turtle";
-"레인" = "Rain";
-"두더지" = "Mole";
-"쉐리" = "Sherry";
-"오즈" = "Oz";
-"미뉴" = "Meenu";
-"레서 판다 A, B, C" = "Lesser Panda A, B, C";
-"레서 판다 A" = "Lesser Panda A";
-"레서 판다 B" = "Lesser Panda B";
-"레서 판다 C" = "Lesser Panda C";
-"오류" = "Error!";
-
-"세상에서 가장 아름답고, 푸르른 마을에 한 아이가 살았어요." = "Once upon a time, there lived a child who lived in the most beautiful green village in the world.";
-"귀여운 다람쥐 이웃들, 듬직한 독수리 친구, 어머니 같이 포근한 세계수는 아이의 가족이 되어주었어요." = "The cute squirrel neighbors, the reliable Eagle, and the World Tree who was as warm as a mother all became the child’s family.";
-"아이와 친구들은 서로를 아껴주며 의지하며 행복하게 살고 있었어요." = "They all cared for and relied on each other.";
-
-"그런데, 어느 날부터 하루가 지날수록 하늘이 어두워지고 날씨가 더워지기 시작했어요." = "But one day, the sky became darker and the weather started to get hotter.";
-"아이도, 자연 친구들도 변한 날씨에 힘들어했어요." = "The child and nature friends had a hard time with the changing weather.";
-"결국, 다정했던 세계수도 알 수 없는 병에 걸려버리고 말았어요." = "In the end, the friendly World Tree fell ill with an unknown disease.";
-"푸르고 빳빳했던 나뭇잎이 노랗게 변하고 시들해졌고," = "The fresh, green leaves turned yellow and withered.";
-"늘 아이를 안아주던 가지도 바람이 불면 부러질 듯이 약해보였어요." = "The branches that always hugged the child looked so weak as if it would break from the wind.";
-"아이는 태어나서 느껴본 슬픔 중 가장 큰 슬픔을 느꼈어요." = "The child felt the greatest sadness that was never felt before.";
-
-"독수리는 아이가 매일 흐느끼며 우는 모습을 보니 마음이 너무 아팠어요." = "The Eagle felt heartbroken when she saw the child sobbing and crying every day.";
-"'이 문제를 해결할 수 있는 방법은 없을까?'" = "‘Is there any way to cure the World Tree?’";
-"고민하던 독수리는 하늘을 날아다니며 지혜로운 자를 찾아다녔어요." = "The Eagle flew through the sky, searching for the Wise One.";
-"독수리가 답을 찾았는지, 다시 아이에게 왔네요." = "Soon, the Eagle came back.";
-"\"아이야, 레서판다 미뉴가 답을 알고 있대!\"" = "“Hey, I found that Lesser Panda Meenu knows how to cure the World Tree!”";
-"\"판다 씨에게 몇 가지 재료만 가지고 가면, 병들어 있는 세계수를 치료할 치료약을 만들어 주신다고 하셨어\"" = "“With a few ingredients, a cure can be made!”";
-"\"정말로? 어떤 재료를 찾아가면 되는 거야? 정말로 이걸로 세계수를 살릴 수 있어?\"" = "“Really? What ingredients should I find? Can it really save the World Tree?”";
-"\"그럼. 치료약을 만드는 데 필요한 3가지 재료를 판다 씨에게 전해주면 돼.\"" = "“Of course. Three ingredients are needed.”";
-"\"바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 찾아오렴. 나는 세계수를 돌보고 있을게\"" = "“One bucket of clean sea water, a handful of earth soil, and a breath of fresh air. I’ll take care of the World Tree while you go find the ingredients.”";
-
-"\"알겠어! 나라도 무언가를 해봐야겠어! 나, 재료를 찾으러 다녀올게. 세계수를 잘 부탁해\"" = "“Got it! I’d better get going! Please take care of the World Tree while I’m gone.”";
-"그 길로 아이는 바다의 깨끗한 소금물 한 바가지, 대지의 흙 한 줌, 청량한 공기 한 숨을 찾기 위한 여정을 떠났어요." = "And so the child’s journey began.\nThe quest to get the three ingredients to cure the World Tree.";
-"어디에 가야 바다의 깨끗한 소금물 한 바가지를 구할 수 있을까요?" = "“Where can I go to get a bucket of clean salt water?”";
-
-"아이는 근처 바다에 도착했어요." = "The child reached the sea.";
-"와 바다다! 여기라면 깨끗한 소금물 한 바가지를 구할 수 있겠지?" = "Wow, it’s the sea! I’ll be able to get a clean bucket of sea water here, right?";
-"아이고.. 힘들다 힘들어" = "ugh.. my back…";
-"어? 거북이다. 거북이한테 물어볼까?" = "Huh? A turtle. Maybe I should ask the turtle.";
-"안녕 거북아?" = "Hello turtle?";
-"누구냐 넌! 너도 바다를 더럽히러 온 거야? 내가 혼쭐을 내주마!" = "Who are you! Did you also come to pollute the sea? I’ll teach you a lesson!";
-"잠깐만, 아니야! 나는 바다의 깨끗한 소금물 한 바가지를 구하러 왔어" = "Wait, no! I’m here to get a bucket of clean salt water from the sea.";
-"깨끗한 소금물 한 바가지?" = "A bucket of clean salt water?";
-"응! 너 혹시 그게 어디있는지 아니 거북아?" = "Yes! Do you know where it is, turtle?";
-"내 이름은 레인이야. 지금은 깨끗한 소금물 한 바가지를 구할 수 없어." = "My name is Rain. And you can’t get a bucket of clean salt water right now.";
-"레인이었구나! 그런데 구할 수 없다니? 왜?!" = "Oh, it was Rain! But we can’t get it? Why?!";
-"여길 봐. 바다가 쓰레기로 뒤덮여 있잖아. 이렇게 더러운 곳에 그런게 있겠어? 나도 바다를 청소하고 있지만, 나는 너무 느려서 언제 다 할 수 있을지 모르겠어." = "Just look. The sea is covered with trash. How could there be such a thing in this dirty place? I'm cleaning the sea, but I'm slow I don't know when I’ll be able to finish.";
-"그럼 내가 도와줄게! 같이 청소하자." = "Then I'll help you! Let's clean up together.";
-"와 고마워. 그러면 바다에서 쓰레기를 찾아서 없애보자!" = "Wow, thanks. Then let's find the trash and get rid of it!";
-
-"참 잘했어! 네 덕분에 바다가 깨끗해졌어. 이제 이 바다에는 쓰레기들 때문에 죽는 친구들이 없어질거야" = "Well done! Thanks to you, the sea is now clean. There will be no friends in this sea dying of garbage.";
-"내가 도움이 되었다니 다행이야" = "I'm glad I was helpful.";
-"자, 이게 바로 깨끗한 소금물 한 바가지야. 이걸로 네 친구를 꼭 치료하길 바라.." = "Well, this is a bucket of clean salt water. I hope you heal your friend with this…";
-"난 이제 대지의 흙 한 줌을 구하러 갈 거야. 레인, 너는?" = "I'm going to go get a handful of earth soil now. Rain, what about you?";
-"이 바다는 깨끗해졌지만, 아직 다른 바다는 쓰레기들 때문에 죽어가는 친구들이 이렇게 많아." = "This sea is clean, but there are still other seas where so many friends are dying of garbage.";
-"난 이제 다른 바다를 청소하러 갈거야. 고마웠어 안녕~" = "I’ll be off to clean up the other seas now. Thank you until now! Bye!";
-"아이는 길을 가면서 곰곰이 생각해봤어요." = "The child thought hard while he went on his way.";
-"바다에 있는 쓰레기는 아이에게 익숙한 것들이었어요."="The garbage in the sea were all familiar.";
-"평소에 들고 다녔던 물통, 즐겨먹던 플라스틱 도시락, 매일 사용하던 빨대..."="The water bottles, plastic picnic baskets, plastic straws..";
-"아이는 자신의 행동을 되돌아봤어요."="The child reflected on his past actions.";
-"내가 많이 사용했던 물건들이 쉽게 쓰레기가 되는구나..."="‘The things I used easily became garbage…";
-"앞으로는 바다 친구들을 위해서 조금씩 줄어야겠다."="I should make less garbage for the sea friends from now on’";
-"아이는 다짐하며 대지의 마을을 향해 발길을 재촉했어요."="With this in mind, the child hurried.";
-"설명을 해줄게!" = "This is a Find Hidden objects Game!";
-
