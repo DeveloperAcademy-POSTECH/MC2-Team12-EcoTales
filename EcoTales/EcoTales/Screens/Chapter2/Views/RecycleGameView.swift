@@ -95,6 +95,7 @@ struct RecycleGameView: View {
                 chapterProgress.completionStatus[.two] = true
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

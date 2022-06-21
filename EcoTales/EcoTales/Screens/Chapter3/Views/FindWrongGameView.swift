@@ -17,7 +17,7 @@ struct FindWrongGameView: View {
 
     var body: some View {
         ZStack {
-            Image(ImageLiteral.chapter3Pollutedbackground)
+            Image(ImageLiteral.chapter3GameWoodPanel)
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
