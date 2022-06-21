@@ -58,7 +58,7 @@ enum Speaker: String {
 
 struct StoryDataModel {
     let speaker: [Speaker]
-    let dialog: [String]
+    let dialog: [LocalizedStringKey]
 //    var isReadyToUse: Bool
 }
 

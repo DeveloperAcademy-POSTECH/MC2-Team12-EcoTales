@@ -14,6 +14,7 @@ struct IntroView: View {
     @State private var introStoryIndex = 0
     @Binding var isIntroSeen: Bool
     let screenWidth = UIScreen.main.bounds.size.width
+    private let title: LocalizedStringKey = "다음"
 
     var body: some View {
         ZStack {
