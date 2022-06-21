@@ -22,6 +22,19 @@
 "레서 판다 C" = "Lesser Panda C";
 "오류" = "Error!";
 
+// Map Popup
+"이야기를 시작할까요?" = "Shall we start?";
+"네" = "Yes";
+"아니오" = "No";
+
+// Chapter
+"인트로" = "Intro";
+"챕터 1" = "Chapter 1";
+"챕터 2" = "Chapter 2";
+"챕터 3" = "Chapter 3";
+"챕터 4" = "Chapter 4";
+"에필로그" = "Epilogue";
+
 // Intro One
 "세상에서 가장 아름답고, 푸르른 마을에 한 아이가 살았어요." = "Once upon a time, there lived a child who lived in the most beautiful green village in the world.";
 "귀여운 다람쥐 이웃들, 듬직한 독수리 친구, 어머니 같이 포근한 세계수는 아이의 가족이 되어주었어요." = "The cute squirrel neighbors, the reliable Eagle, and the World Tree who was as warm as a mother all became the child’s family.";

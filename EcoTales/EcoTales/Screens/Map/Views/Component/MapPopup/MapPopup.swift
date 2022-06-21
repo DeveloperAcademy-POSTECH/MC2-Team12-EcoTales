@@ -27,12 +27,12 @@ struct MapPopup: View {
                         .strokeBorder(Color.PauseStrokeBrown, lineWidth: 5)
                     VStack {
                         HStack {
-                            Text("\(chapter.name())")
+                            Text(chapter.name())
                                 .font(.system(size: 20, weight: .heavy))
                                 .background(
                                     RoundedRectangle(cornerRadius: 50)
                                         .fill(Color.PopupReplayYellow)
-                                        .frame(width: 80, height: 30)
+                                        .frame(width: 120, height: 30)
                                 )
                                 .padding(.leading, 60)
                             Spacer()
