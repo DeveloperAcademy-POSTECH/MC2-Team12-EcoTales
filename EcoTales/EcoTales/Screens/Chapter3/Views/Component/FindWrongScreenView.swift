@@ -23,13 +23,13 @@ struct FindWrongScreenView: View {
             findWrongButton(0, firstCircle: CGPoint(x: 405, y: 198),
                             secondCircle: CGPoint(x: 30, y: 198), circleSize: 140)
             findWrongButton(1, firstCircle: CGPoint(x: 580, y: 140),
-                            secondCircle: CGPoint(x: 210, y: 140), circleSize: 120)
-            findWrongButton(2, firstCircle: CGPoint(x: 505, y: 20),
-                            secondCircle: CGPoint(x: 135, y: 20), circleSize: 60)
-            findWrongButton(3, firstCircle: CGPoint(x: 520, y: 280),
-                            secondCircle: CGPoint(x: 150, y: 280), circleSize: 70)
-            findWrongButton(4, firstCircle: CGPoint(x: 570, y: 260),
-                            secondCircle: CGPoint(x: 200, y: 260), circleSize: 70)
+                            secondCircle: CGPoint(x: 220, y: 140), circleSize: 120)
+            findWrongButton(2, firstCircle: CGPoint(x: 510, y: 20),
+                            secondCircle: CGPoint(x: 130, y: 20), circleSize: 60)
+            findWrongButton(3, firstCircle: CGPoint(x: 530, y: 265),
+                            secondCircle: CGPoint(x: 160, y: 265), circleSize: 70)
+            findWrongButton(4, firstCircle: CGPoint(x: 580, y: 250),
+                            secondCircle: CGPoint(x: 210, y: 250), circleSize: 70)
         }
     }
 
