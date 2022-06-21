@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HiddenObjGameView: View {
+
     @EnvironmentObject var chapterProgress: ChapterProgress
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var isGameClear: Bool
@@ -15,6 +16,7 @@ struct HiddenObjGameView: View {
     @State private var isPausePopup = false
     @State private var foundTrash = Set<String>()
     @State private var isHiddenObjGameClear = false
+
     var body: some View {
         ZStack {
             if foundTrash.count == 10 {

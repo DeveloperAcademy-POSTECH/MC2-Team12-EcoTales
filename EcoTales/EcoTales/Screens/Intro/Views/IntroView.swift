@@ -88,7 +88,7 @@ struct IntroView: View {
         }
     }
 
-    func introStory() -> [String] {
+    func introStory() -> [LocalizedStringKey] {
         switch introNumber {
         case 1:
             return StoryData().introOne
@@ -103,7 +103,7 @@ struct IntroView: View {
         }
     }
 
-    func introStoryContent(position: Int) -> String {
+    func introStoryContent(position: Int) -> LocalizedStringKey {
         return introStory()[introStoryIndex / 3 * 3 + position]
     }
 }
