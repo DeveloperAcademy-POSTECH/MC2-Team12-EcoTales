@@ -8,6 +8,11 @@
 
 "다음" = "Next";
 
+// For SplashView
+"에코 테일즈" = "Eco Tales";
+"세계수와 나" = "World Tree and I";
+"화면을 눌러서 시작하기" = "Press to start!";
+
 "아이는 근처 바다에 도착했어요." = "ddddd";
 
 "드디어 레서판다 마을이다!" = "Finally, Lesser Panda village!";
@@ -49,6 +54,19 @@
 "레서 판다 B" = "Lesser Panda B";
 "레서 판다 C" = "Lesser Panda C";
 "오류" = "Error!";
+
+// Map Popup
+"이야기를 시작할까요?" = "Shall we start?";
+"네" = "Yes";
+"아니오" = "No";
+
+// Chapter
+"인트로" = "Intro";
+"챕터 1" = "Chapter 1";
+"챕터 2" = "Chapter 2";
+"챕터 3" = "Chapter 3";
+"챕터 4" = "Chapter 4";
+"에필로그" = "Epilogue";
 
 // Intro One
 "세상에서 가장 아름답고, 푸르른 마을에 한 아이가 살았어요." = "Once upon a time, there lived a child who lived in the most beautiful green village in the world.";
