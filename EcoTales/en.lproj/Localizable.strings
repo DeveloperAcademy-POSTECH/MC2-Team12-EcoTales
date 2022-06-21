@@ -1,10 +1,37 @@
-/* 
-  Localizable.strings
-  EcoTales
-
-  Created by 김민택 on 2022/06/21.
-  
-*/
+ /* 
+ Localizable.strings
+ EcoTales
+ 
+ Created by 김민택 on 2022/06/21.
+ 
+ */
 
 "다음" = "Next";
-"아이는 근처 바다에 도착했어요." = "ddddd";
+"아이는 근처 바다에 도착했어요." = "The child reached the sea.";
+"와 바다다! 여기라면 깨끗한 소금물 한 바가지를 구할 수 있겠지?" = "Wow, it’s the sea! I’ll be able to get a clean bucket of sea water here, right?";
+"아이고.. 힘들다 힘들어" = "ugh.. my back…";
+"어? 거북이다. 거북이한테 물어볼까?" = "Huh? A turtle. Maybe I should ask the turtle.";
+"안녕 거북아?" = "Hello turtle?";
+"누구냐 넌! 너도 바다를 더럽히러 온 거야? 내가 혼쭐을 내주마!" = "Who are you! Did you also come to pollute the sea? I’ll teach you a lesson!";
+"잠깐만, 아니야! 나는 바다의 깨끗한 소금물 한 바가지를 구하러 왔어" = "Wait, no! I’m here to get a bucket of clean salt water from the sea";
+"깨끗한 소금물 한 바가지?" = "A bucket of clean salt water?";
+"응! 너 혹시 그게 어디있는지 아니 거북아?" = "Yes! Do you know where it is, turtle?";
+"내 이름은 레인이야. 지금은 깨끗한 소금물 한 바가지를 구할 수 없어." = "My name is Rain. And you can’t get a bucket of clean salt water right now.";
+"레인이었구나! 그런데 구할 수 없다니? 왜?!" = "Oh, it was Rain! But we can’t get it? Why?!";
+"여길 봐. 바다가 쓰레기로 뒤덮여 있잖아. 이렇게 더러운 곳에 그런게 있겠어? 나도 바다를 청소하고 있지만, 나는 너무 느려서 언제 다 할 수 있을지 모르겠어." = "Look around. The sea is covered with trash. How could there be such a thing in such a dirty place? I'm cleaning the sea, but I'm slow I don't know when I’ll be able to finish it.";
+"그럼 내가 도와줄게! 같이 청소하자." = "Then I'll help you! Let's clean up together.";
+"와 고마워. 그러면 바다에서 쓰레기를 찾아서 없애보자!" = "Wow, thanks. Then let's find the trash and get rid of it!";
+
+"참 잘했어! 네 덕분에 바다가 깨끗해졌어. 이제 이 바다에는 쓰레기들 때문에 죽는 친구들이 없어질거야" = "Well done! Thanks to you, the sea is now clean. There will be no friends in this sea dying of garbage.";
+"내가 도움이 되었다니 다행이야" = "I'm glad I was helpful.";
+"자, 이게 바로 깨끗한 소금물 한 바가지야. 이걸로 네 친구를 꼭 치료하길 바라.." = "Well, this is a bucket of clean salt water. I hope you heal your friend with this…";
+"난 이제 대지의 흙 한 줌을 구하러 갈 거야. 레인, 너는?" = "I'm going to go get a handful of earth soil now. Rain, what about you?";
+"이 바다는 깨끗해졌지만, 아직 다른 바다는 쓰레기들 때문에 죽어가는 친구들이 이렇게 많아." = "This sea is clean, but there are still other seas where so many friends are dying of garbage.";
+"난 이제 다른 바다를 청소하러 갈거야. 고마웠어 안녕~" = "I’ll be off to clean up the other seas now. Thank you until now! Bye!";
+"아이는 길을 가면서 곰곰이 생각해봤어요." = "The child thought hard while he went on his way.";
+"바다에 있는 쓰레기는 아이에게 익숙한 것들이었어요."="The garbage in the sea were all familiar.";
+"평소에 들고 다녔던 물통, 즐겨먹던 플라스틱 도시락, 매일 사용하던 빨대..."="The water bottles, plastic picnic baskets, plastic straws..";
+"아이는 자신의 행동을 되돌아봤어요."="The child reflected on his past actions.";
+"내가 많이 사용했던 물건들이 쉽게 쓰레기가 되는구나..."="‘The things I used easily became garbage…";
+"앞으로는 바다 친구들을 위해서 조금씩 줄어야겠다."="I should make less garbage for the sea friends from now on’";
+"아이는 다짐하며 대지의 마을을 향해 발길을 재촉했어요."="With this in mind, the child hurried.";
