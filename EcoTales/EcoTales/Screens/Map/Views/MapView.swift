@@ -54,6 +54,7 @@ struct MapView: View {
                          content: { IntroView(isIntroSeen: $isIntroSeen) })
         .fullScreenCover(isPresented: $isChapterStart,
                          content: { StoryView(isStagePopup: $isStagePopUp, chapter: $selectedChapter) })
+        .navigationBarHidden(true)
     }
 
     private func isCompleted(chapter: Chapter) -> Bool {
