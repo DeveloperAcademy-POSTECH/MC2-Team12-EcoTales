@@ -5,9 +5,26 @@
 //  Created by Eunbee Kang on 2022/06/11.
 //
 
-import Foundation
+import SwiftUI
+
+extension LocalizedStringKey: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self)
+    }
+}
 
 struct HiddenObjectData: Hashable {
+    private let drinkCan: LocalizedStringKey = "음료수 캔"
+    private let plasticBottle: LocalizedStringKey = "플라스틱\n물병"
+    private let toothBrush: LocalizedStringKey = "칫솔"
+    private let plasticBag: LocalizedStringKey = "비닐봉지"
+    private let cigaretteWaste: LocalizedStringKey = "담배꽁초"
+    private let plasticCutlery: LocalizedStringKey = "플라스틱\n숟가락과 포크"
+    private let plasticStraw: LocalizedStringKey = "플라스틱\n빨대"
+    private let disposableCup: LocalizedStringKey = "일회용\n음료 컵"
+    private let glassBottle: LocalizedStringKey = "유리병"
+    private let crispPacket: LocalizedStringKey = "과자 봉지"
+
     var list = [
         HiddenObject(image: "hidden_can", objectName: "음료수 캔",
                      positionX: 758, positionY: 210, rotation: 270, opacity: 1,
