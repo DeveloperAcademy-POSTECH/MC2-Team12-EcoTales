@@ -89,7 +89,7 @@ struct EpilogueTwo: View {
         return epilogueNumber == 0 ? ImageLiteral.epilogueValley : ImageLiteral.intro1Background
     }
 
-    private func epilogueDialog(position: Int) -> String {
+    private func epilogueDialog(position: Int) -> LocalizedStringKey {
         return StoryData().epilogueTwoDialog[epilogueIndex / 3 * 3 + position]
     }
 }
