@@ -8,6 +8,11 @@
 
 "다음" = "Next";
 
+// For SplashView
+"에코 테일즈" = "Eco Tales";
+"세계수와 나" = "World Tree and I";
+"화면을 눌러서 시작하기" = "Press to start!";
+
 // Character Name
 "아이" = "Child";
 "거북이" = "Turtle";
