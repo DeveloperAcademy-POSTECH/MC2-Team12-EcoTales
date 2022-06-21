@@ -14,7 +14,7 @@ struct PandaGameView: View {
     @Binding var isGameClear: Bool
     @State private var isPausePopup = false
     @State private var showGameClear = false
-
+    private let title: LocalizedStringKey = "치료약을 만들기 위해 레서판다 미뉴를 찾아보자!"
     var body: some View {
         ZStack {
             Image(ImageLiteral.pandaBackground)

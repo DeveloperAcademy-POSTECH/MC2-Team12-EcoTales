@@ -13,6 +13,7 @@ struct RecycleGameView: View {
     @State private var isWrong = false
     @State private var isGameOver = false
     @Binding var isGameClear: Bool
+    private let title: LocalizedStringKey = "여기에 텍스트가 들어갑니다"
 
     var body: some View {
         ZStack {
@@ -73,19 +74,16 @@ struct RecycleGameView: View {
                 }
             }
             if isGameClear {
-                Color.black
-                    .opacity(0.4)
-                    .ignoresSafeArea()
-                Text("Game Clear!")
-                    .foregroundColor(Color.white)
-                    .font(.title)
+                Dim()
+                Image("gameClear")
+                    .resizable()
+                    .scaledToFit()
             }
             if isGameOver {
-                Color.black.opacity(0.4)
-                    .ignoresSafeArea()
-                Text("Game Over!")
-                    .foregroundColor(Color.white)
-                    .font(.title)
+                Dim()
+                Image("gameOver")
+                    .resizable()
+                    .scaledToFit()
             }
         }
         .ignoresSafeArea()
