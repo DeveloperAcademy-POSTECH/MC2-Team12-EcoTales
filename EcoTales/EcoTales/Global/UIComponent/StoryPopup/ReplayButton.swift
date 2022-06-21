@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct ReplayButton: View {
+    private let title: LocalizedStringKey = "다시시작"
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -20,7 +21,7 @@ struct ReplayButton: View {
                     .frame(width: 27, height: 26)
                     .font(.system(size: 5, weight: .semibold))
                     .foregroundColor(.PopupWhite)
-                Text("다시 시작")
+                Text("다시시작")
                     .fontWeight(.bold)
                     .foregroundColor(Color.PopupWhite)
                     .font(.system(size: 24, weight: .heavy))

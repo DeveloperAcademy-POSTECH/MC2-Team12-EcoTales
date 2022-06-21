@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct ContinueButton: View {
+    private let title: LocalizedStringKey = "계속하기"
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)

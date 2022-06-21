@@ -5,6 +5,8 @@
 //  Created by YejiMac on 2022/06/16.
 //
 
+import SwiftUI
+
 enum RecycleObject: Int {
     case litter = 0
     case egg
@@ -19,7 +21,7 @@ enum RecycleObject: Int {
     case cup
     case mug
 
-    func recycleObjectType() -> String {
+    func recycleObjectType() -> LocalizedStringKey {
         switch self {
         case .litter, .egg:
             return "일반쓰레기"

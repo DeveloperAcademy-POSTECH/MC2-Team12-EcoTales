@@ -7,6 +7,7 @@
 import SwiftUI
 
 struct ExitButton: View {
+    private let title: LocalizedStringKey = "나가기"
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
