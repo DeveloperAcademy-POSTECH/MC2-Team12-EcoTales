@@ -8,3 +8,33 @@
 
 "다음" = "Next";
 "아이는 근처 바다에 도착했어요." = "ddddd";
+
+"아이는 대지의 흙 한 줌을 찾기 위해 숲을 향해 걸었어요. 숲에 도착했지만 오염물질과 쓰레기가 많아 마땅한 흙을 찾기 어려웠어요." = "The child walked to the forest to find a handful of earth soil. When the child arrived, it was hard to find the right soil because there were a lot of pollutants and trash.";
+ "계속 걸어가고 있던 중, 마침 땅 속에서 나온 두더지를 마주쳤어요." = "As walking, the child came across a mole coming out of the ground.";
+ "아이 참.. 이것 참 곤란하네.." = "Oh, my… This is really difficult.";
+ "두더지야 안녕~" = "Mole. Hi, how are you~?";
+ "하나도 안녕하지 못해. 난 쉐리야" = "I am not well at all. And my name is Sherry.";
+ "무슨 일 있니, 쉐리?" = "What's wrong, Sherry?";
+ "기껏 새 옷을 샀는데, 이걸 봐 여기 이 더러운 쓰레기들 때문에 새로산 내 옷이 다 더러워져 버렸어." = "I've bought new clothes, but look at this. My new clothes are all dirty because of this mess here.";
+ "저런.. 참 안됐구나.." = "Oh no… I'm sorry to hear that.";
+ "그런데 여긴 무슨 일로 온 거야?" = "So what brings you here?";
+ "아, 나는 대지의 흙 한 줌을 찾고 있어. 혹시 어디에 있는지 아니?" = "Oh, I'm looking for a handful of earth soil. Do you know where it is?";
+ "네가 찾는 대지의 흙 한 줌은 여기에 없어. 저 아무렇게나 버려진 쓰레기들 때문이지" = "The handful of earth you're looking for isn't here. It's because of the trash that's thrown anywhere and everywhere.";
+ "그럼 어쩌지.." = "What should I do?";
+ "저 쓰레기들을 분리수거해 볼까? 그러면 니가 원하는 대지의 흙 한 줌을 구할 수 있을거야." = "How about we separate the garbage? Then you can get a handful of earth soil you want.";
+ "좋아, 하지만 쉐리. 나는 분리수거를 어떻게 해야하는지 잘 몰라.." = "All right, but Sherry. I don't know how to recycle.";
+ "걱정마. 내가 알려줄게." = "Don’t worry. I’ll help you out.";
+ "여기 쓰레기들 보이지? 이 쓰레기는 플라스틱, 이건 캔, 이건 종이야! 내가 땅에서 쓰레기를 주워서 컨베이어 벨트에 올려줄테니 너는 쓰레기를 잘 분류해줘" = "You see the garbage here? This is plastic, this is a can, and this is paper! I’ll pick up the garbage from the ground and put it on the conveyor belt, so please sort out the trash.";
+ "좋아, 한번 도전해볼게" = "Okay, I’ll give it a try.";
+
+"좋았어! 이제 좀 신나는걸!!" = "Great! Now it’s fun!";
+"잘했어 아이야~ 이게 바로 대지의 흙 한 줌이야." = "Well done, child. Here is a handful of earth soil.";
+"이게 다 네 덕분이야 쉐리~" = "This is all thanks to you, Sherry.";
+"아니야 다 네가 잘 해줬기 때문이야." = "No, it's all because you've been nice.";
+"이제 땅도 깨끗해졌으니 쉐리 네 옷들도 더러워지지 않겠다." = "Now that the ground is clean, Sherry's clothes won't get dirty either.";
+"덕분에 내 옷들이 더러워지지 않을 수 있을 것 같아. 하지만 앞으로도 분리수거를 제대로 하지 않으면 다시 땅이 더러워지겠지.." = "Thanks to that, I think my clothes won't get dirty. But in the future, if we do not properly separate waste, the ground will become dirty again..";
+"" = "";
+"아 생각하기도 싫다!!" = "Oh, I hate to even think about it!";
+"걱정마 쉐리, 앞으로 나도 분리수거를 열심히 할게" = "Don't worry, Sherry, I'll do my best to separate garbage from now on.";
+"고마워, 그럼 잘가~" = "Thank you, then bye~";
+"응 안녕 쉐리~" = "Yeah Bye Sherry~";
