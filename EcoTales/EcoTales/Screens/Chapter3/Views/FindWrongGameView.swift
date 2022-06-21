@@ -17,7 +17,7 @@ struct FindWrongGameView: View {
 
     var body: some View {
         ZStack {
-            Image(ImageLiteral.chapter3Pollutedbackground)
+            Image(ImageLiteral.chapter3GameWoodPanel)
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -112,5 +112,12 @@ private struct ExplainGameView: View {
                 .background(Image(ImageLiteral.chapter1TurtleDialog))
         }
         .frame(width: 450, height: 30)
+    }
+}
+
+struct FindWrongGameView_Previews: PreviewProvider {
+    static var previews: some View {
+        FindWrongGameView(isStagePopup: .constant(true), isGameClear: .constant(false))
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
