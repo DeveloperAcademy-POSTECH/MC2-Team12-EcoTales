@@ -8,7 +8,13 @@
 
 - Localization
 
-## 🫂 Authors
+## 👥 Team
+
+<div align="center">
+  ### 세계수🌲
+</div>
+
+### 🫂 Authors
 
 |<img src="https://github.com/eunbkang.png">|<img src="https://github.com/Lim-YongKwan.png">|<img src="https://github.com/yeahaluu.png">|<img src="https://github.com/glitterer.png">|<img src="https://github.com/taek0622.png">|<img src="https://github.com/Lia316.png">|
 |:-:|:-:|:-:|:-:|:-:|:-:|
