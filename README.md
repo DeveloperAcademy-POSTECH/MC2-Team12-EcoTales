@@ -23,11 +23,13 @@
 |[Rain](https://github.com/eunbkang)|[Grizzly](https://github.com/Lim-YongKwan)|[Sherry](https://github.com/yeahaluu)|[Oz](https://github.com/glitterer)|[Meenu](https://github.com/taek0622)|[Lia](https://github.com/Lia316)|
 
 
-## 🌃 Screenshots
+## 🌃 Screenshots!
+(https://user-images.githubusercontent.com/96565110/192723231-13f1eea6-cb9c-42f3-9c8d-7163e4bcf2e4.PNG)
+
 
 ![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
 ![home](<img width="300" src="https://user-images.githubusercontent.com/96565110/192721947-46edb811-08c3-48ca-8353-8d48cde68bcd.PNG">)
-![Prologue](<img width="300" src="https://user-images.githubusercontent.com/96565110/192722065-ab838bc3-d055-4d6f-b3bc-3d5354cf6810.PNG">)
+![Prologue](<img width="500" alt="IMG_0440" src="https://user-images.githubusercontent.com/96565110/192722065-ab838bc3-d055-4d6f-b3bc-3d5354cf6810.PNG">
 ![Chapter1](https://user-images.githubusercontent.com/96565110/192722112-879bd414-44ac-4aca-a0db-facb2c9e2b41.PNG)
 ![Chapter1_2](https://user-images.githubusercontent.com/96565110/192722179-441eb2fe-82a0-462b-a89f-9afff54e436a.PNG)
 ![Chapter1_3](https://user-images.githubusercontent.com/96565110/192722252-3e2a8a62-2ff1-44f8-9d51-996af1005145.PNG)
