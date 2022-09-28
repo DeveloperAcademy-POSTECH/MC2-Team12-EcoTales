@@ -28,7 +28,7 @@
 
 
 ![App Screenshot](https://user-images.githubusercontent.com/96565110/192723782-8d139eea-13de-446f-a42f-ed11d725f4e5.PNG)
-|<img width="500" src="https://user-images.githubusercontent.com/96565110/192723902-29ce7fec-a797-4772-9c0f-039e7ddfeacf.PNG">      |   <img width="500" src="https://user-images.githubusercontent.com/96565110/192724623-b77f46e9-a12d-4078-acef-a200e3aa2d31.PNG">    |
+|<img height="900" src="https://user-images.githubusercontent.com/96565110/192723902-29ce7fec-a797-4772-9c0f-039e7ddfeacf.PNG">      |   <img width="500" src="https://user-images.githubusercontent.com/96565110/192724623-b77f46e9-a12d-4078-acef-a200e3aa2d31.PNG">    |
 
 
 
