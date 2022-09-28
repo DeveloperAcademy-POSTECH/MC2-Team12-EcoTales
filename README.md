@@ -27,13 +27,9 @@
 (https://user-images.githubusercontent.com/96565110/192723231-13f1eea6-cb9c-42f3-9c8d-7163e4bcf2e4.PNG)
 
 
-![App Screenshot](https://dummyimage.com/250x500/000/fff.png)
-![home](<img width="300" src="https://user-images.githubusercontent.com/96565110/192721947-46edb811-08c3-48ca-8353-8d48cde68bcd.PNG">)
-![Prologue](<img width="500" alt="IMG_0440" src="https://user-images.githubusercontent.com/96565110/192722065-ab838bc3-d055-4d6f-b3bc-3d5354cf6810.PNG">
-![Chapter1](https://user-images.githubusercontent.com/96565110/192722112-879bd414-44ac-4aca-a0db-facb2c9e2b41.PNG)
-![Chapter1_2](https://user-images.githubusercontent.com/96565110/192722179-441eb2fe-82a0-462b-a89f-9afff54e436a.PNG)
-![Chapter1_3](https://user-images.githubusercontent.com/96565110/192722252-3e2a8a62-2ff1-44f8-9d51-996af1005145.PNG)
-![Pause](https://user-images.githubusercontent.com/96565110/192722293-c8a39e32-917b-4c14-b088-1bd7307a410c.PNG)
+![App Screenshot](![IMG_0439](https://user-images.githubusercontent.com/96565110/192723782-8d139eea-13de-446f-a42f-ed11d725f4e5.PNG))
+|<img width="300" src="![IMG_0440](https://user-images.githubusercontent.com/96565110/192723902-29ce7fec-a797-4772-9c0f-039e7ddfeacf.PNG)
+">      |   <img width="250" alt="스크린샷 2022-07-31 오전 12 19 10" src="https://user-images.githubusercontent.com/96565110/181921062-9f533ff9-8ddf-4d05-ad05-12563db873e6.png">    |
 
 
 
